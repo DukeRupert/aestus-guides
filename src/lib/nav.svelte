@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import { ChevronDown, X, Menu } from 'svelte-hero-icons';
 	import Icon from 'svelte-hero-icons/Icon.svelte';
 
+	export let path;
+	console.log(path);
 	let timing = 500;
 	let delay = 250;
 	let mobileOpen = false;
@@ -35,7 +36,7 @@
 			<div class="relative group">
 				<a
 					href="/guides"
-					class="{$page.path == '/guides'
+					class="{path == '/guides'
 						? 'text-gray-900'
 						: ''} text-gray-500 mb-3 bg-parchment rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 					aria-expanded="false"
@@ -44,7 +45,7 @@
 					<Icon
 						src={ChevronDown}
 						solid
-						class="{$page.path == '/guides'
+						class="{path == '/guides'
 							? 'text-gray-600'
 							: ''}text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500"
 					/>
@@ -81,7 +82,7 @@
 			</div>
 			<a
 				href="/about"
-				class="{$page.path == '/about'
+				class="{path == '/about'
 					? 'text-gray-900'
 					: ''}text-base font-medium text-gray-500 hover:text-gray-900"
 			>
