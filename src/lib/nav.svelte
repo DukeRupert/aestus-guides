@@ -5,7 +5,6 @@
 	import Icon from 'svelte-hero-icons/Icon.svelte';
 
 	export let path;
-	console.log(path);
 	let timing = 500;
 	let delay = 250;
 	let mobileOpen = false;
@@ -29,7 +28,18 @@
 				on:click={() => (mobileOpen = !mobileOpen)}
 			>
 				<span class="sr-only">Open menu</span>
-				<Icon src={Menu} class="h-6 w-6" />
+				<!-- Feather/Menu -->
+				<svg
+					class="h-6 w-6"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<polyline points="6 9 12 15 18 9" /></svg
+				>
 			</button>
 		</div>
 		<nav class="hidden md:flex space-x-10">
@@ -42,13 +52,18 @@
 					aria-expanded="false"
 				>
 					<span>Guides</span>
-					<Icon
-						src={ChevronDown}
-						solid
-						class="{path == '/guides'
-							? 'text-gray-600'
-							: ''}text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500"
-					/>
+					<!-- Feather/ChevronDown -->
+					<svg
+						class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<polyline points="6 9 12 15 18 9" /></svg
+					>
 				</a>
 				<div
 					class="hidden group-hover:block absolute z-10 -ml-4 w-screen max-w-xs lg:max-w-xs lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 transform"
@@ -111,7 +126,18 @@
 								on:click={() => (mobileOpen = !mobileOpen)}
 							>
 								<span class="sr-only">Close menu</span>
-								<Icon src={X} class="h-6 w-6" />
+								<!-- Feather/X -->
+								<svg
+									class="h-6 w-6"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<line x1="18" y1="6" x2="6" y2="18" /> <line x1="6" y1="6" x2="18" y2="18" /></svg
+								>
 							</button>
 						</div>
 					</div>
