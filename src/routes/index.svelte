@@ -8,7 +8,7 @@
 <!-- Hero section -->
 <div class="relative">
 	<div class="w-full mx-auto sm:px-6 lg:px-8">
-		<div class="relative m-auto px-4 lg:max-w-3xl sm:overflow-hidden">
+		<div class="relative m-auto pt-8 px-4 lg:pt-24 max-w-2xl sm:overflow-hidden">
 			<img
 				class="h-full w-full object-contain"
 				src="/images/AeFull1200.png"

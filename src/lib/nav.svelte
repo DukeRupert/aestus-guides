@@ -28,7 +28,7 @@
 				<span class="sr-only">Open menu</span>
 				<!-- Feather/Menu -->
 				<svg
-					class="h-6 w-6"
+					class="h-8 w-8"
 					viewBox="0 0 24 24"
 					fill="none"
 					stroke="currentColor"
@@ -36,7 +36,8 @@
 					stroke-linecap="round"
 					stroke-linejoin="round"
 				>
-					<polyline points="6 9 12 15 18 9" /></svg
+					<line x1="3" y1="12" x2="21" y2="12" /> <line x1="3" y1="6" x2="21" y2="6" />
+					<line x1="3" y1="18" x2="21" y2="18" /></svg
 				>
 			</button>
 		</div>
@@ -161,7 +162,7 @@
 
 							<a href="/about" class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50">
 								<div
-									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-br from-purple-500 to-purple-700 text-white"
+									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-parchment text-white"
 								>
 									<img class="h-8 w-auto" src="/images/Ae200.png" alt="Aestus Guides logo" />
 								</div>
