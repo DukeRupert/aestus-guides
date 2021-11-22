@@ -18,6 +18,7 @@ const config = {
 				bgBlack: '#0D0D0D'
 			},
 			maxWidth: {
+				xs: '20rem',
 				'8xl': '90rem'
 			}
 		}

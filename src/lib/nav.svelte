@@ -8,7 +8,7 @@
 	let mobileOpen = false;
 </script>
 
-<div class="relative shadow-xl bg-parchment">
+<div class="relative shadow-xl bg-white">
 	<div
 		class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
 	>
@@ -21,7 +21,7 @@
 		<div class="-mr-2 -my-2 md:hidden">
 			<button
 				type="button"
-				class="bg-parchment rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+				class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 				aria-expanded="false"
 				on:click={() => (mobileOpen = !mobileOpen)}
 			>
@@ -67,7 +67,7 @@
 					class="hidden group-hover:block absolute z-10 -ml-4 w-screen max-w-xs lg:max-w-xs lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 transform"
 				>
 					<div class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5 overflow-hidden">
-						<div class="relative grid gap-6 bg-parchment px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-1">
+						<div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-1">
 							<a href="/guides" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
@@ -110,7 +110,7 @@
 			class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
 		>
 			<div
-				class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-parchment divide-y-2 divide-gray-50"
+				class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
 			>
 				<div class="pt-5 pb-6 px-5">
 					<div class="flex items-center justify-between">
@@ -120,7 +120,7 @@
 						<div class="-mr-2">
 							<button
 								type="button"
-								class="bg-parchment rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+								class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 								on:click={() => (mobileOpen = !mobileOpen)}
 							>
 								<span class="sr-only">Close menu</span>

@@ -264,6 +264,163 @@
 		]
 	};
 
+	let eldritchKnight: bgClass = {
+		title: 'Eldritch Knight',
+		tier: 'RP',
+		image: {
+			url: '/images/guides/bg3-class-fighter-eldritchknight.webp',
+			alt: 'BG3 Eldritch Knight symbol'
+		},
+		body: [
+			`This class will be really good on full release, probably A tier, maybe S, but right now it just can’t compete with the Battle Master. It hasn’t gotten enough of Larian’s attention in the early access, so as of now it is always worse to pick Eldritch Knight over Battle Master.`,
+			`Eldritch Knights add spell casting to the Fighter base class. They learn two cantrips and up to four spells by level 4. Three of those four spells must be in the abjuration or evocation schools. At level 4 they have three first level spell casts per long rest. Their spell casting modifier is intelligence.`,
+			`The problem with this feature is that there are not enough spells in the early access to support it. In patch 4 there are six evocation or abjuration spells they can choose from. They are Burning Hands, Magic Missile, Mage Armor, Protection from Evil and Good, Thunderwave, and Witch Bolt. None of them synergize well with the Fighter base class. The cantrip selection does not fare much better. For the one spell you get that isn’t restricted there are three interesting choices: Jump, Sleep, and Tasha's Hideous Laughter. All three are good spells, you will use them often, but they are not enough to compete with Riposte or Menacing Strike.`,
+			`So instead, let’s discuss what can happen between this patch and full release to make the Eldritch Knight good. The obvious fix would be the addition of new spells and cantrips. The spell Shield, for example, is famously good on Eldritch Knights, basically serving as a defensive counterpart to Riposte. The Eldritch Knight also gets two really important class features at levels 7 and 10. The level 10 feature is particularly good, as it is one of only a handful of ways in the 5e rule set to reliably impose disadvantage on a target’s saving throws, setting up for those devastating paralyze spells. With more options, the Eldritch Knight should serve as a more durable and control focused alternative to Battle Master.`,
+			`As you can see, weaponizing that reaction is a big deal. Note that weaponizing it through Menacing Strike will result in an identical curve, so while I have it labeled as Riposte it works for both. Battle Master's can do this 4 times per short rest. If we were being strict about what counts as sustain DPR we would not include the Riposte damage, but 4 times per short rest is A LOT, so not including it is also a distorted picture. So, going forward I will include both lines in my sustain DPR graphs, for context.`,
+			`<strong>Build:</strong>  an optimal build would do something like our build for Battle Master above, taking Great Weapon Master and optimizing for DPR, but we have established that there is no way for the Eldritch Knight to compete, so I’m going to outline a sub-optimal but fun build that plays on a few unique interactions available to this sub-class. Pick Gold Dwarf as your race, max your constitution, and make sure you have a 14 dexterity. At level 3, take Shocking Grasp and Blade Ward as your cantrips. At level 4, take the tough feet. You should have 52 hit points at level 4, the highest possible in the early access. Normally a build that goes full tank like this will be two behind curve for accuracy, but with the Headband of Intellect, your Shocking Grasp will be only slightly behind curve. Your damage will still be painfully low, but you are extremely tanky to make up for it.`
+		]
+	};
+
+	let ranger: bgClass = {
+		title: 'Ranger',
+		tier: 'B',
+		image: {
+			url: '/images/guides/bg3-class-ranger.webp',
+			alt: 'BG3 Ranger symbol'
+		},
+		list: [
+			{ title: 'Hit Points', body: '1d10 progression' },
+			{ title: 'Saving Throws', body: 'Strength and Dexterity' },
+			{
+				title: 'Proficiencies',
+				body: ' Light and Medium Armor, Shields, Simple and Martial Weapons.'
+			},
+			{ title: 'Team Role', body: 'Striker' }
+		],
+		body: [
+			`Ranger’s are an interesting class in D&D history. I’ve never felt like they have been executed well, accept in that edition we all decided to hate for some reason. Larian has changed the Ranger quite a bit from how it works in the Player’s Handbook. They have tried to give them options that are more consistently useful. Besides the things outlined above, the ranger base class is defined by four features: Favored Enemy, Natural Explorer, Fighting Styles, and spell casting.`,
+			`Favored Enemy represents the Ranger’s special training in hunting certain targets. You must choose one of five options:`,
+			[
+				`Bounty Hunter: Gain Proficiency in investigation and learn the Thieves' Cant passive. Creatures you restrain have a harder time escaping. (Note, I am not sure what ‘harder time escaping’ actually translates to mechanically).`,
+				`Keeper of the Veil: You gain proficiency in Arcana, and can cast Protection from Evil and Good.`,
+				`Mage Breaker: Gain proficiency with Arcana and the True Strike cantrip.`,
+				`Ranger Knight: Gain proficiency with History and Heavy Armor.`,
+				`Sanctified Stalker: Gain proficiency in Religion and the Sacred Flame cantrip. Wisdom is your spell casting ability for this spell.`
+			],
+			`Natural Explorer represents a Ranger’s special training in a particular environment. Again, you can choose one of five options:`,
+			[
+				`Beast Tamer: You can cast Find Familiar as a ritual.`,
+				`Urban Tracker: you gain proficiency with the disguise kit and thieves' tools.`,
+				`Wasteland Wanderer (Cold): Gain resistance to cold damage.`,
+				`Wasteland Wanderer (Fire): Gain resistance to fire damage.`,
+				`Wasteland Wanderer (Poison): Gain resistance to poison damage.`
+			],
+			`These features are much more useful. The Fire resistance is probably the best choice, with Beast Tamer taking second. Really, any of the resistances will be useful. Pass on Urban Tracker unless you really need it for a concept.`,
+			`The Ranger Fighting Styles are identical to the eponymous feature in the Fighter base class, only the Ranger gets access to fewer options. Rangers may choose from Archery, Defense, Dueling, and Two-Weapon Fighting. Nothing in the Ranger class changes my analysis of this feature with the Fighter. It is best to take Archery if you want to primarily attack with ranged weapons, take TWF if you want to dual wield, and take Defense in all other cases.`,
+			`Finally, the Ranger base class also gets access to spell casting at level 2. Their spell list is small, and, for the most part, lackluster, but there are some solid spells that are worth discussing. Hunter’s Mark is the first of what I call “4e striker spells.” These are spells that add a d6 to your damage on attacks against the marked target. The spells always hit their target, are a bonus action to cast, and can be switched to new targets when the first one dies without taking an extra spell slot. Usually they also take concentration. In fact, its helpful to think of them as weaponizing your concentration slot, adding 3.5 damage on average to your DPR when you hit. It’s a decent use of a concentration slot at early levels, and an extremely efficient use of a level one spell slot. Jump is an amazing mobility spell in BG3. Use it to kite if you are ranged attack focused and use it for priority target selection if you are melee.`,
+			`Ensnaring Strike is a unique spell to the Ranger that has some promise, so its worth taking a second to discuss it. It is cast on an attack, and restrains a target that is hit and fails a strength saving throw. Besides being restrained, the target takes 1d6 damage per round for as long as they are restrained. Restrained is a useful condition, especially when you can chain it with other spells that target the dex saving throw (which is difficult at this point of early access). The damage is comparable to Hunter’s Mark, but does not refresh when the target dies. Its also one of those dreaded spells that has to hit twice to get full effect (hit on the attack and on the saving throw). It competes with Hunter’s Mark for concentration, so 95% of the time you should prefer Hunter’s Mark.`
+		]
+	};
+
+	let beastmaster: bgClass = {
+		title: 'Beastmaster',
+		tier: 'B',
+		image: {
+			url: '/images/guides/bg3-class-ranger-beastmaster.webp',
+			alt: 'BG3 Beast Master symbol'
+		},
+		body: [
+			`<strong>*I haven't tested the Beastmaster since Patch 4, so some of this information may be outdated*</strong>`,
+			`The Beastmaster augments the Ranger base class with the Summon Companion feature. As the name suggests, this feature allows you to summon an animal companion to fight along side you. You may summon this companion an infinite amount of times outside of combat, so you can have it for every fight, but if it falls in battle you cannot re-summon while the combat is ongoing.`,
+			`Technically there are five options for animals to summon, but functionally there are only four. The five choices are bear, boar, raven, spider, wolf, but there really is no reason pick the the boar, it just gets outclassed by the other options. The bear gets a taunting feature and has the most hit-points at 19. In terms of raw stats, the spider used to be overloaded compared to the other options, but it has taken a big nerf. Still, it gets an enweb ability on a bonus action, and its attacks have a chance to impose the poisoned condition, which gives disadvantage on attacks, so not bad. Raven carves out its own niche by being able to blind opponents and fly away to safety as a hit-and-run move. Blind imposes disadvantage on their attacks, and advantage on all attacks against. The wolf does the most DPR of all the choices by just a smidge, and the wolf’s attacks have a chance to inflict the prone condition. If you prefer the prone condition to the spider’s poison, or the Raven's blind, you might prefer the wolf.`,
+			`Now, we haven’t discussed summons in general yet, so now if a good time to do it. Summons are really useful, since they come with their own actions there is no real opportunity cost to them. The only opportunity cost is the cost of choosing a summon feature over some other feature. Also, summoned allies are typically at their best when you first get them, then diminish in power as your character progresses. In early access though, we are restricted to lower levels, which inflates the value of summons in general. Since the Beast Master gets the spider, one of the best summons in the game, it is an A Tier subclass. However, I don’t expect it to keep its ‘A’ ranking with full release.`,
+			`<strong>Build:</strong>  The Beast Master animal companion feature doesn’t scale with anything, so go hog wild. An optimized Ranger would go Mountain Dwarf and take Great Weapon Master at level 4. However, for my play-through as a Beast Master, I played as my boy John Dell (in honor of the Adventures in Odyssey character from the “Castles and Cauldrons” episode, written to warn parents about the secret satanism of D&D in 1990). John Dell is a Stoutheart Halfling, with Agnes, his trusted spider companion. John Dell was a stone cold killer in every conceivable meaning of that phrase.`
+		]
+	};
+
+	let hunter: bgClass = {
+		title: 'Hunter',
+		tier: 'A',
+		image: {
+			url: '/images/guides/bg3-class-ranger-hunter.webp',
+			alt: 'BG3 Hunter symbol'
+		},
+		body: [
+			`The Hunter adds the Hunter’s Prey feature to the Ranger base class. Hunter’s Prey has you choose one of three options to represent your Ranger’s special expertise in fighting a particular type of monster:`,
+			[
+				`Colossus Slayer: Once per turn, your weapon attack deals an extra 1d8 damage if the target is below its hit point maximum.`,
+				`Giant Killer: If a Large or bigger creature attacks you, you can use your reaction to make a melee attack.`,
+				`Horde Breaker: Target two creatures standing close to each other, attacking them in quick succession.`
+			],
+			`Giant Killer and Horde Breaker are impactful, but to situational to proc. Giant Killer looks really attractive when you read it, because there are a few tough fights against Large or bigger creatures in the early access. However, in those fights, I find it difficult to efficiently force aggro on my Ranger, which means you just don’t proc this feature enough for it to add substantial damage. Colossus Slayer is the best choice just because you can consistently proc it in most combats. The damage increase it gives you stacks with Hunter’s Mark, making Hunters very flexible damage dealers.`,
+			`<strong>Build:</strong>  For this build I recommend shield dwarf. Buy a 16 in strength and constitution, a 14 in dexterity, putting the rest in wisdom (it should buy you a 13 with 1 point remaining). At level 2 take TWF for your fighting style At level 4 take the Dual Wielder feat. I recommend using the Shattered Flail in your off-hand.`
+		]
+	};
+
+	let rogue: bgClass = {
+		title: 'Rogue',
+		tier: 'C',
+		image: {
+			url: '/images/guides/bg3-class-rogue.webp',
+			alt: 'BG3 Rogue symbol'
+		},
+		list: [
+			{ title: 'Hit Points', body: '1d8 progression' },
+			{ title: 'Saving Throws', body: 'Dexterity and Intelligence' },
+			{
+				title: 'Proficiencies',
+				body: 'Light Armor, Simple and Rogue Weapons.'
+			},
+			{ title: 'Team Role', body: 'Striker' }
+		],
+		body: [
+			`A C-tier ranking might surprise a few readers. I had planned on ranking both the Rogue base class and the Thief subclass much higher then I have, but once I really did the analysis and compared the Rogue’s average DPR to other striker classes I discovered I was overrating them. It surprised me too. I will try to lay out all of my analysis in detail. If you feel that I missed something I welcome your input.`,
+			`The Rogue base class gets two features in BG3: Sneak Attack and Cunning Action. Sneak Attack is kind of like a 4e striker spell, but it scales and is more situational to proc. Whenever you are attacking with advantage, or attacking a target that is within 1.5m of an ally, your standard action attack does an extra 1d6 damage, or 2d6 damage after level 3 (it gains 1d6 every odd level). This is a strong feature in BG3, since it is very easy to get advantage. However, as we will see below when we discuss the Thief subclass, it does not compare well to features that multiply attacks, like the Battle Master’s Riposte.`,
+			`Cunning Action in BG3 allows you to take the Dash action as bonus action instead. Dash doubles your movement; a handy mobility boost. Its value is weakened a tad because it competes with Jump for your bonus action. With a high strength, Jump can be used for a few bonus meters. Dash will get you more movement though, and does not require in investment in strength. Mobility on strikers like Rogues can be used to close distance on priority targets if melee, or to kite if ranged.`,
+			`These features are much more useful. The Fire resistance is probably the best choice, with Beast Tamer taking second. Really, any of the resistances will be useful. Pass on Urban Tracker unless you really need it for a concept.`,
+			`Compared to Fighters and Rangers, Rogues have more mobility, but are less durable and do less damage. Its not a favorable trade for them, thus the C ranking.`
+		]
+	};
+
+	let thief: bgClass = {
+		title: 'Thief',
+		tier: 'S',
+		image: {
+			url: '/images/guides/bg3-class-rogue-thief.webp',
+			alt: 'BG3 Thief symbol'
+		},
+		body: [
+			`Just this once we are going to break alphabetic order and discuss the Thief subclass before its counterpart, the Arcane Trickster. Larian has changed the Thief, giving it some attention grabbing features, and its become a fan favorite.`,
+			`This subclass adds two features to the Rogue base class: Fast Hands and Second-Story Work. Second-Story Work gives resistance to fall damage. It has not been noticeable on any of my Thief runs. The real reason the Thief is valued so highly is Fast Hands.`,
+			`Fast Hands gives the Thief an additional bonus action. That’s right, instead of having one bonus action per turn, you now have two. You can now Jump twice in turn, use the Dash bonus action and hide, Shove two goblins off a roof, drink two healing potions, you get the picture, there are so many possibilities. Probably the most tantalizing of them is combining Fast Hands with dual-wielding and getting two off-hand attacks in a turn, three attacks per turn total. How can that not be S-tier?`,
+			`The biggest problem is that off-hand attacks are not very good unless you have the TWF Fighting Style offered by Fighters and Rangers. Without TWF, you do not get to add your ability modifier to your damage and this drastically undercuts the efficiency of dual-wielding.`,
+			`However, there is a clever way to add some damage to those off-hand attacks, and that is to take the Magic Initiate: Warlock feat at level 4 instead of the ASI. With that feat you can cast Hex, which is currently bugged right now (Patch 6) to allow you to use it multiple times per long rest when you take it with the feat. Hex will add 1d6 (3.5 average) necrotic damage to each of your attacks, including you off-hand, greatly improving the thief's damage.`,
+			`Here is a graph that compares the average damage per round of the three martial striker classes available so far - Thieves, Hunters, and Battle Masters - at (mostly) maximized level 4 builds. The X-axis represents average DPR each build has attacking the corresponding AC value on the Y-axis. It assumes that the Thief is procing Sneak Attack (but not with advantage). It also assumes each class has +1 enchanted weapons.`,
+			{
+				url: '/images/guides/bg3-thief-dmg-comparison.webp',
+				alt: 'Thief DPR comparison'
+			},
+			`Its also worth noting that the thief will average 33 damage on a crit, the dual-wield hunter 29, and the Battle Master 22 (31 if they use a manuever). Since criting is common thanks to spells like Sleep, Hold Person, etc, having a higher damage per crit like the Thief does will mean a lot.`,
+			`<strong>Build:</strong>  Probably the most fun I have had in BG3 is playing a Gith Thief! Gith get a bonus to str, and Jump as a racial spell. Strength gives you farther jump distance, the Jump spell that distance, and Fast Hands lets you jump twice in a round. You can move roughly 50m in a round (if my math is right) and still have your action left to attack with! With strength you also get more potent shoves. Moreover, Githyanki get an invisible Mage Hand as a cantrip, which you can use to consistantly prov Sneak Attack The build is pretty simple, just pick Gith, max strength, take a strength ASI or the Dual-Wielder Feat at level 4 and go bananas! Note, you cannot use Hex and Mage Hand together, since they both require concentration. If you want to do the Hex Thief build I graphed above, I recommend going half wood elf and prioritizing dexterity over strength.`
+		]
+	};
+
+	let arcaneTrickster: bgClass = {
+		title: 'Arcane Trickster',
+		tier: 'B',
+		image: {
+			url: '/images/guides/bg3-class-rogue-arcanetrickster.webp',
+			alt: 'BG3 Arcane Trickster symbol'
+		},
+		body: [
+			`If the Thief is overrated, the Arcane Trickster is underrated. The gap between these two subclasses is pretty narrow in my opinion. The Arcane Trickster is a nifty subclass that has its own interesting niche compared to the Thief.`,
+			`When you pick Arcane Trickster you gain two features: Mage Hand Legerdemain and spell casting.`,
+			`Mage Hand Legerdemain is incomplete. The tool tip says it gives the summoned mage hand more actions, but it doesn’t yet. All it does right now is make the mage hand invisible when first summoned. Its barely noticeable.`,
+			`The Arcane Trickster’s spell casting is similar to the Eldritch Knight’s that we discussed above. They learn 2 cantrips and up to 4 spells by level 4. 3 of those 4 spells must be in the enchantment or illusion schools. At level 4 they have 3 first level spell casts per long rest. Their spell casting modifier is intelligence. Like the Eldritch Knight, their spell selection is slim. There are five first level spells in those two schools. However, unlike the Eldritch Knight, the really important spells are available: Sleep and Tasha's.We’ve discussed Sleep a little above. At early levels, it is probably the best control spell in the game, because it doesn’t have a saving throw and the first melee attack against a sleeping target is a guaranteed crit. Tasha's is like Sleep, but with a saving throw. Rogues get very high value from crits because it multiplies their Sneak Attack damage. So, an Arcane Trickster is a striker that brings some of its own control options.`,
+			`<strong>Build:</strong>  Pick Half Wood-Elf as your race, putting the two ability bonuses in dexterity and constitution. Your level 1 statistics should be 8,16,16,8,14,12 (its only really important that you have a 16 in dexterity and constitution, for the rest you can do whatever). For your spells, make sure you have Sleep. For your bonus spell, pick Longstrider. You should get 4.5m bonus movement between Longstrider and your race, which you can double on turns when you take Dash as a bonus action. At level 4, take the ASI to boost dexterity to 18. You should also have the Headband of Intellect now, so your intelligence will be at 17. Now you are a striker/controller with awesome mobility. This subclass is comparable in power to the Thief. Still not as good as Rangers and Fighters, but underrated all the same.Note, you can do this same build on Astarion.`
+		]
+	};
+
 	const sections = [
 		cleric,
 		lightDomain,
@@ -273,13 +430,21 @@
 		circleOfTheMoon,
 		circleOfTheLand,
 		fighter,
-		battleMaster
+		battleMaster,
+		eldritchKnight,
+		ranger,
+		beastmaster,
+		hunter,
+		rogue,
+		thief,
+		arcaneTrickster
 	];
 
 	function getTitle(item) {
 		let title = item.title;
 		let link = item.title.replace(/\s+/g, '');
-		return { title: title, link: link };
+		let image = item.image;
+		return { title: title, link: link, image: image };
 	}
 
 	const links = sections.map(getTitle);
