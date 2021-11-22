@@ -14,7 +14,7 @@
 </script>
 
 <div
-	class="fixed inset-0 overflow-hidden z-50"
+	class="fixed inset-0 overflow-hidden {slideOver ? 'z-50' : 'z-0'}"
 	aria-labelledby="slide-over-title"
 	role="dialog"
 	aria-modal="true"
