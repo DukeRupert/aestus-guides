@@ -1,6 +1,18 @@
 <script lang="ts">
 	import Class from '$lib/guideComponents/class.svelte';
 	import type { bgClass } from 'src/global';
+	import Navigation from '$lib/guideComponents/navigation.svelte';
+
+	let slideOver = false;
+
+	function toggleSlideOver() {
+		slideOver = !slideOver;
+	}
+
+	function handleMessage(event) {
+		slideOver = !slideOver;
+	}
+
 	const guide = {
 		body: [],
 		categories: [{ title: 'BG3', description: "Baldur's Gate 3" }],
@@ -215,7 +227,102 @@
 			`Altogether, the Fighter base class is solid foundation for a reliable striker. Its reliable because their features are easy to use, useful in every combat situation, and are either always available or refresh on a short rest. Moreover, the fighter is also highly durable compared to other striking classes in the game, allowing them to consistently push through to priority targets, and to survive long enough to dish out the damage that you want them for. It is best to not think of the Fighter as a defender class, but as a durable striker class.`
 		]
 	};
+
+	let battleMaster: bgClass = {
+		title: 'Battle Master',
+		tier: 'S',
+		image: {
+			url: '/images/guides/bg3-class-fighter-battlemaster.webp',
+			alt: 'BG3 Battle Master symbol'
+		},
+		body: [
+			`This subclass pretty much does what it says on the tin: it masters battles. Seriously though, this class is meat mincer. Battle Master’s add the Combat Maneuver feature to the Fighter base class. Maneuvers are spell-like abilities that use a special resource called superiority dice. Basically, a superiority dice is a resource you expend to perform the maneuver (like a spell slot for a spell), and most maneuvers will have you roll the expended dice (a d8) and add it to the effect of the maneuver in some way. You start with 4 superiority dice, and they refresh after a short rest, meaning you will get a maximum of 12 “casts” per long rest. Some of the maneuvers require the enemy to make a saving throw, in which case the DC is always “8 + proficiency bonus + strength or dexterity modifier (whichever is highest)”`,
+			`So far in the early access you are able to select 3 maneuvers from a total of 6 options. Those options are:`,
+			[
+				`Menacing Attack: you make a standard attack against the target and add the superiority dice roll to the damage. The target must also succeed on a wisdom saving throw or be frightened of you until the end of your next turn.`,
+				`Pushing Attack: you make a standard attack against the target and add the superiority dice roll to the damage. If the target is large or smaller it must make a strength saving throw or get pushed 4.5m away from you.`,
+				`Rally: with a bonus action, expend a superiority die to give 8 temporary hit-points to an ally within 1.5m of you. These hit points last 10 rounds.`,
+				`Riposte: when an ally misses you with a melee attack you use your reaction to riposte. Make a standard attack against the target and add the superiority dice roll to the damage.`,
+				`Trip Attack: you make a standard attack against the target and add the superiority dice roll to the damage. The target must also succeed on a strength saving throw or be knocked prone.`,
+				`Disarming Attack: you make a standard attack against the target and add the superiority dice roll to the damage. The target must also succeed a strength saving throw or drop their weapon to the ground.`
+			],
+			`We will discuss these options one at a time.`,
+			`Menacing Attack is amazing. It requires two “hits” to get the full effect: first you have to hit the attack, then they have to fail their saving throw. If you manage to hit both, the enemy is frightened for one turn. Usually I do not like the two-hit maneuvers, but Frightened is such a good status effect, that it is worth it. The reason it is good is that, if your make this maneuver as a melee attack, your frightened enemy will run from you next turn, procing an attack of opportunity. This means you are able to use your reaction to make another full attack, which is an extremely efficient use of a reaction. We will discuss this more when we get to the Riposte maneuver. Finally, the new Dazed condition which you can apply on a bonus action with weapons that have access to Pommel Strike gives disadvantage to enemy wisdom saves, allowing you to land that second hit more reliably.`,
+			`Pushing Attack is situationally worth the cast. If you can use it to push your target off of a high place it does a lot of damage and inflicts prone, which is useful. Otherwise, it is underwhelming.`,
+			`Rally would be amazing if it worked the way it works in the Players Handbook, but Larian has nerfed it into near uselessness in BG3. In the tabletop rules, Rally has no timed expiration, it just lasts until you take enough damage to break the temporary hit-points or until you take your next long rest. That means you can start every adventuring day by casting Rally on your party, then take a short rest. The expended superiority dice refresh on the short rest, but the temporary hit points stay. In effect, you are boosting your party’s hit point total by, on average, 18 (even more if you have a positive charisma modifier) every day, at level 3, for no real cost at all. Larian apparently noticed the potential for abuse and gave the maneuver an expiration. They tried to buff it by having it always heal for the maximum 8, but its usually a waste of a dice. The fact that it is on a bonus action is nice though.`,
+			`Riposte allows you to weaponize your reaction, an otherwise under-utilized resource in your action budget. For the cost of a superiority die you are reliably buying an extra attack per turn, which is incredible. However, Riposte does compete with the attack of opportunity you may get from Menacing Strike. Does that mean it is better to save your superiority dice for Menacing Strikes and pass on Riposte altogether? No, it doesn't because Riposte is a more reliable proc, since it doesn't depend on your enemy failing their saving throw. Use both Riposte and Menacing Strike liberally.`,
+
+			`Trip Attack is decent if you have not used your Action Surge yet. If you land the trip you can then Action Surge and attack with advantage before they can get back up. Its just decent though, since its still a double-hit maneuver.`,
+			`Lastly, Disarming Attack is strong, but limited to targets who use weapons, i.e. not beast creatures like owlbears, bulletes, or hooked horrors.`,
+			`To finish I just want to note something about the Battle Master and sustained DPR. I consider the Battle Master the highest DPR subclass in the game because they have a the most reliable ways of weaponizing all of their action types, particularly their reaction. Some people object to me figuring Riposte or attacks of opportunity into their sustain DPR since it technically does not proc every round (though I find that it is close). So here is a graph that compares the DPR of a Great Weapon Master Battle Master build with and without the reaction attack:`,
+			{
+				url: '/images/guides/bg3-riposte-dmg-comparison.webp',
+				alt: 'Riposte damage analysis graph'
+			},
+			`As you can see, weaponizing that reaction is a big deal. Note that weaponizing it through Menacing Strike will result in an identical curve, so while I have it labeled as Riposte it works for both. Battle Master's can do this 4 times per short rest. If we were being strict about what counts as sustain DPR we would not include the Riposte damage, but 4 times per short rest is A LOT, so not including it is also a distorted picture. So, going forward I will include both lines in my sustain DPR graphs, for context.`,
+			`<strong>Build:</strong>  Like I did with the Trickery Domain Cleric, I am going to suggest a Battle Master build for a companion, this time Lae’zel. Lae’zel is actually really close to an optimized Battle Master already, which is just fantastic. Take Riposte, Rally, and Pushing Attack at level 3, then the Great Weapon Master feat at level 4. This build centers around maximizing damage per attack, then multiplying attacks with Riposte, Action Surge, and the cleave feature from Great Weapon Master. Assuming you proc cleave on around half of your turns, are procing Riposte, and are attacking with advantage, you will average 34.9 DPR against an AC range of 5-25. This isn’t factoring in Bless, or the guaranteed crits from spells like Sleep and Hold Person. If you have a team that can support Lae’zel with spells like this, her DPR shoots into the stratosphere. It is the highest sustain DPR build I know of in BG3 right now, and it even has burst and AoE damage options with Action Surge and Cleave ability from Greatswords. Its the best striker build in the game and you can get it on a stock companion. I can’t say enough good things about it!`
+		]
+	};
+
+	const sections = [
+		cleric,
+		lightDomain,
+		lifeDomain,
+		trickeryDomain,
+		druid,
+		circleOfTheMoon,
+		circleOfTheLand,
+		fighter,
+		battleMaster
+	];
+
+	function getTitle(item) {
+		let title = item.title;
+		let link = item.title.replace(/\s+/g, '');
+		return { title: title, link: link };
+	}
+
+	const links = sections.map(getTitle);
 </script>
+
+<Navigation on:toggleSlideOver={handleMessage} {slideOver} {links} />
+{#if slideOver}
+	<button
+		class="fixed bottom-0 right-0 w-12 h-12 mb-4 mr-4 rounded-full bg-white flex justify-center items-center z-50"
+		on:click={toggleSlideOver}
+	>
+		<svg
+			class="h-6 w-6 text-gray-500"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		>
+			<line x1="18" y1="6" x2="6" y2="18" /> <line x1="6" y1="6" x2="18" y2="18" /></svg
+		></button
+	>
+{:else}
+	<button
+		class="fixed bottom-0 right-0 w-12 h-12 mb-4 mr-4 rounded-full bg-white flex justify-center items-center shadow-xl z-50"
+		on:click={toggleSlideOver}
+	>
+		<svg
+			class="h-6 w-6 text-gray-500"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		>
+			<line x1="8" y1="6" x2="21" y2="6" /> <line x1="8" y1="12" x2="21" y2="12" />
+			<line x1="8" y1="18" x2="21" y2="18" /> <line x1="3" y1="6" x2="3.01" y2="6" />
+			<line x1="3" y1="12" x2="3.01" y2="12" /> <line x1="3" y1="18" x2="3.01" y2="18" /></svg
+		></button
+	>
+{/if}
 
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8">
@@ -371,14 +478,9 @@
 			<p>Ok, that is out of the way. Let’s get started!</p>
 		</div>
 		<div class="mt-6 prose prose-lg text-gray-700 mx-auto">
-			<Class data={cleric} />
-			<Class data={lightDomain} />
-			<Class data={lifeDomain} />
-			<Class data={trickeryDomain} />
-			<Class data={druid} />
-			<Class data={circleOfTheMoon} />
-			<Class data={circleOfTheLand} />
-			<Class data={fighter} />
+			{#each sections as section}
+				<Class data={section} />
+			{/each}
 		</div>
 	</div>
 </div>

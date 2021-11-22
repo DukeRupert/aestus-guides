@@ -14,12 +14,13 @@ export interface guide {
 }
 export interface bgClass {
 	title: string;
+	link?: string;
 	tier: string;
 	image?: {
 		url: string;
 		alt: string;
 	};
 	list?: { title: string; body: string }[];
-	body: (string | Array<string> | Object)[];
+	body: (string | string[] | { url: string; alt: string })[];
 	quote?: string;
 }
