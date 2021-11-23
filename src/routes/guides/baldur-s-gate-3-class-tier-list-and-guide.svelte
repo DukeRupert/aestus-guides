@@ -293,7 +293,7 @@
 			{ title: 'Saving Throws', body: 'Strength and Dexterity' },
 			{
 				title: 'Proficiencies',
-				body: ' Light and Medium Armor, Shields, Simple and Martial Weapons.'
+				body: 'Light and Medium Armor, Shields, Simple and Martial Weapons.'
 			},
 			{ title: 'Team Role', body: 'Striker' }
 		],
@@ -421,6 +421,229 @@
 		]
 	};
 
+	let warlock: bgClass = {
+		title: 'Warlock',
+		tier: 'A',
+		image: {
+			url: '/images/guides/bg3-class-warlock.webp',
+			alt: 'BG3 Warlock symbol'
+		},
+		list: [
+			{ title: 'Hit Points', body: '1d8 progression' },
+			{ title: 'Saving Throws', body: 'Wisdom and Charisma' },
+			{
+				title: 'Proficiencies',
+				body: 'Light Armor and Simple Weapons.'
+			},
+			{ title: 'Team Role', body: 'Controller, Striker' }
+		],
+		body: [
+			`Warlocks are a stand out class in terms of design, in my opinion. They are powerful and flexible, supporting a wide range of viable builds. They have a lot of features to talk about, so let’s get to it.`,
+			`The Warlock base class has three features: spell casting, Eldritch Invocations, and their Pact Boon. We’ll discuss them one at a time.`,
+			`Spell casting works differently for the Warlock then it does for most classes. Warlock’s get two spell slots which refresh on a short rest rather than a long one. Also, their spells are always up-cast at the highest available spell level (spell level 2 for a level 4 Warlock). Warlock’s use charisma as their spell ability. For the most part their spell list is the same as a Wizards, with a few notable unique spells that more or less define their class. In this article we will just look at the really important ones, although I will review every spell in depth in my forthcoming Spell Tier List article, so look forward to it!`,
+			`The class defining spell for the Warlock is actually a cantrip: Eldritch Blast. Eldritch Blast is a ranged spell attack that does 1d10 force damage on a hit. When it’s damage scales (not available yet in early access) you also get an option to split the attacks to multiple targets, and you make separate attack roles with each beam. On its own, it is a solid damage cantrip, but the Warlock can also augment it with several invocations. In the early access there are two invocations which augment Eldritch Blast which we will discuss below.`,
+			`Hex is the Warlock’s 4e striker spell. It’s identical to Hunter’s Mark, except it adds the extra feature of imposing disadvantage on one ability check of your choosing on the target for the duration of the spell (note, it’s an ability check, not a saving throw. I made that mistake for an embarrassing amount of time). I usually use the extra feature to impose disadvantage on strength checks for easier shove targets. However, the bread and butter of Hex is the extra 1d6 necrotic damage on successful attacks you make against the target. It adds up to a lot of damage for just one cast of a spell.`,
+			`Armor of Agathys and Hellish Rebuke both do retaliation damage, which I value very highly because it has low opportunity costs. Armor of Agathys is the better of the two, but it only retaliates against melee attacks. Hellish Rebuke retaliates at range, so with ranged builds cast it, and for melee focused builds use Armor of Agathys.`,
+			`For control spells the big one is, obviously, Hold Person, but there are other options as well. Some of the best alternatives are available specifically for certain sub-classes, so we will discuss them there.`,
+			`Eldritch Invocations are small boosts meant to represent a Warlock’s supernatural powers. You choose two from among nine options:`,
+			[
+				`Agonizing Blast: When you cast Eldritch Blast you now add your Charisma modifier to the damage it deals.`,
+				`Armor of Shadows: You can cast Mage Armor on yourself at will, without expending a spell slot.`,
+				`Beast Speech: You can cast Speak with Animals at will, without expending a spell slot.`,
+				`Beguiling Influence: You gain proficiency in deception and persuasion checks.`,
+				`Devil’s Sight: You can see normally in darkness, both magical and nonmagical, to a distance of 18 m.`,
+				`Fiendish Vigor: You can cast False Life on yourself at will as a 1st-level Spell, without expending a spell slot.`,
+				`Mask of Many Faces: You can cast Disguise Self at will, without expending a spell slot.`,
+				`Repelling Blast: When you hit a creature with Eldritch Blast, you can push the creature up to 4.5 m.`,
+				`Thief of Five Fates: Once per long rest, you can cast Bane using a Warlock spell slot.`
+			],
+			`Some of these have no direct combat utility, namely, Beguiling Influence, Beast Speech, and Mask of Many Faces, so we will set them to one side. Agonizing Blast is a standout option, especially for ranged builds. Pass on Armor of Shadows, it is +2 AC early, but you can eventually find magical armor that is equivalent, and it is useless if you have medium armor proficiency as a racial bonus. Devil’s Sight is an awesome invocation in combination with the Darkness spell, but it seems that Larian hasn’t included a distinction between magical and non-magical darkness in the game yet, so if you have darkvision from your race Devil’s Sight is redundant (I haven’t tested this since Patch 3 yet, so it may be fixed). Fiendish Vigor is +7 temporary HP at the cost of an action, not bad, but not amazing, since temporary HP does not stack. Repelling Blast is also a mediocre boost in most situations, but procs automatically when you take an action that you will be taking a lot anyways, which makes it really good. Push effects can be really efficient in BG3 due to Larian’s vertical encounter design. Finally, Thief of Five fates is a great spell, but a once per long rest cast is just not enough, pass. In summary, Agonizing and Repelling Blast will be your best choices on most builds. Fiendish Vigor and Devil’s Sight can be good on certain builds. None of the rest are comparable in terms of combat efficiency.`,
+			`The third and final feature Warlocks get is their Pact Boon. In tabletop 5e there are four official options for Boons to choose from, but in BG3 so far there is only one: the Pact of the Chain. This Boon allows you to summon a special familiar at will outside of combat (similar to the Beast Master’s summon). There are several options, but this class analysis is already taking up a lot of real estate, so instead of discussing them all I will just recommend the one I think is best, which is the Imp. Imps have a resistance to the most common damage types (including non-magical slashing, piercing, and bludgeoning). They also have a fly speed, and the chance to do extra poison damage on attacks. They are arguably the best summon option in the game so far, it’s between them and the spider for sure. Summons are really useful, since they come with their own actions there is no real opportunity cost to them.`,
+			`In summary, Warlocks get a ton of features, and all of them are great, so why haven’t I given them an S-tier ranking? It has to do with my own value judgements and the way I have constructed the tier system. The mark of an S-tier class the way I have constructed it is when you really feel its absence if you don’t have it in your party. As good as the Warlock is, it isn’t that, probably because the Warlock is a selfish class. It’s really good on its own and doesn’t increase much in power when you plug it into a party that is built for it. Similarly, while the Warlock is good at two roles, it is not great at either. If you need a striker there are better strikers available. If you need a controller there are also better controllers. By my judgement, 5e favors classes that specialize in a roll and synergize with other roles in a multiplicative way, rather than merely additive. All of that said, Warlock is still an awesome base class, easily deserving of an A-tier ranking, and you party won’t suffer for having one if they are built right.`,
+			`Whew! That was a lot! Let’s look at the subclasses now.`
+		]
+	};
+
+	let fiendPatron: bgClass = {
+		title: 'The Fiend Patron',
+		tier: 'B',
+		image: {
+			url: '/images/guides/bg3-class-warlock-fiend.webp',
+			alt: 'BG3 The Fiend Patron symbol'
+		},
+		body: [
+			`The Fiend subclass represents a pact made with a devil or demon from the lower planes. They add two features to the Warlock base class: Dark One’s Blessing, and subclass spells.`,
+			`Dark One’s Blessing grants you temporary hit-points equal to your charisma modifier + Warlock level upon killing an enemy. This feature patches up a weakness of the base class, which is durability. I don’t think its crazy to expect your Warlock to kill 1-2 targets per encounter on average, which gives them 8-16 extra health per encounter at level 4 (assuming you take a charisma ASI). That is a lot of bonus health. However, this isn’t a durability boost that at all helps you maintain concentration, which is what we would prefer on a caster class like Warlock. Note that the Fiendish Vigor invocation gives you 7 temp hp per cast, which is does not stack with Dark One’s Blessing, so taking it isn’t recommended with this sub-class.`,
+			`Like the Cleric, Warlock subclasses have extended spell lists, granting two extra spells learned for each spell level up to level 5. Fiend Warlock’s get Burning Hands and Command for level 1, and Blindness/Deafness plus Scorching Ray for level 2. Both sets give you decent striking and control options but are hardly the best in their role.`,
+			`Both these features are useful but are not enough to bump the Warlock base class up to an S-tier. Picking the Fiend subclass basically means having a slightly more durable Warlock.`,
+			`<strong>Build:</strong> There are several interesting ways to build a Fiend Warlock, but a simple ranged build centered around Eldritch Blast is best, I think. You can use this build on Wyll. Make sure you max charisma and dexterity (or have at least a 14 dexterity on a race that gets medium armor proficiency). For cantrips, take Eldritch Blast and whatever else you prefer (I recommend Chill Touch or Blade Ward. If you aren’t sure how Blade Ward can be useful, keep an eye out for my forthcoming Spell Tier List, I will discuss it there). For your spells, take Hex and Hellish Rebuke. At level 2, take Repelling Blast and Agonizing Blast invocations and Armor of Agathys for your spell. For your level 2 spells, take Hold Person and Misty step, with the charisma ASI at level 4. If you find that you aren’t getting much use out of Hellish Rebuke, swap it out for something else, maybe Command, Mirror Image, or Ray of Enfeeblement.`
+		]
+	};
+
+	let greatOldOnePatron: bgClass = {
+		title: 'The Great Old One Patron',
+		tier: 'RP',
+		image: {
+			url: '/images/guides/bg3-class-warlock-greatOldOne.webp',
+			alt: 'BG3 The Great Old One Patron symbol'
+		},
+		body: [
+			`Like the Eldritch Knight, this class just isn’t complete yet. It seems like Larian want’s to rework it, but haven’t finished the development. I expect that the class will be very good on full release, assuming they keep some of its key features from the tabletop version, and that Mind Flayers will remain the major enemy of the game.`,
+			`This subclass adds two level 1 spells to the Warlock’s spells known. Those spells are Dissonant Whispers and Tasha’s Hideous Laughter. Both are very good spells. Tasha's guarantee's crits and Dissonant Whispers can be used to proc attacks of opportunity. Neither spell scales very well when up cast, which is kind of the Warlock's schtick, but they remain strong for the entire EA.`,
+			`<strong>Build:</strong> Just follow the build I outlined for the Fiend subclass.`
+		]
+	};
+
+	let wizard: bgClass = {
+		title: 'Wizard',
+		tier: 'S',
+		image: {
+			url: '/images/guides/bg3-class-wizard.webp',
+			alt: 'BG3 Wizard symbol'
+		},
+		list: [
+			{ title: 'Hit Points', body: '1d6 progression' },
+			{ title: 'Saving Throws', body: 'Intelligence and Wisdom' },
+			{
+				title: 'Proficiencies',
+				body: 'Wizard Weapons.'
+			},
+			{ title: 'Team Role', body: 'Controller, Striker, Support' }
+		],
+		body: [
+			`This class is a little weird right now, benefiting from a bug that likely will not survive to full release. The bug is fun though, so enjoy it while we have it! Wizards are the best controllers available so far, and probably will remain the best controllers until full release, although I do not expect them to remain S-tier on full release.`,
+			`The Wizard base class has three features: spell casting, Arcane Recovery, and what I call the Learn Spells feature. We will go through them one at a time.`,
+			`Wizard spell casting is like the Druid or Cleric spell casting. Its has the same progression, refreshes on a long rest, only it uses intelligence rather then wisdom as its ability modifier. The Wizard spell list is extensive and flexible, so there isn’t enough space to talk about every spell in this article (I will review every spell in my forthcoming Spell Tier List article). There is one spell that is unique to the arcane casters (like Wizards) that bears mentioning, and that is Sleep. If you’ve read this tier list in order, you have already heard me mention Sleep several times. Sleep is the ultimate control spell at early levels. It is an AoE control that effects a number of targets up to 24 hit points (32 if cast as a level 2 spell) and there is no saving throw to resist. It targets current hit-points, not max hit-points, so you can get multiple targets if you soften them up first. What is really strong about it is the sleep condition. When you make a melee attack against a sleeping target it automatically hits and automatically crits (this is a buff from how it works in the tabletop rules). The target wakes up after taking damage. Because the target will necessarily have under 32 hit points, it is very likely that a melee attack from a striker will just kill them outright. So, with the right team, Sleep is a death sentence when it lands, and there is no chance for a saving throw. I love that Sleep is so powerful in BG3, since Sleep is also really powerful in the original BG games, it makes it feel like the same world. Note, Tasha's Hideous Laughter is exactly the same as sleep, accept it takes a saving throw rather than the hit-point system. That makes it better in some situations and worse in others. You should be casting both often.`,
+			`Arcane Recovery allows you to recover some spell slots between encounters. You can use it once per long rest, and the spell slots recovered must be equal to or less than half your wizard level (rounded up). So, a 4th level Wizard can recover one 2nd level spell slot, or two 1st level spell slots. This isn’t a flashy feature, but it is awesome, giving you more spells to cast. It is this and the Wizard’s spell list that make them the strongest controllers in the game so far.`,
+			`The last feature Wizards get is a hidden one; it is the Learn Spell feature. It is not listed as a class feature when you choose the class or when you level up, but it is there all the same. The name pretty much explains it, with the Learn Spell feature you can learn the way words are spelled. Not sure how to spell ‘Expeditious?’ Play a Wizard, its spelled right there on ‘Expeditious Retreat.’ This is the feature that really makes the Wizard base class S-tier, due to its obvious out-of-game utility.`,
+			`Okay sorry, I couldn’t resist. Learn Spell is actually about learning new spells, not spellings. Unlike other classes, Wizard’s can learn new spells from scrolls you acquire in your adventures. You simply pay 50g per spell level, and you can now add that spell to your available spells to cast. On its own this feature is just okay, but its also bugged right now in a way that makes it incredible. The bug is that you can learn any spell that you find as a scroll regardless of whether it belongs to the Wizard spell list or not . Yes, that means you can learn Bless, or Armor of Agathys, or any other spell you find as a scroll. This greatly expands the Wizards already expansive spell list. It also works on cantrips, so whatever cantrip you find in a scroll you just get for the cost of 50g. I don’t expect this bug to survive the early access.`,
+			`Altogether, the Wizard is great because of the sheer volume and variety of spells it can cast. Now lets look at its subclasses.`
+		]
+	};
+
+	let abjuration: bgClass = {
+		title: 'School of Abjuration',
+		tier: 'C',
+		image: {
+			url: '/images/guides/bg3-class-wizard-abjuration.webp',
+			alt: 'BG3 School of Abjuration symbol'
+		},
+		body: [
+			`Wizard subclasses represent an education in a particular arcane tradition. The School of Abjuration is a tradition that emphasizes magic that wards and protects. So far, it adds one feature to the wizard base class, and that is the Arcane Ward feature. Whenever you cast an abjuration spell (not a cantrip) you will gain temporary hit-points. The first time you cast such a spell after a long rest it gives you temp HP equal to twice your wizard level plus you intelligence modifier (so 12 HP at level 4 and 18 intelligence). This amount represents your maximum value ward, and however many abjuration spells you cast its temp HP value can never exceed this number. Every abjuration spell you cast after the first will “heal” the ward an amount equal to twice the level of the spell. Its complicated, but I think it is reasonable to expect this feature to give you a comparable amount of temp HP per long rest to what a Fiend Warlock gets from Dark One’s Own Blessing (perhaps slightly less). It is giving your wizard a respectable boost to durability, which is something wizards can really use.`,
+			`One complication of this feature is the pretty sorry selection of abjuration spells available so far. In the wizard spell list it is just two spells: Mage Armor and Protection from Evil/Good. Realistically, you will not be casting these very many times in an adventuring day. Armor of Agathys is an abjuration spell you can learn from a scroll that you can expect to cast often, but its bugged in a way that doesn’t work with Arcane Ward. There is one trick I know of to consistently proc Arcane Ward, but it requires a very particular build, so I will outline it in the build section.`,
+			`In summary, the Abjuration School gives you a middling amount of durability. On top of that, it is difficult to get maximum value out of the feature do to early access’s limited abjuration spells. It is an underwhelming subclass.`,
+			`<strong>Build:</strong>  This is one of my favorite builds, I call it the Sword Wizard (damn… I suck at names). The crux of the build is using the greatsword proficiency that Githyanki get to allow the Abjuration Wizard to use the Sword of Justice. Besides being a +1 greatsword, the Sword of Justice allows the wielder to cast Shield of Faith once per combat (at-will outside of combat). Shield of Faith is a useful Abjuration spell that procs Arcane Ward, so you can keep your ward topped up without expanding valuable spell slots. You also get medium armor proficiency from Githyanki, so your Wizard will function like a warrior with spells.`,
+			`Pick Githyanki as your race and Wizard as your class. Buy a 16 strength, and a 14 dexterity and constitution, then use the rest of your points however you want (I recommend dumping intelligence and just use the Headband of Intellect when you get it). For cantrips take Light to make up for the lack of darkvision (note, the light spell hasn't been working in some of my runs on patch 4), and the whatever else you like (I recommend Blade Ward and Chill Touch, if these choices confuse you be sure to read my forthcoming Spell Tier List article). For 1st level spells, be sure to take Sleep. When you reach level 3, take Misty Step and Hold Person for your 2nd level spells. At level 4 take the Great Weapon Master Feat. Now you are a decent striker (you have comparable DPR to an optimized Thief), with all of the benefits of being a Wizard. You can cast Sleep on your enemies then crit them yourself for 30+ damage. You are also comparable in durability to a standard Fighter. This is the best Wizard build in the game so far. Sadly it does not work on Gale, since he is not a Gith.`
+		]
+	};
+
+	let evocation: bgClass = {
+		title: 'School of Evocation',
+		tier: 'C',
+		image: {
+			url: '/images/guides/bg3-class-wizard-evocation.webp',
+			alt: 'BG3 School of Evocation symbol'
+		},
+		body: [
+			`The School of Evocation is a tradition that specializes in spells that unleash elemental energy. This sub-class emphasizes the striker aspect of the Wizard by adding the Sculpt Spells feature to the base class. Sculpt Spells creates pockets of safety within your Evocation Spells. Allied creatures automatically succeed their saving throws and take no damage from these spells. It’s the nature of this feature that you will get no benefit from it when casting single targets evocations spells. After all, why would you cast a single target evocation spell on an ally? So this spell will only practically effect AoE evocation spells that have saving throws. There are three of these spells in the game: Burning Hands, Thunderwave, and Shatter (Darkness is an AoE evocation spell, but does not have a saving throw). I tested to see if it also worked on ground effects from evocation spells, like when you cast Witch Bolt on a target standing in water, but it doesn’t (Larian, if you are reading this, you should change it to effect ground effects from evocations spells too. It won’t break the balance of the game, but it will make Sculpt Spells more interesting). All three of the spells it augments are decent spells, but we are still entering an area of extreme situationality for this feature. It is only effective when you cast one of three spells AND when you couldn’t otherwise have positioned the spell in a way where it would hit all enemies possible without hitting any allies. There shouldn’t be very many of those, so this subclass gets a C ranking from me.`,
+			`All of that said, you could build your party to better utilize this feature. For example, if you had both a Moon Druid and an Evocation Wizard, you could have the Moon Druid taunt enemies to group them up, then the Evocation Wizard could nuke them with Shatter without hitting the Druid. Its is still a lot of set up for mediocre payoff.`,
+			`<strong>Build:</strong> There aren’t any tricks for this subclass, it is pretty much a vanilla Wizard , so I am going to use this section to explain how I recommend building Gale. Gale has good stats for an evocation wizard. The biggest choice for building him comes at level 4. How should you spend his ASI? The deciding factor should be whether or not you have another member of your team who can use the Headband of Intellect. If you do, spend the ASI to boost his intelligence to 18, then swap the Headband to the other party member. Otherwise, split the ASI between constitution and wisdom to bump them to a 16 and a 12 respectively. For spell selection, make sure you have Burning Hands, Thunderwave, and Shatter. Sleep and Hold Person are still mandatory. Misty Step is another good choice, since you can chain it with Thunderwave effectively in vertical terrain encounters.`
+		]
+	};
+
+	let sorcerer: bgClass = {
+		title: 'Sorcerer',
+		tier: 'A',
+		image: {
+			url: '/images/guides/bg3-class-sorcerer.webp',
+			alt: 'BG3 Sorcerer symbol'
+		},
+		list: [
+			{ title: 'Hit Points', body: '1d6 progression' },
+			{ title: 'Saving Throws', body: 'Constitution and Charisma' },
+			{
+				title: 'Proficiencies',
+				body: 'Dagger, Quarterstaff, Light Crossbow'
+			},
+			{ title: 'Team Role', body: 'Controller, Striker ' }
+		],
+		body: [
+			`The most recently released class as of patch 6. The sorcerer base class is distinguished by two features: its unique spell casting and metamagic. We will discuss each below. As spell casters the sorcerer class is very similar to the wizard, but with a narrower spell pool. Unlike wizards, sorcerer’s cannot learn spells from scrolls, and learn significantly less spells by level as well. Moreover, currently there are spells that are available to learn by level by the wizard that the sorcerer cannot learn, which is to say, they are also selecting from a smaller pool of spells. Nevertheless, the most important arcane control spells are available to sorcerers: Sleep, Hold Person, Misty Step, Cloud of Daggers, etc. What this means is that the sorcerer can cast all of the same S-tier arcane spells that spells that the wizard can cast, but they can’t cast anything else; you lose the ability to customize your spell selection to adapt to up coming encounters. To compensate for the loss in adaptability of spell choices, the sorcerer gets the metamagic feature, which allows them to adapt the spells they can cast on the fly. Metamagic functions a little like the Battle Master’s manuevers but for spells instead of attacks. You choose from a list of extra effects which you can add to your normal spells and you gain a resource – sorcery points -to manage these effects. Your sorcerer will get two sorcery points at level 2, then gain one per level after that. Sorcery points replenish on a long rest or when you expend spell slots to buy more, which we will discuss below. For now, lets look at the abilities you can spend these points on. Metamagic abilities are different in BG3 compared to table top 5e. In Bg3, you choose two metamagic abilities from a shortened list at level 2, then at level 3 you can choose one more from an expanded list with some of the more expensive and powerful abilities added.`,
+			`Level 2 Metamagic Abilities (choose two):`,
+			[
+				`Careful Spell (costs 1 sorcery point): this ability modifies aoe spells that require saving throws. When you use this, any ally hit by one of these spells will automatically succeed on their saving throw. To be honest, I have not tested this ability very much, mostly because I just cannot imagine it being very impactful given the spells we have available in early access. There are three spells available to sorcerers, possibly five, which I can think of that this ability would effect: Burning Hands, Thunderwave, Shatter, Grease, and Web. For the first three, even when you allies succeed on the saving throw they will still take half damage… not an efficient use of a sorcery point. Grease and Web would be useful, but I am not sure if Careful Spell nullifies the save every round, or just the initial save from the cast. If it is the latter, then there is no use for this ability, just pass on it. If it’s the former, then I could see it being useful. <strong>*Note*</strong> Using careful spell with Thunderwave will stop the spell from pushing your allies, which can be useful. My thanks to reddit user Hi_I'm_A for drawing this to my attention.`,
+				`Distant Spell (1 sorc point): This is ability is really interesting. Its cool to cast spells from such a long range, and you could imagine a build that exploits this to always stay out of range of its enemies. The problem is that it is not a persistant ability that costs a limited resource that refreshes on a long rest, and extending the range of a spell just isn’t the fight changing spike that you need from a limited resource ability, at least not with the way Larian has designed their combat encounters.`,
+				`Extend Spell (1 sorc point): Here we get to a bread and butter metamagic ability. Extend Spell doubles the duration of conditions, summons, and ground effects. For the cost of a single sorc point this is amazing. The best spells to use this with are conditions and buffs that have duration but are not concentration. Of these, the two obvious candidates are Sleep and Blade Ward.`,
+				`Twinned Spell (1 sorc point per spell level): This ability modifies single target spells allowing them to effect two targets instead of one. This is a phenomenal ability, especially for single target concentration debuffs like Hold Person or Crown of Madness, effectively doubling the potency of your concentration slot. Don’t pass on this ability.`
+			],
+			`Level 2 Metamagic Abilities (choose one):`,
+			[
+				`Heightened Spell (3 sorc points): This ability modifies spells that require a saving throw, imposing disadvantage on the first saving throw a target makes against that spell. There isn’t much to say here except that this makes your save spells more accurate. While simple, that is extremely important given the potency of many saving throw spells. Landing a Hold Person on the right target, even just for one turn, can single handedly win a fight, so packing a Heightened Spell for those occasions is game changing.`,
+				`Quickened Spell (3 sorc points): With this ability you can spend three sorcery points to cast a spell with a bonus action that would otherwise cost an action. In table top 5e only one leveled spell can be cast per turn, but in BG3 you can use this to chain several spells in a turn. This is a powerful effect that you is practically always useful. It also has an interesting interaction with the Circlet of Fire item. A character who is wearing the Circlet of Fire gains a bonus action when they hit with a non-cantrip spell that deals fire damage, although this only works once per turn. If you have the circlet, Quickened Spell, and six sorcery points you can cast 3 spells in a single turn as long as one of them is a fire spell that hits.`,
+				`Subtle Spell (1 sorc point): Subtle Spell allows you to cast any spell while silenced. Obviously when you are silenced you are close to useless since spells is a sorcerer’s whole thing, so being able to counteract silence for such a low cost is awesome. However, silence is not very common in my runs. Subtle Spell would be awesome to have if you got more metamagic abilities to choose, but since you can only pick one from this list, and it is competing with some of the best options, it is seldom worth grabbing.`
+			],
+			`I think that you should always pick Extend and Twinned Spell at level two if you are wanting to optimize. They are just better than the other options, more potent, more flexible, and easier to use. The really interesting metamagic choice comes at level 3, between Quickened Spell and Hightened Spell. Choose whichever one seems like the most fun. I suspect Hightened Spell is better, but only marginally.`,
+			`Metamagic is not the only thing you can use your sorcery points for. You can also use them to exchange points for spell slots, and vice versa. When you exchange points to get an extra spell slot it costs the spell slot level plus one (so 2 for a level one spell and 3 for a level 2). Converting your spell slots into points gives you points equal to the spell slots level. Both kinds of exchanges can be done in combat as a bonus action. This feature also has a fun interaction with an item: Spellthief, a magical longbow that you can buy from Auntie Ethel in the grove. Once per short rest when you crit with Spellthief you recover a level 1 spell slot. You can exchange that spell slot for sorcery points, allowing you to store up 3 extra sorc points per long rest, allowing you to do fun things like the three casts in a one turn with Quickened Spell and the Circlet of Fire. Now, you may be thinking, will I really be critting reliably enough for Spellthief to be useful? If you just wait to role a 20 on an attack, no, you won’t. However, you can guarantee crits by attacking sleeping or paralyzed targets at melee range. It must be melee range to work. Chances are, you will have plenty of opportunities to get attacks on sleeping or paralyzed targets if you spam Sleep and Hold Person like I do. Have fun with all your extra spells/sorc points! As a final, short note before we move on to discussing the sorcerer’s subclasses, its needs to be noted that, unlike other casters in the game so far, sorcerer’s get proficiency in constitution saves, which is the saving throw used to maintain concentration, and thus the most important save for casters. This is a fantastic feature that is easy to miss.`
+		]
+	};
+
+	let draconic: bgClass = {
+		title: 'Draconic Bloodline',
+		tier: 'A',
+		image: {
+			url: '/images/guides/bg3-class-sorcerer-draconic.webp',
+			alt: 'BG3 Draconic Bloodline symbol'
+		},
+		body: [
+			`Sorcerer subclasses are the origin and source of your characters unique magical gift. The Draconic Bloodline are sorcerer’s who are descended from dragons and whose arcane power come from their magical ancestry. Because the subclass represents this classes’s origina, they choose it at level 1. Mechanically what the Draconic origin adds to the sorcerer base class is two features: Draconic Ancestry and Draconic Resilience. Draconic Resilience provides a boost to hit points and armor class. You receive an extra hit point per sorcerer level and when you are not wearing armor your base armor class is 13 + your dex modifier, as opposed to the typical 10 + dex modifier. The bonus hit points are always useful. The AC boost is only effective for characters who do not plan on wearing armor, so choosing a race with an armor proficiency will have some negative synergy with this feature. Most arcane casters without armor proficiencies will cast Mage Armor, which also give 13 + dex modifier, so essentially the Draconic sorcerer is saving a level 1 spell cast per long rest, which is great! Draconic Ancestry represents the specific kind of dragon you are descended from. In D&D there are two broad types of dragons: chromatic and metallic. Chromatic dragons are typically evil in alignment whereas metallic are typically good. When you choose the Draconic Bloodline subclass you get to choose one of ten bloodline option which we will review below. Each choice is distinguished mechanically by an elemental damage type, which, at level 6 you will get boosted damage and a situational resistance to that type. Since early access only goes to level 4, the damage type does not really matter yet. However, each bloodline also gets a bonus spell. The bloodline are:`,
+			[
+				`Red Dragon (Fire): Burning Hands`,
+				`Black Dragon (Acid): Grease`,
+				`Blue Dragon (Lightning): Witch Bolt`,
+				`White Dragon (Cold): Armor of Agathys`,
+				`Green Dragon (Poison): Ray of Sickness`,
+				`Gold Dragon (Fire): Disguise Self`,
+				`Silver Dragon (Cold): Feather Fall`,
+				`Bronze Dragon (Lightning): Fog Cloud`,
+				`Copper Dragon (Acid): Tasha’s Hideous Laughter`,
+				`Brass Dragon (Fire): Sleep`
+			],
+			`There isn’t the space to talk about each of these individually, so I will point out the two that I consider the best, they are White Dragon and Copper Dragon. Both of these provide S-tier, versatile spells that the sorcerer wouldn’t otherwise get access to. Armor of Agathys pairs well with an extended spell Blade Ward, giving your sorcerer much needed durability. In a solo run, I would recommend White Dragon for that reason. For everything else, Copper Dragon is better. Tasha’s Hideous Laughter is like Sleep but with a saving throw instead of targeting hit points. Being able to Twin Spell or Heighten Spell Tasha’s is extremely potent with a team that can utilize the free crits.`,
+			`<strong>Build:</strong>  I recommend building a drow dragon sorcerer. Buy a 16 dexterity, 16 charisma, and 14 constitution, then use whatever is left however seems cool to you. Pick the Copper Dragon ancestry. For spells, take Chromatic Orb and Sleep (take Blade Ward, Chill Touch, then whatever else you life for cantrips). At level 2, take Twinned Spell and Extend Spell as your metamagic abilities, and something fun for your new level 1 spell, lets say Jump (we are going to replace it next level, so it doesn’t matter very much). At level 3, take the Heightened Spell metamagic ability, Cloud of Daggers, then replace Jump (or whatever else you chose) with Hold Person. Finally, at level 4, take the ASI to bump your charisma to 18, then take Misty Step as your spell. Your final spell list should be Chromatic Orb, Sleep, Tasha’s Hideous Laughter, Cloud of Daggers, Hold Person, and Misty Step. Your primary metamagic strategies are using Heightened Spell with Tasha’s and Hold Person, using Twinned Spell in combination with Chromatic Orb for burst damage, and using Extend Spell with Blade Ward when you cannot avoid taking damage, or Sleep when you can prevent the targets from being woken up. I consider this build to be the best controller available in early access so far, and it also does a lot of single target and AoE damage while being reasonably durable and mobile. It is an S-tier build in my books.`
+		]
+	};
+
+	let wildMagic: bgClass = {
+		title: 'Wild Magic',
+		tier: 'A',
+		image: {
+			url: '/images/guides/bg3-class-sorcerer-wildmagic.webp',
+			alt: 'BG3 Wild Magic symbol'
+		},
+		body: [
+			`For those familiar with this class, you may be surprised that I am giving it an equal ranking to the Draconic Bloodline subclass. I have completed a playthrough with each subclass and I believe in the current state of the game the wild mages can be at least as powerful as the more predictable draconic sorcerers. If you are curious to find out why, keep reading! Wild mages have a natural control of the arcane that is potent and unpredictable. Mechanically this manifests with two features: Tides of Chaos and Wild Magic Surge. Tides of Chaos gives you advantage on one attack role, saving throw, or skill check per short or long rest. In previous patches this would have been nearly useless, but now advantage on attacks on backstab and high ground has been removed, making this a nifty little bonus when you need it. However, I do not recommend saving it for that right moment. Use it on the first useful opportunity you can, because once it is used it makes wild magic surges more frequent. Lets turn to that feature now to understand how useful this one can be.`,
+			`Wild Magic surge is a random effect that might happen in addition to a magic spell you cast, whenever you cast a spell of 1st level or higher (i.e. not cantrips). You have no control over the which effect happens, or whether one happens at all, except that you can make the chance of a surge happening more frequent when you use your Tides of Chaos feature, as we discussed above. I do not have comprehensive list of possible surges, but some that have happened in my game are:`,
+			[
+				`Wild Magic: Enchant Weapons – The weapons of you and your allies within a large radius of you become enchanted. On the next hit with that weapon, it deals an additional 1d4 force damage and critical hits. This effect lasts until your next hit with the weapon.`,
+				`Teleport -Until the end of your next turn, you can teleport up to 9m as a bonus action.`,
+				`Summon Mephit – You summon a hostile mephit adjacent to you.`,
+				`Position Swap – For the next few rounds (I forgot how many) whenever you target someone with a spell or cantrip you swap places with that target.`,
+				`Heal Effect – Whenever you cast a spell of level 1 or higher, all creatures within 3m are healed 1d4 hit points.`,
+				`Fog Cloud – a blinding fog cloud is summoned directly on top of you.`,
+				`Blur – Every creature within 9m of you (including you) gains the blurred buff as if the spell Blur was cast on them.`
+			],
+			`Some surges that have not happened to me but are reported by other players on Reddit are:`,
+			[
+				`Fire – Every creature within a radius of the caster is lit on fire for 5 turns.`,
+				`Water – A pool of water is summoned directly on top of the caster (I am assuming it is like the spell Create Water was cast).`
+			],
+			`No doubt many more surges will be added in future patches, but for now you will hopefully notice that all of these surges are either good for you or could be good for you. Consider summoning a mephit as an example. You might think “how could summoning a hostile creature be good? Isn’t it just one more bad guy to fight?” The thing is, in my runs, the mephit is also hostile to whatever it is you are fighting, so an enemy may waste a turn killing it for you! In one of my fights, a unnamed goblin attacked it, but in a different situation it could have been an owlbear, and minotaur, or a githyanki fighter. Imagine if, in addition to whatever spell you cast you also waste the turn of a minotaur… that is an extremely efficient use of a spell. The same principle applies to a surge like Fog Cloud, sure you are blinded, but so is everyone trying to attack you! With some clever thinking you can turn most of these into an advantage.`,
+			`Then there are the surges that are just extremely good with almost no negatives. Two of the most potent are the enchanted weapons and position swap. Enchanted weapon makes your next hit with your weapon a crit and it lasts until your next hit, which means if you roll this surge in a routine fight against a weak enemy, you can save that weapon for the next boss battle. That is huge! Position swap can also completely change the outcome of a fight. You could Misty Step somewhere high up, swap places with an enemy, then pull them to their death. Alternatively, you could reposition their squishy caster right beside your striker. Have you lost the high ground? Not any more! Again, with some creative thinking, these surges become huge buffs.`,
+			`Because the surges are almost always beneficial to me, I try to spam Tides of Chaos in order to get as many surges in a playthrough as possible. This is also why I give the Wild Mage subclass an A-tier ranking. In the future, if they add some nasty surges, I expect the subclass to drop to a B. It will always be S-tier for fun though!`,
+			`<strong>Build:</strong>  If you are wanting to optimize you should probably build your wild sorcerer as some variation of tiefling so that you have resistance to the painful fire surge. However, I built mine as a Lightfoot halfling for the “luck bending” RP angle. Optimal attribute and spell selection will be similar to Draconic sorcerer build I outlined above, but with a few differences. Instead of Extended Spell it could be fun to play around with Distant Spell in combination with the possible position swap surge. I also recommend taking Misty Step as soon as you can (level 3), since being able to reposition is crucial for using many of the surges to your advantage.`
+		]
+	};
+
 	const sections = [
 		cleric,
 		lightDomain,
@@ -437,7 +660,16 @@
 		hunter,
 		rogue,
 		thief,
-		arcaneTrickster
+		arcaneTrickster,
+		warlock,
+		fiendPatron,
+		greatOldOnePatron,
+		wizard,
+		abjuration,
+		evocation,
+		sorcerer,
+		draconic,
+		wildMagic
 	];
 
 	function getTitle(item) {
@@ -646,6 +878,7 @@
 			{#each sections as section}
 				<Class data={section} />
 			{/each}
+			<a href="/"><p class="text-bgRed">Return home</p></a>
 		</div>
 	</div>
 </div>
