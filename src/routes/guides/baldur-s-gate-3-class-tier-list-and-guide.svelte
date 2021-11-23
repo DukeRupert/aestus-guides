@@ -2,8 +2,12 @@
 	import Class from '$lib/guideComponents/class.svelte';
 	import type { bgClass } from 'src/global';
 	import Navigation from '$lib/guideComponents/navigation.svelte';
+	import { fly } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 
 	let slideOver = false;
+	let timing = 500;
+	let delay = 250;
 
 	function toggleSlideOver() {
 		slideOver = !slideOver;
@@ -681,10 +685,12 @@
 </script>
 
 <Navigation on:toggleSlideOver={handleMessage} {slideOver} {links} />
-{#if slideOver}
+{#if !slideOver}
 	<button
-		class="fixed bottom-0 right-0 w-12 h-12 mb-4 mr-4 rounded-full bg-white flex justify-center items-center z-50"
+		class="fixed top-28 right-0 w-12 h-12 rounded-l-lg bg-white flex justify-center items-center shadow-xl z-50"
 		on:click={toggleSlideOver}
+		in:fly={{ x: 100, delay: delay, duration: timing, easing: quintOut }}
+		out:fly={{ x: 100, duration: timing, easing: quintOut }}
 	>
 		<svg
 			class="h-6 w-6 text-gray-500"
@@ -695,26 +701,7 @@
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		>
-			<line x1="18" y1="6" x2="6" y2="18" /> <line x1="6" y1="6" x2="18" y2="18" /></svg
-		></button
-	>
-{:else}
-	<button
-		class="fixed bottom-0 right-0 w-12 h-12 mb-4 mr-4 rounded-full bg-white flex justify-center items-center shadow-xl z-50"
-		on:click={toggleSlideOver}
-	>
-		<svg
-			class="h-6 w-6 text-gray-500"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		>
-			<line x1="8" y1="6" x2="21" y2="6" /> <line x1="8" y1="12" x2="21" y2="12" />
-			<line x1="8" y1="18" x2="21" y2="18" /> <line x1="3" y1="6" x2="3.01" y2="6" />
-			<line x1="3" y1="12" x2="3.01" y2="12" /> <line x1="3" y1="18" x2="3.01" y2="18" /></svg
+			<line x1="19" y1="12" x2="5" y2="12" /> <polyline points="12 19 5 12 12 5" /></svg
 		></button
 	>
 {/if}
