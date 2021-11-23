@@ -723,7 +723,7 @@
 
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8">
-		<div class="text-xl prose max-w-prose mx-auto">
+		<article class="mt-6 prose prose-lg text-gray-700 mx-auto">
 			<h1>
 				<span class="block text-base text-center text-bgRed font-semibold tracking-wide uppercase"
 					>Guide</span
@@ -766,8 +766,6 @@
 				tier lists are just a fun part of gaming culture that I enjoy! If you do not enjoy them, I
 				think you will still find a lot of helpful advice in this article anyways.
 			</p>
-		</div>
-		<div class="mt-6 prose prose-lg text-gray-700 mx-auto">
 			<h2>The Tiers and Combat Roles</h2>
 			<p>I will be using a similar tier system to the one I used in my Race Tier List. It is:</p>
 			<ul role="list">
@@ -873,12 +871,11 @@
 				the amount of reloads and long rests you take in your runs.
 			</p>
 			<p>Ok, that is out of the way. Let’s get started!</p>
-		</div>
-		<div class="mt-6 prose prose-lg text-gray-700 mx-auto">
+
 			{#each sections as section}
 				<Class data={section} />
 			{/each}
 			<a href="/"><p class="text-bgRed">Return home</p></a>
-		</div>
+		</article>
 	</div>
 </div>
