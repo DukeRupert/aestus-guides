@@ -35,7 +35,7 @@
 						? 'transform transition ease-in-out duration-500 sm:duration-700 translate-x-0'
 						: 'transform transition ease-in-out duration-500 sm:duration-700 translate-x-full'}"
 				>
-					<div class="h-full flex flex-col py-6 bg-parchment shadow-xl overflow-y-scroll">
+					<div class="h-full flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
 						<div class="px-4 sm:px-6">
 							<div class="flex items-start justify-between">
 								<h2 class="text-lg font-medium text-gray-900" id="slide-over-title">Navigation</h2>

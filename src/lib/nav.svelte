@@ -172,7 +172,7 @@
 								<div class="ml-4 text-base font-medium text-gray-900">Baldur's Gate 1</div>
 							</a>
 
-							<a href="/about-me" class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50">
+							<a href="/about" class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50">
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-parchment text-white"
 								>
