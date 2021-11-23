@@ -15,7 +15,7 @@ export interface guide {
 export interface bgClass {
 	title: string;
 	link?: string;
-	tier: string;
+	tier?: string;
 	image?: {
 		url: string;
 		alt: string;

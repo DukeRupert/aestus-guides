@@ -16,13 +16,21 @@
 		</div>
 		<div class="flex justify-center items-center">
 			<a id={link} style="scroll-margin-top: 10em;" />
-			<h2 class="m-0">{data.title} - {data.tier} Tier</h2>
+			{#if data.tier}
+				<h2 class="m-0">{data.title} - {data.tier} Tier</h2>
+			{:else}
+				<h2 class="m-0">{data.title}</h2>
+			{/if}
 		</div>
 	</div>
 {:else}
 	<a id={link} style="scroll-margin-top: 8em;" />
 	>
-	<h2 class="m-0">{data.title} - {data.tier} Tier</h2>
+	{#if data.tier}
+		<h2 class="m-0">{data.title} - {data.tier} Tier</h2>
+	{:else}
+		<h2 class="m-0">{data.title}</h2>
+	{/if}
 {/if}
 
 {#if data.list}
