@@ -69,7 +69,10 @@
 				>
 					<div class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5 overflow-hidden">
 						<div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-1">
-							<a href="/guides" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+							<a
+								href="/guides/baldurs-gate-3"
+								class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
+							>
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
 								>
@@ -80,7 +83,10 @@
 								</div>
 							</a>
 
-							<a href="/guides" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+							<a
+								href="/guides/baldurs-gate-1"
+								class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
+							>
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
 								>
@@ -142,7 +148,10 @@
 					</div>
 					<div class="mt-6">
 						<nav class="grid grid-cols-1 gap-7">
-							<a href="/guides" class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50">
+							<a
+								href="/guides/baldurs-gate-3"
+								class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50"
+							>
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-br from-gray-700 to-gray-900 text-white"
 								>
@@ -151,7 +160,10 @@
 								<div class="ml-4 text-base font-medium text-gray-900">Baldur's Gate 3</div>
 							</a>
 
-							<a href="/guides" class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50">
+							<a
+								href="/guides/baldurs-gate-1"
+								class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50"
+							>
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-br from-gray-500 to-gray-700 text-white"
 								>
@@ -160,7 +172,7 @@
 								<div class="ml-4 text-base font-medium text-gray-900">Baldur's Gate 1</div>
 							</a>
 
-							<a href="/about" class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50">
+							<a href="/about-me" class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50">
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-parchment text-white"
 								>

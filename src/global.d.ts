@@ -1,7 +1,7 @@
 /// <reference types="@sveltejs/kit" />
 export interface guide {
 	body: any[];
-	categories: [{ title: string; description: string }];
+	game: { title: string; description: string; link: string };
 	image: {
 		url: string;
 		alt: string;

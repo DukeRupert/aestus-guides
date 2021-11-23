@@ -3,7 +3,7 @@
 	import { guides } from '$lib/store';
 </script>
 
-<!-- Hero section -->
+<!-- Title section -->
 <div class="relative">
 	<div class="w-full mx-auto sm:px-6 lg:px-8">
 		<div class="relative m-auto pt-8 px-4 lg:pt-24 max-w-2xl sm:overflow-hidden">
@@ -18,7 +18,7 @@
 <!-- Recent Guides Section -->
 <div class="bg-parchment">
 	<div class="w-full mx-auto lg:max-w-8xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-		<h2 class="pb-4 lg:pb-8 text-xl md:text-2xl lg:text-4xl text-black">Recent Posts</h2>
+		<h2 class="pb-4 lg:pb-8 text-lg md:text-2xl lg:text-3xl text-black">Recent Posts</h2>
 		<div
 			class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8"
 		>

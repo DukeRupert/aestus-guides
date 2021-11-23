@@ -20,7 +20,7 @@
 	</div>
 	<div class="flex-1 p-4 space-y-2 flex flex-col">
 		<h3 class="text-lg font-medium text-gray-900">
-			<a href="/guides/{guide.slug}">
+			<a href="/guides/{guide.game.link}/{guide.slug}">
 				<span aria-hidden="true" class="absolute inset-0" />
 				{guide.title}
 			</a>
