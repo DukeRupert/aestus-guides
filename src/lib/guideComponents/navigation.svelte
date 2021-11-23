@@ -44,7 +44,7 @@
 										{#each links as { title, link, image }}
 											<div class="flex items-center">
 												<img
-													class="h-12 w-12 mr-2 mt-0 mb-0 lg:h-16 lg:w-16"
+													class="h-12 w-12 mr-2 mt-0 mb-0 lg:h-16 lg:w-16 rounded-full object-cover object-center"
 													src={image.url}
 													alt={image.alt}
 												/>
@@ -54,7 +54,6 @@
 									</ul>
 								</nav>
 							</div>
-							<!-- /End replace -->
 						</div>
 					</div>
 				</div>

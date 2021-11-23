@@ -8,7 +8,11 @@
 {#if data.image}
 	<div class="sm:flex">
 		<div class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-			<img class="h-24 w-24 mx-auto lg:h-28 lg:w-28" src={data.image.url} alt={data.image.alt} />
+			<img
+				class="h-24 w-24 mx-auto lg:h-28 lg:w-28 object-cover object-center"
+				src={data.image.url}
+				alt={data.image.alt}
+			/>
 		</div>
 		<div class="flex justify-center items-center">
 			<a id={link} style="scroll-margin-top: 10em;" />
@@ -31,23 +35,23 @@
 		{/each}
 	</ul>
 {/if}
-{#each data.body as body}
-	{#if typeof body === 'string'}
-		<p>{@html body}</p>
+{#each data.body as item}
+	{#if typeof item === 'string'}
+		<p>{@html item}</p>
 	{/if}
-	{#if Object.prototype.toString.call(body) === '[object Array]'}
+	{#if Object.prototype.toString.call(item) === '[object Array]'}
 		<ul role="list">
-			{#each body as item}
+			{#each item as part}
 				<li>
-					{@html item}
+					{@html part}
 				</li>
 			{/each}
 		</ul>
 	{/if}
-	{#if body.url}
+	{#if item.url}
 		<figure>
-			<img class="w-full rounded-lg" src={body.url} alt={body.alt} width="1310" height="873" />
-			<figcaption>{body.alt}</figcaption>
+			<img class="w-full rounded-lg" src={item.url} alt={item.alt} width="1310" height="873" />
+			<figcaption>{item.alt}</figcaption>
 		</figure>
 	{/if}
 {/each}

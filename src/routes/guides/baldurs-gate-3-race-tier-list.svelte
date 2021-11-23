@@ -1,6 +1,17 @@
 <script lang="ts">
 	import Class from '$lib/guideComponents/class.svelte';
 	import type { bgClass } from 'src/global';
+	import Navigation from '$lib/guideComponents/navigation.svelte';
+
+	let slideOver = false;
+
+	function toggleSlideOver() {
+		slideOver = !slideOver;
+	}
+
+	function handleMessage(event) {
+		slideOver = !slideOver;
+	}
 
 	let goldDwarf: bgClass = {
 		title: 'Gold Dwarf',
@@ -372,8 +383,55 @@
 			'I rank the races available in BG3 early access. I cannot stress enough that BG3 is a video game. If you find this because you have googled something you will hopefully regret under the influence of rage, fear, and ethnic insecurity, I am not on your side. Find someone qualified to help you.',
 		updatedAt: '2021-11-04T23:06:39Z'
 	};
+
+	function getTitle(item) {
+		let title = item.title;
+		let link = item.title.replace(/\s+/g, '');
+		let image = item.image;
+		return { title: title, link: link, image: image };
+	}
+
+	const links = guide.body.map(getTitle);
 </script>
 
+<Navigation on:toggleSlideOver={handleMessage} {slideOver} {links} />
+{#if slideOver}
+	<button
+		class="fixed bottom-0 right-0 w-12 h-12 mb-4 mr-4 rounded-full bg-white flex justify-center items-center z-50"
+		on:click={toggleSlideOver}
+	>
+		<svg
+			class="h-6 w-6 text-gray-500"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		>
+			<line x1="18" y1="6" x2="6" y2="18" /> <line x1="6" y1="6" x2="18" y2="18" /></svg
+		></button
+	>
+{:else}
+	<button
+		class="fixed bottom-0 right-0 w-12 h-12 mb-4 mr-4 rounded-full bg-white flex justify-center items-center shadow-xl z-50"
+		on:click={toggleSlideOver}
+	>
+		<svg
+			class="h-6 w-6 text-gray-500"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		>
+			<line x1="8" y1="6" x2="21" y2="6" /> <line x1="8" y1="12" x2="21" y2="12" />
+			<line x1="8" y1="18" x2="21" y2="18" /> <line x1="3" y1="6" x2="3.01" y2="6" />
+			<line x1="3" y1="12" x2="3.01" y2="12" /> <line x1="3" y1="18" x2="3.01" y2="18" /></svg
+		></button
+	>
+{/if}
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8">
 		<article class="mt-6 prose prose-lg max-w-prose text-gray-700 mx-auto">

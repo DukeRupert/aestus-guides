@@ -13,21 +13,6 @@
 		slideOver = !slideOver;
 	}
 
-	const guide = {
-		body: [],
-		categories: [{ title: 'BG3', description: "Baldur's Gate 3" }],
-		image: {
-			url: '/images/guides/bg3-class-tier-list.webp',
-			alt: "Baldur's Gate 3 standard party characters standing in a diamond formation."
-		},
-		publishedAt: '2021-03-21T15:00:00.000Z',
-		slug: 'baldur-s-gate-3-class-tier-list-and-guide',
-		title: "Baldur's Gate 3 Class Tier List and Guide",
-		excerpt:
-			'This is entry three of four in my Baldur’s Gate 3 rankings and guide series where I review the 7 classes and the 15 subclasses available in the early access so far.',
-		updatedAt: '2021-11-19T21:11:28Z'
-	};
-
 	let cleric: bgClass = {
 		title: 'Cleric',
 		tier: 'S',
@@ -644,33 +629,46 @@
 		]
 	};
 
-	const sections = [
-		cleric,
-		lightDomain,
-		lifeDomain,
-		trickeryDomain,
-		druid,
-		circleOfTheMoon,
-		circleOfTheLand,
-		fighter,
-		battleMaster,
-		eldritchKnight,
-		ranger,
-		beastmaster,
-		hunter,
-		rogue,
-		thief,
-		arcaneTrickster,
-		warlock,
-		fiendPatron,
-		greatOldOnePatron,
-		wizard,
-		abjuration,
-		evocation,
-		sorcerer,
-		draconic,
-		wildMagic
-	];
+	const guide = {
+		body: [
+			cleric,
+			lightDomain,
+			lifeDomain,
+			trickeryDomain,
+			druid,
+			circleOfTheMoon,
+			circleOfTheLand,
+			fighter,
+			battleMaster,
+			eldritchKnight,
+			ranger,
+			beastmaster,
+			hunter,
+			rogue,
+			thief,
+			arcaneTrickster,
+			warlock,
+			fiendPatron,
+			greatOldOnePatron,
+			wizard,
+			abjuration,
+			evocation,
+			sorcerer,
+			draconic,
+			wildMagic
+		],
+		categories: [{ title: 'BG3', description: "Baldur's Gate 3" }],
+		image: {
+			url: '/images/guides/bg3-class-tier-list.webp',
+			alt: "Baldur's Gate 3 standard party characters standing in a diamond formation."
+		},
+		publishedAt: '2021-03-21T15:00:00.000Z',
+		slug: 'baldur-s-gate-3-class-tier-list-and-guide',
+		title: "Baldur's Gate 3 Class Tier List and Guide",
+		excerpt:
+			'This is entry three of four in my Baldur’s Gate 3 rankings and guide series where I review the 7 classes and the 15 subclasses available in the early access so far.',
+		updatedAt: '2021-11-19T21:11:28Z'
+	};
 
 	function getTitle(item) {
 		let title = item.title;
@@ -679,7 +677,7 @@
 		return { title: title, link: link, image: image };
 	}
 
-	const links = sections.map(getTitle);
+	const links = guide.body.map(getTitle);
 </script>
 
 <Navigation on:toggleSlideOver={handleMessage} {slideOver} {links} />
@@ -872,7 +870,7 @@
 			</p>
 			<p>Ok, that is out of the way. Let’s get started!</p>
 
-			{#each sections as section}
+			{#each guide.body as section}
 				<Class data={section} />
 			{/each}
 			<a href="/"><p class="text-bgRed">Return home</p></a>
