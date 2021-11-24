@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
+	import { clickOutside } from '$lib/clickOutside';
 	const dispatch = createEventDispatcher();
 
 	export let slideOver;
@@ -7,6 +8,12 @@
 
 	function toggleSlideOver() {
 		dispatch('toggleSlideOver');
+	}
+
+	function handleClick(e) {
+		if (slideOver) {
+			dispatch('toggleSlideOver');
+		}
 	}
 
 	let timing = 500;
@@ -22,13 +29,18 @@
 	<div class="absolute inset-0 overflow-hidden">
 		<!-- Background overlay, show/hide based on slide-over state. -->
 		<div
+			id="overlay"
 			class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity {slideOver
 				? 'ease-in-out duration-500 opacity-100'
 				: 'ease-in-out duration-500 opacity-0'}"
 			aria-hidden="true"
 		/>
 		<div class="absolute inset-0" aria-hidden="true">
-			<div class="fixed inset-y-0 right-0 pl-10 max-w-full flex">
+			<div
+				use:clickOutside
+				on:click_outside={handleClick}
+				class="fixed inset-y-0 right-0 pl-10 max-w-full flex"
+			>
 				<!-- Slide-over panel, show/hide based on slide-over state.-->
 				<div
 					class="w-screen max-w-xs md:max-w-md {slideOver
