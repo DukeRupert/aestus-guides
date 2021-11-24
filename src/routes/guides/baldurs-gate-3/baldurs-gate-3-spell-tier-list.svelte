@@ -4,6 +4,8 @@
 	import Navigation from '$lib/guideComponents/navigation.svelte';
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { page } from '$app/stores';
+	import Seo from '$lib/seo.svelte';
 
 	let slideOver = false;
 	let timing = 500;
@@ -1465,7 +1467,7 @@
 		],
 		game: [{ title: 'BG3', description: "Baldur's Gate 3", link: 'baldurs-gate-3' }],
 		image: {
-			url: '/images/guides/bg3-class-tier-list.webp',
+			url: '/images/guides/bg3-spell-tier-list-main.webp',
 			alt: "Baldur's Gate 3 standard party characters standing in a diamond formation."
 		},
 		publishedAt: '2021-11-24T15:00:00.000Z',
@@ -1484,8 +1486,13 @@
 	}
 
 	const links = guide.body.map(getTitle);
+
+	// SEO
+	let canonical = $page.host + $page.path;
+	let seoImage = $page.host + guide.image.url;
 </script>
 
+<Seo title={guide.title} excerpt={guide.excerpt} {canonical} {seoImage} />
 <Navigation on:toggleSlideOver={handleMessage} {slideOver} {links} />
 {#if !slideOver}
 	<button

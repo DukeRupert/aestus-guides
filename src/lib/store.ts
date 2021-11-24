@@ -5,7 +5,7 @@ export const guides = writable([
 		body: [],
 		game: { title: 'BG3', description: "Baldur's Gate 3", link: 'baldurs-gate-3' },
 		image: {
-			url: '/images/guides/bg3-class-tier-list.webp',
+			url: '/images/guides/bg3-spell-tier-list-main.webp',
 			alt: "Baldur's Gate 3 standard party characters standing in a diamond formation."
 		},
 		publishedAt: '2021-11-24T15:00:00.000Z',
@@ -77,7 +77,7 @@ export const bg3Guides = writable([
 		body: [],
 		game: { title: 'BG3', description: "Baldur's Gate 3", link: 'baldurs-gate-3' },
 		image: {
-			url: '/images/guides/bg3-class-tier-list.webp',
+			url: '/images/guides/bg3-spell-tier-list-main.webp',
 			alt: "Baldur's Gate 3 standard party characters standing in a diamond formation."
 		},
 		publishedAt: '2021-11-24T15:00:00.000Z',

@@ -4,6 +4,8 @@
 	import Navigation from '$lib/guideComponents/navigation.svelte';
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { page } from '$app/stores';
+	import Seo from '$lib/seo.svelte';
 
 	let slideOver = false;
 	let timing = 500;
@@ -682,8 +684,13 @@
 	}
 
 	const links = guide.body.map(getTitle);
+
+	// SEO
+	let canonical = $page.host + $page.path;
+	let seoImage = $page.host + guide.image.url;
 </script>
 
+<Seo title={guide.title} excerpt={guide.excerpt} {canonical} {seoImage} />
 <Navigation on:toggleSlideOver={handleMessage} {slideOver} {links} />
 {#if !slideOver}
 	<button

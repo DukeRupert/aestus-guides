@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+	import Seo from '$lib/seo.svelte';
+
 	const guide = {
 		body: [],
 		categories: [{ title: 'BG1', description: "Baldur's Gate 1" }],
@@ -12,8 +15,13 @@
 		excerpt: 'My recommendations for extremely fun solo builds for BGI',
 		updatedAt: '2021-03-30T15:33:07Z'
 	};
+
+	// SEO
+	let canonical = $page.host + $page.path;
+	let seoImage = $page.host + guide.image.url;
 </script>
 
+<Seo title={guide.title} excerpt={guide.excerpt} {canonical} {seoImage} />
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8">
 		<div class="text-lg max-w-prose mx-auto">
