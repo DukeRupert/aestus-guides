@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { SUBREDDIT, PATREON } from '$lib/constants';
 
 	export let path;
 	let timing = 500;
@@ -186,7 +187,15 @@
 				<div class="py-6 px-5">
 					<div class="mt-6">
 						<a
-							href="#"
+							href={SUBREDDIT}
+							class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-purple-800 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700"
+						>
+							Visit Subreddit
+						</a>
+					</div>
+					<div class="mt-6">
+						<a
+							href={PATREON}
 							class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-purple-800 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700"
 						>
 							Support Me
