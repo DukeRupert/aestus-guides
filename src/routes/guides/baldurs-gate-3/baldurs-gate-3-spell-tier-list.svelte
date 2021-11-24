@@ -643,6 +643,19 @@
 			`Fog Cloud gets the S-tier for being consistently amazing once you understand how to use it. You should almost never cast fog cloud offensively, i.e. as a debuff against enemies, they can just walk out. What makes this spell so good is when you cast it on your own party. When used in this way, Fog Cloud is like a fortification spell; you choose a spot and don’t leave it. Because enemies can’t target you in the cloud, they will be forced to move towards you. At least, that is how it should work. How it actually works right now is the AI just doesn’t know you are there, and they stand around wasting their turn... You could just pop out, shoot at them, then run back into the cloud and hide if you wanted, but I consider that cheap and unfun. Nevertheless, even if you are like me and don’t want to exploit the AI by hiding, Fog Cloud is still an invaluable tool for controlling enemy aggro, covering against incoming fire on a charge, splitting off enemies from each other, or for sneaking into an optimal position to start the fight. There are several fights where most of the challenge is caused by enemies being spread out, for example, the harpies, or the tea house masks. While you run around trying to kill one, the others are hitting you at range with debilitating damage or CC. With Fog Cloud you mitigate most of those advantages. Seriously, try casting fog cloud in the center of the room against the tea house masks; it makes a difficult, chaotic fight predictable and easy.`
 		]
 	};
+	let goodberry: spell = {
+		level: 1,
+		class: ['ranger', 'ranger'],
+		title: 'Goodberry',
+		tier: 'C',
+		image: {
+			url: '/images/spell/goodberry.png',
+			alt: 'BG3 Goodberry symbol'
+		},
+		body: [
+			`Goodberry summons magical berries into your inventory. These berries can be passed on to companions and last until your next long rest. As a bonus action you can eat a berry and it will heal the glutton 1d4 (2.5 average) HP. This is healing that costs a bonus action, which is good, but you can’t really use this for what healing is best at – getting downed allies back into the fight. The healing is insignificant, so just pass on this spell and cast Healing Word instead.`
+		]
+	};
 	let grease: spell = {
 		level: 1,
 		class: ['wizard'],
@@ -1090,6 +1103,33 @@
 			`If all this spell did was give you a reusable 3d6 spell attack action I would probably rate it B-tier. 10.5 average damage per hit is good, but it is also taking up your concentration slot. What makes this spell S-tier is that the flaming scimitar has the “light” property, which means it can be used in the caster’s off-hand. Without Two Weapon Fighting Style, off-hand attacks are very weak, typically averaging around 3.5 damage per hit. Using the Flame Blade in your off-hand is therefore adding 7 damage per hit. Moreover, hits with the Flame Blade proc the Circlet of Fire item, which gives you another bonus action which you can use to make another off-hand attack with the Flame Sword! The damage is incredible! Its definitely worth building around. In fact, I am writing a build around this spell right now, so keep an eye out for it!`
 		]
 	};
+	let flamingSphere: spell = {
+		level: 2,
+		class: ['druid', 'wizard'],
+		title: 'Flaming Sphere',
+		tier: 'S',
+		image: {
+			url: '/images/spell/flaming-sphere.png',
+			alt: 'BG3 Flaming Sphere symbol'
+		},
+		body: [
+			`This is one of my least favorite spells in the game. Flaming Sphere is a summon spell… I know, its strange. This spell costs an action and your concentration to cast. It summons a fiery sphere. Like other summons, the sphere gets its own initiative and can take its own actions, which is always strong. Its only action is a bonus action save attack called Ram. Ram attacks dexterity, and will do 2d6 (7 average) fire damage, half on a successful save. Enemies that begin their turn adjacent to the Flaming Sphere also must make a dexterity saving throw or take 2d6 fire damage, the same as Ram, so its movement is weaponized in a way. As a save attack spell it averages 5.6 DPTr, which is very low, but it will hit significantly more targets then other spells, making its damage very high. It also sheds light in a 6m radius. Mathematically speaking, it’s a phenomenal use of a concentration slot, but I hate it… Maybe that’s just me.`
+		]
+	};
+	let heatMetal: spell = {
+		level: 2,
+		class: ['druid', 'bard'],
+		title: 'Heat Metal',
+		tier: 'A',
+		image: {
+			url: '/images/spell/heat-metal.png',
+			alt: 'BG3 Heat Metal symbol'
+		},
+		body: [
+			`Heat metal heats up a metal object that an enemy is holding (i.e. their weapon). The enemy takes 2d8 (9 average) fire damage and drops their weapon. For most enemies this is the end of the spell. Technically the weapon stays hot, taking your concentration. Enemies can pick it back up; in which case they suffer disadvantage on attack roles and ability checks and you may reactivate the spell as a bonus action on subsequent turns to do the damage over again. However, I not even sure if the AI even does pick up their weapon, because I will typically cancel the concentration and pick up their dropped weapon so that they cannot re-equip it. Enemies in BG3 do not carry side arms right now (Patch 6), so once you’ve taken their weapon, they are practically useless.`,
+			`If you cast this spell on a metal construct however the spell heat them up rather than their weapon. They still drop their weapon (weirdly), but you can reapply the damage at the cost of a bonus action. This is nice, but the main use of this spell right now is disarming enemies. Think of this as a potent control spell, especially against striker enemies (like the Gith patrol). If they fail one save their damage drops to (practically) zero with no chance of making the save again.`
+		]
+	};
 	let holdPerson: spell = {
 		level: 2,
 		class: ['bard', 'cleric', 'druid', 'sorcerer', 'warlock', 'wizard'],
@@ -1168,6 +1208,19 @@
 			`Misty Step teleports the caster to a spot they can see within 18m. It costs a bonus action to cast and does not provoke attacks of opportunity. This spell has two primary uses: escaping difficult positions and repositioning for spells. Both of those are very important for most casters, so take this spell and use it!`
 		]
 	};
+	let moonbeam: spell = {
+		level: 2,
+		class: ['sorcerer', 'warlock', 'wizard'],
+		title: 'Moonbeam',
+		tier: 'A',
+		image: {
+			url: '/images/spell/moonbeam.png',
+			alt: 'BG3 Moonbeam symbol'
+		},
+		body: [
+			`Moonbeam is a very small area AoE save spell. Creatures a 1.5 m radius that you can see within 18m must make a constitution save or take 2d10 (11 average) radiant damage, half as much on a successful save. Creatures who begin their turn in the area or who move into the area proc the damage as well. This means you will get two guaranteed procs on each target in the area of the cast, which is excellent. Moon Beam will average 8.8 DPTr, and when you are getting two guaranteed procs that adds up. Altogether this is a high damage spell in a small area. Cast this against targets you’ve engaged so that they are forced to take an opportunity attack if they want to leave the area.`
+		]
+	};
 	let prayerOfHealing: spell = {
 		level: 2,
 		class: ['cleric'],
@@ -1179,6 +1232,19 @@
 		},
 		body: [
 			`This spell costs an action to cast and heals all allies that you can see 2d8+2 hit points (11 average). 11 HP can definitely be enough to buy your allies an extra turn before being knocked out. You can also use this to stack some of the useful healing buff effects you can get from items on multiple allies in a turn. Its useful, but I still prefer to rely on Healing Word and use my action killing enemies.`
+		]
+	};
+	let passWithoutTrace: spell = {
+		level: 2,
+		class: ['druid', 'ranger'],
+		title: 'Pass without Trace',
+		tier: 'S',
+		image: {
+			url: '/images/spell/pass-without-trace.png',
+			alt: 'BG3 Pass without Trace symbol'
+		},
+		body: [
+			`Pass without Trace is a concentration spell that gives all allies in the area of effect a +10 bonus to stealth checks. How good is a +10? A level 4 character maximized for stealth with the high roll on guidance will also get a +10 to stealth… that means with this level 2 spell, your trickery cleric is making everyone in your party the equivalent of a fully optimized sneak. And this +10 bonus stacks with other bonuses, like the advantage you get from Blessing of the Trickster, or a bonus from Guidance, and even standard proficiency. With this spell you should never get spotted, which means you basically have an invisibility spell that doesn’t break when you attack enemies. That said, I seldom cast this spell, because I prefer to face my enemies head on.`
 		]
 	};
 	let protectionFromPoison: spell = {
@@ -1270,6 +1336,20 @@
 			`It creates a dome in a large area. There is  no sound in that zone, which means no spells can be cast within it and everyone within is immune to Thunder damage. The trouble with this spell is that enemies can walk out of the dome and still cast spells, so it only really useful when the terrain is such that the only direction the can walk is towards you. It can also be useful as a way to stop enemies from using Misty Step to flee while avoiding attacks of opportunity, but that is also really niche. Shutting down spells is good, an A-tier or higher effect, but I just haven’t been able to use this spell to effectively do that.`
 		]
 	};
+	let spikeGrowth: spell = {
+		level: 2,
+		class: ['druid', 'ranger'],
+		title: 'Spike Growth',
+		tier: 'A',
+		image: {
+			url: '/images/spell/spike-growth.png',
+			alt: 'BG3 Spike Growth symbol'
+		},
+		body: [
+			`Spike Growth is a ground effect spell, causing the earth in a 6m radius to twist up sharp, thorny vines. The area becomes difficult terrain and any creature that moves through it takes 2d4 (5 average) piercing damage for each 3m (I think. Tooltip says 1.5m but my experience is that you will proc damage twice if you just walk out without jumping) that they walk in it. There is no saving throw for this damage. Spike Growth requires concentration.`,
+			`Any no-save damage spell will be good. The problem with Spike Growth for me is that enemies can jump out of much of the damage. Damage does not proc if you start your turn in the area, and that is a big draw back. Still a great spell!`
+		]
+	};
 	let web: spell = {
 		level: 2,
 		class: ['sorcerer', 'wizard'],
@@ -1329,6 +1409,7 @@
 			featherFall,
 			findFamiliar,
 			fogCloud,
+			goodberry,
 			grease,
 			guidingBolt,
 			hailOfThorns,
@@ -1361,18 +1442,25 @@
 			enhanceAbility,
 			enlargeReducePerson,
 			flameBlade,
+			flamingSphere,
+			heatMetal,
 			holdPerson,
+			invisibility,
 			lesserRestoration,
 			melfsAcidArrow,
 			mirrorImage,
 			mistyStep,
+			moonbeam,
 			prayerOfHealing,
+			passWithoutTrace,
+			protectionFromPoison,
 			protection,
 			rayOfEnfeeblement,
 			scorchingRay,
 			searingSmite,
 			shatter,
 			silence,
+			spikeGrowth,
 			web
 		],
 		game: [{ title: 'BG3', description: "Baldur's Gate 3", link: 'baldurs-gate-3' }],
@@ -1585,27 +1673,32 @@
 			<h2>Final Rankings for 1st Level</h2>
 			<ul role="list">
 				<li>
-					<strong>S Tier:</strong> ⦁ Armor of Agathys, Bess, Create/Destroy Water, Dissonant Whispers,
+					<strong>S Tier:</strong> Armor of Agathys, Bess, Create/Destroy Water, Dissonant Whispers,
 					Fog Cloud, Healing Word, Hex, Hunter’s Mark, Sleep, Tasha’s Hideous Laughter.
 				</li>
 				<li>
-					<strong>A Tier:</strong> ⦁ Bane, Chromatic Orb, Faerie Fire, Guiding Bolt, Hellish Rebuke,
-					Inflict Wounds, Jump, Longstrider, mage Armor, Magic Missile, Shield of Faith, Thunderwave.
+					<strong>A Tier:</strong> Bane, Chromatic Orb, Faerie Fire, Guiding Bolt, Hellish Rebuke, Inflict
+					Wounds, Jump, Longstrider, mage Armor, Magic Missile, Shield of Faith, Thunderwave.
 				</li>
 				<li>
-					<strong>B Tier:</strong> ⦁ Burning Hands, Command, Ensnaring Strike, Entangle, False Life,
-					Find Familiar, Grease, Protection from Evil and Good.
+					<strong>B Tier:</strong> Burning Hands, Command, Ensnaring Strike, Entangle, False Life, Find
+					Familiar, Grease, Protection from Evil and Good.
 				</li>
 				<li>
-					<strong>C Tier:</strong> ⦁ Charm Person, Color Spray, Expeditious Retreat, Feather Fall, Hail
+					<strong>C Tier:</strong> Charm Person, Color Spray, Expeditious Retreat, Feather Fall, Hail
 					of Thorns.
 				</li>
 				<li>
-					<strong>RP Tier:</strong> ⦁ Arms of Hadar, Animal Friendship, Cure Wounds, Disguise Self, Ray
+					<strong>RP Tier:</strong> Arms of Hadar, Animal Friendship, Cure Wounds, Disguise Self, Ray
 					of Sickness, Speak with Animals, Witch Bolt.
 				</li>
 			</ul>
 			<h2>2nd Level Spells</h2>
+			{#each guide.body as spell}
+				{#if spell.level === 2}
+					<Class data={spell} />
+				{/if}
+			{/each}
 			<a href="/"><p class="text-bgRed">Return home</p></a>
 		</article>
 	</div>
