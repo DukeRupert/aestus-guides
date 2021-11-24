@@ -8,6 +8,20 @@ export const guides = writable([
 			url: '/images/guides/bg3-class-tier-list.webp',
 			alt: "Baldur's Gate 3 standard party characters standing in a diamond formation."
 		},
+		publishedAt: '2021-11-24T15:00:00.000Z',
+		slug: 'baldurs-gate-3-spell-tier-list',
+		title: "Baldur's Gate 3 Spell Tier List",
+		excerpt:
+			'This is the fourth and final article in my Baldur’s Gate 3 rankings and guide series where I review the spells available in the early access so far.',
+		updatedAt: '2021-11-24T21:11:28Z'
+	},
+	{
+		body: [],
+		game: { title: 'BG3', description: "Baldur's Gate 3", link: 'baldurs-gate-3' },
+		image: {
+			url: '/images/guides/bg3-class-tier-list.webp',
+			alt: "Baldur's Gate 3 standard party characters standing in a diamond formation."
+		},
 		publishedAt: '2021-03-21T15:00:00.000Z',
 		slug: 'baldur-s-gate-3-class-tier-list-and-guide',
 		title: "Baldur's Gate 3 Class Tier List and Guide",
@@ -59,6 +73,20 @@ export const guides = writable([
 ]);
 
 export const bg3Guides = writable([
+	{
+		body: [],
+		game: { title: 'BG3', description: "Baldur's Gate 3", link: 'baldurs-gate-3' },
+		image: {
+			url: '/images/guides/bg3-class-tier-list.webp',
+			alt: "Baldur's Gate 3 standard party characters standing in a diamond formation."
+		},
+		publishedAt: '2021-11-24T15:00:00.000Z',
+		slug: 'baldurs-gate-3-spell-tier-list',
+		title: "Baldur's Gate 3 Spell Tier List",
+		excerpt:
+			'This is the fourth and final article in my Baldur’s Gate 3 rankings and guide series where I review the spells available in the early access so far.',
+		updatedAt: '2021-11-24T21:11:28Z'
+	},
 	{
 		body: [],
 		game: { title: 'BG3', description: "Baldur's Gate 3", link: 'baldurs-gate-3' },

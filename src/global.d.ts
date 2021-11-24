@@ -24,3 +24,18 @@ export interface bgClass {
 	body: (string | string[] | { url: string; alt: string })[];
 	quote?: string;
 }
+
+export interface spell {
+	level: number;
+	class: string[];
+	title: string;
+	link?: string;
+	tier?: string;
+	image?: {
+		url: string;
+		alt: string;
+	};
+	list?: { title: string; body: string }[];
+	body: (string | string[] | { url: string; alt: string })[];
+	quote?: string;
+}
