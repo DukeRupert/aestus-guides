@@ -1252,11 +1252,11 @@
 	let protectionFromPoison: spell = {
 		level: 2,
 		class: ['cleric', 'druid', 'paladin', 'ranger'],
-		title: 'Detect Thoughts',
-		tier: 'RP',
+		title: 'Protection from Poison',
+		tier: 'B',
 		image: {
-			url: '/images/spell/detect-thoughts.png',
-			alt: 'BG3 Detect Thoughts symbol'
+			url: '/images/spell/protection-from-poison.png',
+			alt: 'BG3 Protection from Poison symbol'
 		},
 		body: [
 			`This is a touch range ally or self buff that costs an action to cast. It has three effects:`,
@@ -1706,6 +1706,27 @@
 					<Class data={spell} />
 				{/if}
 			{/each}
+			<h2>Final Rankings for 2nd Level</h2>
+			<ul role="list">
+				<li>
+					<strong>S Tier:</strong> Cloud of Daggers, Darkness, Flame Blade, Flaming Sphere, Hold Person,
+					Pass without Trace, Scorching Ray.
+				</li>
+				<li>
+					<strong>A Tier:</strong> Aid, Heat Metal, Invisibility, Mirror Imgae, Misty Step, Moon Beam,
+					Spike Growth.
+				</li>
+				<li>
+					<strong>B Tier:</strong> Blur, Darkvision, Lesser Restoration, Melf's Acid Arrow, Prayer of
+					healing, Ray of Enfeeblement, Shatter, Silence, Web
+				</li>
+				<li>
+					<strong>C Tier:</strong> Barkskin, Enhance Ability, Enlarge/Reduce Person, Searing Smite.
+				</li>
+				<li>
+					<strong>RP Tier:</strong> Blindness, Crown of Madness, Detect Thoughts, Protection from Poison.
+				</li>
+			</ul>
 			<a href="/"><p class="text-bgRed">Return home</p></a>
 		</article>
 	</div>
