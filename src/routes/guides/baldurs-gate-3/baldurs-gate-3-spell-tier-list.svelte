@@ -1470,12 +1470,12 @@
 			url: '/images/guides/bg3-spell-tier-list-main.webp',
 			alt: "Baldur's Gate 3 standard party characters standing in a diamond formation."
 		},
-		publishedAt: '2021-11-24T15:00:00.000Z',
+		publishedAt: '2021-12-24T15:00:00.000Z',
 		slug: 'baldurs-gate-3-spell-tier-list',
 		title: "Baldur's Gate 3 Spell Tier List",
 		excerpt:
 			'This is the fourth and final article in my Baldur’s Gate 3 rankings and guide series where I review the spells available in the early access so far.',
-		updatedAt: '2021-11-24T21:11:28Z'
+		updatedAt: '2021-12-24T21:11:28Z'
 	};
 
 	function getTitle(item) {
