@@ -180,24 +180,25 @@
 {/if}
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8">
-		<article class="mt-6 prose prose-lg max-w-prose text-gray-700 mx-auto">
+		<article class="mt-6 prose-lg dark:prose-light max-w-prose mx-auto">
 			<h1>
-				<span class="block text-base text-center text-bgRed font-semibold tracking-wide uppercase"
+				<span
+					class="block text-base text-center text-bgRed dark:text-gray-100 font-semibold tracking-wide uppercase"
 					>Guide</span
 				>
 				<span
-					class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+					class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl"
 					>{guide.title}</span
 				>
 			</h1>
-			<p class="mt-8 text-xl text-gray-700 leading-8">
+			<p class="mt-8 text-xl leading-8">
 				This is the first article in a four part series where I analyze and rank fundamental build
 				choices in Baldur’s Gate 3 (BG3). I will be ranking abilities, races, classes, and spells.
 				In this article I analyze and rank abilities. Not all abilities are equal! Some are
 				definitely more valuable than others. We will discuss each below in order of value from best
 				to worst.
 			</p>
-			<p class="mt-8 text-xl text-gray-700 leading-8">
+			<p class="mt-8 text-xl leading-8">
 				Before getting into the analysis, it is prudent to say something about how I balance combat
 				versus out of combat utility. This is my order of value starting with the most valuable and
 				ending with the least:
@@ -228,7 +229,7 @@
 				That concludes the abilities. In the next article I will analyze and rank all available
 				races and subraces in a tier list. Look forward to it!
 			</p>
-			<a href="/"><p class="text-bgRed">Return home</p></a>
+			<a href="/"><p class="text-bgRed dark:text-gray-100">Return home</p></a>
 		</article>
 	</div>
 </div>

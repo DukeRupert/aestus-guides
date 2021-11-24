@@ -716,18 +716,19 @@
 
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8">
-		<article class="mt-6 prose prose-lg text-gray-700 mx-auto">
+		<article class="mt-6 prose-lg dark:prose-light mx-auto">
 			<h1>
-				<span class="block text-base text-center text-bgRed font-semibold tracking-wide uppercase"
+				<span
+					class="block text-base text-center text-bgRed dark:text-gray-100 font-semibold tracking-wide uppercase"
 					>Guide</span
 				>
 				<span
-					class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+					class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl"
 					>{guide.title}</span
 				>
 			</h1>
 			<h2>Introduction and Fundamental Assumptions</h2>
-			<p class="mt-8 text-xl text-gray-700 leading-8">
+			<p class="mt-8 text-xl leading-8">
 				This article is a resource for optimizing your Tavs! It is entry three of four in my
 				Baldur’s Gate 3 rankings and guide series. In the first entry I analyzed and ranked the six
 				abilities: strength, dexterity, constitution, wisdom, intelligence, and charisma. That
@@ -736,7 +737,7 @@
 				same treatment to the 7 classes and the 15 sub-classes available in the early access so far.
 				I hope you find it helpful!
 			</p>
-			<p class="mt-8 text-xl text-gray-700 leading-8">
+			<p class="mt-8 text-xl leading-8">
 				Before diving into my tier ranking system, let’s take a moment to discuss how I expect this
 				guide will be different from the two that precede it. So far, I have ranked abilities,
 				sub-races, and now classes. Of the three it is classes that are the most complex and are
@@ -749,7 +750,7 @@
 				they are all really fun! Towards that end, I have included a build outline for every
 				subclass for you to try.
 			</p>
-			<p class="mt-8 text-xl text-gray-700 leading-8">
+			<p class="mt-8 text-xl leading-8">
 				Now some of you may be asking “why even have a tier ranking at all then?” There are a few
 				reasons. One is that thinking about the relative strength of certain options compared to
 				others is a great way to understand those options, which is to say that having power
@@ -868,7 +869,7 @@
 			{#each guide.body as section}
 				<Class data={section} />
 			{/each}
-			<a href="/"><p class="text-bgRed">Return home</p></a>
+			<a href="/"><p class="text-bgRed dark:text-gray-100">Return home</p></a>
 		</article>
 	</div>
 </div>

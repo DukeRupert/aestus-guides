@@ -16,14 +16,14 @@
 					/>
 				</div>
 				<div>
-					<h1 class="text-xl lg:text-4xl font-bold">Baldur's Gate 1</h1>
+					<h1 class="text-xl lg:text-4xl font-bold dark:text-gray-300">Baldur's Gate 1</h1>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <!-- Recent Guides Section -->
-<div class="bg-parchment">
+<div>
 	<div class="w-full mx-auto lg:max-w-8xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
 		<h2 class="pb-4 lg:pb-8 text-lg md:text-2xl lg:text-3xl text-black">Recent Posts</h2>
 		<div

@@ -428,24 +428,25 @@
 {/if}
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8">
-		<article class="mt-6 prose prose-lg max-w-prose text-gray-700 mx-auto">
+		<article class="mt-6 prose-lg dark:prose-light mx-auto">
 			<h1>
-				<span class="block text-base text-center text-bgRed font-semibold tracking-wide uppercase"
+				<span
+					class="block text-base text-center text-bgRed dark:text-gray-100 font-semibold tracking-wide uppercase"
 					>Guide</span
 				>
 				<span
-					class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+					class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl"
 					>{guide.title}</span
 				>
 			</h1>
-			<p class="mt-8 text-xl text-gray-700 leading-8">
+			<p class="mt-8 text-xl leading-8">
 				In this article I rank the races available in BG3 early access. I cannot stress enough that
 				BG3 is a video game. This is not a tier list of so-called races of actual human beings. If
 				you find this because you have googled something you will hopefully regret under the
 				influence of rage, fear, and ethnic insecurity, I am not on your side. Find someone
 				qualified to help you.
 			</p>
-			<p class="mt-8 text-xl text-gray-700 leading-8">
+			<p class="mt-8 text-xl leading-8">
 				I also want to stress that this article is a first draft, representing my initial thoughts.
 				I am sure my opinions will change as I think about it more and learn more about the game.
 			</p>
@@ -558,7 +559,7 @@
 					<strong>RP Tier:</strong> None (anymore).
 				</li>
 			</ul>
-			<a href="/"><p class="text-bgRed">Return home</p></a>
+			<a href="/"><p class="text-bgRed dark:text-gray-100">Return home</p></a>
 		</article>
 	</div>
 </div>

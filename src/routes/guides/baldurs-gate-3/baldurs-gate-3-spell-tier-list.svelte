@@ -1494,13 +1494,13 @@
 <Navigation on:toggleSlideOver={handleMessage} {slideOver} {links} />
 {#if !slideOver}
 	<button
-		class="fixed top-28 right-0 w-12 h-12 rounded-l-lg bg-white flex justify-center items-center shadow-xl z-50"
+		class="fixed top-28 right-0 w-12 h-12 rounded-l-lg bg-white dark:bg-gray-900 flex justify-center items-center shadow-xl z-50"
 		on:click={toggleSlideOver}
 		in:fly={{ x: 100, delay: delay, duration: timing, easing: quintOut }}
 		out:fly={{ x: 100, duration: timing, easing: quintOut }}
 	>
 		<svg
-			class="h-6 w-6 text-gray-500"
+			class="h-6 w-6 text-gray-500 dark:text-gray-400"
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
@@ -1515,17 +1515,18 @@
 
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8">
-		<article class="mt-6 prose prose-lg text-gray-700 mx-auto">
+		<article class="mt-6 prose-lg dark:prose-light mx-auto">
 			<h1>
-				<span class="block text-base text-center text-bgRed font-semibold tracking-wide uppercase"
+				<span
+					class="block text-base text-center text-bgRed dark:text-gray-100 font-semibold tracking-wide uppercase"
 					>Guide</span
 				>
 				<span
-					class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+					class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl"
 					>{guide.title}</span
 				>
 			</h1>
-			<p class="mt-8 text-xl text-gray-700 leading-8">
+			<p class="mt-8 text-xl leading-8">
 				This is the fourth and final article in my Baldur’s Gate Three Rankings and Guide Series.
 				The purpose of this series is to assess the relative power of fundamental choices for
 				building your character in BG3. In past articles I ranked abilities, races, classes, and in
@@ -1725,7 +1726,7 @@
 					<strong>RP Tier:</strong> Blindness, Crown of Madness, Detect Thoughts, Protection from Poison.
 				</li>
 			</ul>
-			<a href="/"><p class="text-bgRed">Return home</p></a>
+			<a href="/"><p class="text-bgRed dark:text-gray-100">Return home</p></a>
 		</article>
 	</div>
 </div>

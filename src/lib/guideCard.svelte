@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class="group relative bg-white border border-gray-200 shadow-xl hover:shadow-2xl transition-all duration-150 hover:scale-105 rounded-xl flex flex-col overflow-hidden"
+	class="group relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-600 shadow-xl hover:shadow-2xl transition-all duration-150 hover:scale-105 rounded-xl flex flex-col overflow-hidden"
 >
 	<div class="aspect-w-4 aspect-h-3 bg-bgBlack group-hover:opacity-75 sm:aspect-none sm:h-96">
 		<img
@@ -19,14 +19,14 @@
 		/>
 	</div>
 	<div class="flex-1 p-4 space-y-2 flex flex-col">
-		<h3 class="text-lg font-medium text-gray-900">
+		<h3 class="text-lg font-medium text-gray-900 dark:text-gray-300">
 			<a href="/guides/{guide.game.link}/{guide.slug}">
 				<span aria-hidden="true" class="absolute inset-0" />
 				{guide.title}
 			</a>
 		</h3>
-		<p class="text-sm italic text-gray-500">{formatDate(guide.updatedAt)}</p>
-		<p class="text-sm text-gray-700">
+		<p class="text-sm italic text-gray-500 dark:text-gray-600">{formatDate(guide.updatedAt)}</p>
+		<p class="text-sm text-gray-700 dark:text-gray-400">
 			{guide.excerpt}
 		</p>
 	</div>

@@ -2,6 +2,7 @@
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import { SUBREDDIT, PATREON } from '$lib/constants';
+	import { dark } from '$lib/store';
 	import DarkToggle from '$lib/darkToggle.svelte';
 
 	export let path;
@@ -10,20 +11,28 @@
 	let mobileOpen = false;
 </script>
 
-<div class="relative shadow-xl bg-white z-30">
+<div class="relative shadow-xl bg-white dark:bg-gray-900 z-30">
 	<div
 		class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
 	>
 		<div class="flex justify-start lg:w-0 lg:flex-1">
 			<a href="/">
 				<span class="sr-only">Aestus Guides</span>
-				<img class="h-8 w-auto sm:h-10" src="/images/Ae200.png" alt="Aestus Guides logo" />
+				{#if $dark}
+					<img
+						class="h-8 w-auto sm:h-10 brightness-90"
+						src="/images/AeFull400Dark.png"
+						alt="Aestus Guides"
+					/>
+				{:else}
+					<img class="h-8 w-auto sm:h-10" src="/images/AeFull400.png" alt="Aestus Guides" />
+				{/if}
 			</a>
 		</div>
 		<div class="-mr-2 -my-2 md:hidden">
 			<button
 				type="button"
-				class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+				class="bg-white dark:bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 				aria-expanded="false"
 				on:click={() => (mobileOpen = !mobileOpen)}
 			>
@@ -49,8 +58,8 @@
 				<a
 					href="/guides"
 					class="{path == '/guides'
-						? 'text-gray-900'
-						: ''} text-gray-500 mb-3 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+						? 'text-gray-900 dark:text-gray-400'
+						: ''} text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 mb-3 rounded-md inline-flex items-center text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 					aria-expanded="false"
 				>
 					<span>Guides</span>
@@ -70,11 +79,15 @@
 				<div
 					class="hidden group-hover:block absolute z-10 -ml-4 w-screen max-w-xs lg:max-w-xs lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 transform"
 				>
-					<div class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5 overflow-hidden">
-						<div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-1">
+					<div
+						class="rounded-lg shadow-xl ring-1 ring-black dark:ring-gray-400 ring-opacity-5 overflow-hidden"
+					>
+						<div
+							class="relative grid gap-6 bg-white dark:bg-gray-900 px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-1"
+						>
 							<a
 								href="/guides/baldurs-gate-3"
-								class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
+								class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
 							>
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
@@ -82,13 +95,15 @@
 									<img class="h-10 w-auto" src="/images/bg3.png" alt="Baldur's Gate 3 logo" />
 								</div>
 								<div class="ml-4">
-									<p class="text-base font-medium text-gray-900">Baldur's Gate 3</p>
+									<p class="text-base font-medium text-gray-900 dark:text-gray-400">
+										Baldur's Gate 3
+									</p>
 								</div>
 							</a>
 
 							<a
 								href="/guides/baldurs-gate-1"
-								class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
+								class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
 							>
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
@@ -96,7 +111,9 @@
 									<img class="h-10 w-auto" src="/images/bg1.png" alt="Baldur's Gate 1 logo" />
 								</div>
 								<div class="ml-4">
-									<p class="text-base font-medium text-gray-900">Baldur's Gate 1</p>
+									<p class="text-base font-medium text-gray-900 dark:text-gray-400">
+										Baldur's Gate 1
+									</p>
 								</div>
 							</a>
 						</div>
@@ -106,8 +123,8 @@
 			<a
 				href="/about"
 				class="{path == '/about'
-					? 'text-gray-900'
-					: ''}text-base font-medium text-gray-500 hover:text-gray-900"
+					? 'text-gray-900 dark:text-gray-400'
+					: ''}text-base font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-300"
 			>
 				About
 			</a>
@@ -120,7 +137,7 @@
 			class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
 		>
 			<div
-				class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
+				class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white dark:bg-gray-900 divide-y-2 divide-gray-50"
 			>
 				<div class="pt-5 pb-6 px-5">
 					<div class="flex items-center justify-between">
@@ -130,7 +147,7 @@
 						<div class="-mr-2">
 							<button
 								type="button"
-								class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+								class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 								on:click={() => (mobileOpen = !mobileOpen)}
 							>
 								<span class="sr-only">Close menu</span>

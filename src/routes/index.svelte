@@ -1,22 +1,30 @@
 <script lang="ts">
 	import GuideCard from '$lib/guideCard.svelte';
-	import { guides } from '$lib/store';
+	import { guides, dark } from '$lib/store';
 </script>
 
 <!-- Hero section -->
 <div class="relative">
 	<div class="w-full mx-auto sm:px-6 lg:px-8">
 		<div class="relative m-auto pt-8 px-4 lg:pt-24 max-w-2xl sm:overflow-hidden">
-			<img
-				class="h-full w-full object-contain"
-				src="/images/AeFull1200.png"
-				alt="Aestus Guides logo"
-			/>
+			{#if $dark}
+				<img
+					class="h-full w-full object-contain brightness-75"
+					src="/images/AeFull800Dark.png"
+					alt="Aestus Guides logo"
+				/>
+			{:else}
+				<img
+					class="h-full w-full object-contain"
+					src="/images/AeFull800.png"
+					alt="Aestus Guides logo"
+				/>
+			{/if}
 		</div>
 	</div>
 </div>
 <!-- Recent Guides Section -->
-<div class="bg-parchment">
+<div>
 	<div class="w-full mx-auto lg:max-w-8xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
 		<h2 class="pb-4 lg:pb-8 text-xl md:text-2xl lg:text-4xl text-black">Recent Posts</h2>
 		<div

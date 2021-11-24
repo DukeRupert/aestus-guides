@@ -63,3 +63,17 @@
 		</figure>
 	{/if}
 {/each}
+
+<style>
+	h2 {
+		@apply dark:text-gray-300;
+	}
+
+	strong {
+		@apply dark:text-gray-300;
+	}
+
+	blockquote {
+		@apply dark:text-gray-400;
+	}
+</style>

@@ -30,7 +30,7 @@
 		<!-- Background overlay, show/hide based on slide-over state. -->
 		<div
 			id="overlay"
-			class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity {slideOver
+			class="absolute inset-0 bg-gray-500 dark:bg-black bg-opacity-75 dark:bg-opacity-75 transition-opacity {slideOver
 				? 'ease-in-out duration-500 opacity-100'
 				: 'ease-in-out duration-500 opacity-0'}"
 			aria-hidden="true"
@@ -48,14 +48,21 @@
 						? 'transform transition ease-in-out duration-500 sm:duration-700 translate-x-0'
 						: 'transform transition ease-in-out duration-500 sm:duration-700 translate-x-full'}"
 				>
-					<div class="h-full flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
+					<div
+						class="h-full flex flex-col py-6 bg-white dark:bg-gray-900 shadow-xl overflow-y-scroll"
+					>
 						<div class="px-4 sm:px-6">
 							<div class="flex items-start justify-between">
-								<h2 class="text-lg font-medium text-gray-900" id="slide-over-title">Navigation</h2>
+								<h2
+									class="text-lg font-medium text-gray-900 dark:text-gray-300"
+									id="slide-over-title"
+								>
+									Navigation
+								</h2>
 								<div class="ml-3 h-7 flex items-center">
 									<button
 										type="button"
-										class="rounded-md text-gray-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bgRed"
+										class="rounded-md text-gray-700 dark:text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bgRed"
 										on:click={toggleSlideOver}
 									>
 										<span class="sr-only">Close panel</span>
@@ -82,7 +89,7 @@
 						<div class="mt-6 relative flex-1 px-4 sm:px-6">
 							<!-- Replace with your content -->
 							<div class="absolute inset-0 px-4 sm:px-6">
-								<nav class="block relative prose pb-4">
+								<nav class="block relative prose dark:prose-light pb-4">
 									<ul role="list">
 										{#each links as { title, link, image }}
 											<div class="flex items-center">

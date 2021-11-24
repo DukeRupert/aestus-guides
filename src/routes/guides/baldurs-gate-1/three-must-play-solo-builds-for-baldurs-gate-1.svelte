@@ -24,24 +24,25 @@
 <Seo title={guide.title} excerpt={guide.excerpt} {canonical} {seoImage} />
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8">
-		<div class="text-lg max-w-prose mx-auto">
+		<div class="text-lg prose-lg dark:prose-light max-w-prose mx-auto">
 			<h1>
-				<span class="block text-base text-center text-bgRed font-semibold tracking-wide uppercase"
+				<span
+					class="block text-base text-center text-bgRed dark:text-gray-100 font-semibold tracking-wide uppercase"
 					>Guide</span
 				>
 				<span
-					class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+					class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl"
 					>{guide.title}</span
 				>
 			</h1>
-			<p class="mt-8 text-xl text-gray-800 leading-8">
+			<p class="mt-8 text-xl leading-8">
 				I am one of those guys who prefers Baldur’s Gate I (BGI) over its sequel (BGII). Part of the
 				reason is aesthetic: BGI is more focused in its aesthetic, and I prefer that. However,
 				another reason is that BGI is so rewarding to play as a solo character, i.e., without any
 				party members. Below I share three solo builds that are extremely fun to play through BGI. I
 				hope you will give them a shot!
 			</p>
-			<p class="mt-8 text-xl text-gray-800 leading-8">
+			<p class="mt-8 text-xl leading-8">
 				Before getting to the builds, let me just briefly say something about what makes solo runs
 				so interesting. The first is obviously the challenge; BGI is like a puzzle that is designed
 				to be solved with the resources of six characters and finding a way to do it with the
@@ -53,8 +54,7 @@
 				you are new to the original Baldur's Gate series and want to see what makes it so awesome,
 				keep an eye out for my forthcoming Baldur's Gate Beginners Guide.
 			</p>
-		</div>
-		<div class="mt-6 prose prose-lg text-gray-800 mx-auto">
+
 			<h2>Gnome Illusionist/Thief</h2>
 			<p>
 				The Gnome Illusionist/Thief plays exactly like you would imagine a Gnome would fight:
@@ -214,7 +214,7 @@
 				decent as damage dealers. Just pass on this spell.
 			</p>
 
-			<a href="/"><p class="text-bgRed">Return home</p></a>
+			<a href="/"><p class="text-bgRed dark:text-gray-100">Return home</p></a>
 		</div>
 	</div>
 </div>

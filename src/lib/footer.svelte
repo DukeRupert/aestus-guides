@@ -1,35 +1,60 @@
 <script lang="ts">
 	import { SUBREDDIT, PATREON } from '$lib/constants';
+	import { dark } from '$lib/store';
 	import DarkToggle from './darkToggle.svelte';
 </script>
 
 <!-- Footer -->
-<footer class="bg-parchment">
+<footer class="dark:bg-gray-900">
 	<div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8 border-t border-bgRed">
-		<div class="mb-8 flex justify-center space-x-6 text-gray-500">
+		<div class="mb-8 flex justify-center space-x-6 text-gray-500 dark:text-gray-400">
 			Cast Darkness : &nbsp; &nbsp; <DarkToggle />
 		</div>
 		<nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
 			<div class="px-5 py-2">
-				<a href="/about" class="text-base text-gray-500 hover:text-gray-900"> About </a>
+				<a
+					href="/about"
+					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
+				>
+					About
+				</a>
 			</div>
 
 			<div class="px-5 py-2">
-				<a href="/guides" class="text-base text-gray-500 hover:text-gray-900"> Guides </a>
+				<a
+					href="/guides"
+					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
+				>
+					Guides
+				</a>
 			</div>
 
 			<div class="px-5 py-2">
-				<a href={SUBREDDIT} class="text-base text-gray-500 hover:text-gray-900"> Subreddit </a>
+				<a
+					href={SUBREDDIT}
+					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
+				>
+					Subreddit
+				</a>
 			</div>
 
 			<div class="px-5 py-2">
-				<a href={PATREON} class="text-base text-gray-500 hover:text-gray-900"> Patreon </a>
+				<a
+					href={PATREON}
+					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
+				>
+					Patreon
+				</a>
 			</div>
 		</nav>
 		<div class="mt-8 flex justify-center space-x-6">
-			<img class="h-16" src="/images/AeFull400.png" alt="Aestus Guides" />
+			{#if $dark}
+				<img class="h-16 brightness-90" src="/images/AeFull400Dark.png" alt="Aestus Guides" />
+			{:else}
+				<img class="h-16" src="/images/AeFull400.png" alt="Aestus Guides" />
+			{/if}
 		</div>
-		<p class="mt-8 text-center text-base text-gray-400">
+		<p class="mt-8 text-center text-base text-gray-500 dark:text-gray-400">
 			&copy; 2021 Aestus Guides 2021. All rights reserved.
 		</p>
 	</div>

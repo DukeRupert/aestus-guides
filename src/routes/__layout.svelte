@@ -16,8 +16,8 @@
 	export let path;
 </script>
 
-<div class="bg-parchment font-sans">
-	<div class="max-w-8xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 bg-parchment">
+<div class="bg-parchment dark:bg-black font-sans">
+	<div class="max-w-8xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
 		<header>
 			<Nav {path} />
 		</header>
