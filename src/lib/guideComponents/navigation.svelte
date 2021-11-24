@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
-	import { clickOutside } from '$lib/clickOutside';
+	import { clickOutside, touchOutside } from '$lib/clickOutside';
 	const dispatch = createEventDispatcher();
 
 	export let slideOver;
@@ -38,6 +38,7 @@
 		<div class="absolute inset-0" aria-hidden="true">
 			<div
 				use:clickOutside
+				use:touchOutside
 				on:click_outside={handleClick}
 				class="fixed inset-y-0 right-0 pl-10 max-w-full flex"
 			>

@@ -2,6 +2,7 @@
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import { SUBREDDIT, PATREON } from '$lib/constants';
+	import DarkToggle from '$lib/darkToggle.svelte';
 
 	export let path;
 	let timing = 500;
@@ -43,6 +44,7 @@
 			</button>
 		</div>
 		<nav class="hidden md:flex space-x-10">
+			<DarkToggle />
 			<div class="relative group">
 				<a
 					href="/guides"

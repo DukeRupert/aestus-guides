@@ -434,7 +434,6 @@
 				`Thunder: 3d8 (13.5 average) damage.`,
 				`Poison: 2d8 damage and a small cloud of bursts around the point of impact. Any creature in the area must make a constitution saving throw or be poisoned for two rounds.While poisoned the creature has disadvantage on attack roles and ability checks.`
 			],
-			`Its easy to overlook how good this buff is though. A +2 bonus so saving throws is like having proficiency in every saving throw. It helps you maintain concentration so that you get more efficiency from your concentration spells.  A +2.5 to accuracy adds 4.4 DPR to Lae’zel on the current optimum build, and that is just one companion. This spell is insane, cast it every encounter.`,
 			`The damage on this spell is a bit low, but that’s not that bad since the you will likely be casting it to exploit enemy vulnerabilities or for the extra effects. Except for poison and cold, which require saving throws, all the extra effects proc even when the spell misses. If you aren’t exploiting vulnerabilities, the best extra effect is acid. A guaranteed -2 to a targets AC is a significant accuracy boost for the rest of the party. Frost and Lightning need a special mention due to their synergy with another spell: Create/Destroy Water. We will discuss that synergy below once we review Create/Destroy Water.`,
 			`*Note to Larian if you are reading this. The DC on the saving throws for this spell are bugged right now. On my 18 intelligence Gale, whose DC is 14 on all other spells, has a DC 12 for Chromatic Orb for some reason. I tested it on an custom wizard with 8 intelligence and it was still DC12 (it should be 9).*`
 		]
@@ -696,9 +695,8 @@
 			alt: 'BG3 Hail of Thorns symbol'
 		},
 		body: [
-			`Grease slicks a large are ground with a flammable oil. The area is now difficult terrain. Creatures that are in it when it is cast or that subsequently move through it have to make a dexterity saving throw or fall prone. If something ignites the grease, all creatures in it are ignited, immediately taking 1d4 fire damage and 1d4 more on the start of their next turn. Once it is ignited, it is no longer slippery, difficult terrain, however, it does burn for a round, and any creature that moves through it in that round is ignited. Grease does not use concentration.`,
-			`Grease is just an alright spell. It can knock enemies prone, but you can’t reliably capitalize on the condition by gaining advantage on your attacks against them, because in order to be in melee range of them you have to risk falling prone yourself. In most fights it is strictly a kiting tool, meant to slow enemies who are trying to close to melee range against you so that you have more turns to pelt them with arrows. Igniting the grease does a guaranteed 2d4 damage (5 damage on average) and has a chance to proc again for another 2d4 if they can’t jump out. The guarantee is nice, but the damage is low for a two-spell combo. That said, sometimes you can combine grease with fire that’s already in the terrain, which removes half of the investment from the combo. Sometimes that 1d4 damage can break an enemy’s concentration. Sometimes you can use this to trigger explosive barrels. Milage for this spell varies depending on the terrain.`,
-			`Now, some readers are probably thinking “isn’t this just an objectively worse version of Create/Destroy Water? Shouldn’t it be RP-tier, since there is always a better spell that does the same thing?” The short answer is no, you must consider Grease on it own merits. The long answer is that because the wet condition grants resistance to fire damage, party compositions which depend on fire damage for a significant part of their damage load cannot depend on Create Water the same way other compositions can. There are some S-tier fire damage spells that are worth building around that we will discuss below. Parties that are depending on those spells have reason to consider Grease over Create Water.`
+			`This is a spell that is made with a standard ranged attack. If the attack lands, besides dealing damage like normal, there is a burst of thorns in a small area around the target. All creatures in the area must make a dexterity saving throw or take 1d10 (5.5) piercing damage, half as much on a successful save.`,
+			`This is another spell that has basically no action cost since it is cast on a standard attack (the other is Ensnaring Strike above). Sadly, its damage is just abysmal. It never that bad to cast, since it costs next to nothing, but you also get next to nothing, so C-tier.`
 		]
 	};
 	let healingWord: spell = {
@@ -818,7 +816,7 @@
 			alt: 'BG3 Magic Missile symbol'
 		},
 		body: [
-			`Magic Missile shoots three bolts of magical energy. Each bolt does 1d4 + 1 (3.5 average) force damage to its target. There is no attack role and no saving throw, it just does damage. The are directed individually, so you can have them all hit one target, or all hit different targets, or any combination in between. 10.5 average damage on a single cast of a spell is not bad but not great. The real value of this spell is that it always hits, and force damage is never resisted (not yet anyways), so you can rely on this spell to do damage against hard to hit enemies. Really, that is all its useful for: hurting enemies with high AC. The higher their AC the more efficient the damage.`,
+			`Magic Missile shoots three bolts of magical energy. Each bolt does 1d4 + 1 (3.5 average) force damage to its target. There is no attack role and no saving throw, it just does damage. They are directed individually, so you can have them all hit one target, or all hit different targets, or any combination in between. 10.5 average damage on a single cast of a spell is not bad but not great. The real value of this spell is that it always hits, and force damage is never resisted (not yet anyways), so you can rely on this spell to do damage against hard to hit enemies. Really, that is all its useful for: hurting enemies with high AC. The higher their AC the more efficient the damage.`,
 			`This is one of those rare spells where we need to talk about its synergy with an item. There is an easy to acquire necklace in the game which adds an extra 1d4 psychic damage (another seldom resisted damage type) to each bolt, bumping the average damage to 6 per bolt, or 18 damage total, 24 if you upcast it. Magic Missile becomes an S-tier spell for whoever gets that item.`
 		]
 	};
@@ -845,7 +843,7 @@
 			alt: 'BG3 Ray of Sickness symbol'
 		},
 		body: [
-			`Ray of Sickness is a ranged attack spell that does 2d8 (9 average) damage on a hit. If the spell hits, the target must also make a constitution save or become poisoned for two turns. The damage is low. Poisoned is a decent condition, but you need two hit twice (hit the attack and then the target needs to fail their saving throw) to apply it, so it is not reliable. What really makes this RP tier is that Ray of Sickness is just a slightly worse version of Chromatic Orb poison. Just take Chromatic Orb instead.`,
+			`Ray of Sickness is a ranged attack spell that does 2d8 (9 average) damage on a hit. If the spell hits, the target must also make a constitution save or become poisoned for two turns. The damage is low. Poisoned is a decent condition, but you need to hit twice (hit the attack and then the target needs to fail their saving throw) to apply it, so it is not reliable. What really makes this RP tier is that Ray of Sickness is just a slightly worse version of Chromatic Orb poison. Just take Chromatic Orb instead.`,
 			`If you get this spell from a scroll or from a magic item, and thus cannot exchange it for Chromatic Orb, I would give it a B-tier.`
 		]
 	};
@@ -1155,7 +1153,7 @@
 			alt: 'BG3 Invisibility symbol'
 		},
 		body: [
-			`I think this ability should be A-tier, but to be honest with you, I hardly cast it. It makes a single ally invisible, allowing you to either sneak them to a good starting position or avoid aggro. You lost invisibility if you attack or cast a spell. Invisibility requires concentration. I hardly ever cast it because it seems like I hardly ever need to, but that’s probably just me being uncreative. What the spell does IS valuable, even if I forget to use it often.`
+			`I think this ability should be A-tier, but to be honest with you, I hardly cast it. It makes a single ally invisible, allowing you to either sneak them to a good starting position or avoid aggro. You lose invisibility if you attack or cast a spell. Invisibility requires concentration. I hardly ever cast it because it seems like I hardly ever need to, but that’s probably just me being uncreative. What the spell does IS valuable, even if I forget to use it often.`
 		]
 	};
 	let lesserRestoration: spell = {
@@ -1220,7 +1218,7 @@
 			alt: 'BG3 Moonbeam symbol'
 		},
 		body: [
-			`Moonbeam is a very small area AoE save spell. Creatures a 1.5 m radius that you can see within 18m must make a constitution save or take 2d10 (11 average) radiant damage, half as much on a successful save. Creatures who begin their turn in the area or who move into the area proc the damage as well. This means you will get two guaranteed procs on each target in the area of the cast, which is excellent. Moon Beam will average 8.8 DPTr, and when you are getting two guaranteed procs that adds up. Altogether this is a high damage spell in a small area. Cast this against targets you’ve engaged so that they are forced to take an opportunity attack if they want to leave the area.`
+			`Moonbeam is a very small area AoE save spell. Creatures in a 1.5 m radius that you can see within 18m must make a constitution save or take 2d10 (11 average) radiant damage, half as much on a successful save. Creatures who begin their turn in the area or who move into the area proc the damage as well. This means you will get two guaranteed procs on each target in the area of the cast, which is excellent. Moon Beam will average 8.8 DPTr, and when you are getting two guaranteed procs that adds up. Altogether this is a high damage spell in a small area. Cast this against targets you’ve engaged so that they are forced to take an opportunity attack if they want to leave the area.`
 		]
 	};
 	let prayerOfHealing: spell = {
@@ -1292,7 +1290,7 @@
 			alt: 'BG3 Scorching Ray symbol'
 		},
 		body: [
-			`This spell is easy to overlook, but once you understand its math you will understand that is one of a handful of premier striking spells for arcane casters. When you cast Scorching Ray you hurl 3 bolts of fire. Each bolt is its own ranged attack and can target any creature within range, so you can have them all hit one target or split to hit separate targets. If they hit each ray does 2d6 fire damage to the target.`,
+			`This spell is easy to overlook, but once you understand its math you will understand that it is one of a handful of premier striking spells for arcane casters. When you cast Scorching Ray you hurl 3 bolts of fire. Each bolt is its own ranged attack and can target any creature within range, so you can have them all hit one target or split to hit separate targets. If they hit each ray does 2d6 fire damage to the target.`,
 			`So why is this so good? Its good for the same reasons that the cantrip Eldritch Blast is which we covered above. Typically spells do a lot of damage on a single attack role. Scorching Ray does less damage but gets multiple attack roles. Multiple attack roles are, as a general rule, better, because you can combine them with effects that proc on hits, like Hex. Assuming a 75% hit chance on each attack, Scorching Ray will average 16.8 damage per cast, which is decent, but not S-tier level damage. However, when you combine it with Hex your damage goes up to 25.2 per cast, much better! Add high-ground bonus to that and its 28.35. Hide before you cast it and now you have advantage and you’re averaging 33.86. Ring of Fire? Now its 36.5. You get the idea, it’s a lot of reliable damage.`,
 			`Its also worth discussing how this spell will scale at full release once we have higher spell slots than level 2. Assuming they follow the scaling rules of tabletop 5e you will gain one additional ray for each slot level above 2nd. That means when you cast as a 3rd level spell you are getting 4 attacks instead of three. That is phenomenal scaling! This is a spell that is worth building around.`
 		]
@@ -1362,7 +1360,7 @@
 			alt: 'BG3 Web symbol'
 		},
 		body: [
-			`Web is practically identical to the 1st level spell Entangle which we reviewed above. The difference is that Web targets the dexterity save and applies the enwebbed condition instead of restrained. Enwebbed is just a kind of restrained, they do the same things but there are items creatures in the game that can be immune to enwebbed that aren’t immune to restrained. There is, in fact, a pair of boots that you can get fairly early in the game which makes a character immune to enwebbed. This gives Web an advantage the Entangle doesn’t have. You can cast Web and run a melee striker with the boots into it, giving them advantage on attacks against the enwebbed enemies. This is a decent strategy, but not good enough to earn Web anything above a B-tier ranking like its 1st level counterpart.`
+			`Web is practically identical to the 1st level spell Entangle which we reviewed above. The difference is that Web targets the dexterity save and applies the enwebbed condition instead of restrained. Enwebbed is just a kind of restrained, they do the same things but there are creatures in the game that can be immune to enwebbed that aren’t immune to restrained. There is, in fact, a pair of boots that you can get fairly early in the game which makes a character immune to enwebbed. This gives Web an advantage the Entangle doesn’t have. You can cast Web and run a melee striker with the boots into it, giving them advantage on attacks against the enwebbed enemies. This is a decent strategy, but not good enough to earn Web anything above a B-tier ranking like its 1st level counterpart.`
 		]
 	};
 
