@@ -327,6 +327,659 @@
 		]
 	};
 
+	let armsOfHadar: spell = {
+		level: 1,
+		class: ['warlock'],
+		title: 'Arms of Hadar',
+		tier: 'RP',
+		image: {
+			url: '/images/spell/arms-of-hadar.png',
+			alt: 'BG3 Arms of Hadar symbol'
+		},
+		body: [
+			`We are going to start off by breaking alphabetical order slightly and look at a save attack spell so that we can discuss how save attack spells are different then save attack cantrips and set the pattern for how we will evaluate them. Remember that save attacks are offensive spells that target a saving throw defense instead of armor class. They have a different kind of math to them, for example, they cannot crit, they are not affected by certain conditional modifiers like high ground or disadvantage from dim light, etc. One of the unique things about save attack spells is that they do damage even when they miss (i.e. I consider an enemy making their saving throw a “miss”). Every save attack spell that is not a cantrip will have a rider that says something like “on a successful save, targets only take half damage.” You can think of this as making up for the fact that they cannot crit. Save attack spells do reliable damage compared to higher potential but more volatile standard attacks`,
+			`To calculate their “damage per target” we multiple the damage on a hit with the probability to hit, then do the same with damage on a miss with probability to miss then add the two together. This will tell us how much damage the spell will do on average per target, but because most save attack spells are AoE they have the possibility of hitting multiple targets you will need to multiply that by the average number of targets per cast to get a complete “damage per cast” number. It is, tragically, impossible for me to get a precise number for the average number of targets per cast, so when reviewing save attack spells I will just give you their damage per target average (DPTr) and my subjective opinion on how easy it is to hit a high number of targets with the spell.`,
+			`So, this means we will have 3 criteria on which to judge the potency of a save attack spell:`,
+			[
+				`Their damage per target average (DPTr). <strong>In this article I calculate DPTr assuming there is a 60% chance to hit, which is as if you are attacking a target with a +2 to save with a 14 DC.</strong> Its somewhat arbitrary, but I just needed a number to express the relative strengths of the spells.`,
+				`The value of their particular targeting method, ex. all creatures in 4.5m cone, all enemies in 3m circle from caster, a ranged 6m blast, etc. Here we will need to make some subjective value judgements.`,
+				`The value of any extra effects to the spell. Here again we’ll need to make some value judgments.`
+			],
+			`Okay, now that we have said all of that, let’s return to Arms of Hadar.`,
+			`When you cast Arms of Hadar all creatures in a 3m radius from the caster must make a strength save or take 2d6 necrotic damage and lose their reaction until the start of their next turn. On a failed save, targets take half damage. Arms of Hadar will average 5.6 DPTr, which is low. It also have a very inconvenient targeting method, a low 3m radius centered on the caster that can hit allies, meaning you have to put yourself in an exposed position to maximize the damage of the spell. The only real reason you would want to cast this spell is if you are already surrounded and you want to try to escape without taking attacks of opportunity. However, targets only lose their reaction if the spell hits, so it is not a guaranteed escape, and there is another spell, Misty Step, which is a guarantee and is more useful in general. Its always better to cast Misty Step or Expeditious Retreat, which is why I have given Arms of Hadar a RP-tier ranking. I want to note though, the RP value of this spell is amazing. Tendrils of dark energy attack my enemies? That is so badass! `
+		]
+	};
+
+	let animalFriendship: spell = {
+		level: 1,
+		class: ['bard', 'druid', 'ranger'],
+		title: 'Animal Friendship',
+		tier: 'RP',
+		image: {
+			url: '/images/spell/animal-friendship.png',
+			alt: 'BG3 Animal Friendship symbol'
+		},
+		body: [
+			`Animal Friendship is a single target save spell that targets wisdom. It can only be cast on a beast that has an intelligence of 4 or lower. If the target fails their save they are charmed. Charmed is already an underwhelming condition, and this spell is a charm that only works for an extremely niche creature group. There are better things to cast from a power perspective, but it may help you navigate some quests/areas without harming any animals, so 10/10 for RP utility.`
+		]
+	};
+
+	let armorOfAgathys: spell = {
+		level: 1,
+		class: ['warlock'],
+		title: 'Armor of Agathys',
+		tier: 'S',
+		image: {
+			url: '/images/spell/armor-of-agathys.png',
+			alt: 'BG3 Armor of Agathys symbol'
+		},
+		body: [
+			`This is a phenomenal spell that is easy to overlook. When you cast Armor of Agathys you become encased in a spectral frost. This gives the caster 5 temporary hit points. Furthermore, for as long as the temporary hit points remain, melee attacks that hit you return 5 cold damage to the attacker in retaliation. The temporary hit points remain until you finish a long rest, or until they are depleted from damage.`,
+			`It may seem a little confusing, but basically it works like this: you do 5 retaliation damage to attackers until you have taken 5 damage yourself. After that, the spell is done. So casting this at level 1 will likely be worth about 10 damage: 5 damage saved and 5 damage dealt. 10 damage is ok at best. Its close to the same value as Magic Missile, but you cannot choose the target, and its technically not a guarantee. Why is it S-tier then?`,
+			`It’s S-tier because of how insanely it scales when it is upcast. For every spell slot above 1st level that you cast this spell it increases both the temp hit point value and retaliation damage by 5. So, as a 2nd level spell its now giving 10 hit points and retaliates 10 damage. When it was 5 temporary hit points it was very unlikely to absorb more then one hit. But now with 10 hit points there is definitely a possibility that it will absorb two, which means two procs of retaliation… that’s a 30-damage swing from a single spell. Its starting to look much better now. Imagine how its going to look on full release when we can cast it as a 3rd or even 5th level spell.`,
+			`There are some more subtle aspects to this spell that are easy to miss. One is its low opportunity cost. It costs an action to cast, but it lasts until your long rest, which means you should always cast this before an encounter, effectively making it cost no action at all. And at the low cost of nothing it is unlocking an otherwise locked resource of the action economy: free retaliation. See, all other forms of damage that you can deal in BG3 actually cost some part of the action economy: full actions, bonus actions, reactions, concentration, etc. Armor of Agathys costs nothing except a spell slot. There is nothing else like this in the game.`,
+			`Because it does damage to enemies completely for free, you can actually afford to spend actions to get more value out of it. There are three primary ways to do this. The first and best is the cantrip Blade Ward, which we discussed above. The resistances from Blade Ward reduce incoming damage, meaning more durability and more retaliation procs. The second is Ray of Enfeeblement which we will review below. It also reduces incoming damage and stacks with Blade Ward. The final way is Create/Destroy Water, which we will also discuss below. It debuffs enemies to take more damage from your retaliation damage.`
+		]
+	};
+
+	let bane: spell = {
+		level: 1,
+		class: ['cleric', 'warlock'],
+		title: 'Bane',
+		tier: 'A',
+		image: {
+			url: '/images/spell/bane.png',
+			alt: 'BG3 Bane symbol'
+		},
+		body: [
+			`Bane is an AoE debuff that targets three enemies in a large area. Those enemies must make a Charisma saving throw. If they fail they subtract 1d4 (2.5 average) from all attack roles and saving throws. This is an extremely potent debuff, especially the penalty to saving throws. A penalty to an enemies saving throw is effectively a buff to your save spell’s accuracy. As we will see, there are a handful of saving throw spells which are so debilitating that might as well be a guaranteed kill, so being more accurate with them is powerful. The only reason this spell is not S tier is that it competes for a concentration slot against better spells, making its opportunity cost to cast very high. Speaking of better spells…`
+		]
+	};
+
+	let bless: spell = {
+		level: 1,
+		class: ['cleric'],
+		title: 'Bless',
+		tier: 'S',
+		image: {
+			url: '/images/spell/bless.png',
+			alt: 'BG3 Bless symbol'
+		},
+		body: [
+			`Bless if the buff counterpart to Bane. It does the same thing, but reverse, and to members of your own party. It is probably slightly worse as a buff then as a debuff (it is harder and more important to hit save spells then weapon attacks, and Bane improves the accuracy of save spells), however, since this is cast on allies there is no chance to miss! If there is one thing I like in BG3, its not missing.`,
+			`Its easy to overlook how good this buff is though. A +2 bonus so saving throws is like having proficiency in every saving throw. It helps you maintain concentration so that you get more efficiency from your concentration spells.  A +2.5 to accuracy adds 4.4 DPR to Lae’zel on the current optimum build, and that is just one companion. This spell is insane, cast it every encounter.`
+		]
+	};
+
+	let burningHands: spell = {
+		level: 1,
+		class: ['cleric', 'warlock', 'wizard'],
+		title: 'Burning Hands',
+		tier: 'B',
+		image: {
+			url: '/images/spell/burning-hands.png',
+			alt: 'BG3 Burning Hands symbol'
+		},
+		body: [
+			`You shoot fire from your hands, scorching all creatures in a 5m cone from the caster. All creatures in the cone must make a dexterity saving throw or take 3d6 fire damage. Targets take half damage on a successful save; any flammable or explosive surfaces/objects in the cone are ignited. Burning Hands averages 8.4 DPTr (as a reminder, this is with a 60% chance to hit the target), which is the highest DPTr 1st level spell. However, its targeting method does typically force you into an exposed position. It synergizes well with flammable ground effect spells like Grease, Entangle, and Web. When cast on top of those ground effects they ignite all targets in the area (a 2.5 DPT for two turns). Moreover, those spells impose either the restrained or prone conditions, which give disadvantage to dexterity saving throws. Your DPTr increases to 9.66 against targets with disadvantage.`,
+			`We will discuss this spell more when we get to Entangle, Grease, and Web spells below, but the jist is that even in combination with those spells Burning Hands is just a mediocre striking spell, so I have given it a B-tier ranking.`,
+			`It is worth noting that casting Burning Hands is the only way in the game so far to guarantee a proc of the item Circlet of Fire, a potentially build defining item. That interaction could bump its rating up to an A, but because it is a very niche item interaction that is difficult to capitalize on I am leaving it out of this spells rank. Unlike other item-spell combos, it just won’t affect the majority of runs.`
+		]
+	};
+
+	let charmPerson: spell = {
+		level: 1,
+		class: ['cleric', 'warlock', 'wizard', 'druid'],
+		title: 'Charm Person',
+		tier: 'RP',
+		image: {
+			url: '/images/spell/charm-person.png',
+			alt: 'BG3 Charm Person symbol'
+		},
+		body: [
+			`Charm Person is a control spell that imposes the charmed condition on a target that fails a wisdom save for 10 turns or until you lose concentration. As we discussed in the introduction to this article, charmed is an underwhelming condition. This spell is completely outperformed by a competing spell – Tasha’s Hideous Laughter – so it gets an RP-tier ranking.`
+		]
+	};
+
+	let chromaticOrb: spell = {
+		level: 1,
+		class: ['sorcerer', 'wizard'],
+		title: 'Chromatic Orb',
+		tier: 'A',
+		image: {
+			url: '/images/spell/chromatic-orb.png',
+			alt: 'BG3 Chromatic Orb symbol'
+		},
+		body: [
+			`When you cast Chromatic Orb you hurl a elemental sphere at a single target. You choose the element of that sphere from one of several options. It is a ranged attack spell. Each option does 2d8 (9 average) damage of its elemental type with an added effect. The elemental types are:`,
+			[
+				`Fire: 2d8 fire damage and ignites the target and the ground they are standing on. Ignited targets take 1d4 initial damage and another 1d4 on their subsequent turn.`,
+				`Acid: 2d8 acid damage and a puddle of acid forms in the area around the target. The target, and anyone who moves through the puddle, receive a -2 penalty to their AC.`,
+				`Cold: 2d8 cold damage and the ground freezes around the target. They must make a dexterity saving throw or fall prone. Any creature that walks on the ice must also make a dexterity saving throw or fall prone.`,
+				`Lightning: 2d8 lightning damage and the target is electrocuted. The area around the target is electrically charged, electrocuting creatures who move through it. Electrocuted is identical to the ignited condition (see fire above) only it does lightning damage instead of fire.`,
+				`Thunder: 3d8 (13.5 average) damage.`,
+				`Poison: 2d8 damage and a small cloud of bursts around the point of impact. Any creature in the area must make a constitution saving throw or be poisoned for two rounds.While poisoned the creature has disadvantage on attack roles and ability checks.`
+			],
+			`Its easy to overlook how good this buff is though. A +2 bonus so saving throws is like having proficiency in every saving throw. It helps you maintain concentration so that you get more efficiency from your concentration spells.  A +2.5 to accuracy adds 4.4 DPR to Lae’zel on the current optimum build, and that is just one companion. This spell is insane, cast it every encounter.`,
+			`The damage on this spell is a bit low, but that’s not that bad since the you will likely be casting it to exploit enemy vulnerabilities or for the extra effects. Except for poison and cold, which require saving throws, all the extra effects proc even when the spell misses. If you aren’t exploiting vulnerabilities, the best extra effect is acid. A guaranteed -2 to a targets AC is a significant accuracy boost for the rest of the party. Frost and Lightning need a special mention due to their synergy with another spell: Create/Destroy Water. We will discuss that synergy below once we review Create/Destroy Water.`,
+			`*Note to Larian if you are reading this. The DC on the saving throws for this spell are bugged right now. On my 18 intelligence Gale, whose DC is 14 on all other spells, has a DC 12 for Chromatic Orb for some reason. I tested it on an custom wizard with 8 intelligence and it was still DC12 (it should be 9).*`
+		]
+	};
+
+	let colorSpray: spell = {
+		level: 1,
+		class: ['wizard'],
+		title: 'Color Spray',
+		tier: 'C',
+		image: {
+			url: '/images/spell/color-spray.png',
+			alt: 'BG3 Color Spray symbol'
+		},
+		body: [
+			`This is one of two control spells that break the typical pattern for spells in that they attack neither saving throws nor AC. Instead, they effect a number of targets equal to a certain hit point threshold. The other spell that is like it is Sleep. I discuss the mechanic in more detail there.`,
+			`Color Spray imposes the blind condition to the targets it hits. Blind is a valuable debuff but not nearly as strong as the incapacitated condition offered by Sleep. Its almost always better to cast Sleep instead of this Color Spray. The only reason this spell is not RP-tier is that a fairly common racial trait – Elven Ancestry – gives immunity to sleep, but not blind, so against those targets Color Spray is a useful spell that reliable imposes a strong debuff. I still rarely have this in my spell book.`
+		]
+	};
+
+	let command: spell = {
+		level: 1,
+		class: ['cleric', 'warlock'],
+		title: 'Command',
+		tier: 'B',
+		image: {
+			url: '/images/spell/command.png',
+			alt: 'BG3 Command symbol'
+		},
+		body: [
+			`This is a single target control spell. When cast the target must makes a wisdom save and if they fail they lose their next turn. They cannot move or take any actions. It is only one turn however. Command does not require concentration.`,
+			`The trouble with this spell is, on its own, you are trading your most of your turn for all of theirs’s. Its unlikely that a player character will have a less impactful turns then whoever they are halting. This can be good if you are halting someone in a vulnerable area, like in a Cloud of Daggers for example.`
+		]
+	};
+
+	let createDestroyWater: spell = {
+		level: 1,
+		class: ['druid'],
+		title: 'Create/Destroy Water',
+		tier: 'S',
+		image: {
+			url: '/images/spell/create-destroy-water.png',
+			alt: 'BG3 Create/Destroy Water symbol'
+		},
+		body: [
+			`This spell rocketed from RP-tier to S-tier with the introduction of Chromatic Orb on patch 6. I have already mentioned it several times when discussing cantrips like Ray of Frost and Shocking Grasp, so let’s get right to it. Create/Destroy water has two unique parts: creating water and destroying water, we will discuss each in turn`,
+			`Creating Water drenches a 4.5m radius in water that magically manifests out of the air. A puddle is created on the ground in that radius and any creatures in it when the spell is cast gains the wet condition for two rounds. There is no saving throw to avoid getting wet (that’s a sentence that felt weird to type…) A wet creature is immune to the ignited condition and resistant to fire damage but is also vulnerable to cold and lightning damage. There are so many uses for this spell it is daunting to have to describe them. You can cast this defensively on your own party if you are expecting incoming fire damage; resistance to fire halves that damage. The puddle it creates on the ground can be frozen or electrically charged. If you freeze it, all enemies in the area and who subsequently move through it must make a dex saving throw or fall prone. If you electrically charge it shocks everyone in the area, dealing 1d4 lightning damage, and 1d4 more at the start of their next turn. The most important use is as a debuff on enemies to set up for lightning and cold orbs.`,
+			`Let’s take a second to analyze vulnerability as a mechanic. You can think of vulnerability as a slightly better version of a critical hit. A target that is vulnerable to a damage type takes double the damage of that type. Unlike critical hits, it is really, truly, double damage. Mathematically you calculate damage as normal and then when you have added everything up, you multiply it by two. Another advantage is has over critical hits is that it stacks with critical hits. With vulnerability you can super-crit, so to speak, where you double your damage (kinda) from critting then double the double with vulnerability. `,
+			`So, what does this mean for Create Water? It means you have a method of forcing a condition which will, effectively, turn all of your hits with cold and lightening attacks into critical hits but better. So cast Create Water, get those baddies all moist, then hit one with a Lightening Chromatic Orb, what happens? Well to start, if you hit, your target takes 4d8 damage (18 average) with a chance that it can crit (which will add around 2 damage to the average). They also get electrocuted for 2d4 (5 average) damage which will trigger again on their next turn if they are still alive. Remember that the electrocution effect from Chromatic Orb procs even when the spell misses! Altogether you will average 30ish damage on a hit and 10 damage on a miss. But there is more! The electricity will spread through the whole 4.5m radius puddle, electrocuting every creature in it, even if the chromatic orb misses, procing a guaranteed 10 damage on average. For comparison, Burning Hands averages 10.5 damage ON A HIT. You need a 90% accuracy before you get comparable DPTr out of the highest 1st level DPTr spell. You get so much guaranteed value from this spell. It turns a fairly average single target damage spell into a nuke with an AoE electricity death trap on the side. The gravity of this synergy has completely warps the value of other spells. Cantrips like Ray of Frost and Shocking Grasp are bumped up a tier just because their damage types add to this combo.`,
+			`Destroy Water evaporates water and liquids in an area. You can use it to dispel a Fog Cloud, for example. To be honest, I’ve never actually been in a situation where this Destroy Water was useful, but Create Water is useful enough for the both of them.   `
+		]
+	};
+
+	let cureWounds: spell = {
+		level: 1,
+		class: ['bard', 'cleric', 'druid', 'paladin', 'ranger', 'celestial'],
+		title: 'Cure Wounds',
+		tier: 'RP',
+		image: {
+			url: '/images/spell/cure-wounds.png',
+			alt: 'BG3 Cure Wounds symbol'
+		},
+		body: [
+			`Cure Wounds heals a single target adjacent to the caster for 1d8 + your spellcasting modifier at the cost of an action. This is how we used to heal our allies back in BG1 when resting for 8 hours would heal your 1 HP… But we are playing BG3 now and we heal allies with Healing Word. Just cast Healing Word instead. If you aren’t sure why, scroll down and read my entry on it below.`
+		]
+	};
+
+	let disguiseSelf: spell = {
+		level: 1,
+		class: ['cleric', 'wizard'],
+		title: 'Disguise Self',
+		tier: 'RP',
+		image: {
+			url: '/images/spell/disguise-self.png',
+			alt: 'BG3 Disguise Self symbol'
+		},
+		body: [
+			`This spell modifies the appearance of the caster into a humanoid of another kind. It has no direct combat utility. As far as I know it also has no indirect combat utility, but I haven’t messed around with it that much. This spell is designed for role-play, not for optimization, so it belongs in RP-tier.`
+		]
+	};
+
+	let dissonantWhispers: spell = {
+		level: 1,
+		class: ['bard', 'warlock'],
+		title: 'Dissonant Whispers',
+		tier: 'S',
+		image: {
+			url: '/images/spell/dissonant-whispers.png',
+			alt: 'BG3 Dissonant Whispers symbol'
+		},
+		body: [
+			`This is a single target control spell that attacks wisdom. If the target fails a wisdom saving throw they take 3d6 psychic damage and become frightened. If they succeed, they take half as much damage and are not frightened. The damage on this spell is the same as Burning Hands, but on a single target, so not bad. Frightened is a very strong condition, especially if you land it on a target that will proc an opportunity attack when they flee. This spell does damage, steals an enemy turn, and procs an opportunity attack. That is extremely efficient. `
+		]
+	};
+
+	let ensnaringStrike: spell = {
+		level: 1,
+		class: ['ranger'],
+		title: 'Ensnaring Strike',
+		tier: 'B',
+		image: {
+			url: '/images/spell/ensnaring-strike.png',
+			alt: 'BG3 Ensnaring Strike symbol'
+		},
+		body: [
+			`Ensnaring strike is cast on a weapon attack. If that attack hits, besides dealing normal attack damage, the target must make a strength saving throw or be restrained. While restrained the creature takes 1d6 (3.5 average) piercing damage on each of its turns. The creature or an ally may use an action to try to tear away the restraints, making another strength saving throw. If they succeed the condition ends.`,
+			`Ensnaring Strike is an interesting spell mechanically. Since it is attached to a weapon attack, you can think of it as a spell that costs no action, meaning it has a very low opportunity cost. That said, you kind of get what you pay for with this spell. It is meant to lock down a target and make them vulnerable to attacks and dexterity attacking spells. It also adds a little bit of damage and keeps a target from moving. It’s a consistently average spell, so B Tier.`
+		]
+	};
+
+	let entangle: spell = {
+		level: 1,
+		class: ['druid'],
+		title: 'Entangle',
+		tier: 'B',
+		image: {
+			url: '/images/spell/entangle.png',
+			alt: 'BG3 Entangle symbol'
+		},
+		body: [
+			`Entange covers a large are ground with a vines. The area is now difficult terrain. Creatures that are in it when it is cast or that subsequently move through it have to make a strength saving throw or be restrained. On their turn an entangled target or one of their allies may expend an action to reroll the saving throw to free themselves from the condition. If something ignites the vines all creatures in it are ignited, immediately taking 1d4 fire damage and 1d4 more on the start of their next turn. Once it is ignited, it no longer restrains or is difficult terrain, however, it does burn for a round and any creature that moves through it in that round is ignited. Entangle uses concentration.`,
+			`Restrained targets cannot move and all attacks against them have advantage. This means you can entangle a group of enemies then shoot at them with arrows. Your attacks will have advantage and they won’t be able to close the distance against you, because they are restrained. They can still shoot back at you of course if they have ranged weapons, and most enemies do. Entangle is a good spell, but it requires concentration, and gets out competed by often stronger options of the same level, like, say, Faerie Fire. I compare the two spells when I review Faerie Fire below.`
+		]
+	};
+
+	let expeditiousRetreat: spell = {
+		level: 1,
+		class: ['sorcerer', 'warlock', 'wizard'],
+		title: 'Expeditious Retreat',
+		tier: 'C',
+		image: {
+			url: '/images/spell/expeditious-retreat.png',
+			alt: 'BG3 Expeditious Retreat symbol'
+		},
+		body: [
+			`This is a self only buff that can be cast as a bonus action. When it is cast, it functions as if you took the dash action and on subsequent turns, while this spell is active, you may dash as a bonus action. The spell remains active until your next long rest or until you lose concentration.`,
+			`To rank this spell we need to ask what it should be used for? My first instinct for this spell is that it is a mobility buff that competes with Longstrider and Jump, and, indeed, it can be used this way. However, when used this way it is objectively worse than its competitors. Another use for this spell is as an escape/reposition tool, competing with spells like Arms of Hadar and Misty Step. Because it can be cast as a bonus action and doesn’t depend on a saving throw to work it is better then Arms of Hadar. It is still always worse than Misty Step, but it doesn’t require a 2nd level spell slot to cast, so there is a niche situation where you need to escape and do not have 2nd level spell slots where this spell is useful. It’s a generic brand Misty Step.`,
+			{
+				url: '/images/guides/expeditious-retreat-joke.png',
+				alt: 'Joke image'
+			}
+		]
+	};
+
+	let falseLife: spell = {
+		level: 1,
+		class: ['sorcerer', 'wizard'],
+		title: 'False Life',
+		tier: 'B',
+		image: {
+			url: '/images/spell/false-life.png',
+			alt: 'BG3 False Life symbol'
+		},
+		body: [
+			`False life is a self buff spell that gives the caster 7 temporary hit points. It does not require concentration and lasts until your next long rest, or until you’ve taken 7 or more damage. When you cast this spell with a 2nd level spell slot it gives you 12 temp hit points (it should increase by 5 for each spell slot level once we have more levels). It is single use hit point booster, not useless but not game changing. Its practically always better to use Armor of Agathys, which we discussed above. However, not all characters who can cast False Life have access to Armor of Agathys, so for them it is a B-tier spell.`
+		]
+	};
+
+	let faerieFire: spell = {
+		level: 1,
+		class: ['druid', 'cleric', 'drow'],
+		title: 'Faerie Fire',
+		tier: 'A',
+		image: {
+			url: '/images/spell/faerie-fire.png',
+			alt: 'BG3 Faerie Fire symbol'
+		},
+		body: [
+			`When you cast Faerie Fire, enemies in a large area begin to glow, revealing any invisible creatures and providing advantage to your attacks against them for the duration of the spell. Enemies are lit up if they fail a dexterity saving throw and remain that way until the spell expires (10 rounds) or concentration is broken.`,
+			`This is a very potent spell. Getting advantage on attacks is a substantial boost to accuracy, and accuracy is very important in BG3. To see what really makes this spell good it is useful to compare it to a competing spell: Entangle. Entangle also applies a debuff that gives advantage to attacks in a large area, but it also does much more, so why have I given Faerie Fire a higher ranking? The biggest reason is that Faerie Fire only has one save. If enemies fail their initial saving throw, they do not get another chance. With Entangle, enemies can get a chance to free themselves every turn. This makes Faerie Fire is a much more reliable way to get advantage.`
+		]
+	};
+
+	let featherFall: spell = {
+		level: 1,
+		class: ['bard', 'sorcerer', 'wizard'],
+		title: 'Feather Fall',
+		tier: 'C',
+		image: {
+			url: '/images/spell/feather-fall.png',
+			alt: 'BG3 Feather Fall symbol'
+		},
+		body: [
+			`Feather Fall is an AoE team buff that makes everyone effected immune to fall damage. It lasts 10 rounds, does not require concentration, and can be cast on a bonus action. In tabletop 5e this spell can be cast as a reaction, which is better, since you can use while someone is falling instead of when you are worried, they might fall. There are some fights where fall damage is a factor, but good planning and positioning will mitigate that almost as well as this spell. Most of the time when you have the high ground you don’t want to leave it, so Feather Fall isn’t very useful for mobility. There are a few out of combat puzzles that are simpler if you have Feather Fall, but not impossible without it. It’s a C-tier spell for now, but could easily change once we have more content that may call for it.`
+		]
+	};
+
+	let findFamiliar: spell = {
+		level: 1,
+		class: ['wizard', 'ranger', 'eldritch knight', 'warlock'],
+		title: 'Find Familiar',
+		tier: 'B',
+		image: {
+			url: '/images/spell/find-familiar.png',
+			alt: 'BG3 Find Familiar symbol'
+		},
+		body: [
+			`This spell conjures an extra-planar being which can manifest in the material plane in the shape of one several kinds small, cute animal. Each kind of animal that you summon is mechanically different, so we will discuss each:`,
+			[
+				`Spider: of the familiars, spider’s have the most hit-points (6) and do the most damage on their attacks (tied with crab). Their attack does 1 piercing damage + 1d4 poison. It also injects a venom which does 1d4 damage to the target on their turn for two turns. Spiders get a very long jump range, so that in theory they can jump to safety after attacking. I say “in theory” because they will still proc an attack of opportunity from whoever they just attacked, and it will probably kill them.`,
+				`Raven: a raven attack blinds enemies on hit. They can also fly very far as a bonus action. For some reason blinded targets do not proc their attacks of opportunity, so if the raven hits their attack they can actually fly away to safety!`,
+				`Rat: the rat infects their target with disease when their attack hits. It is a unique condition that subtracts 1 constitution from the target and imposes disadvantage on constitution saves. Enemies do lose hit points if their constitution modified drops from this condition, so, when attacking enemies with even number con scores, the rat’s attack does 1 times their level damage. Of course, that is low damage, so the more important effect is the penalty to their con saves. The whole point of the rat is to set up for a save attack spell that targets constitution.`,
+				`Frog: The frog’s attacks impose disadvantage to dexterity saves if they hit. They also have a long jump, like the spider, but they will be risking opportunity attacks. Best for setting up a dex save attack spell.`,
+				`Crab: their attacks do a bonus 1d4 piercing damage and inflict a unique condition: pinched. Pinched slows the target’s movement by 3m and deal 1d4 pierce damage at the start of their turns.`,
+				`Cat: the cat can meow, which distracts NPCs, similar to the Minor Illusion cantrip above.`
+			],
+			`Practically speaking familiars should only be getting one attack, maybe two, before they die. They will likely miss that attack, although if they hit it will do something useful depending on your familiar. Most of the value from familiars comes from the fact that they will probably absorb an enemy action. The best familiar is the Raven, because there is a higher chance of getting more attacks out of her. `
+		]
+	};
+
+	let fogCloud: spell = {
+		level: 1,
+		class: ['wizard', 'ranger', 'sorcerer', 'druid'],
+		title: 'Fog Cloud',
+		tier: 'S',
+		image: {
+			url: '/images/spell/fog-cloud.png',
+			alt: 'BG3 Fog Cloud symbol'
+		},
+		body: [
+			`Fog Cloud is a AoE, terrain altering spell. It summons a 6m radius cloud of fog in an area that you choose within range. Any creature in that fog is blinded, but the blind goes away if they leave the fog. Creatures outside of the fog cannot see into it and thus cannot target anyone within the cloud.`,
+			`Fog Cloud gets the S-tier for being consistently amazing once you understand how to use it. You should almost never cast fog cloud offensively, i.e. as a debuff against enemies, they can just walk out. What makes this spell so good is when you cast it on your own party. When used in this way, Fog Cloud is like a fortification spell; you choose a spot and don’t leave it. Because enemies can’t target you in the cloud, they will be forced to move towards you. At least, that is how it should work. How it actually works right now is the AI just doesn’t know you are there, and they stand around wasting their turn... You could just pop out, shoot at them, then run back into the cloud and hide if you wanted, but I consider that cheap and unfun. Nevertheless, even if you are like me and don’t want to exploit the AI by hiding, Fog Cloud is still an invaluable tool for controlling enemy aggro, covering against incoming fire on a charge, splitting off enemies from each other, or for sneaking into an optimal position to start the fight. There are several fights where most of the challenge is caused by enemies being spread out, for example, the harpies, or the tea house masks. While you run around trying to kill one, the others are hitting you at range with debilitating damage or CC. With Fog Cloud you mitigate most of those advantages. Seriously, try casting fog cloud in the center of the room against the tea house masks; it makes a difficult, chaotic fight predictable and easy.`
+		]
+	};
+
+	let grease: spell = {
+		level: 1,
+		class: ['wizard'],
+		title: 'Grease',
+		tier: 'B',
+		image: {
+			url: '/images/spell/grease.png',
+			alt: 'BG3 Grease symbol'
+		},
+		body: [
+			`Grease slicks a large are ground with a flammable oil. The area is now difficult terrain. Creatures that are in it when it is cast or that subsequently move through it have to make a dexterity saving throw or fall prone. If something ignites the grease, all creatures in it are ignited, immediately taking 1d4 fire damage and 1d4 more on the start of their next turn. Once it is ignited, it is no longer slippery, difficult terrain, however, it does burn for a round, and any creature that moves through it in that round is ignited. Grease does not use concentration.`,
+			`Grease is just an alright spell. It can knock enemies prone, but you can’t reliably capitalize on the condition by gaining advantage on your attacks against them, because in order to be in melee range of them you have to risk falling prone yourself. In most fights it is strictly a kiting tool, meant to slow enemies who are trying to close to melee range against you so that you have more turns to pelt them with arrows. Igniting the grease does a guaranteed 2d4 damage (5 damage on average) and has a chance to proc again for another 2d4 if they can’t jump out. The guarantee is nice, but the damage is low for a two-spell combo. That said, sometimes you can combine grease with fire that’s already in the terrain, which removes half of the investment from the combo. Sometimes that 1d4 damage can break an enemy’s concentration. Sometimes you can use this to trigger explosive barrels. Milage for this spell varies depending on the terrain.`,
+			`Now, some readers are probably thinking “isn’t this just an objectively worse version of Create/Destroy Water? Shouldn’t it be RP-tier, since there is always a better spell that does the same thing?” The short answer is no, you must consider Grease on it own merits. The long answer is that because the wet condition grants resistance to fire damage, party compositions which depend on fire damage for a significant part of their damage load cannot depend on Create Water the same way other compositions can. There are some S-tier fire damage spells that are worth building around that we will discuss below. Parties that are depending on those spells have reason to consider Grease over Create Water.`
+		]
+	};
+
+	let guidingBolt: spell = {
+		level: 1,
+		class: ['cleric'],
+		title: 'Guiding Bolt',
+		tier: 'A',
+		image: {
+			url: '/images/spell/guiding-bolt.png',
+			alt: 'BG3 Guiding Bolt symbol'
+		},
+		body: [
+			`Guiding Bolt is a ranged attack spell that deals 4d6 radiant damage to a single target on a hit. If hit, the next ally attack against that target will have advantage. The damage on this spell is awesome, 14 average on a hit, and twice that on a crit. Also giving advantage on an ally attack is just gravy. Nothing clever about this, just cast it and do lots of damage.`
+		]
+	};
+
+	let hailOfThorns: spell = {
+		level: 1,
+		class: ['ranger'],
+		title: 'Hail of Thorns',
+		tier: 'C',
+		image: {
+			url: '/images/spell/hail-of-thorns.png',
+			alt: 'BG3 Hail of Thorns symbol'
+		},
+		body: [
+			`Grease slicks a large are ground with a flammable oil. The area is now difficult terrain. Creatures that are in it when it is cast or that subsequently move through it have to make a dexterity saving throw or fall prone. If something ignites the grease, all creatures in it are ignited, immediately taking 1d4 fire damage and 1d4 more on the start of their next turn. Once it is ignited, it is no longer slippery, difficult terrain, however, it does burn for a round, and any creature that moves through it in that round is ignited. Grease does not use concentration.`,
+			`Grease is just an alright spell. It can knock enemies prone, but you can’t reliably capitalize on the condition by gaining advantage on your attacks against them, because in order to be in melee range of them you have to risk falling prone yourself. In most fights it is strictly a kiting tool, meant to slow enemies who are trying to close to melee range against you so that you have more turns to pelt them with arrows. Igniting the grease does a guaranteed 2d4 damage (5 damage on average) and has a chance to proc again for another 2d4 if they can’t jump out. The guarantee is nice, but the damage is low for a two-spell combo. That said, sometimes you can combine grease with fire that’s already in the terrain, which removes half of the investment from the combo. Sometimes that 1d4 damage can break an enemy’s concentration. Sometimes you can use this to trigger explosive barrels. Milage for this spell varies depending on the terrain.`,
+			`Now, some readers are probably thinking “isn’t this just an objectively worse version of Create/Destroy Water? Shouldn’t it be RP-tier, since there is always a better spell that does the same thing?” The short answer is no, you must consider Grease on it own merits. The long answer is that because the wet condition grants resistance to fire damage, party compositions which depend on fire damage for a significant part of their damage load cannot depend on Create Water the same way other compositions can. There are some S-tier fire damage spells that are worth building around that we will discuss below. Parties that are depending on those spells have reason to consider Grease over Create Water.`
+		]
+	};
+
+	let healingWord: spell = {
+		level: 1,
+		class: ['cleric', 'druid'],
+		title: 'Healing Word',
+		tier: 'S',
+		image: {
+			url: '/images/spell/healing-word.png',
+			alt: 'BG3 Healing Word symbol'
+		},
+		body: [
+			`This is our first contender for best spell of the game. My review here will be borrowing from what I already wrote about this spell in my Class Tier list. Healing Word is practically a cheat code for most fights. It is like Cure Wounds, but it heals 1d4 + your ability modified at 18m range at the cost of a bonus action. If you are not sure why this is good you should play Darkest Dungeon and you’ll figure it out. Basically, in BG3, same as in Darkest Dungeon, in-combat healing is not designed to be efficient, you should never be able to reliably heal more damage than your enemies are dealing. An efficient use of healing in combat is either when it revives a fallen character, or it gives a character just enough hit points to survive an attack that otherwise would have downed them, effectively giving them another action.`,
+			`Let’s model it in our minds. Imagine a cleric, an enemy owlbear, and an ally fighter taking turns in that initiative order. When it is the owlbear’s turn, he will down the fighter, but a Cure Wounds spell will allow the fighter to survive the attack with 1 HP remaining. This is an efficient cast of Cure Wounds, because at the cost of one action you are giving the fighter one action and forcing the owlbear to expend one action more to kill the fighter; it’s a 1 for 2 trade. As good as that is, Healing Word is even better. Healing word will not heal enough to save the fighter against the owlbear’s onslaught, so the cleric will spend their turn attacking the owlbear. On the owlbear’s turn it will down the fighter. The fighter loses their turn, and we are back to the cleric. The cleric can then cast Healing Word to revive the fighter with a bonus action and spend their action to attack again. Now it’s the owlbear’s turn again, and they are in exactly the same situation as last time: they have to spend their action downing the fighter. Suppose the owlbear averages 20 damage per action, they will have to spend that 20 damage to down the fighter, even though the fighter only has 6 hit points remaining. So, casting Healing Word in this situation is effectively absorbing 20 damage at the cost of a bonus action… That is insane efficiency.`
+		]
+	};
+
+	let hellishRebuke: spell = {
+		level: 1,
+		class: ['warlock'],
+		title: 'Hellish Rebuke',
+		tier: 'A',
+		image: {
+			url: '/images/spell/hellish-rebuke.png',
+			alt: 'BG3 Hellish Rebuke symbol'
+		},
+		body: [
+			`Casting Hellish Rebuke is a free action that enables a reaction option. As a reaction, you can retaliate against enemies who hit you with a constitution save attack which does 2d10 (11 average) fire damage on a hit and half as much on a miss, average 8.8 damage in scenarios with a 60% hit chance. Unlike other retaliation mechanics in BG3 Hellish Rebuke will retaliate against ranged attacks as well as melee. The strength of this spell comes from its low opportunity cost. Weaponizing your reaction is difficult to do. The damage is kind of mediocre sadly.`
+		]
+	};
+
+	let hex: spell = {
+		level: 1,
+		class: ['warlock'],
+		title: 'Hex',
+		tier: 'S',
+		image: {
+			url: '/images/spell/hex.png',
+			alt: 'BG3 Hex symbol'
+		},
+		body: [
+			`Hex is the first of what I call “4e striker spells.” These are spells that add a d6 (necrotic damage in the case of Hex) to your damage on attacks against the marked target. The spells always hit their target, are a bonus action to cast, and can be switched to new targets when the first one dies without taking an extra spell slot. They also take concentration. In fact, its helpful to think of them as weaponizing your concentration slot, adding 3.5 damage per attack on average to your DPR when you hit. It’s a decent use of a concentration slot at early levels and an extremely efficient use of a level one spell slot.`,
+			`Hex earns its S tier in virtue of it being build defining. If you don’t build around it its not that good. Building around it means optimizing the amount of attack roles you make in a round, usually through off-hand weapon attacks and something which gives you extra bonus attacks. Extra bonus attacks can be acquired through the Thief’s Fast Hands feature, the Helmet of Grit, and the Circlet of Fire. Another way to stack attacks on a round is to cast spells which make multiple attack roles. Eldritch Blast will be one of these spells once level cap is increased. A better one that you can cast in the game right now is  the 2nd level spell Scorching Ray, which we will discuss below.`,
+			`Hex also imposes disadvantage on an ability check of your choice. Ability checks are kind of rare in combat. They are basically skill checks. Wisdom is used for perception checks for people spotting you in stealth. Initiative roles are a dexterity skill check, so you could give a target disadvantage on initiative if you start a fight with Hex. The most useful is to Hex strength before you shove somebody.`
+		]
+	};
+
+	let huntersMark: spell = {
+		level: 1,
+		class: ['ranger'],
+		title: "Hunter's Mark",
+		tier: 'S',
+		image: {
+			url: '/images/spell/hunters-mark.png',
+			alt: 'BG3 Hunters Mark symbol'
+		},
+		body: [
+			`Hunter’s Mark is practically identical to Hex, only it does piercing damage instead of necrotic, and it does not impose a disadvantage on skill checks. Those differences make it worse, but not by enough to move it down a tier. It still adds 3.5 damage per hit, so stack up as many attack roles as you can in a turn and you will get a ton of value from this spell.`
+		]
+	};
+
+	let inflictWounds: spell = {
+		level: 1,
+		class: ['cleric'],
+		title: 'Inflict Wounds',
+		tier: 'A',
+		image: {
+			url: '/images/spell/inflict-wounds.png',
+			alt: 'BG3 Inflict Wounds symbol'
+		},
+		body: [
+			`Inflict Wounds is a melee attack spell that deals 3d10 necrotic damage to its target. That is 16.5 average on a hit and double that on a crit. I crit with this spell probably 98% of the time I cast it, because I almost always cast it to execute incapacitated or paralyzed targets. Its not the highest crit damage possible in the game, but its close, and it’s the highest that doesn’t take several spells to prep. I always have this spell prepared on every caster who can learn it.`
+		]
+	};
+
+	let jump: spell = {
+		level: 1,
+		class: ['druid', 'ranger', 'sorcerer', 'wizard'],
+		title: 'Jump',
+		tier: 'A',
+		image: {
+			url: '/images/spell/jump.png',
+			alt: 'BG3 Jump symbol'
+		},
+		body: [
+			`Jump is a touch range self or ally buff spell. It triples the target’s jumping distance for 10 rounds and does not require concentration. It is particularly potent on characters who have a high strength since it triples their strength bonus to jump distance as well. A strength-based striker with jump is virtually unstoppable; do not even try to run… she will outrun you. It can also be a valuable tool for sneaking into a good position, because you can jump over entire cones of vision. With Larian’s vertical encounter design, being able to move up high is particularly important, and Jump gets you higher than anything else of its spell level. Its only draw back is that it takes a bonus action to jump, and bonus actions are hot commodities in the current state of the game.`
+		]
+	};
+
+	let longstrider: spell = {
+		level: 1,
+		class: ['bard', 'druid', 'ranger', 'wizard'],
+		title: 'Longstrider',
+		tier: 'A',
+		image: {
+			url: '/images/spell/longstrider.png',
+			alt: 'BG3 Longstrider symbol'
+		},
+		body: [
+			`Longstrider is another self or team mobility buff. It increases a single target’s movement by 3m until their next long rest. It does not require concentration. You can think of movement in BG3 and games like it as a kind of currency which you use to buy defensive or offensive buffs. Consider this situation: Lae’zel with Great Weapon Master kills the target next to her at the beginning of her turn procing the bonus action attack. The nearest target is 8m away, and her movement is 7m. That extra attack is an offensive buff she could have but doesn’t have enough movement moneys. If she had Longstrider she could afford it, and so her DPR would be boosted. Imagine Gale now, he casts a spell, and then spends his movement to position around the corner so that he is out of sight and does not draw aggro. He just bought himself a valuable durability buff that can only be purchased with movement. It can be hard for me to see what more mobility is really getting me, so thinking of it as a resource that I can use to buy more DPR or durability is useful to me. Maybe its useful to you too.`
+		]
+	};
+
+	let mageArmor: spell = {
+		level: 1,
+		class: ['sorcerer', 'arcane trickter', 'eldritch knight', 'wizard'],
+		title: 'Mage Armor',
+		tier: 'B',
+		image: {
+			url: '/images/spell/mage-armor.png',
+			alt: 'BG3 Mage Armor symbol'
+		},
+		body: [
+			`Mage Armor is a single target self or ally buff that you can only cast on a target that is not wearing armor. Once it is cast, that targets AC is now 13 + their dex modifier (a +3 bonus) until their next long rest or until they put on armor. Mage Armor does not require concentration. It is basically a way for wizards and sorcerers to wear armor without an armor proficiency, which is nice. The AC is respectable but not high, it’s a mediocre buff, but its always on and has a low opportunity cost.`
+		]
+	};
+
+	let magicMissile: spell = {
+		level: 1,
+		class: ['sorcerer', 'eldritch knight', 'arcane trickster', 'wizard'],
+		title: 'Magic Missile',
+		tier: 'A',
+		image: {
+			url: '/images/spell/magic-missile.png',
+			alt: 'BG3 Magic Missile symbol'
+		},
+		body: [
+			`Magic Missile shoots three bolts of magical energy. Each bolt does 1d4 + 1 (3.5 average) force damage to its target. There is no attack role and no saving throw, it just does damage. The are directed individually, so you can have them all hit one target, or all hit different targets, or any combination in between. 10.5 average damage on a single cast of a spell is not bad but not great. The real value of this spell is that it always hits, and force damage is never resisted (not yet anyways), so you can rely on this spell to do damage against hard to hit enemies. Really, that is all its useful for: hurting enemies with high AC. The higher their AC the more efficient the damage.`,
+			`This is one of those rare spells where we need to talk about its synergy with an item. There is an easy to acquire necklace in the game which adds an extra 1d4 psychic damage (another seldom resisted damage type) to each bolt, bumping the average damage to 6 per bolt, or 18 damage total, 24 if you upcast it. Magic Missile becomes an S-tier spell for whoever gets that item.`
+		]
+	};
+
+	let protection: spell = {
+		level: 1,
+		class: ['sorcerer', 'eldritch knight', 'arcane trickster', 'wizard'],
+		title: 'Protection from Evil/Good',
+		tier: 'B',
+		image: {
+			url: '/images/spell/protection-from-good-and-evil.png',
+			alt: 'BG3 Protection from Evil and Good symbol'
+		},
+		body: [
+			`This is a single target self or ally defensive buff that requires concentration. Any aberration, fey, celestial, elemental, fiend, or undead now has disadvantage on all attacks against you. You also cannot be frightened or charmed by any creature of those categories. It’s a potent defensive buff, but it only works on one person and not in every encounter. If you are fighting one these kinds of creature it is worth casting on your striker. You can see a creatures category by right-clicking it and selecting “examine.”`
+		]
+	};
+
+	let rayOfSickness: spell = {
+		level: 1,
+		class: ['sorcerer', 'wizard'],
+		title: 'Ray of Sickness',
+		tier: 'RP/B',
+		image: {
+			url: '/images/spell/ray-of-sickness.png',
+			alt: 'BG3 Ray of Sickness symbol'
+		},
+		body: [
+			`Ray of Sickness is a ranged attack spell that does 2d8 (9 average) damage on a hit. If the spell hits, the target must also make a constitution save or become poisoned for two turns. The damage is low. Poisoned is a decent condition, but you need two hit twice (hit the attack and then the target needs to fail their saving throw) to apply it, so it is not reliable. What really makes this RP tier is that Ray of Sickness is just a slightly worse version of Chromatic Orb poison. Just take Chromatic Orb instead.`,
+			`If you get this spell from a scroll or from a magic item, and thus cannot exchange it for Chromatic Orb, I would give it a B-tier.`
+		]
+	};
+
+	let shieldOfFaith: spell = {
+		level: 1,
+		class: ['cleric'],
+		title: 'Shielf of Faith',
+		tier: 'A',
+		image: {
+			url: '/images/spell/shield-of-faith.png',
+			alt: 'BG3 Shield of Faith symbol'
+		},
+		body: [
+			`Shield of Faith is a self only buff that requires concentration. While it is active it adds 2 to your armor class. A bonus 2 AC is great in a system like 5e, where armor and accuracy bonuses are sparse. The big problem with this spell is that it competes for concentration in a spell list with Bless. It’s a good spell, but Bless is better.`
+		]
+	};
+
+	let sleep: spell = {
+		level: 1,
+		class: ['bard', 'sorcerer', 'wizard'],
+		title: 'Sleep',
+		tier: 'S',
+		image: {
+			url: '/images/spell/sleep.png',
+			alt: 'BG3 Sleep symbol'
+		},
+		body: [
+			`Okay, we made it to Sleep, I’ve been looking forward to this for a while! Sleep is an extremely potent spell, in fact it may be the best spell in the game. When cast it puts some targets in a very large radius to sleep for two rounds. The sleep condition is a unique, slightly worse version of incapacitated. It functions exactly the same except that some creatures are immune to it (creatures with the Elven Ancestry trait), and it automatically ends if the affected target takes damage or is moved involuntarily. While it is not as strong as a standard incapacitated condition, it still guarantees a crit on the next melee range attack made against the affected target, which is the important part. Guaranteeing a crit in a game with Sneak Attack and Great Weapon Master means A LOT of damage.`,
+			`Sleep also has an odd targeting method that it shares with only one other spell – Color Spray – which we have already discussed above. Sleep and Color Spray attack neither saving throws nor AC. Instead, they effect a number of targets equal to a certain hit point threshold (24 HP, 32 if upcast). So, suppose there are 24 goblins, all with 1 hp, and all kind of clustered together. Sleep would hit all 24, no need to role dice. Now suppose you are fighting two hobgoblins, one of them has 12 hp and the other 13. Since their hit point total is above 24 you cannot hit both of them with one Sleep spell, even if they are both in the area of effect. You would have to choose to hit one or the other. If a creature has more than 24 hit points you cannot hit it with sleep until you do enough damage to get it below the threshold. Yes, that is right, it goes off of current hp, not total hp, so you can hit tougher targets with this spell once you have softened them up. Since Sleep guarantees a crit, and you should be criting for more then 24 damage with your strikers, landing a Sleep spell is a death sentence. No save, no chance to resist, you just die.`,
+			`There are other spells that can incapacitate targets, but this is the only one that does it without a saving throw. USE IT LIBERALLY. If you are ever thinking “I will probably kill this target next attack anyways, no need to waste a spell slot putting him to sleep first” just slap yourself in the face and cast Sleep anyways. It’s a guarantee, so take it! Don’t put your life in the hands of the dice god, she will hurt you every time…  Its like my boy Boethius wrote:`,
+			`“I know how Fortune is ever most friendly and alluring to those whom she strives to deceive, until she overwhelms them with grief beyond bearing, by deserting them when least expected… For no man can ever make himself sure that she will never desert him… Is good fortune dear to you, which is with you for a time and is not sure to stay, and which is sure to bring you unhappiness when it is gone?... If you set your sails before the wind, will you not move forward whither the wind drives you, not whither your will may choose to go? If you intrust your seed to the furrow, will you not weigh the rich years and the barren against each other? You have given yourself over to Fortune’s rule, and you must bow yourself to your mistress’s ways. Are you trying to stay the force of her turning wheel? Ah! Dull-witted mortal, if Fortune begin to stay still, she is no longer Fortune.”`,
+			`Don’t sell yourself to Fortune’s rule friends. As sure as winter that critical miss is coming, so just cast Sleep.`
+		]
+	};
+
+	let speakWithAnimals: spell = {
+		level: 1,
+		class: ['bard', 'druid', 'ranger', 'warlock'],
+		title: 'Speak with Animals',
+		tier: 'RP',
+		image: {
+			url: '/images/spell/speak-with-animals.png',
+			alt: 'BG3 Speak with Animals symbol'
+		},
+		body: [
+			`This spell allows you to dialogue with animals. Its fun, but has no direct combat utility, so its RP-tier.`
+		]
+	};
+
+	let tashasHideousLaughter: spell = {
+		level: 1,
+		class: ['bard', 'wizard'],
+		title: "Tasha's Hideous Laughter",
+		tier: 'S',
+		image: {
+			url: '/images/spell/tashas-hideous-laughter.png',
+			alt: 'BG3 Tashas Hideous Laughter symbol'
+		},
+		body: [
+			`A single target control spell that attacks Wisdom. If the target fails their wisdom save they become incapacitated for as long as the caster maintains concentration or they pass a wisdom save to resist the spell. They can roll another wisdom save at the end of their next turn or whenever they take damage. This spell can only target enemies with 5 intelligence or above.`,
+			`We have already talked about incapacitated a few times. It guarantees crits on melee ranged attacks, which is incredible. Basically then, Tasha’s is slightly better version of Sleep, but with a saving throw. If you are facing an enemy that you can drop below 32/24 health without risking to much, just go for Sleep, its more reliable. However, there are some encounters where most of the difficulty comes from a single enemy and hitting them with a Tasha’s early will make the fight a breeze. If you miss with this spell, you are basically wasting a turn though… it really sucks to miss it.`
+		]
+	};
+
+	let thunderweave: spell = {
+		level: 1,
+		class: ['bard', 'druid', 'sorcerer', 'wizard'],
+		title: 'Thunderweave',
+		tier: 'A',
+		image: {
+			url: '/images/spell/thunderweave.png',
+			alt: 'BG3 Thunderweave symbol'
+		},
+		body: [
+			`Thunderwave is an AoE save attack spell that targets constitution. When you cast it a sonic boom explodes out from the caster. It averages 7.2 DPTr (assuming a 60% hit chance) to all creatures in a 5m. Furthermore, targets who fail their save are thrown backwards pretty far (not sure how they do the push distance in BG3, but you won’t need to know, because the game will show you while you are aiming the spell). This is a solid, bread-and-butter spell, the “Fus-ro-dah” of BG3. It averages 1-2 damage less per target then Burning Hands, so its damage is fair as far is 1st level  AoE’s go. And then you get a knockback effect on top of it! Use this spell to push enemies off of high places.`
+		]
+	};
+	let witchBolt: spell = {
+		level: 1,
+		class: ['sorcerer', 'warlock', 'wizard'],
+		title: 'Witch Bolt',
+		tier: 'RP',
+		image: {
+			url: '/images/spell/witch-bolt.png',
+			alt: 'BG3 Witch Bolt symbol'
+		},
+		body: [
+			`Witch Bolt function like a standard ranged attack spell but with an added twist. If you hit with this spell, after doing an initial 1d12 damage lightning damage (6.5 on average), a bolt of lightning stays connected between the caster and the target. On subsequent turns, for as long as they maintain concentration, the caster may spend an action to reactivate the bolt, doing another 1d12 damage. There is no attack roll on the reactivation damage, it is a guaranteed hit.`,
+			`The problem with Witch Bolt is the low damage for the high opportunity cost. It has a lot of potential. Only needing to hit once with the spell to apply damage every turn should be effective. But… Witch Bolt requires both your action and your concentration every turn to deal damage, and it only deals 6.5 damage on average… Even with the forced vulnerability from Create Water, there are just better ways to damage than this spell, so save yourself a headache and cast something else.`
+		]
+	};
+
 	const guide = {
 		body: [
 			acidSplash,
@@ -349,7 +1002,49 @@
 			shockingGrasp,
 			thaumaturgy,
 			thornWhip,
-			trueStrike
+			trueStrike,
+			armsOfHadar,
+			animalFriendship,
+			armorOfAgathys,
+			bless,
+			bane,
+			burningHands,
+			charmPerson,
+			chromaticOrb,
+			colorSpray,
+			command,
+			createDestroyWater,
+			cureWounds,
+			disguiseSelf,
+			dissonantWhispers,
+			ensnaringStrike,
+			entangle,
+			expeditiousRetreat,
+			falseLife,
+			faerieFire,
+			featherFall,
+			findFamiliar,
+			fogCloud,
+			grease,
+			guidingBolt,
+			hailOfThorns,
+			healingWord,
+			hellishRebuke,
+			hex,
+			huntersMark,
+			inflictWounds,
+			jump,
+			longstrider,
+			mageArmor,
+			magicMissile,
+			protection,
+			rayOfSickness,
+			shieldOfFaith,
+			sleep,
+			speakWithAnimals,
+			tashasHideousLaughter,
+			thunderweave,
+			witchBolt
 		],
 		game: [{ title: 'BG3', description: "Baldur's Gate 3", link: 'baldurs-gate-3' }],
 		image: {
@@ -526,10 +1221,62 @@
 				Now let’s look at the spells. We will start with cantrips and address each spell level
 				successively. Spells are ordered alphabetically within each spell level.
 			</p>
-
-			{#each guide.body as section}
-				<Class data={section} />
+			<h2>Cantrips</h2>
+			{#each guide.body as spell}
+				{#if spell.level === 0}
+					<Class data={spell} />
+				{/if}
 			{/each}
+			<h2>Final Rankings for Cantrips</h2>
+			<ul role="list">
+				<li>
+					<strong>S Tier:</strong> Eldritch Blast, Guidance, Light.
+				</li>
+				<li>
+					<strong>A Tier:</strong> Chill Touch, Dancing Lights, Minor Illusion, Produce Flame, Ray of
+					Frost, Shillelagh, Thorn Whip.
+				</li>
+				<li>
+					<strong>B Tier:</strong> Blade Ward, Eldritch Blast, Fire Bolt, Friends, Mage Hand, Poison
+					Spray*, Shocking Grasp, Thaumaturgy.
+				</li>
+				<li>
+					<strong>C Tier:</strong> Acid Splash, Poison Spray*, Resistance, Sacred Flame.
+				</li>
+				<li>
+					<strong>RP Tier:</strong> True Strike.
+				</li>
+			</ul>
+			<h2>1st Level Spells</h2>
+			{#each guide.body as spell}
+				{#if spell.level === 1}
+					<Class data={spell} />
+				{/if}
+			{/each}
+			<h2>Final Rankings for 1st Level</h2>
+			<ul role="list">
+				<li>
+					<strong>S Tier:</strong> ⦁ Armor of Agathys, Bess, Create/Destroy Water, Dissonant Whispers,
+					Fog Cloud, Healing Word, Hex, Hunter’s Mark, Sleep, Tasha’s Hideous Laughter.
+				</li>
+				<li>
+					<strong>A Tier:</strong> ⦁ Bane, Chromatic Orb, Faerie Fire, Guiding Bolt, Hellish Rebuke,
+					Inflict Wounds, Jump, Longstrider, mage Armor, Magic Missile, Shield of Faith, Thunderwave.
+				</li>
+				<li>
+					<strong>B Tier:</strong> ⦁ Burning Hands, Command, Ensnaring Strike, Entangle, False Life,
+					Find Familiar, Grease, Protection from Evil and Good.
+				</li>
+				<li>
+					<strong>C Tier:</strong> ⦁ Charm Person, Color Spray, Expeditious Retreat, Feather Fall, Hail
+					of Thorns.
+				</li>
+				<li>
+					<strong>RP Tier:</strong> ⦁ Arms of Hadar, Animal Friendship, Cure Wounds, Disguise Self, Ray
+					of Sickness, Speak with Animals, Witch Bolt.
+				</li>
+			</ul>
+			<h2>2nd Level Spells</h2>
 			<a href="/"><p class="text-bgRed">Return home</p></a>
 		</article>
 	</div>
