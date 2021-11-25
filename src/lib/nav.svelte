@@ -29,6 +29,9 @@
 				{/if}
 			</a>
 		</div>
+		<div class="md:hidden">
+			<DarkToggle />
+		</div>
 		<div class="-mr-2 -my-2 md:hidden">
 			<button
 				type="button"
@@ -147,7 +150,7 @@
 						<div class="-mr-2">
 							<button
 								type="button"
-								class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+								class="bg-white dark:bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 								on:click={() => (mobileOpen = !mobileOpen)}
 							>
 								<span class="sr-only">Close menu</span>
@@ -177,7 +180,9 @@
 								>
 									<img class="h-10 w-auto" src="/images/bg3.png" alt="Baldur's Gate 3 logo" />
 								</div>
-								<div class="ml-4 text-base font-medium text-gray-900">Baldur's Gate 3</div>
+								<div class="ml-4 text-base font-medium text-gray-900 dark:text-gray-400">
+									Baldur's Gate 3
+								</div>
 							</a>
 
 							<a
@@ -189,7 +194,9 @@
 								>
 									<img class="h-10 w-auto" src="/images/bg1.png" alt="Baldur's Gate 1 logo" />
 								</div>
-								<div class="ml-4 text-base font-medium text-gray-900">Baldur's Gate 1</div>
+								<div class="ml-4 text-base font-medium text-gray-900 dark:text-gray-400">
+									Baldur's Gate 1
+								</div>
 							</a>
 
 							<a href="/about" class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50">
@@ -198,7 +205,9 @@
 								>
 									<img class="h-8 w-auto" src="/images/Ae200.png" alt="Aestus Guides logo" />
 								</div>
-								<div class="ml-4 text-base font-medium text-gray-900">About Me</div>
+								<div class="ml-4 text-base font-medium text-gray-900 dark:text-gray-400">
+									About Me
+								</div>
 							</a>
 						</nav>
 					</div>
