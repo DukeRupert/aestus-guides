@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class="group relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-600 shadow-xl hover:shadow-2xl transition-all duration-150 hover:scale-105 rounded-xl flex flex-col overflow-hidden"
+	class="group relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-600 shadow-xl hover:shadow-2xl transition-all duration-150 hover:scale-102 rounded-xl flex flex-col overflow-hidden"
 >
 	<div class="aspect-w-4 aspect-h-3 bg-bgBlack group-hover:opacity-75 sm:aspect-none sm:h-96">
 		<img

@@ -24,6 +24,9 @@ const config = {
 			invert: {
 				20: '.2'
 			},
+			scale: {
+				102: '1.02'
+			},
 			typography: (theme) => ({
 				light: {
 					css: [

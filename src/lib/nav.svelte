@@ -2,7 +2,6 @@
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import { SUBREDDIT, PATREON } from '$lib/constants';
-	import DarkToggle from '$lib/darkToggle.svelte';
 
 	export let path;
 	let timing = 500;
@@ -20,14 +19,12 @@
 
 				<img
 					class="h-8 w-auto sm:h-10 filter dark:invert-20"
-					src="/images/AeFull400.png"
+					src="/images/Ae200.png"
 					alt="Aestus Guides"
 				/>
 			</a>
 		</div>
-		<div class="md:hidden">
-			<DarkToggle />
-		</div>
+		<div class="md:hidden" />
 		<div class="-mr-2 -my-2 md:hidden">
 			<button
 				type="button"
@@ -52,7 +49,6 @@
 			</button>
 		</div>
 		<nav class="hidden md:flex space-x-10">
-			<DarkToggle />
 			<div class="relative group">
 				<a
 					href="/guides"
