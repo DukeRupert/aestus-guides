@@ -11,7 +11,7 @@
 				<div class="mr-4 flex-shrink-0">
 					<img
 						class="h-full w-20 md:w-24 lg:w-28"
-						src="/images/bg1.png"
+						src="/images/bg1.webp"
 						alt="Baldur's Gate 1 logo"
 					/>
 				</div>

@@ -25,7 +25,7 @@
 		title: 'Acid Splash',
 		tier: 'C',
 		image: {
-			url: '/images/spell/acid-splash.png',
+			url: '/images/spell/acid-splash.webp',
 			alt: 'BG3 Acid Splash symbol'
 		},
 		body: [
@@ -39,7 +39,7 @@
 		title: 'Blade Ward',
 		tier: 'B',
 		image: {
-			url: '/images/spell/blade-ward.png',
+			url: '/images/spell/blade-ward.webp',
 			alt: 'BG3 Blade Ward symbol'
 		},
 		body: [
@@ -52,7 +52,7 @@
 		title: 'Chill Touch',
 		tier: 'A',
 		image: {
-			url: '/images/spell/chill-touch.png',
+			url: '/images/spell/chill-touch.webp',
 			alt: 'BG3 Chill Touch symbol'
 		},
 		body: [
@@ -65,7 +65,7 @@
 		title: 'Dancing Lights',
 		tier: 'A',
 		image: {
-			url: '/images/spell/dancing-lights.png',
+			url: '/images/spell/dancing-lights.webp',
 			alt: 'BG3 Dancing Lights symbol'
 		},
 		body: [
@@ -79,7 +79,7 @@
 		title: 'Eldritch Blast',
 		tier: 'S/B',
 		image: {
-			url: '/images/spell/eldritch-blast.png',
+			url: '/images/spell/eldritch-blast.webp',
 			alt: 'BG3 Eldritch Blast symbol'
 		},
 		body: [
@@ -94,7 +94,7 @@
 		title: 'Fire Bolt',
 		tier: 'B',
 		image: {
-			url: '/images/spell/fire-bolt.png',
+			url: '/images/spell/fire-bolt.webp',
 			alt: 'BG3 Fire Bolt symbol'
 		},
 		body: [
@@ -107,7 +107,7 @@
 		title: 'Friends',
 		tier: 'B',
 		image: {
-			url: '/images/spell/friends.png',
+			url: '/images/spell/friends.webp',
 			alt: 'BG3 Friends symbol'
 		},
 		body: [
@@ -120,7 +120,7 @@
 		title: 'Guidance',
 		tier: 'S',
 		image: {
-			url: '/images/spell/guidance.png',
+			url: '/images/spell/guidance.webp',
 			alt: 'BG3 Guidance symbol'
 		},
 		body: [
@@ -133,7 +133,7 @@
 		title: 'Light',
 		tier: 'S',
 		image: {
-			url: '/images/spell/light.png',
+			url: '/images/spell/light.webp',
 			alt: 'BG3 Light symbol'
 		},
 		body: [
@@ -147,7 +147,7 @@
 		title: 'Mage Hand',
 		tier: 'B',
 		image: {
-			url: '/images/spell/mage-hand.png',
+			url: '/images/spell/mage-hand.webp',
 			alt: 'BG3 Mage Hand symbol'
 		},
 		body: [
@@ -161,7 +161,7 @@
 		title: 'Minor Illusion',
 		tier: 'A',
 		image: {
-			url: '/images/spell/minor-illusion.png',
+			url: '/images/spell/minor-illusion.webp',
 			alt: 'BG3 Minor Illusion symbol'
 		},
 		body: [
@@ -175,7 +175,7 @@
 		title: 'Poison Spray',
 		tier: 'C',
 		image: {
-			url: '/images/spell/poison-spray.png',
+			url: '/images/spell/poison-spray.webp',
 			alt: 'BG3 Poison Spray symbol'
 		},
 		body: [
@@ -188,7 +188,7 @@
 		title: 'Produce Flame',
 		tier: 'A',
 		image: {
-			url: '/images/spell/produce-flame.png',
+			url: '/images/spell/produce-flame.webp',
 			alt: 'BG3 Produce Flame symbol'
 		},
 		body: [
@@ -202,7 +202,7 @@
 		title: 'Ray of Frost',
 		tier: 'A',
 		image: {
-			url: '/images/spell/ray-of-frost.png',
+			url: '/images/spell/ray-of-frost.webp',
 			alt: 'BG3 Ray of Frost symbol'
 		},
 		body: [
@@ -216,7 +216,7 @@
 		title: 'Resistance',
 		tier: 'C',
 		image: {
-			url: '/images/spell/resistance.png',
+			url: '/images/spell/resistance.webp',
 			alt: 'BG3 Resistance symbol'
 		},
 		body: [
@@ -229,7 +229,7 @@
 		title: 'Sacred Flame',
 		tier: 'C',
 		image: {
-			url: '/images/spell/sacred-flame.png',
+			url: '/images/spell/sacred-flame.webp',
 			alt: 'BG3 Sacred Flame symbol'
 		},
 		body: [
@@ -242,7 +242,7 @@
 		title: 'Shillelagh',
 		tier: 'A',
 		image: {
-			url: '/images/spell/shillelagh.png',
+			url: '/images/spell/shillelagh.webp',
 			alt: 'BG3 Shillelagh symbol'
 		},
 		body: [
@@ -255,7 +255,7 @@
 		title: 'Shocking Grasp',
 		tier: 'A',
 		image: {
-			url: '/images/spell/shocking-grasp.png',
+			url: '/images/spell/shocking-grasp.webp',
 			alt: 'BG3 Shocking Grasp symbol'
 		},
 		body: [
@@ -268,7 +268,7 @@
 		title: 'Thaumaturgy',
 		tier: 'B',
 		image: {
-			url: '/images/spell/thaumaturgy.png',
+			url: '/images/spell/thaumaturgy.webp',
 			alt: 'BG3 Thaumaturgy symbol'
 		},
 		body: [
@@ -281,7 +281,7 @@
 		title: 'Thorn Whip',
 		tier: 'A',
 		image: {
-			url: '/images/spell/thorn-whip.png',
+			url: '/images/spell/thorn-whip.webp',
 			alt: 'BG3 Thorn Whip symbol'
 		},
 		body: [
@@ -294,7 +294,7 @@
 		title: 'True Strike',
 		tier: 'RP',
 		image: {
-			url: '/images/spell/true-strike.png',
+			url: '/images/spell/true-strike.webp',
 			alt: 'BG3 True Strike symbol'
 		},
 		body: [
@@ -314,7 +314,7 @@
 		title: 'Arms of Hadar',
 		tier: 'RP',
 		image: {
-			url: '/images/spell/arms-of-hadar.png',
+			url: '/images/spell/arms-of-hadar.webp',
 			alt: 'BG3 Arms of Hadar symbol'
 		},
 		body: [
@@ -336,7 +336,7 @@
 		title: 'Animal Friendship',
 		tier: 'RP',
 		image: {
-			url: '/images/spell/animal-friendship.png',
+			url: '/images/spell/animal-friendship.webp',
 			alt: 'BG3 Animal Friendship symbol'
 		},
 		body: [
@@ -349,7 +349,7 @@
 		title: 'Armor of Agathys',
 		tier: 'S',
 		image: {
-			url: '/images/spell/armor-of-agathys.png',
+			url: '/images/spell/armor-of-agathys.webp',
 			alt: 'BG3 Armor of Agathys symbol'
 		},
 		body: [
@@ -366,7 +366,7 @@
 		title: 'Bane',
 		tier: 'A',
 		image: {
-			url: '/images/spell/bane.png',
+			url: '/images/spell/bane.webp',
 			alt: 'BG3 Bane symbol'
 		},
 		body: [
@@ -379,7 +379,7 @@
 		title: 'Bless',
 		tier: 'S',
 		image: {
-			url: '/images/spell/bless.png',
+			url: '/images/spell/bless.webp',
 			alt: 'BG3 Bless symbol'
 		},
 		body: [
@@ -393,7 +393,7 @@
 		title: 'Burning Hands',
 		tier: 'B',
 		image: {
-			url: '/images/spell/burning-hands.png',
+			url: '/images/spell/burning-hands.webp',
 			alt: 'BG3 Burning Hands symbol'
 		},
 		body: [
@@ -408,7 +408,7 @@
 		title: 'Charm Person',
 		tier: 'RP',
 		image: {
-			url: '/images/spell/charm-person.png',
+			url: '/images/spell/charm-person.webp',
 			alt: 'BG3 Charm Person symbol'
 		},
 		body: [
@@ -421,7 +421,7 @@
 		title: 'Chromatic Orb',
 		tier: 'A',
 		image: {
-			url: '/images/spell/chromatic-orb.png',
+			url: '/images/spell/chromatic-orb.webp',
 			alt: 'BG3 Chromatic Orb symbol'
 		},
 		body: [
@@ -444,7 +444,7 @@
 		title: 'Color Spray',
 		tier: 'C',
 		image: {
-			url: '/images/spell/color-spray.png',
+			url: '/images/spell/color-spray.webp',
 			alt: 'BG3 Color Spray symbol'
 		},
 		body: [
@@ -458,7 +458,7 @@
 		title: 'Command',
 		tier: 'B',
 		image: {
-			url: '/images/spell/command.png',
+			url: '/images/spell/command.webp',
 			alt: 'BG3 Command symbol'
 		},
 		body: [
@@ -472,7 +472,7 @@
 		title: 'Create/Destroy Water',
 		tier: 'S',
 		image: {
-			url: '/images/spell/create-destroy-water.png',
+			url: '/images/spell/create-destroy-water.webp',
 			alt: 'BG3 Create/Destroy Water symbol'
 		},
 		body: [
@@ -489,7 +489,7 @@
 		title: 'Cure Wounds',
 		tier: 'RP',
 		image: {
-			url: '/images/spell/cure-wounds.png',
+			url: '/images/spell/cure-wounds.webp',
 			alt: 'BG3 Cure Wounds symbol'
 		},
 		body: [
@@ -502,7 +502,7 @@
 		title: 'Disguise Self',
 		tier: 'RP',
 		image: {
-			url: '/images/spell/disguise-self.png',
+			url: '/images/spell/disguise-self.webp',
 			alt: 'BG3 Disguise Self symbol'
 		},
 		body: [
@@ -515,7 +515,7 @@
 		title: 'Dissonant Whispers',
 		tier: 'S',
 		image: {
-			url: '/images/spell/dissonant-whispers.png',
+			url: '/images/spell/dissonant-whispers.webp',
 			alt: 'BG3 Dissonant Whispers symbol'
 		},
 		body: [
@@ -528,7 +528,7 @@
 		title: 'Ensnaring Strike',
 		tier: 'B',
 		image: {
-			url: '/images/spell/ensnaring-strike.png',
+			url: '/images/spell/ensnaring-strike.webp',
 			alt: 'BG3 Ensnaring Strike symbol'
 		},
 		body: [
@@ -542,7 +542,7 @@
 		title: 'Entangle',
 		tier: 'B',
 		image: {
-			url: '/images/spell/entangle.png',
+			url: '/images/spell/entangle.webp',
 			alt: 'BG3 Entangle symbol'
 		},
 		body: [
@@ -556,14 +556,14 @@
 		title: 'Expeditious Retreat',
 		tier: 'C',
 		image: {
-			url: '/images/spell/expeditious-retreat.png',
+			url: '/images/spell/expeditious-retreat.webp',
 			alt: 'BG3 Expeditious Retreat symbol'
 		},
 		body: [
 			`This is a self only buff that can be cast as a bonus action. When it is cast, it functions as if you took the dash action and on subsequent turns, while this spell is active, you may dash as a bonus action. The spell remains active until your next long rest or until you lose concentration.`,
 			`To rank this spell we need to ask what it should be used for? My first instinct for this spell is that it is a mobility buff that competes with Longstrider and Jump, and, indeed, it can be used this way. However, when used this way it is objectively worse than its competitors. Another use for this spell is as an escape/reposition tool, competing with spells like Arms of Hadar and Misty Step. Because it can be cast as a bonus action and doesn’t depend on a saving throw to work it is better then Arms of Hadar. It is still always worse than Misty Step, but it doesn’t require a 2nd level spell slot to cast, so there is a niche situation where you need to escape and do not have 2nd level spell slots where this spell is useful. It’s a generic brand Misty Step.`,
 			{
-				url: '/images/guides/expeditious-retreat-joke.png',
+				url: '/images/guides/expeditious-retreat-joke.webp',
 				alt: 'Joke image'
 			}
 		]
@@ -574,7 +574,7 @@
 		title: 'False Life',
 		tier: 'B',
 		image: {
-			url: '/images/spell/false-life.png',
+			url: '/images/spell/false-life.webp',
 			alt: 'BG3 False Life symbol'
 		},
 		body: [
@@ -587,7 +587,7 @@
 		title: 'Faerie Fire',
 		tier: 'A',
 		image: {
-			url: '/images/spell/faerie-fire.png',
+			url: '/images/spell/faerie-fire.webp',
 			alt: 'BG3 Faerie Fire symbol'
 		},
 		body: [
@@ -601,7 +601,7 @@
 		title: 'Feather Fall',
 		tier: 'C',
 		image: {
-			url: '/images/spell/feather-fall.png',
+			url: '/images/spell/feather-fall.webp',
 			alt: 'BG3 Feather Fall symbol'
 		},
 		body: [
@@ -614,7 +614,7 @@
 		title: 'Find Familiar',
 		tier: 'B',
 		image: {
-			url: '/images/spell/find-familiar.png',
+			url: '/images/spell/find-familiar.webp',
 			alt: 'BG3 Find Familiar symbol'
 		},
 		body: [
@@ -636,7 +636,7 @@
 		title: 'Fog Cloud',
 		tier: 'S',
 		image: {
-			url: '/images/spell/fog-cloud.png',
+			url: '/images/spell/fog-cloud.webp',
 			alt: 'BG3 Fog Cloud symbol'
 		},
 		body: [
@@ -650,7 +650,7 @@
 		title: 'Goodberry',
 		tier: 'C',
 		image: {
-			url: '/images/spell/goodberry.png',
+			url: '/images/spell/goodberry.webp',
 			alt: 'BG3 Goodberry symbol'
 		},
 		body: [
@@ -663,7 +663,7 @@
 		title: 'Grease',
 		tier: 'B',
 		image: {
-			url: '/images/spell/grease.png',
+			url: '/images/spell/grease.webp',
 			alt: 'BG3 Grease symbol'
 		},
 		body: [
@@ -678,7 +678,7 @@
 		title: 'Guiding Bolt',
 		tier: 'A',
 		image: {
-			url: '/images/spell/guiding-bolt.png',
+			url: '/images/spell/guiding-bolt.webp',
 			alt: 'BG3 Guiding Bolt symbol'
 		},
 		body: [
@@ -691,7 +691,7 @@
 		title: 'Hail of Thorns',
 		tier: 'C',
 		image: {
-			url: '/images/spell/hail-of-thorns.png',
+			url: '/images/spell/hail-of-thorns.webp',
 			alt: 'BG3 Hail of Thorns symbol'
 		},
 		body: [
@@ -705,7 +705,7 @@
 		title: 'Healing Word',
 		tier: 'S',
 		image: {
-			url: '/images/spell/healing-word.png',
+			url: '/images/spell/healing-word.webp',
 			alt: 'BG3 Healing Word symbol'
 		},
 		body: [
@@ -719,7 +719,7 @@
 		title: 'Hellish Rebuke',
 		tier: 'A',
 		image: {
-			url: '/images/spell/hellish-rebuke.png',
+			url: '/images/spell/hellish-rebuke.webp',
 			alt: 'BG3 Hellish Rebuke symbol'
 		},
 		body: [
@@ -732,7 +732,7 @@
 		title: 'Hex',
 		tier: 'S',
 		image: {
-			url: '/images/spell/hex.png',
+			url: '/images/spell/hex.webp',
 			alt: 'BG3 Hex symbol'
 		},
 		body: [
@@ -747,7 +747,7 @@
 		title: "Hunter's Mark",
 		tier: 'S',
 		image: {
-			url: '/images/spell/hunters-mark.png',
+			url: '/images/spell/hunters-mark.webp',
 			alt: 'BG3 Hunters Mark symbol'
 		},
 		body: [
@@ -760,7 +760,7 @@
 		title: 'Inflict Wounds',
 		tier: 'A',
 		image: {
-			url: '/images/spell/inflict-wounds.png',
+			url: '/images/spell/inflict-wounds.webp',
 			alt: 'BG3 Inflict Wounds symbol'
 		},
 		body: [
@@ -773,7 +773,7 @@
 		title: 'Jump',
 		tier: 'A',
 		image: {
-			url: '/images/spell/jump.png',
+			url: '/images/spell/jump.webp',
 			alt: 'BG3 Jump symbol'
 		},
 		body: [
@@ -786,7 +786,7 @@
 		title: 'Longstrider',
 		tier: 'A',
 		image: {
-			url: '/images/spell/longstrider.png',
+			url: '/images/spell/longstrider.webp',
 			alt: 'BG3 Longstrider symbol'
 		},
 		body: [
@@ -799,7 +799,7 @@
 		title: 'Mage Armor',
 		tier: 'B',
 		image: {
-			url: '/images/spell/mage-armor.png',
+			url: '/images/spell/mage-armor.webp',
 			alt: 'BG3 Mage Armor symbol'
 		},
 		body: [
@@ -812,7 +812,7 @@
 		title: 'Magic Missile',
 		tier: 'A',
 		image: {
-			url: '/images/spell/magic-missile.png',
+			url: '/images/spell/magic-missile.webp',
 			alt: 'BG3 Magic Missile symbol'
 		},
 		body: [
@@ -826,7 +826,7 @@
 		title: 'Protection from Evil/Good',
 		tier: 'B',
 		image: {
-			url: '/images/spell/protection-from-good-and-evil.png',
+			url: '/images/spell/protection-from-good-and-evil.webp',
 			alt: 'BG3 Protection from Evil and Good symbol'
 		},
 		body: [
@@ -839,7 +839,7 @@
 		title: 'Ray of Sickness',
 		tier: 'RP/B',
 		image: {
-			url: '/images/spell/ray-of-sickness.png',
+			url: '/images/spell/ray-of-sickness.webp',
 			alt: 'BG3 Ray of Sickness symbol'
 		},
 		body: [
@@ -853,7 +853,7 @@
 		title: 'Shield of Faith',
 		tier: 'A',
 		image: {
-			url: '/images/spell/shield-of-faith.png',
+			url: '/images/spell/shield-of-faith.webp',
 			alt: 'BG3 Shield of Faith symbol'
 		},
 		body: [
@@ -866,7 +866,7 @@
 		title: 'Sleep',
 		tier: 'S',
 		image: {
-			url: '/images/spell/sleep.png',
+			url: '/images/spell/sleep.webp',
 			alt: 'BG3 Sleep symbol'
 		},
 		body: [
@@ -883,7 +883,7 @@
 		title: 'Speak with Animals',
 		tier: 'RP',
 		image: {
-			url: '/images/spell/speak-with-animals.png',
+			url: '/images/spell/speak-with-animals.webp',
 			alt: 'BG3 Speak with Animals symbol'
 		},
 		body: [
@@ -896,7 +896,7 @@
 		title: "Tasha's Hideous Laughter",
 		tier: 'S',
 		image: {
-			url: '/images/spell/tashas-hideous-laughter.png',
+			url: '/images/spell/tashas-hideous-laughter.webp',
 			alt: 'BG3 Tashas Hideous Laughter symbol'
 		},
 		body: [
@@ -910,7 +910,7 @@
 		title: 'Thunderweave',
 		tier: 'A',
 		image: {
-			url: '/images/spell/thunderweave.png',
+			url: '/images/spell/thunderweave.webp',
 			alt: 'BG3 Thunderweave symbol'
 		},
 		body: [
@@ -923,7 +923,7 @@
 		title: 'Witch Bolt',
 		tier: 'RP',
 		image: {
-			url: '/images/spell/witch-bolt.png',
+			url: '/images/spell/witch-bolt.webp',
 			alt: 'BG3 Witch Bolt symbol'
 		},
 		body: [
@@ -937,7 +937,7 @@
 		title: 'Aid',
 		tier: 'A',
 		image: {
-			url: '/images/spell/aid.png',
+			url: '/images/spell/aid.webp',
 			alt: 'BG3 Aid symbol'
 		},
 		body: [
@@ -950,7 +950,7 @@
 		title: 'Barkskin',
 		tier: 'C',
 		image: {
-			url: '/images/spell/barkskin.png',
+			url: '/images/spell/barkskin.webp',
 			alt: 'BG3 Barkskin symbol'
 		},
 		body: [
@@ -963,7 +963,7 @@
 		title: 'Blindness',
 		tier: 'RP',
 		image: {
-			url: '/images/spell/blindness.png',
+			url: '/images/spell/blindness.webp',
 			alt: 'BG3 Blindness symbol'
 		},
 		body: [
@@ -976,7 +976,7 @@
 		title: 'Blur',
 		tier: 'B',
 		image: {
-			url: '/images/spell/blur.png',
+			url: '/images/spell/blur.webp',
 			alt: 'BG3 Blur symbol'
 		},
 		body: [
@@ -1018,7 +1018,7 @@
 		title: 'Darkness',
 		tier: 'RP/S',
 		image: {
-			url: '/images/spell/darkness.png',
+			url: '/images/spell/darkness.webp',
 			alt: 'BG3 Darkness symbol'
 		},
 		body: [
@@ -1031,7 +1031,7 @@
 		title: 'Darkvision',
 		tier: 'B',
 		image: {
-			url: '/images/spell/darkvision.png',
+			url: '/images/spell/darkvision.webp',
 			alt: 'BG3 Darkvision symbol'
 		},
 		body: [
@@ -1044,7 +1044,7 @@
 		title: 'Detect Thoughts',
 		tier: 'RP',
 		image: {
-			url: '/images/spell/detect-thoughts.png',
+			url: '/images/spell/detect-thoughts.webp',
 			alt: 'BG3 Detect Thoughts symbol'
 		},
 		body: [
@@ -1057,7 +1057,7 @@
 		title: 'Enhance Ability',
 		tier: 'C',
 		image: {
-			url: '/images/spell/enhance-ability.png',
+			url: '/images/spell/enhance-ability.webp',
 			alt: 'BG3 Enhance Ability symbol'
 		},
 		body: [
@@ -1079,7 +1079,7 @@
 		title: 'Enlarge/Reduce Person',
 		tier: 'C',
 		image: {
-			url: '/images/spell/enlarge-reduce-person.png',
+			url: '/images/spell/enlarge-reduce-person.webp',
 			alt: 'BG3 Enlarge Reduce/Person symbol'
 		},
 		body: [
@@ -1095,7 +1095,7 @@
 		title: 'Flame Blade',
 		tier: 'S',
 		image: {
-			url: '/images/spell/flame-blade.png',
+			url: '/images/spell/flame-blade.webp',
 			alt: 'BG3 Flame Blade symbol'
 		},
 		body: [
@@ -1109,7 +1109,7 @@
 		title: 'Flaming Sphere',
 		tier: 'S',
 		image: {
-			url: '/images/spell/flaming-sphere.png',
+			url: '/images/spell/flaming-sphere.webp',
 			alt: 'BG3 Flaming Sphere symbol'
 		},
 		body: [
@@ -1122,7 +1122,7 @@
 		title: 'Heat Metal',
 		tier: 'A',
 		image: {
-			url: '/images/spell/heat-metal.png',
+			url: '/images/spell/heat-metal.webp',
 			alt: 'BG3 Heat Metal symbol'
 		},
 		body: [
@@ -1136,7 +1136,7 @@
 		title: 'Hold Person',
 		tier: 'S',
 		image: {
-			url: '/images/spell/hold-person.png',
+			url: '/images/spell/hold-person.webp',
 			alt: 'BG3 Hold Person symbol'
 		},
 		body: [
@@ -1149,7 +1149,7 @@
 		title: 'Invisibilty',
 		tier: 'A',
 		image: {
-			url: '/images/spell/invisibility.png',
+			url: '/images/spell/invisibility.webp',
 			alt: 'BG3 Invisibility symbol'
 		},
 		body: [
@@ -1162,7 +1162,7 @@
 		title: 'Lesser Restoration',
 		tier: 'B',
 		image: {
-			url: '/images/spell/lesser-restoration.png',
+			url: '/images/spell/lesser-restoration.webp',
 			alt: 'BG3 Lesser Restoration symbol'
 		},
 		body: [
@@ -1188,7 +1188,7 @@
 		title: 'Mirror Image',
 		tier: 'A',
 		image: {
-			url: '/images/spell/mirror-image.png',
+			url: '/images/spell/mirror-image.webp',
 			alt: 'BG3 Mirror Image symbol'
 		},
 		body: [
@@ -1201,7 +1201,7 @@
 		title: 'Misty Step',
 		tier: 'A',
 		image: {
-			url: '/images/spell/misty-step.png',
+			url: '/images/spell/misty-step.webp',
 			alt: 'BG3 Misty Step symbol'
 		},
 		body: [
@@ -1214,7 +1214,7 @@
 		title: 'Moonbeam',
 		tier: 'A',
 		image: {
-			url: '/images/spell/moonbeam.png',
+			url: '/images/spell/moonbeam.webp',
 			alt: 'BG3 Moonbeam symbol'
 		},
 		body: [
@@ -1227,7 +1227,7 @@
 		title: 'Prayer of Healing',
 		tier: 'B',
 		image: {
-			url: '/images/spell/prayer-of-healing.png',
+			url: '/images/spell/prayer-of-healing.webp',
 			alt: 'BG3 Prayer of Healing symbol'
 		},
 		body: [
@@ -1240,7 +1240,7 @@
 		title: 'Pass without Trace',
 		tier: 'S',
 		image: {
-			url: '/images/spell/pass-without-trace.png',
+			url: '/images/spell/pass-without-trace.webp',
 			alt: 'BG3 Pass without Trace symbol'
 		},
 		body: [
@@ -1253,7 +1253,7 @@
 		title: 'Protection from Poison',
 		tier: 'B',
 		image: {
-			url: '/images/spell/protection-from-poison.png',
+			url: '/images/spell/protection-from-poison.webp',
 			alt: 'BG3 Protection from Poison symbol'
 		},
 		body: [
@@ -1273,7 +1273,7 @@
 		title: 'Ray of Enfeeblement',
 		tier: 'B',
 		image: {
-			url: '/images/spell/ray-of-enfeeblement.png',
+			url: '/images/spell/ray-of-enfeeblement.webp',
 			alt: 'BG3 Ray of Enfeeblement symbol'
 		},
 		body: [
@@ -1286,7 +1286,7 @@
 		title: 'Scorching Ray',
 		tier: 'S',
 		image: {
-			url: '/images/spell/scorching-ray.png',
+			url: '/images/spell/scorching-ray.webp',
 			alt: 'BG3 Scorching Ray symbol'
 		},
 		body: [
@@ -1301,7 +1301,7 @@
 		title: 'Searing Smite',
 		tier: 'C',
 		image: {
-			url: '/images/spell/searing-smite.png',
+			url: '/images/spell/searing-smite.webp',
 			alt: 'BG3 Searing Smite symbol'
 		},
 		body: [
@@ -1315,7 +1315,7 @@
 		title: 'Shatter',
 		tier: 'B',
 		image: {
-			url: '/images/spell/shatter.png',
+			url: '/images/spell/shatter.webp',
 			alt: 'BG3 Shatter symbol'
 		},
 		body: [
@@ -1329,7 +1329,7 @@
 		title: 'Silence',
 		tier: 'B',
 		image: {
-			url: '/images/spell/silence.png',
+			url: '/images/spell/silence.webp',
 			alt: 'BG3 Silence symbol'
 		},
 		body: [
@@ -1342,7 +1342,7 @@
 		title: 'Spike Growth',
 		tier: 'A',
 		image: {
-			url: '/images/spell/spike-growth.png',
+			url: '/images/spell/spike-growth.webp',
 			alt: 'BG3 Spike Growth symbol'
 		},
 		body: [
@@ -1356,7 +1356,7 @@
 		title: 'Web',
 		tier: 'B',
 		image: {
-			url: '/images/spell/web.png',
+			url: '/images/spell/web.webp',
 			alt: 'BG3 Web symbol'
 		},
 		body: [

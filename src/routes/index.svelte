@@ -9,7 +9,7 @@
 		<div class="relative m-auto pt-8 px-4 lg:pt-24 max-w-2xl sm:overflow-hidden">
 			<img
 				class="h-full w-full object-contain filter dark:invert-20"
-				src="/images/AeFull800.png"
+				src="/images/AeFull800.webp"
 				alt="Aestus Guides logo"
 			/>
 		</div>

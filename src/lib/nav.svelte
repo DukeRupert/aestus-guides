@@ -19,7 +19,7 @@
 
 				<img
 					class="h-8 w-auto sm:h-10 filter dark:invert-20"
-					src="/images/Ae200.png"
+					src="/images/Ae200.webp"
 					alt="Aestus Guides"
 				/>
 			</a>
@@ -87,7 +87,7 @@
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
 								>
-									<img class="h-10 w-auto" src="/images/bg3.png" alt="Baldur's Gate 3 logo" />
+									<img class="h-10 w-auto" src="/images/bg3.webp" alt="Baldur's Gate 3 logo" />
 								</div>
 								<div class="ml-4">
 									<p class="text-base font-medium text-gray-900 dark:text-gray-400">
@@ -105,7 +105,7 @@
 								>
 									<img
 										class="h-10 w-auto filter dark:invert-20"
-										src="/images/bg1.png"
+										src="/images/bg1.webp"
 										alt="Baldur's Gate 1 logo"
 									/>
 								</div>
@@ -143,7 +143,7 @@
 						<div>
 							<img
 								class="h-12 w-auto filter dark:invert-20"
-								src="/images/AeFull400.png"
+								src="/images/AeFull400.webp"
 								alt="Aestus Guides logo"
 							/>
 						</div>
@@ -178,7 +178,7 @@
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-br from-gray-700 to-gray-900 text-white"
 								>
-									<img class="h-10 w-auto" src="/images/bg3.png" alt="Baldur's Gate 3 logo" />
+									<img class="h-10 w-auto" src="/images/bg3.webp" alt="Baldur's Gate 3 logo" />
 								</div>
 								<div class="ml-4 text-base font-medium text-gray-900 dark:text-gray-400">
 									Baldur's Gate 3
@@ -192,7 +192,7 @@
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-br from-gray-500 to-gray-700 text-white"
 								>
-									<img class="h-10 w-auto" src="/images/bg1.png" alt="Baldur's Gate 1 logo" />
+									<img class="h-10 w-auto" src="/images/bg1.webp" alt="Baldur's Gate 1 logo" />
 								</div>
 								<div class="ml-4 text-base font-medium text-gray-900 dark:text-gray-400">
 									Baldur's Gate 1
@@ -203,7 +203,7 @@
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-parchment text-white"
 								>
-									<img class="h-8 w-auto" src="/images/Ae200.png" alt="Aestus Guides logo" />
+									<img class="h-8 w-auto" src="/images/Ae200.webp" alt="Aestus Guides logo" />
 								</div>
 								<div class="ml-4 text-base font-medium text-gray-900 dark:text-gray-400">
 									About Me
