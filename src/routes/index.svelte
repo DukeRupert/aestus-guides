@@ -1,8 +1,16 @@
 <script lang="ts">
 	import GuideCard from '$lib/guideCard.svelte';
 	import { guides } from '$lib/store';
+	import Seo from '$lib/seo.svelte';
+	import { page } from '$app/stores';
 </script>
 
+<Seo
+	title="Aestus Guides - cRPG Guides"
+	excerpt="Articles and guides on computer RPGs like Baldur's Gate, Neverwinter Nights, Icewind Dale and Pillars of Eternity."
+	canonical={$page.host + $page.path}
+	seoImage="{$page.host + $page.path}/images/AeFull800.webp"
+/>
 <!-- Hero section -->
 <div class="relative">
 	<div class="w-full mx-auto sm:px-6 lg:px-8">

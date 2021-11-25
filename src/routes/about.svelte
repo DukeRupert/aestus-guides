@@ -1,3 +1,15 @@
+<script lang="ts">
+	import Seo from '$lib/seo.svelte';
+	import { page } from '$app/stores';
+</script>
+
+<Seo
+	title="Aestus Guides - About Me"
+	excerpt="I am computer RPG veteran and long time fan of the Baldur's Gate series. I have spent close to a thousand hours on the
+				original BG series, including a few hundred on hardcore, no-reload, solo runs."
+	canonical={$page.host + $page.path}
+	seoImage="{$page.host + $page.path}/images/AeFull800.webp"
+/>
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8 min-h">
 		<article class="mt-6 prose-lg dark:prose-light mx-auto">
