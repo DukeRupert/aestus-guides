@@ -716,7 +716,7 @@
 
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8">
-		<article class="mt-6 prose-lg dark:prose-light mx-auto">
+		<article class="mt-6 prose md:prose-lg dark:prose-light mx-auto">
 			<h1>
 				<span
 					class="block text-base text-center text-bgRed dark:text-gray-100 font-semibold tracking-wide uppercase"

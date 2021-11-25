@@ -13,7 +13,17 @@
 	import '../app.css';
 	import Nav from '$lib/nav.svelte';
 	import Footer from '$lib/footer.svelte';
+	import { onMount } from 'svelte';
+	import { dark } from '$lib/store';
 	export let path;
+
+	// Check if dark mode is active to sync darkToggle
+	onMount(() => {
+		const root = document.getElementsByTagName('html')[0];
+		if (root.classList.contains('dark')) {
+			$dark = true;
+		}
+	});
 </script>
 
 <div class="bg-parchment dark:bg-black font-sans">

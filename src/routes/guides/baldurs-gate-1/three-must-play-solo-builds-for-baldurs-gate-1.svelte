@@ -24,7 +24,7 @@
 <Seo title={guide.title} excerpt={guide.excerpt} {canonical} {seoImage} />
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8">
-		<div class="text-lg prose-lg dark:prose-light max-w-prose mx-auto">
+		<div class="text-lg prose md:prose-lg dark:prose-light max-w-prose mx-auto">
 			<h1>
 				<span
 					class="block text-base text-center text-bgRed dark:text-gray-100 font-semibold tracking-wide uppercase"
