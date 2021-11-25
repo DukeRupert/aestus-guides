@@ -2,7 +2,6 @@
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import { SUBREDDIT, PATREON } from '$lib/constants';
-	import { dark } from '$lib/store';
 	import DarkToggle from '$lib/darkToggle.svelte';
 
 	export let path;
@@ -18,15 +17,12 @@
 		<div class="flex justify-start lg:w-0 lg:flex-1">
 			<a href="/">
 				<span class="sr-only">Aestus Guides</span>
-				{#if $dark}
-					<img
-						class="h-8 w-auto sm:h-10 brightness-90"
-						src="/images/AeFull400Dark.png"
-						alt="Aestus Guides"
-					/>
-				{:else}
-					<img class="h-8 w-auto sm:h-10" src="/images/AeFull400.png" alt="Aestus Guides" />
-				{/if}
+
+				<img
+					class="h-8 w-auto sm:h-10 filter dark:invert-20"
+					src="/images/AeFull400.png"
+					alt="Aestus Guides"
+				/>
 			</a>
 		</div>
 		<div class="md:hidden">

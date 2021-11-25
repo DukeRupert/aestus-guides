@@ -21,6 +21,9 @@ const config = {
 				xs: '20rem',
 				'8xl': '90rem'
 			},
+			invert: {
+				20: '.2'
+			},
 			typography: (theme) => ({
 				light: {
 					css: [

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { SUBREDDIT, PATREON } from '$lib/constants';
-	import { dark } from '$lib/store';
 	import DarkToggle from './darkToggle.svelte';
 </script>
 
@@ -48,11 +47,7 @@
 			</div>
 		</nav>
 		<div class="mt-8 flex justify-center space-x-6">
-			{#if $dark}
-				<img class="h-16 brightness-90" src="/images/AeFull400Dark.png" alt="Aestus Guides" />
-			{:else}
-				<img class="h-16" src="/images/AeFull400.png" alt="Aestus Guides" />
-			{/if}
+			<img class="h-16 filter dark:invert-20" src="/images/AeFull400.png" alt="Aestus Guides" />
 		</div>
 		<p class="mt-8 text-center text-base text-gray-500 dark:text-gray-400">
 			&copy; 2021 Aestus Guides 2021. All rights reserved.
