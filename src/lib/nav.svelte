@@ -9,7 +9,7 @@
 	let mobileOpen = false;
 </script>
 
-<div class="relative shadow-xl bg-white dark:bg-gray-900 z-30">
+<div class="relative shadow-xl bg-white dark:bg-gray-900 dark:border-b dark:border-gray-700 z-30">
 	<div
 		class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
 	>
@@ -103,7 +103,11 @@
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
 								>
-									<img class="h-10 w-auto" src="/images/bg1.png" alt="Baldur's Gate 1 logo" />
+									<img
+										class="h-10 w-auto filter dark:invert-20"
+										src="/images/bg1.png"
+										alt="Baldur's Gate 1 logo"
+									/>
 								</div>
 								<div class="ml-4">
 									<p class="text-base font-medium text-gray-900 dark:text-gray-400">
@@ -137,7 +141,11 @@
 				<div class="pt-5 pb-6 px-5">
 					<div class="flex items-center justify-between">
 						<div>
-							<img class="h-12 w-auto" src="/images/AeFull400.png" alt="Aestus Guides logo" />
+							<img
+								class="h-12 w-auto filter dark:invert-20"
+								src="/images/AeFull400.png"
+								alt="Aestus Guides logo"
+							/>
 						</div>
 						<div class="-mr-2">
 							<button
