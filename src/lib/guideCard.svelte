@@ -11,7 +11,7 @@
 <div
 	class="group relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-600 shadow-xl hover:shadow-2xl transition-all duration-150 hover:scale-102 rounded-xl flex flex-col overflow-hidden"
 >
-	<div class="aspect-w-4 aspect-h-3 bg-bgBlack group-hover:opacity-75 sm:aspect-none sm:h-96">
+	<div class="aspect-w-16 aspect-h-9 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
 		<img
 			src={guide.image.url}
 			alt={guide.image.alt}

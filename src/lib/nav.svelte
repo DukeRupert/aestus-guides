@@ -174,6 +174,7 @@
 							<a
 								href="/guides/baldurs-gate-3"
 								class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50"
+								on:click={() => (mobileOpen = !mobileOpen)}
 							>
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-br from-gray-700 to-gray-900 text-white"
@@ -188,6 +189,7 @@
 							<a
 								href="/guides/baldurs-gate-1"
 								class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50"
+								on:click={() => (mobileOpen = !mobileOpen)}
 							>
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-br from-gray-500 to-gray-700 text-white"
@@ -199,7 +201,11 @@
 								</div>
 							</a>
 
-							<a href="/about" class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50">
+							<a
+								href="/about"
+								class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50"
+								on:click={() => (mobileOpen = !mobileOpen)}
+							>
 								<div
 									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-parchment text-white"
 								>

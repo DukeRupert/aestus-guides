@@ -9,7 +9,7 @@
 	title="Aestus Guides - Baldurs Gate 3 Guides"
 	excerpt="Articles and guides on computer RPGs like Baldur's Gate, Neverwinter Nights, Icewind Dale and Pillars of Eternity."
 	canonical={$page.host + $page.path}
-	seoImage="{$page.host + $page.path}/images/bg3.webp"
+	seoImage="{$page.host + $page.path}images/bg3.webp"
 />
 <!-- Title section -->
 <div class="relative">

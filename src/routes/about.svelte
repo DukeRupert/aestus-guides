@@ -8,7 +8,7 @@
 	excerpt="I am computer RPG veteran and long time fan of the Baldur's Gate series. I have spent close to a thousand hours on the
 				original BG series, including a few hundred on hardcore, no-reload, solo runs."
 	canonical={$page.host + $page.path}
-	seoImage="{$page.host + $page.path}/images/AeFull800.webp"
+	seoImage="{$page.host + $page.path}images/AeFull800.webp"
 />
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8 min-h">
