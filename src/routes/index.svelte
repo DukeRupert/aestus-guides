@@ -1,8 +1,30 @@
+<script context="module">
+	export async function load({ fetch }) {
+		const res = await fetch('/api/guides.json');
+		if (res.ok) {
+			const { data } = await res.json();
+			return {
+				props: {
+					data
+				}
+			};
+		}
+		return {
+			status: res.status,
+			error: new Error(res.error)
+		};
+	}
+</script>
+
 <script lang="ts">
 	import GuideCard from '$lib/guideCard.svelte';
 	import { guides } from '$lib/store';
 	import Seo from '$lib/seo.svelte';
 	import { page } from '$app/stores';
+	import BlockContent from '$lib/portable-text';
+	export let data;
+	let section = data[0].body[0].body;
+	console.log(section);
 </script>
 
 <Seo
@@ -36,5 +58,8 @@
 				<GuideCard {guide} />
 			{/each}
 		</div>
+	</div>
+	<div class="prose">
+		<BlockContent blocks={section} serializers={{}} />
 	</div>
 </div>
