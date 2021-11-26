@@ -25,9 +25,10 @@
 				{guide.title}
 			</a>
 		</h3>
-		<p class="text-sm italic text-gray-500 dark:text-gray-600">{formatDate(guide.updatedAt)}</p>
+
 		<p class="text-sm text-gray-700 dark:text-gray-400">
 			{guide.excerpt}
 		</p>
+		<p class="text-sm italic text-gray-500 dark:text-gray-600">{formatDate(guide.updatedAt)}</p>
 	</div>
 </div>
