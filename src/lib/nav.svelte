@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
+	import { quintIn, quintOut } from 'svelte/easing';
 	import { SUBREDDIT, PATREON } from '$lib/constants';
 
 	export let path;
@@ -132,7 +132,8 @@
 
 	{#if mobileOpen}
 		<div
-			transition:fly={{ x: 500, duration: timing, easing: quintOut }}
+			in:fly={{ x: 500, duration: timing, easing: quintOut }}
+			out:fly={{ x: 500, duration: timing, easing: quintIn }}
 			class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
 		>
 			<div
@@ -223,6 +224,7 @@
 						<a
 							href={SUBREDDIT}
 							class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-purple-800 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700"
+							on:click={() => (mobileOpen = !mobileOpen)}
 						>
 							Visit Subreddit
 						</a>
@@ -231,6 +233,7 @@
 						<a
 							href={PATREON}
 							class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-purple-800 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700"
+							on:click={() => (mobileOpen = !mobileOpen)}
 						>
 							Support Me
 						</a>

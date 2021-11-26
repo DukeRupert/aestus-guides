@@ -56,7 +56,7 @@
 			alt: 'BG3 Chill Touch symbol'
 		},
 		body: [
-			`Chill Touch is a ranged attack cantrip that does 1d8 necrotic damage. It also puts a debuff on the target for two turns. The debuff prevents the target from regaining hit points. If the target is undead, the debuff also imposes disadvantage on attack roles. Both of these debuffs are situationally awesome and necrotic damage is a seldom resisted damage type, making Chill Touch one of the best attack cantrip options in the game. `
+			`Chill Touch is a ranged attack cantrip that does 1d8 necrotic damage. It also puts a debuff on the target for two turns. The debuff prevents the target from regaining hit points. If the target is undead, the debuff also imposes disadvantage on attack rolls. Both of these debuffs are situationally awesome and necrotic damage is a seldom resisted damage type, making Chill Touch one of the best attack cantrip options in the game. `
 		]
 	};
 	let dancingLights: spell = {
@@ -246,7 +246,7 @@
 			alt: 'BG3 Shillelagh symbol'
 		},
 		body: [
-			`Shillelagh is a bonus action spell that buffs a club, greatclub, or quarterstaff you are wielding. It enchants that weapon so that it now does 1d8 + your wisdom modifier damage and uses your wisdom modifier on attack roles instead of strength. If you think of this like an attack cantrip it is  technically the only one that adds your spell attribute modifier to the damage (Eldritch Blast can, but only for Warlocks who take the right Invocation). If you think of it like a normal weapon attack, this is one of handful that allow you to use your spellcasting attribute (wisdom) for standard attacks. That is useful because it allows you to effectively invest in weapon attack potency and spell potency simultaneously. However, while this is good, it is still very far from being in the top tier of damage sources in the game, so it has to stay in A-tier. `
+			`Shillelagh is a bonus action spell that buffs a club, greatclub, or quarterstaff you are wielding. It enchants that weapon so that it now does 1d8 + your wisdom modifier damage and uses your wisdom modifier on attack rolls instead of strength. If you think of this like an attack cantrip it is  technically the only one that adds your spell attribute modifier to the damage (Eldritch Blast can, but only for Warlocks who take the right Invocation). If you think of it like a normal weapon attack, this is one of handful that allow you to use your spellcasting attribute (wisdom) for standard attacks. That is useful because it allows you to effectively invest in weapon attack potency and spell potency simultaneously. However, while this is good, it is still very far from being in the top tier of damage sources in the game, so it has to stay in A-tier. `
 		]
 	};
 	let shockingGrasp: spell = {
@@ -370,7 +370,7 @@
 			alt: 'BG3 Bane symbol'
 		},
 		body: [
-			`Bane is an AoE debuff that targets three enemies in a large area. Those enemies must make a Charisma saving throw. If they fail they subtract 1d4 (2.5 average) from all attack roles and saving throws. This is an extremely potent debuff, especially the penalty to saving throws. A penalty to an enemies saving throw is effectively a buff to your save spell’s accuracy. As we will see, there are a handful of saving throw spells which are so debilitating that might as well be a guaranteed kill, so being more accurate with them is powerful. The only reason this spell is not S tier is that it competes for a concentration slot against better spells, making its opportunity cost to cast very high. Speaking of better spells…`
+			`Bane is an AoE debuff that targets three enemies in a large area. Those enemies must make a Charisma saving throw. If they fail they subtract 1d4 (2.5 average) from all attack rolls and saving throws. This is an extremely potent debuff, especially the penalty to saving throws. A penalty to an enemies saving throw is effectively a buff to your save spell’s accuracy. As we will see, there are a handful of saving throw spells which are so debilitating that might as well be a guaranteed kill, so being more accurate with them is powerful. The only reason this spell is not S tier is that it competes for a concentration slot against better spells, making its opportunity cost to cast very high. Speaking of better spells…`
 		]
 	};
 	let bless: spell = {
@@ -432,7 +432,7 @@
 				`Cold: 2d8 cold damage and the ground freezes around the target. They must make a dexterity saving throw or fall prone. Any creature that walks on the ice must also make a dexterity saving throw or fall prone.`,
 				`Lightning: 2d8 lightning damage and the target is electrocuted. The area around the target is electrically charged, electrocuting creatures who move through it. Electrocuted is identical to the ignited condition (see fire above) only it does lightning damage instead of fire.`,
 				`Thunder: 3d8 (13.5 average) damage.`,
-				`Poison: 2d8 damage and a small cloud of bursts around the point of impact. Any creature in the area must make a constitution saving throw or be poisoned for two rounds.While poisoned the creature has disadvantage on attack roles and ability checks.`
+				`Poison: 2d8 damage and a small cloud of bursts around the point of impact. Any creature in the area must make a constitution saving throw or be poisoned for two rounds.While poisoned the creature has disadvantage on attack rolls and ability checks.`
 			],
 			`The damage on this spell is a bit low, but that’s not that bad since the you will likely be casting it to exploit enemy vulnerabilities or for the extra effects. Except for poison and cold, which require saving throws, all the extra effects proc even when the spell misses. If you aren’t exploiting vulnerabilities, the best extra effect is acid. A guaranteed -2 to a targets AC is a significant accuracy boost for the rest of the party. Frost and Lightning need a special mention due to their synergy with another spell: Create/Destroy Water. We will discuss that synergy below once we review Create/Destroy Water.`,
 			`*Note to Larian if you are reading this. The DC on the saving throws for this spell are bugged right now. On my 18 intelligence Gale, whose DC is 14 on all other spells, has a DC 12 for Chromatic Orb for some reason. I tested it on an custom wizard with 8 intelligence and it was still DC12 (it should be 9).*`
@@ -737,8 +737,8 @@
 		},
 		body: [
 			`Hex is the first of what I call “4e striker spells.” These are spells that add a d6 (necrotic damage in the case of Hex) to your damage on attacks against the marked target. The spells always hit their target, are a bonus action to cast, and can be switched to new targets when the first one dies without taking an extra spell slot. They also take concentration. In fact, its helpful to think of them as weaponizing your concentration slot, adding 3.5 damage per attack on average to your DPR when you hit. It’s a decent use of a concentration slot at early levels and an extremely efficient use of a level one spell slot.`,
-			`Hex earns its S tier in virtue of it being build defining. If you don’t build around it its not that good. Building around it means optimizing the amount of attack roles you make in a round, usually through off-hand weapon attacks and something which gives you extra bonus attacks. Extra bonus attacks can be acquired through the Thief’s Fast Hands feature, the Helmet of Grit, and the Circlet of Fire. Another way to stack attacks on a round is to cast spells which make multiple attack roles. Eldritch Blast will be one of these spells once level cap is increased. A better one that you can cast in the game right now is  the 2nd level spell Scorching Ray, which we will discuss below.`,
-			`Hex also imposes disadvantage on an ability check of your choice. Ability checks are kind of rare in combat. They are basically skill checks. Wisdom is used for perception checks for people spotting you in stealth. Initiative roles are a dexterity skill check, so you could give a target disadvantage on initiative if you start a fight with Hex. The most useful is to Hex strength before you shove somebody.`
+			`Hex earns its S tier in virtue of it being build defining. If you don’t build around it its not that good. Building around it means optimizing the amount of attack rolls you make in a round, usually through off-hand weapon attacks and something which gives you extra bonus attacks. Extra bonus attacks can be acquired through the Thief’s Fast Hands feature, the Helmet of Grit, and the Circlet of Fire. Another way to stack attacks on a round is to cast spells which make multiple attack rolls. Eldritch Blast will be one of these spells once level cap is increased. A better one that you can cast in the game right now is  the 2nd level spell Scorching Ray, which we will discuss below.`,
+			`Hex also imposes disadvantage on an ability check of your choice. Ability checks are kind of rare in combat. They are basically skill checks. Wisdom is used for perception checks for people spotting you in stealth. Initiative rolls are a dexterity skill check, so you could give a target disadvantage on initiative if you start a fight with Hex. The most useful is to Hex strength before you shove somebody.`
 		]
 	};
 	let huntersMark: spell = {
@@ -751,7 +751,7 @@
 			alt: 'BG3 Hunters Mark symbol'
 		},
 		body: [
-			`Hunter’s Mark is practically identical to Hex, only it does piercing damage instead of necrotic, and it does not impose a disadvantage on skill checks. Those differences make it worse, but not by enough to move it down a tier. It still adds 3.5 damage per hit, so stack up as many attack roles as you can in a turn and you will get a ton of value from this spell.`
+			`Hunter’s Mark is practically identical to Hex, only it does piercing damage instead of necrotic, and it does not impose a disadvantage on skill checks. Those differences make it worse, but not by enough to move it down a tier. It still adds 3.5 damage per hit, so stack up as many attack rolls as you can in a turn and you will get a ton of value from this spell.`
 		]
 	};
 	let inflictWounds: spell = {
@@ -1099,7 +1099,7 @@
 			alt: 'BG3 Flame Blade symbol'
 		},
 		body: [
-			`This is one of my favorite spells in the game. On a bonus action you summon a flaming scimitar into your main hand which lasts until your next long rest or until you lose concentration. Unlike normal weapon attacks, attacks with the Flame Blade count as melee spell attacks (similar to spells like Inflict Wounds). That means they use your spell ability modifier for attack roles, but do not add any ability modifier to the damage. Flame Blade does 3d6 (10.5 average) fire damage per hit and double that on a crit. It also sheds bright light in a 3m radius, and dim light for another 3m more.`,
+			`This is one of my favorite spells in the game. On a bonus action you summon a flaming scimitar into your main hand which lasts until your next long rest or until you lose concentration. Unlike normal weapon attacks, attacks with the Flame Blade count as melee spell attacks (similar to spells like Inflict Wounds). That means they use your spell ability modifier for attack rolls, but do not add any ability modifier to the damage. Flame Blade does 3d6 (10.5 average) fire damage per hit and double that on a crit. It also sheds bright light in a 3m radius, and dim light for another 3m more.`,
 			`If all this spell did was give you a reusable 3d6 spell attack action I would probably rate it B-tier. 10.5 average damage per hit is good, but it is also taking up your concentration slot. What makes this spell S-tier is that the flaming scimitar has the “light” property, which means it can be used in the caster’s off-hand. Without Two Weapon Fighting Style, off-hand attacks are very weak, typically averaging around 3.5 damage per hit. Using the Flame Blade in your off-hand is therefore adding 7 damage per hit. Moreover, hits with the Flame Blade proc the Circlet of Fire item, which gives you another bonus action which you can use to make another off-hand attack with the Flame Sword! The damage is incredible! Its definitely worth building around. In fact, I am writing a build around this spell right now, so keep an eye out for it!`
 		]
 	};
@@ -1126,7 +1126,7 @@
 			alt: 'BG3 Heat Metal symbol'
 		},
 		body: [
-			`Heat metal heats up a metal object that an enemy is holding (i.e. their weapon). The enemy takes 2d8 (9 average) fire damage and drops their weapon. For most enemies this is the end of the spell. Technically the weapon stays hot, taking your concentration. Enemies can pick it back up; in which case they suffer disadvantage on attack roles and ability checks and you may reactivate the spell as a bonus action on subsequent turns to do the damage over again. However, I not even sure if the AI even does pick up their weapon, because I will typically cancel the concentration and pick up their dropped weapon so that they cannot re-equip it. Enemies in BG3 do not carry side arms right now (Patch 6), so once you’ve taken their weapon, they are practically useless.`,
+			`Heat metal heats up a metal object that an enemy is holding (i.e. their weapon). The enemy takes 2d8 (9 average) fire damage and drops their weapon. For most enemies this is the end of the spell. Technically the weapon stays hot, taking your concentration. Enemies can pick it back up; in which case they suffer disadvantage on attack rolls and ability checks and you may reactivate the spell as a bonus action on subsequent turns to do the damage over again. However, I not even sure if the AI even does pick up their weapon, because I will typically cancel the concentration and pick up their dropped weapon so that they cannot re-equip it. Enemies in BG3 do not carry side arms right now (Patch 6), so once you’ve taken their weapon, they are practically useless.`,
 			`If you cast this spell on a metal construct however the spell heat them up rather than their weapon. They still drop their weapon (weirdly), but you can reapply the damage at the cost of a bonus action. This is nice, but the main use of this spell right now is disarming enemies. Think of this as a potent control spell, especially against striker enemies (like the Gith patrol). If they fail one save their damage drops to (practically) zero with no chance of making the save again.`
 		]
 	};
@@ -1291,7 +1291,7 @@
 		},
 		body: [
 			`This spell is easy to overlook, but once you understand its math you will understand that it is one of a handful of premier striking spells for arcane casters. When you cast Scorching Ray you hurl 3 bolts of fire. Each bolt is its own ranged attack and can target any creature within range, so you can have them all hit one target or split to hit separate targets. If they hit each ray does 2d6 fire damage to the target.`,
-			`So why is this so good? Its good for the same reasons that the cantrip Eldritch Blast is which we covered above. Typically spells do a lot of damage on a single attack role. Scorching Ray does less damage but gets multiple attack roles. Multiple attack roles are, as a general rule, better, because you can combine them with effects that proc on hits, like Hex. Assuming a 75% hit chance on each attack, Scorching Ray will average 16.8 damage per cast, which is decent, but not S-tier level damage. However, when you combine it with Hex your damage goes up to 25.2 per cast, much better! Add high-ground bonus to that and its 28.35. Hide before you cast it and now you have advantage and you’re averaging 33.86. Ring of Fire? Now its 36.5. You get the idea, it’s a lot of reliable damage.`,
+			`So why is this so good? Its good for the same reasons that the cantrip Eldritch Blast is which we covered above. Typically spells do a lot of damage on a single attack role. Scorching Ray does less damage but gets multiple attack rolls. Multiple attack rolls are, as a general rule, better, because you can combine them with effects that proc on hits, like Hex. Assuming a 75% hit chance on each attack, Scorching Ray will average 16.8 damage per cast, which is decent, but not S-tier level damage. However, when you combine it with Hex your damage goes up to 25.2 per cast, much better! Add high-ground bonus to that and its 28.35. Hide before you cast it and now you have advantage and you’re averaging 33.86. Ring of Fire? Now its 36.5. You get the idea, it’s a lot of reliable damage.`,
 			`Its also worth discussing how this spell will scale at full release once we have higher spell slots than level 2. Assuming they follow the scaling rules of tabletop 5e you will gain one additional ray for each slot level above 2nd. That means when you cast as a 3rd level spell you are getting 4 attacks instead of three. That is phenomenal scaling! This is a spell that is worth building around.`
 		]
 	};
@@ -1622,7 +1622,7 @@
 				The middle-of-the-road status effects are Blinded, Poisoned, Restrained, and Prone. A
 				blinded target has disadvantage on their attacks, and all attack against them have advantage
 				(for some reason, they also lose their attacks of opportunity as well). A poisoned target
-				has disadvantage on all attack roles and skill checks. A restrained target cannot move, has
+				has disadvantage on all attack rolls and skill checks. A restrained target cannot move, has
 				disadvantage on dexterity saving throws, and all attacks made against them have advantage.
 				This effect is for locking down enemies and killing them safely from range. Prone halves the
 				target’s movements and gives advantage on melee attacks against them, so it is slightly
