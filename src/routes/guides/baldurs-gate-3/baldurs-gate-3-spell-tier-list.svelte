@@ -1454,7 +1454,6 @@
 			prayerOfHealing,
 			passWithoutTrace,
 			protectionFromPoison,
-			protection,
 			rayOfEnfeeblement,
 			scorchingRay,
 			searingSmite,
@@ -1679,7 +1678,7 @@
 			<h2>Final Rankings for 1st Level</h2>
 			<ul role="list">
 				<li>
-					<strong>S Tier:</strong> Armor of Agathys, Bess, Create/Destroy Water, Dissonant Whispers,
+					<strong>S Tier:</strong> Armor of Agathys, Bless, Create/Destroy Water, Dissonant Whispers,
 					Fog Cloud, Healing Word, Hex, Hunter’s Mark, Sleep, Tasha’s Hideous Laughter.
 				</li>
 				<li>
