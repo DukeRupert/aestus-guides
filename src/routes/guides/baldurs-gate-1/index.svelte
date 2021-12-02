@@ -1,15 +1,37 @@
+<script context="module">
+	export async function load({ fetch }) {
+		const res = await fetch('/api/bg1guides.json');
+		if (res.ok) {
+			const { data } = await res.json();
+			return {
+				props: {
+					data
+				}
+			};
+		}
+		return {
+			status: res.status,
+			error: new Error(res.error)
+		};
+	}
+</script>
+
 <script lang="ts">
 	import GuideCard from '$lib/guideCard.svelte';
-	import { bg1Guides } from '$lib/store';
 	import { page } from '$app/stores';
 	import Seo from '$lib/seo.svelte';
+	export let data;
+
+	let { guides } = data[0];
+
+	console.log(guides);
 </script>
 
 <Seo
-	title="Aestus Guides - Baldurs Gate 3 Guides"
-	excerpt="Articles and guides on computer RPGs like Baldur's Gate, Neverwinter Nights, Icewind Dale and Pillars of Eternity."
+	title="Aestus Guides - Baldurs Gate 1 Guides"
+	excerpt="Articles and guides for Baldur's Gate 1"
 	canonical={$page.host + $page.path}
-	seoImage="{$page.host + $page.path}images/bg3.webp"
+	seoImage="{$page.host + $page.path}/images/bg1.webp"
 />
 <!-- Title section -->
 <div class="relative">
@@ -33,11 +55,13 @@
 <!-- Recent Guides Section -->
 <div>
 	<div class="w-full mx-auto lg:max-w-8xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-		<h2 class="pb-4 lg:pb-8 text-lg md:text-2xl lg:text-3xl text-black">Recent Posts</h2>
+		<h2 class="pb-4 lg:pb-8 text-lg md:text-2xl lg:text-3xl text-gray-900 dark:text-gray-300">
+			Recent Posts
+		</h2>
 		<div
 			class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8"
 		>
-			{#each $bg1Guides as guide}
+			{#each guides as guide}
 				<GuideCard {guide} />
 			{/each}
 		</div>

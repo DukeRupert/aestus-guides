@@ -1,7 +1,8 @@
 import client from '$lib/sanityClient';
 
-export async function get() {
-	const filter = `*[_type == "guide" && defined(slug)] | order(_createdAt desc)`;
+export async function get({ params }) {
+	const { slug } = params;
+	const filter = `*[_type == "guide" && slug.current == "${slug}"]`;
 	const projection = `{
 			..., body[]{
 				..., image{

@@ -18,13 +18,9 @@
 
 <script lang="ts">
 	import GuideCard from '$lib/guideCard.svelte';
-	import { guides } from '$lib/store';
 	import Seo from '$lib/seo.svelte';
 	import { page } from '$app/stores';
-	import BlockContent from '$lib/portable-text';
 	export let data;
-	let section = data[0].body[0].body;
-	console.log(section);
 </script>
 
 <Seo
@@ -54,12 +50,9 @@
 		<div
 			class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8"
 		>
-			{#each $guides as guide}
+			{#each data as guide}
 				<GuideCard {guide} />
 			{/each}
 		</div>
-	</div>
-	<div class="prose">
-		<BlockContent blocks={section} serializers={{}} />
 	</div>
 </div>

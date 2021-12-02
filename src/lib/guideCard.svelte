@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { guide } from 'src/global';
-	export let guide: guide;
+	import { urlFor } from './image-url';
+	export let guide;
 
 	const formatDate = (dateString: string) => {
 		let date = new Date(dateString);
@@ -13,14 +13,14 @@
 >
 	<div class="aspect-w-16 aspect-h-9 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
 		<img
-			src={guide.image.url}
-			alt={guide.image.alt}
+			src={urlFor(guide.mainImage.asset).format('webp').width(600).url()}
+			alt={guide.mainImage.alt}
 			class="w-full h-full object-center object-cover sm:w-full sm:h-full"
 		/>
 	</div>
 	<div class="flex-1 p-4 space-y-2 flex flex-col">
 		<h3 class="text-lg font-medium text-gray-900 dark:text-gray-300">
-			<a href="/guides/{guide.game.link}/{guide.slug}">
+			<a href="/guides/{guide.slug.current}">
 				<span aria-hidden="true" class="absolute inset-0" />
 				{guide.title}
 			</a>
@@ -29,6 +29,6 @@
 		<p class="text-sm text-gray-700 dark:text-gray-400">
 			{guide.excerpt}
 		</p>
-		<p class="text-sm italic text-gray-500 dark:text-gray-600">{formatDate(guide.updatedAt)}</p>
+		<p class="text-sm italic text-gray-500 dark:text-gray-600">{formatDate(guide._updatedAt)}</p>
 	</div>
 </div>
