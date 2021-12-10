@@ -80,6 +80,7 @@
 						<div
 							class="relative grid gap-6 bg-white dark:bg-gray-900 px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-1"
 						>
+							<!-- Baldur's Gate 3 -->
 							<a
 								href="/guides/baldurs-gate-3"
 								class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
@@ -95,13 +96,13 @@
 									</p>
 								</div>
 							</a>
-
+							<!-- Baldur's Gate 1 -->
 							<a
 								href="/guides/baldurs-gate-1"
 								class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
 							>
 								<div
-									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
+									class="flex-shrink-0 flex items-center justify-center h-10 w-16 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
 								>
 									<img
 										class="h-10 w-auto filter dark:invert-20"
@@ -112,6 +113,26 @@
 								<div class="ml-4">
 									<p class="text-base font-medium text-gray-900 dark:text-gray-400">
 										Baldur's Gate 1
+									</p>
+								</div>
+							</a>
+							<!-- Pathfinder: Wrath of the Righteous -->
+							<a
+								href="/guides/pathfinder-wrath-of-the-righteous"
+								class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
+							>
+								<div
+									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
+								>
+									<img
+										class="h-10 w-auto filter dark:invert-20"
+										src="/images/pathfinder_wotr.webp"
+										alt="Pathfinder Wrath of the Righteous logo"
+									/>
+								</div>
+								<div class="ml-4">
+									<p class="text-base font-medium text-gray-900 dark:text-gray-400">
+										Wrath of the Righteous
 									</p>
 								</div>
 							</a>
@@ -172,13 +193,14 @@
 					</div>
 					<div class="mt-6">
 						<nav class="grid grid-cols-1 gap-7">
+							<!-- Baldur's Gate 3 -->
 							<a
 								href="/guides/baldurs-gate-3"
 								class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50"
 								on:click={() => (mobileOpen = !mobileOpen)}
 							>
 								<div
-									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-br from-gray-700 to-gray-900 text-white"
+									class="flex-shrink-0 flex items-center justify-center h-10 w-16 rounded-md bg-gradient-to-br from-gray-700 to-gray-900 text-white"
 								>
 									<img class="h-10 w-auto" src="/images/bg3.webp" alt="Baldur's Gate 3 logo" />
 								</div>
@@ -186,14 +208,14 @@
 									Baldur's Gate 3
 								</div>
 							</a>
-
+							<!-- Baldur's Gate 1 -->
 							<a
 								href="/guides/baldurs-gate-1"
 								class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50"
 								on:click={() => (mobileOpen = !mobileOpen)}
 							>
 								<div
-									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-br from-gray-500 to-gray-700 text-white"
+									class="flex-shrink-0 flex items-center justify-center h-10 w-16 rounded-md bg-gradient-to-br from-gray-500 to-gray-700 text-white"
 								>
 									<img class="h-10 w-auto" src="/images/bg1.webp" alt="Baldur's Gate 1 logo" />
 								</div>
@@ -201,14 +223,33 @@
 									Baldur's Gate 1
 								</div>
 							</a>
-
+							<!-- Pathfinder WotR -->
+							<a
+								href="/guides/pathfinder-wrath-of-the-righteous"
+								class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50"
+								on:click={() => (mobileOpen = !mobileOpen)}
+							>
+								<div
+									class="flex-shrink-0 flex items-center justify-center h-10 w-16 rounded-md  text-white"
+								>
+									<img
+										class="h-10 w-auto"
+										src="/images/pathfinder_wotr.webp"
+										alt="Pathfinder Wrath of the Righteous logo"
+									/>
+								</div>
+								<div class="ml-4 text-base font-medium text-gray-900 dark:text-gray-400">
+									Wrath of the Righteous
+								</div>
+							</a>
+							<!-- About Me -->
 							<a
 								href="/about"
 								class="-m-4 p-4 flex items-center rounded-lg hover:bg-gray-50"
 								on:click={() => (mobileOpen = !mobileOpen)}
 							>
 								<div
-									class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-parchment text-white"
+									class="flex-shrink-0 flex items-center justify-center h-10 w-16 rounded-md bg-parchment text-white"
 								>
 									<img class="h-8 w-auto" src="/images/Ae200.webp" alt="Aestus Guides logo" />
 								</div>
