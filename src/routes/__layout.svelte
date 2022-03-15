@@ -1,10 +1,20 @@
 <script context="module">
-	export async function load({ url }) {
+	export async function load({ url, fetch }) {
 		let { pathname: path } = url;
+		const res = await fetch(`/api/siteSettings.json`);
+		if (res.ok) {
+			const data = await res.json();
+			const { data: settings } = data;
+			return {
+				props: {
+					settings,
+					path
+				}
+			};
+		}
 		return {
-			props: {
-				path
-			}
+			status: res.status,
+			error: new Error(res.statusText)
 		};
 	}
 </script>
@@ -13,7 +23,13 @@
 	import '../app.css';
 	import Nav from '$lib/nav.svelte';
 	import Footer from '$lib/footer.svelte';
+	import { siteSettings } from '$lib/store';
 	export let path;
+	export let settings;
+
+	if (settings) {
+		siteSettings.set(settings);
+	}
 </script>
 
 <div class="bg-parchment dark:bg-black font-sans">
