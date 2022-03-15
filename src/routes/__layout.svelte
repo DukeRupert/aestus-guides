@@ -33,7 +33,7 @@
 </script>
 
 <div class="bg-parchment dark:bg-black font-sans">
-	<div class="max-w-8xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
+	<div class="max-w-8xl min-h-screen flex flex-col mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
 		<header>
 			<Nav {path} />
 		</header>
@@ -42,7 +42,7 @@
 			<slot />
 		</main>
 
-		<footer class="bg-gray-50" aria-labelledby="footer-heading">
+		<footer class="bg-gray-50 mt-auto" aria-labelledby="footer-heading">
 			<Footer />
 		</footer>
 	</div>
