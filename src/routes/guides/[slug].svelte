@@ -1,6 +1,6 @@
 <script context="module">
-	export async function load({ page, fetch }) {
-		const { slug } = page.params;
+	export async function load({ params, fetch }) {
+		const { slug } = params;
 		const res = await fetch(`/api/${slug}.json`);
 		if (res.ok) {
 			const { data } = await res.json();
@@ -32,6 +32,7 @@
 
 	// Initial data, display entire guide
 	export let guide;
+	console.log(guide);
 	let levelFilters = [];
 
 	function filterLevel(e) {
@@ -95,8 +96,8 @@
 
 	// SEO
 	let guideImage = urlFor(guide.mainImage.asset).format('webp').url();
-	let canonical = $page.host + $page.path;
-	let seoImage = $page.host + guideImage;
+	let canonical = $page.url.hostname + $page.url.pathname;
+	let seoImage = $page.url.hostname + guideImage;
 </script>
 
 <Seo title={guide.title} excerpt={guide.excerpt} {canonical} {seoImage} />
