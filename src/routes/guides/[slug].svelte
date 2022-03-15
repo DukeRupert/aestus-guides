@@ -32,7 +32,6 @@
 
 	// Initial data, display entire guide
 	export let guide;
-	console.log(guide);
 	let levelFilters = [];
 
 	function filterLevel(e) {

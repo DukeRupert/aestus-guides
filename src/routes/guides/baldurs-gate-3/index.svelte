@@ -23,8 +23,6 @@
 	export let data;
 
 	let { guides } = data[0];
-
-	console.log(guides);
 </script>
 
 <Seo
