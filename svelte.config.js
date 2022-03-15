@@ -16,7 +16,6 @@ const config = {
 		// netlify adapter does not take any options at the moment
 		adapter: vercel(),
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
 		vite: {
 			optimizeDeps: {
 				include: ['@sanity/block-content-to-hyperscript/internals']
