@@ -4,7 +4,7 @@
 
 	const formatDate = (dateString: string) => {
 		let date = new Date(dateString);
-		return `${date.getMonth()} / ${date.getDate()} / ${date.getFullYear()}`;
+		return `${date.getMonth() + 1} / ${date.getDate()} / ${date.getFullYear()}`;
 	};
 </script>
 
