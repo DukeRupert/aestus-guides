@@ -26,8 +26,8 @@
 <Seo
 	title="Aestus Guides - cRPG Guides"
 	excerpt="Articles and guides on computer RPGs like Baldur's Gate, Neverwinter Nights, Icewind Dale and Pillars of Eternity."
-	canonical={$page.host + $page.path}
-	seoImage="{$page.host + $page.path}images/AeFull800.webp"
+	canonical={$page.url.hostname + $page.url.pathname}
+	seoImage="{$page.url.hostname + $page.url.pathname}images/AeFull800.webp"
 />
 <!-- Hero section -->
 <div class="relative">

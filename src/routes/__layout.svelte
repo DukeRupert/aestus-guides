@@ -1,6 +1,6 @@
 <script context="module">
-	export async function load({ page }) {
-		let { path } = page;
+	export async function load({ url }) {
+		let { pathname: path } = url;
 		return {
 			props: {
 				path

@@ -30,8 +30,8 @@
 <Seo
 	title="Aestus Guides - Baldurs Gate 1 Guides"
 	excerpt="Articles and guides for Baldur's Gate 1"
-	canonical={$page.host + $page.path}
-	seoImage="{$page.host + $page.path}/images/bg1.webp"
+	canonical={$page.url.hostname + $page.url.pathname}
+	seoImage="{$page.url.hostname + $page.url.pathname}/images/bg1.webp"
 />
 <!-- Title section -->
 <div class="relative">
