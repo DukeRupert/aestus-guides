@@ -24,6 +24,7 @@
 	import Nav from '$lib/nav.svelte';
 	import Footer from '$lib/footer.svelte';
 	import { siteSettings } from '$lib/store';
+	import { GoogleAnalytics } from '@beyonk/svelte-google-analytics';
 	export let path;
 	export let settings;
 
@@ -32,6 +33,7 @@
 	}
 </script>
 
+<GoogleAnalytics properties={['G-S2B2ZJ81C6']} />
 <div class="bg-parchment dark:bg-black font-sans">
 	<div class="max-w-8xl min-h-screen flex flex-col mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
 		<header>
