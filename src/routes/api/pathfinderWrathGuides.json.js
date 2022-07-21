@@ -1,6 +1,6 @@
 import client from '$lib/sanityClient';
 
-export async function get() {
+export async function GET() {
 	const filter = `*[_type=="category" && title=="Pathfinder: Wrath of the Righteous"]{_id,"guides": *[_type=="guide" && references(^._id)]| order(_createdAt desc)`;
 	const projection = `{
 			..., body[]{

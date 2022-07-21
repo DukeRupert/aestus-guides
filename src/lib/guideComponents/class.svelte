@@ -34,7 +34,7 @@
 {/if}
 
 {#if data.list}
-	<ul role="list">
+	<ul>
 		{#each data.list as list}
 			<li>
 				<strong>{list.title}:</strong>
@@ -48,7 +48,7 @@
 		<p>{@html item}</p>
 	{/if}
 	{#if Object.prototype.toString.call(item) === '[object Array]'}
-		<ul role="list">
+		<ul>
 			{#each item as part}
 				<li>
 					{@html part}

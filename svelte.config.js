@@ -1,5 +1,4 @@
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-netlify';
 import vercel from '@sveltejs/adapter-vercel';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -14,13 +13,7 @@ const config = {
 
 	kit: {
 		// netlify adapter does not take any options at the moment
-		adapter: vercel(),
-		// hydrate the <div id="svelte"> element in src/app.html
-		vite: {
-			optimizeDeps: {
-				include: ['@sanity/block-content-to-hyperscript/internals']
-			}
-		}
+		adapter: vercel()
 	}
 };
 

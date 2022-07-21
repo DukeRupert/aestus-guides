@@ -16,7 +16,7 @@
 				<h2 class="text-sm font-semibold text-gray-500 dark:text-gray-400 tracking-wide uppercase">
 					Popular pages
 				</h2>
-				<ul role="list" class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
+				<ul class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
 					<li class="relative py-6 flex items-start space-x-4">
 						<div class="flex-shrink-0">
 							<span class="flex items-center justify-center h-12 w-12 rounded-lg">

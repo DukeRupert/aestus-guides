@@ -90,7 +90,7 @@
 							<!-- Replace with your content -->
 							<div class="absolute inset-0 px-4 sm:px-6">
 								<nav class="block relative prose dark:prose-light pb-4">
-									<ul role="list">
+									<ul>
 										{#each links as { title, link, image }}
 											<div class="flex items-center">
 												{#if image}
