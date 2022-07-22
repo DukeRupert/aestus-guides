@@ -42,7 +42,7 @@
 >
 
 <GoogleAnalytics properties={['G-S2B2ZJ81C6']} />
-<div class="bg-parchment dark:bg-black font-sans">
+<div class="bg-white dark:bg-black font-sans">
 	<div class="max-w-8xl min-h-screen flex flex-col mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
 		<header>
 			<Nav {path} />

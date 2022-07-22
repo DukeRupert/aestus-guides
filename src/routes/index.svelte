@@ -1,26 +1,39 @@
-<script context="module">
-	export async function load({ fetch }) {
-		const res = await fetch('/api/guides.json');
-		if (res.ok) {
-			const { data } = await res.json();
-			return {
-				props: {
-					data
-				}
-			};
-		}
-		return {
-			status: res.status,
-			error: new Error(res.error)
-		};
-	}
-</script>
-
+<!-- Hero section -->
 <script lang="ts">
-	import GuideCard from '$lib/guideCard.svelte';
+	import { recentGuides, bg1Guides, bg3Guides, pathfinderWotrGuides } from '$lib/store';
+	import PreviewCard from '$lib/cards/PreviewCard.svelte';
+	import Tabs from '$lib/tabs.svelte';
+	import PlaceholderCard from '$lib/cards/PlaceholderCard.svelte';
 	import Seo from '$lib/seo.svelte';
 	import { page } from '$app/stores';
-	export let data;
+
+	let tab = 'recent';
+
+	// Update tab on user click
+	function handleTab(event) {
+		tab = event.detail.tab;
+	}
+
+	function updateGuides(tab) {
+		switch (tab) {
+			case 'Recent':
+				return recentGuides;
+
+			case "Baldur's Gate 3":
+				return bg3Guides;
+
+			case "Baldur's Gate 1":
+				return bg1Guides;
+
+			case 'Pathfinder: WotR':
+				return pathfinderWotrGuides;
+
+			default:
+				return recentGuides;
+		}
+	}
+
+	$: guides = updateGuides(tab);
 </script>
 
 <Seo
@@ -29,6 +42,7 @@
 	canonical={$page.url.hostname + $page.url.pathname}
 	seoImage="{$page.url.hostname + $page.url.pathname}images/AeFull800.webp"
 />
+
 <!-- Hero section -->
 <div class="relative">
 	<div class="w-full mx-auto sm:px-6 lg:px-8">
@@ -41,18 +55,24 @@
 		</div>
 	</div>
 </div>
-<!-- Recent Guides Section -->
-<div>
-	<div class="w-full mx-auto lg:max-w-8xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-		<h2 class="pb-4 lg:pb-8 text-xl md:text-2xl lg:text-4xl text-gray-900 dark:text-gray-300">
-			Recent Posts
-		</h2>
-		<div
-			class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8"
-		>
-			{#each data as guide}
-				<GuideCard {guide} />
-			{/each}
-		</div>
+<!-- Guide Tabs -->
+<div class="w-full mx-auto lg:max-w-4xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+	<Tabs on:tab={handleTab} />
+
+	<div class="grid grid-cols-1 gap-y-4 sm:gap-y-10 lg:gap-x-8">
+		<ul class="divide-y divide-gray-200">
+			{#await guides.load()}
+				<PlaceholderCard />
+				<PlaceholderCard />
+				<PlaceholderCard />
+				<PlaceholderCard />
+				<PlaceholderCard />
+				<PlaceholderCard />
+			{:then Guides}
+				{#each Guides as guide}
+					<PreviewCard {guide} />
+				{/each}
+			{/await}
+		</ul>
 	</div>
 </div>

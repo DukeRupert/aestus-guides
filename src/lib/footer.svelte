@@ -3,7 +3,7 @@
 </script>
 
 <!-- Footer -->
-<footer class="dark:bg-gray-900">
+<footer class="bg-white dark:bg-gray-900">
 	<div
 		class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8 border-t border-bgRed dark:border-gray-700"
 	>
@@ -14,15 +14,6 @@
 					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
 				>
 					About
-				</a>
-			</div>
-
-			<div class="px-5 py-2">
-				<a
-					href="/guides"
-					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
-				>
-					Guides
 				</a>
 			</div>
 

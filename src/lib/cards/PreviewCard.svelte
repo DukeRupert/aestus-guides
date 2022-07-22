@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { urlFor } from './image-url';
+	import { urlFor } from '$lib/image-url';
 
 	interface Guide {
 		_createdAt: string;
@@ -58,7 +58,7 @@
 		title: 'Three Must-Play Solo Builds for Baldur’s Gate I';
 	}
 
-	export let guide;
+	export let guide: Guide;
 
 	const formatDate = (dateString: string) => {
 		let date = new Date(dateString);
@@ -66,27 +66,53 @@
 	};
 </script>
 
-<div
-	class="group relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-600 shadow-xl hover:shadow-2xl transition-all duration-150 hover:scale-102 rounded-xl flex flex-col overflow-hidden"
+<li
+	class="relative flex p-4 bg-white hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600"
 >
-	<div class="aspect-w-16 aspect-h-9 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
+	<div class="flex-shrink-0 py-0 mr-6 w-28 h-28 md:w-40 md:h-32">
 		<img
-			src={urlFor(guide.mainImage.asset).format('webp').width(600).url()}
+			src={urlFor(guide.mainImage.asset).format('webp').width(160).height(128).url()}
 			alt={guide.mainImage.alt}
-			class="w-full h-full object-center object-cover sm:w-full sm:h-full"
+			class="w-full h-full object-cover"
+			loading="lazy"
 		/>
 	</div>
-	<div class="flex-1 p-4 space-y-2 flex flex-col">
-		<h3 class="text-lg font-medium text-gray-900 dark:text-gray-300">
-			<a href="/guides/{guide.slug.current}">
-				<span aria-hidden="true" class="absolute inset-0" />
-				{guide.title}
-			</a>
-		</h3>
 
-		<p class="text-sm text-gray-700 dark:text-gray-400">
+	<div class="flex flex-col w-full space-y-2">
+		<a
+			href="/guides/{guide.slug.current}"
+			class="block text-sm md:text-lg font-bold leading-5 break-words line-clamp-3 focus:outline-none"
+		>
+			{guide.title}
+		</a>
+		<a href="/guides/{guide.slug.current}" class="line-clamp-2 text-xs md:text-sm text-gray-600">
 			{guide.excerpt}
-		</p>
-		<p class="text-sm italic text-gray-500 dark:text-gray-600">{formatDate(guide._updatedAt)}</p>
+		</a>
+
+		<div class="flex">
+			<time
+				datetime="2021-01-27T16:35"
+				class="flex-shrink-0 whitespace-nowrap text-xs md:text-sm text-gray-500"
+				>{formatDate(guide._updatedAt)}</time
+			>
+			<!-- <button class="h-6 w-6 p-1">
+					<svg
+						class="h-full w-full text-gray-500"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" /> <circle cx="6" cy="12" r="3" />
+						<circle cx="18" cy="6" r="3" /> <circle cx="18" cy="18" r="3" />
+						<line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+						<line x1="8.7" y1="13.3" x2="15.3" y2="16.7" /></svg
+					>
+				</button> -->
+		</div>
 	</div>
-</div>
+</li>
