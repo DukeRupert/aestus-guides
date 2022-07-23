@@ -1,6 +1,7 @@
 <script lang="ts">
 	import BlockContent from '$lib/portable-text';
 	import sectionSerializer from '$lib/guideComponents/sectionSerializer';
+	import Youtube from '$lib/youtube/Youtube.svelte';
 
 	export let name;
 	export let url;
@@ -8,6 +9,7 @@
 	export let tier;
 	export let level;
 	export let body;
+	export let youtube;
 
 	const customSerializers = sectionSerializer;
 
@@ -31,6 +33,9 @@
 		{/if}
 	</div>
 </div>
+{#if youtube}
+	<Youtube id={youtube} />
+{/if}
 <BlockContent blocks={body} serializers={customSerializers} />
 
 <style>

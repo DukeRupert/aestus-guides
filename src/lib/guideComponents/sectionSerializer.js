@@ -1,6 +1,3 @@
-// https://www.sanity.io/docs/what-you-need-to-know-about-block-text/presenting-block-text
-// https://github.com/movingbrands/svelte-portable-text
-import BlockContent from '$lib/portable-text';
 // https://www.npmjs.com/package/@sanity/image-url
 import { urlFor } from '$lib/image-url';
 import Section from '$lib/guideComponents/section.svelte';
@@ -18,12 +15,13 @@ export default {
 		})
 	},
 	types: {
-		section: ({ node: { name, tier, body, image }, children }) => ({
+		section: ({ node: { name, tier, youtube, body, image }, children }) => ({
 			component: Section,
 			childNodes: children,
 			props: {
 				name: name,
 				tier: tier,
+				youtube: youtube,
 				body: body,
 				url: urlFor(image.asset).width(150).auto('format').url(),
 				alt: image.alt

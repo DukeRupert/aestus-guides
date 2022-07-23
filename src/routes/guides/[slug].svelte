@@ -19,8 +19,6 @@
 </script>
 
 <script lang="ts">
-	import Class from '$lib/guideComponents/class.svelte';
-	import type { spell } from 'src/global';
 	import Navigation from '$lib/guideComponents/navigation.svelte';
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
@@ -29,9 +27,11 @@
 	import BlockContent from '$lib/portable-text';
 	import { urlFor } from '$lib/image-url';
 	import Serializers from '$lib/guideComponents/serializers';
+	import Youtube from '$lib/youtube/Youtube.svelte';
 
 	// Initial data, display entire guide
 	export let guide;
+
 	let levelFilters = [];
 
 	function filterLevel(e) {
@@ -135,6 +135,9 @@
 					>{guide.title}</span
 				>
 			</h1>
+			{#if guide.youtube}
+				<Youtube id={guide.youtube} />
+			{/if}
 			<p class="mt-8 text-xl leading-8">
 				<BlockContent blocks={guide.preamble} serializers={{}} />
 			</p>
