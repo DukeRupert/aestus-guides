@@ -37,7 +37,13 @@
 			</div>
 		</nav>
 		<div class="mt-8 flex justify-center space-x-6">
-			<img class="h-16 filter dark:invert-20" src="/images/AeFull400.webp" alt="Aestus Guides" />
+			<img
+				class="h-16 w-auto filter dark:invert-20"
+				src="/images/AeFull400.webp"
+				alt="Aestus Guides logo"
+				width="400"
+				height="234"
+			/>
 		</div>
 		<p class="mt-8 text-center text-base text-gray-500 dark:text-gray-400">
 			&copy; 2021 Aestus Guides 2021. All rights reserved.
