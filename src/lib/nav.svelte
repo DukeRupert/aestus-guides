@@ -23,7 +23,7 @@
 				<span class="sr-only">Aestus Guides</span>
 
 				<img
-					class="h-8 w-auto sm:h-12 filter dark:invert-20"
+					class="h-10 w-auto sm:h-12 filter dark:invert-20"
 					src="/images/Ae200.webp"
 					alt="Aestus Guides logo"
 					width="200"
@@ -31,7 +31,7 @@
 				/>
 			</a>
 		</div>
-		<!-- <ToggleTextSize /> -->
+		<ToggleTextSize />
 		<ToggleTheme />
 		<!-- Mobile Menu Toggle -->
 		<div class="-mr-2 -my-2 md:hidden">
