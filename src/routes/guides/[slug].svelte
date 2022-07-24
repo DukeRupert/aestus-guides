@@ -23,7 +23,7 @@
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import { page } from '$app/stores';
-	import Seo from '$lib/seo.svelte';
+	import SvelteSeo from 'svelte-seo';
 	import BlockContent from '$lib/portable-text';
 	import { urlFor } from '$lib/image-url';
 	import Serializers from '$lib/guideComponents/serializers';
@@ -94,12 +94,27 @@
 	}
 
 	// SEO
-	let guideImage = urlFor(guide.mainImage.asset).format('webp').url();
-	let canonical = $page.url.hostname + $page.url.pathname;
-	let seoImage = $page.url.hostname + guideImage;
+	let guideImage = urlFor(guide.mainImage.asset).format('webp').width(600).height(400).url();
+	console.log(guide);
 </script>
 
-<Seo title={guide.title} excerpt={guide.excerpt} {canonical} {seoImage} />
+<SvelteSeo
+	openGraph={{
+		title: guide.title,
+		description: guide.excerpt,
+		url: $page.url.hostname + $page.url.pathname,
+		type: 'website',
+		images: [
+			{
+				url: guideImage,
+				width: 600,
+				height: 400,
+				alt: guide.mainImage.alt
+			}
+		]
+	}}
+/>
+
 <Navigation on:toggleSlideOver={toggleSlideOver} {slideOver} {links} />
 {#if !slideOver}
 	<button

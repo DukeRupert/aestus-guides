@@ -47,6 +47,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sanity/cli": "^2.22.3",
-		"@square/svelte-store": "^0.2.0"
+		"@square/svelte-store": "^0.2.0",
+		"svelte-seo": "^1.4.1"
 	}
 }

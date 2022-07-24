@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Seo from '$lib/seo.svelte';
+	import SvelteSeo from 'svelte-seo';
 	import { page } from '$app/stores';
 	import { siteSettings } from '$lib/store';
 	import BlockContent from '$lib/portable-text';
@@ -8,12 +8,22 @@
 	const { aboutMe, patreon } = $siteSettings;
 </script>
 
-<Seo
-	title="Aestus Guides - About Me"
-	excerpt="I am computer RPG veteran and long time fan of the Baldur's Gate series. I have spent close to a thousand hours on the
-				original BG series, including a few hundred on hardcore, no-reload, solo runs."
-	canonical={$page.url.hostname + $page.url.pathname}
-	seoImage="{$page.url.hostname + $page.url.pathname}images/AeFull800.webp"
+<SvelteSeo
+	openGraph={{
+		title: 'Aestus Guides - About Me',
+		description: `I am computer RPG veteran and long time fan of the Baldur's Gate series. I have spent close to a thousand hours on the
+				original BG series, including a few hundred on hardcore, no-reload, solo runs.`,
+		url: `${$page.url.hostname + $page.url.pathname}`,
+		type: 'website',
+		images: [
+			{
+				url: 'https://www.aestusguides.com/images/Ae600.png',
+				width: 400,
+				height: 234,
+				alt: 'Aestus cRPG Guides logo'
+			}
+		]
+	}}
 />
 <div class="relative py-16 overflow-hidden">
 	<div class="relative px-4 sm:px-6 lg:px-8 min-h">

@@ -2,9 +2,9 @@
 <script lang="ts">
 	import { recentGuides, bg1Guides, bg3Guides, pathfinderWotrGuides } from '$lib/store';
 	import PreviewCard from '$lib/cards/PreviewCard.svelte';
-	import Tabs from '$lib/tabs.svelte';
+	import Tabs from '$lib/Tabs.svelte';
 	import PlaceholderCard from '$lib/cards/PlaceholderCard.svelte';
-	import Seo from '$lib/seo.svelte';
+	import SvelteSeo from 'svelte-seo';
 	import { page } from '$app/stores';
 
 	let tab = 'recent';
@@ -36,11 +36,22 @@
 	$: guides = updateGuides(tab);
 </script>
 
-<Seo
-	title="Aestus Guides - cRPG Guides"
-	excerpt="Articles and guides on computer RPGs like Baldur's Gate, Neverwinter Nights, Icewind Dale and Pillars of Eternity."
-	canonical={$page.url.hostname + $page.url.pathname}
-	seoImage="{$page.url.hostname + $page.url.pathname}images/AeFull800.webp"
+<SvelteSeo
+	openGraph={{
+		title: 'Aestus Guides - CRPG Guides',
+		description: `Guides on computer RPGs like Baldur's Gate, Neverwinter Nights, Icewind Dale and Pillars of Eternity. I am a cRPG veteran and long time fan of the Baldur's Gate series. I have spent close to a thousand hours on the
+				original BG series, including a few hundred on hardcore, no-reload, solo runs.`,
+		url: `${$page.url.hostname + $page.url.pathname}`,
+		type: 'website',
+		images: [
+			{
+				url: 'https://www.aestusguides.com/images/Ae600.png',
+				width: 400,
+				height: 234,
+				alt: 'Aestus cRPG Guides logo'
+			}
+		]
+	}}
 />
 
 <!-- Hero section -->

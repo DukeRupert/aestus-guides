@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { SUBREDDIT, PATREON } from '$lib/constants';
+	import { siteSettings } from '$lib/store';
+	const { subreddit, patreon } = $siteSettings;
 </script>
 
 <!-- Footer -->
@@ -19,7 +20,7 @@
 
 			<div class="px-5 py-2">
 				<a
-					href={SUBREDDIT}
+					href={subreddit}
 					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
 				>
 					Subreddit
@@ -28,7 +29,7 @@
 
 			<div class="px-5 py-2">
 				<a
-					href={PATREON}
+					href={patreon}
 					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
 				>
 					Patreon

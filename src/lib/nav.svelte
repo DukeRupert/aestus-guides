@@ -1,30 +1,35 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { quintIn, quintOut } from 'svelte/easing';
-	import { SUBREDDIT, PATREON } from '$lib/constants';
-	import Toggle from './Toggle.svelte';
+	import ToggleTheme from './ToggleTheme.svelte';
+	import { siteSettings } from '$lib/store';
 
 	export let path;
 	let timing = 500;
 	let mobileOpen = false;
+	const { subreddit, patreon } = $siteSettings;
 </script>
 
 <div class="relative shadow-md bg-white dark:bg-gray-900 dark:border-b dark:border-gray-700 z-30">
 	<div
 		class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
 	>
+		<!-- Logo -->
 		<div class="flex justify-start lg:w-0 lg:flex-1">
 			<a href="/">
 				<span class="sr-only">Aestus Guides</span>
 
 				<img
-					class="h-8 w-auto sm:h-10 filter dark:invert-20"
+					class="h-8 w-auto sm:h-12 filter dark:invert-20"
 					src="/images/Ae200.webp"
-					alt="Aestus Guides"
+					alt="Aestus Guides logo"
+					width="200"
+					height="140"
 				/>
 			</a>
 		</div>
-		<div class="md:hidden" />
+		<ToggleTheme />
+		<!-- Mobile Menu Toggle -->
 		<div class="-mr-2 -my-2 md:hidden">
 			<button
 				type="button"
@@ -48,7 +53,7 @@
 				>
 			</button>
 		</div>
-		<Toggle />
+
 		<nav class="hidden md:flex space-x-10">
 			<a
 				href="/about"
@@ -124,7 +129,7 @@
 				<div class="py-6 px-5">
 					<div class="mt-6">
 						<a
-							href={SUBREDDIT}
+							href={subreddit}
 							class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-purple-800 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700"
 							on:click={() => (mobileOpen = !mobileOpen)}
 						>
@@ -133,7 +138,7 @@
 					</div>
 					<div class="mt-6">
 						<a
-							href={PATREON}
+							href={patreon}
 							class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-purple-800 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700"
 							on:click={() => (mobileOpen = !mobileOpen)}
 						>
