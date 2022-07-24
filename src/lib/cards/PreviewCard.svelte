@@ -75,6 +75,8 @@
 			alt={guide.mainImage.alt}
 			class="w-full h-full object-cover"
 			loading="lazy"
+			width="160"
+			height="128"
 		/>
 	</div>
 

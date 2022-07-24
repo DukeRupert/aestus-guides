@@ -3,6 +3,7 @@
 	import { quintIn, quintOut } from 'svelte/easing';
 	import ToggleTheme from './ToggleTheme.svelte';
 	import { siteSettings } from '$lib/store';
+	import ToggleTextSize from './ToggleTextSize.svelte';
 
 	export let path;
 	let timing = 500;
@@ -30,6 +31,7 @@
 				/>
 			</a>
 		</div>
+		<ToggleTextSize />
 		<ToggleTheme />
 		<!-- Mobile Menu Toggle -->
 		<div class="-mr-2 -my-2 md:hidden">
