@@ -3,8 +3,7 @@
 
 	const dispatch = createEventDispatcher();
 
-	// Todo
-	let current = 'new';
+	let current = 'Recent';
 
 	function handleClick(id) {
 		dispatch('tab', {
@@ -25,10 +24,14 @@
 			id="tabs"
 			name="tabs"
 			bind:value={current}
-			class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm rounded-md"
+			class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:bg-black dark:border-gray-600 dark:text-gray-300 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm rounded-md"
 		>
-			{#each tabs as tab}
-				<option class="py-4">{tab}</option>
+			{#each tabs as tab, i}
+				{#if i == 0}
+					<option selected class="py-4">{tab}</option>
+				{:else}
+					<option class="py-4">{tab}</option>
+				{/if}
 			{/each}
 		</select>
 	</div>
