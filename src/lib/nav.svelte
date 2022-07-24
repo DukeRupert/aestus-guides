@@ -31,7 +31,7 @@
 				/>
 			</a>
 		</div>
-		<ToggleTextSize />
+		<!-- <ToggleTextSize /> -->
 		<ToggleTheme />
 		<!-- Mobile Menu Toggle -->
 		<div class="-mr-2 -my-2 md:hidden">
