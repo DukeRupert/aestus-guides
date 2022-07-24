@@ -60,6 +60,8 @@ export const pathfinderWotrGuides: Loadable<Guide[]> = asyncReadable(
 
 export const dark = writable(false);
 
+export const mobileOpen = writable(false);
+
 export const guides = writable([
 	{
 		body: [],

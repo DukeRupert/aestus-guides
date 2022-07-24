@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 	import { clickOutside, touchOutside } from '$lib/clickOutside';
+
 	const dispatch = createEventDispatcher();
 
 	export let slideOver;
@@ -15,9 +16,6 @@
 			dispatch('toggleSlideOver');
 		}
 	}
-
-	let timing = 500;
-	let delay = 250;
 </script>
 
 <div

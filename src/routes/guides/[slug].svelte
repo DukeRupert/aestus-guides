@@ -21,13 +21,14 @@
 <script lang="ts">
 	import Navigation from '$lib/guideComponents/navigation.svelte';
 	import { fly } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
+	import { quintIn, quintOut } from 'svelte/easing';
 	import { page } from '$app/stores';
 	import SvelteSeo from 'svelte-seo';
 	import BlockContent from '$lib/portable-text';
 	import { urlFor } from '$lib/image-url';
 	import Serializers from '$lib/guideComponents/serializers';
 	import Youtube from '$lib/youtube/Youtube.svelte';
+	import { mobileOpen } from '$lib/store';
 
 	// Initial data, display entire guide
 	export let guide;
@@ -116,12 +117,12 @@
 />
 
 <Navigation on:toggleSlideOver={toggleSlideOver} {slideOver} {links} />
-{#if !slideOver}
+{#if !slideOver && !$mobileOpen}
 	<button
 		class="fixed top-28 right-0 w-12 h-12 rounded-l-lg bg-white dark:bg-gray-900 flex justify-center items-center shadow-xl z-50"
 		on:click={toggleSlideOver}
 		in:fly={{ x: 100, delay: delay, duration: timing, easing: quintOut }}
-		out:fly={{ x: 100, duration: timing, easing: quintOut }}
+		out:fly={{ x: 100, duration: timing, easing: quintIn }}
 	>
 		<svg
 			class="h-6 w-6 text-gray-500 dark:text-gray-400"
