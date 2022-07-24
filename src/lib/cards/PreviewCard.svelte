@@ -67,7 +67,7 @@
 </script>
 
 <li
-	class="relative flex p-4 bg-white hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600"
+	class="relative flex p-4 bg-white dark:bg-black hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600"
 >
 	<div class="flex-shrink-0 py-0 mr-6 w-28 h-28 md:w-40 md:h-32">
 		<img
@@ -81,18 +81,21 @@
 	<div class="flex flex-col w-full space-y-2">
 		<a
 			href="/guides/{guide.slug.current}"
-			class="block text-sm md:text-lg font-bold leading-5 break-words line-clamp-3 focus:outline-none"
+			class="block dark:text-gray-100 text-sm md:text-lg font-bold leading-5 break-words line-clamp-3 focus:outline-none"
 		>
 			{guide.title}
 		</a>
-		<a href="/guides/{guide.slug.current}" class="line-clamp-2 text-xs md:text-sm text-gray-600">
+		<a
+			href="/guides/{guide.slug.current}"
+			class="line-clamp-2 text-xs md:text-sm text-gray-600 dark:text-gray-300"
+		>
 			{guide.excerpt}
 		</a>
 
 		<div class="flex">
 			<time
 				datetime="2021-01-27T16:35"
-				class="flex-shrink-0 whitespace-nowrap text-xs md:text-sm text-gray-500"
+				class="flex-shrink-0 whitespace-nowrap text-xs md:text-sm text-gray-500 dark:text-gray-400"
 				>{formatDate(guide._updatedAt)}</time
 			>
 			<!-- <button class="h-6 w-6 p-1">

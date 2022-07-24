@@ -56,11 +56,11 @@
 	</div>
 </div>
 <!-- Guide Tabs -->
-<div class="w-full mx-auto lg:max-w-4xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+<div class="w-full bg-white dark:bg-black mx-auto lg:max-w-4xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
 	<Tabs on:tab={handleTab} />
 
-	<div class="grid grid-cols-1 gap-y-4 sm:gap-y-10 lg:gap-x-8">
-		<ul class="divide-y divide-gray-200">
+	<div class="bg-white dark:bg-black grid grid-cols-1 gap-y-4 sm:gap-y-10 lg:gap-x-8">
+		<ul class="divide-y divide-gray-200 dark:divide-gray-700">
 			{#await guides.load()}
 				<PlaceholderCard />
 				<PlaceholderCard />
