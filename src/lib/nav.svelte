@@ -2,6 +2,7 @@
 	import { fly } from 'svelte/transition';
 	import { quintIn, quintOut } from 'svelte/easing';
 	import { SUBREDDIT, PATREON } from '$lib/constants';
+	import Toggle from './Toggle.svelte';
 
 	export let path;
 	let timing = 500;
@@ -47,6 +48,7 @@
 				>
 			</button>
 		</div>
+		<Toggle />
 		<nav class="hidden md:flex space-x-10">
 			<a
 				href="/about"

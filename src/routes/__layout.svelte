@@ -25,6 +25,8 @@
 	import Footer from '$lib/footer.svelte';
 	import { siteSettings } from '$lib/store';
 	import { GoogleAnalytics } from '@beyonk/svelte-google-analytics';
+	import { onMount } from 'svelte';
+
 	export let path;
 	export let settings;
 

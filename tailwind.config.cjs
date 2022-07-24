@@ -2,7 +2,7 @@ const config = {
 	mode: 'jit',
 	purge: ['./src/**/*.{html,js,svelte,ts}'],
 	important: true,
-	darkMode: 'media',
+	darkMode: 'class',
 	theme: {
 		fontFamily: {
 			sans: ['Petrona', 'Helvetica', 'Arial', 'sans-serif']
