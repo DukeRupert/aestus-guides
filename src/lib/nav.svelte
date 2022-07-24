@@ -10,9 +10,11 @@
 	const { subreddit, patreon } = $siteSettings;
 </script>
 
-<div class="relative shadow-md bg-white dark:bg-gray-900 dark:border-b dark:border-gray-700 z-30">
+<div
+	class="fixed top-0 left-0 w-full lg:relative shadow-md bg-white dark:bg-gray-900 dark:border-b dark:border-gray-700 z-30"
+>
 	<div
-		class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
+		class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:space-x-10 lg:px-8"
 	>
 		<!-- Logo -->
 		<div class="flex justify-start lg:w-0 lg:flex-1">

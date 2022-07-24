@@ -42,7 +42,7 @@
 			<Nav {path} />
 		</header>
 
-		<main>
+		<main class="mt-20 lg:mt-0">
 			<slot />
 		</main>
 
