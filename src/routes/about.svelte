@@ -9,11 +9,15 @@
 </script>
 
 <SvelteSeo
+	title="Aestus Guides - About Me"
+	description="I am computer RPG veteran and long time fan of the Baldur's Gate series. I have spent close to a thousand hours on the
+				original BG series, including a few hundred on hardcore, no-reload, solo runs."
+	canonical={$page.url.toString()}
 	openGraph={{
 		title: 'Aestus Guides - About Me',
 		description: `I am computer RPG veteran and long time fan of the Baldur's Gate series. I have spent close to a thousand hours on the
 				original BG series, including a few hundred on hardcore, no-reload, solo runs.`,
-		url: `${$page.url.hostname + $page.url.pathname}`,
+		url: $page.url.toString(),
 		type: 'website',
 		images: [
 			{
