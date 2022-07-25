@@ -4,8 +4,9 @@
 	import { siteSettings } from '$lib/store';
 	import BlockContent from '$lib/portable-text';
 	import serializers from '$lib/guideComponents/serializers';
+	import SocialMedia from '$lib/SocialMedia.svelte';
 
-	const { aboutMe, patreon } = $siteSettings;
+	const { aboutMe, patreon, youtube } = $siteSettings;
 </script>
 
 <SvelteSeo
@@ -40,15 +41,8 @@
 			</h1>
 			<BlockContent blocks={aboutMe} {serializers} />
 		</article>
-		<div class="py-6 px-5">
-			<div class="mt-6 max-w-xs m-auto">
-				<a
-					href={patreon}
-					class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 dark:from-purple-800 to-purple-800 dark:to-purple-900 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700"
-				>
-					Support Me
-				</a>
-			</div>
+		<div class="mt-6">
+			<SocialMedia />
 		</div>
 	</div>
 </div>

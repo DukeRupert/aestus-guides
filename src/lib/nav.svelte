@@ -4,6 +4,7 @@
 	import ToggleTheme from './ToggleTheme.svelte';
 	import { mobileOpen, siteSettings } from '$lib/store';
 	import ToggleTextSize from './ToggleTextSize.svelte';
+	import SocialMedia from './SocialMedia.svelte';
 
 	export let path;
 	let timing = 500;
@@ -129,6 +130,7 @@
 						</nav>
 					</div>
 				</div>
+				<SocialMedia />
 				<div class="py-6 px-5">
 					<div class="mt-6">
 						<a
@@ -137,15 +139,6 @@
 							on:click={() => mobileOpen.update((v) => !v)}
 						>
 							Visit Subreddit
-						</a>
-					</div>
-					<div class="mt-6">
-						<a
-							href={patreon}
-							class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-purple-800 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700"
-							on:click={() => mobileOpen.update((v) => !v)}
-						>
-							Support Me
 						</a>
 					</div>
 				</div>

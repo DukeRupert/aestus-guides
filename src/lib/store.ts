@@ -187,6 +187,7 @@ export const siteSettings = writable({
 		'tier list',
 		'guide'
 	],
+	youtube: 'https://www.youtube.com/channel/UCs0WWs6-v6R1nQFZIW3iwSQ',
 	patreon: 'https://www.patreon.com/user?u=52365991&fan_landing=true',
 	subreddit: 'https://www.reddit.com/r/AestusGuides/',
 	title: 'Aestus Guides'
