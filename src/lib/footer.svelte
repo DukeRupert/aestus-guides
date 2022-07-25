@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { siteSettings } from '$lib/store';
-	const { subreddit, patreon } = $siteSettings;
+	const { subreddit, patreon, youtube } = $siteSettings;
 </script>
 
 <!-- Footer -->
@@ -11,19 +11,11 @@
 		<nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
 			<div class="px-5 py-2">
 				<a
-					href="/about"
+					href={youtube}
 					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
+					aria-label="Go to Aestus Guides youtube channel"
 				>
-					About
-				</a>
-			</div>
-
-			<div class="px-5 py-2">
-				<a
-					href={subreddit}
-					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
-				>
-					Subreddit
+					Youtube
 				</a>
 			</div>
 
@@ -31,8 +23,29 @@
 				<a
 					href={patreon}
 					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
+					aria-label="Go to Aestus Guides patreon account"
 				>
 					Patreon
+				</a>
+			</div>
+
+			<div class="px-5 py-2">
+				<a
+					href={subreddit}
+					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
+					aria-label="Go to Aestus Guides subreddit"
+				>
+					Subreddit
+				</a>
+			</div>
+
+			<div class="px-5 py-2">
+				<a
+					href="/about"
+					class="text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
+					aria-label="Go to Aestus Guides about page"
+				>
+					About
 				</a>
 			</div>
 		</nav>
