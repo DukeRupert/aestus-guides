@@ -92,6 +92,9 @@ const config = {
 			})
 		}
 	},
+	corePlugins: {
+		aspectRatio: false
+	},
 
 	variants: {
 		extend: { typography: ['dark'] },

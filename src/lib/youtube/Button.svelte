@@ -34,8 +34,8 @@
 	.play-button {
 		display: grid;
 		place-items: center;
-		height: 80px;
-		width: 80px;
+		height: 0px;
+		width: 60px;
 		position: absolute;
 		top: 0;
 		right: 0;

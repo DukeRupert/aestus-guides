@@ -3,10 +3,10 @@
 
 	const dispatch = createEventDispatcher();
 
-	let current = 'Recent';
+	let current = 'New';
 
 	function handleClick(id) {
-		dispatch('tab', {
+		dispatch('guideTab', {
 			tab: id
 		});
 		current = id;
@@ -14,7 +14,7 @@
 
 	$: handleClick(current);
 
-	const tabs = ['Recent', "Baldur's Gate 3", "Baldur's Gate 1", 'Pathfinder: WotR'];
+	const tabs = ['New', "Baldur's Gate 3", "Baldur's Gate 1", 'Pathfinder: WotR'];
 </script>
 
 <div class="h-12 mb-4">

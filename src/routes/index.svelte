@@ -1,22 +1,61 @@
 <!-- Hero section -->
 <script lang="ts">
-	import { recentGuides, bg1Guides, bg3Guides, pathfinderWotrGuides } from '$lib/store';
+	import {
+		recentVideos,
+		recentGuides,
+		bg1Guides,
+		bg3Guides,
+		pathfinderWotrGuides,
+		bg3Videos,
+		pathfinderWotrVideos,
+		poeVideos
+	} from '$lib/store';
 	import PreviewCard from '$lib/cards/PreviewCard.svelte';
-	import Tabs from '$lib/Tabs.svelte';
+	import GuideTabs from '$lib/GuideTabs.svelte';
+	import VideoTabs from '$lib/VideoTabs.svelte';
 	import PlaceholderCard from '$lib/cards/PlaceholderCard.svelte';
+	import EmptyCard from '$lib/youtube/EmptyCard.svelte';
 	import SvelteSeo from 'svelte-seo';
 	import { page } from '$app/stores';
+	import CardYoutube from '$lib/youtube/CardYoutube.svelte';
+	import LoadingSpinner from '$lib/LoadingSpinner.svelte';
+	import EmptyGuideCard from '$lib/guideComponents/emptyGuideCard.svelte';
 
-	let tab = 'recent';
+	let guideTab = 'New';
+	let videoTab = 'New';
 
 	// Update tab on user click
-	function handleTab(event) {
-		tab = event.detail.tab;
+	function handleVideoTab(event) {
+		videoTab = event.detail.tab;
+	}
+
+	// Update tab on user click
+	function handleGuideTab(event) {
+		guideTab = event.detail.tab;
+	}
+
+	function updateVideos(tab) {
+		switch (tab) {
+			case 'New':
+				return recentVideos;
+
+			case "Baldur's Gate 3":
+				return bg3Videos;
+
+			case 'Pathfinder: WotR':
+				return pathfinderWotrVideos;
+
+			case 'Pillars of Eternity':
+				return poeVideos;
+
+			default:
+				return recentVideos;
+		}
 	}
 
 	function updateGuides(tab) {
 		switch (tab) {
-			case 'Recent':
+			case 'New':
 				return recentGuides;
 
 			case "Baldur's Gate 3":
@@ -33,7 +72,8 @@
 		}
 	}
 
-	$: guides = updateGuides(tab);
+	$: guides = updateGuides(guideTab);
+	$: videos = updateVideos(videoTab);
 </script>
 
 <SvelteSeo
@@ -71,9 +111,46 @@
 		</div>
 	</div>
 </div>
+<!-- Video Tabs -->
+<div class="w-full bg-white dark:bg-black mx-auto lg:max-w-4xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+	<h1 class="text-2xl lg:text-4xl text-black dark:text-gray-100 my-4">Videos</h1>
+	<VideoTabs on:videoTab={handleVideoTab} />
+
+	<div class="bg-white dark:bg-black grid grid-cols-1 gap-y-4 sm:gap-y-10 lg:gap-x-8">
+		<ul
+			class="flex overflow-x-scroll no-scrollbar snap-mandatory snap-x divide-y divide-gray-200 dark:divide-gray-700"
+		>
+			{#await recentVideos.load()}
+				<EmptyCard />
+				<EmptyCard />
+				<EmptyCard />
+				<EmptyCard />
+				<EmptyCard />
+				<EmptyCard />
+			{:then}
+				{#if $videos.length === 0}
+					<EmptyCard />
+					<EmptyCard />
+					<EmptyCard />
+					<EmptyCard />
+					<EmptyCard />
+					<EmptyCard />
+				{:else}
+					{#each $videos as video (video.id)}
+						<CardYoutube snippet={video.snippet} />
+					{/each}
+				{/if}
+			{:catch error}
+				<p class="text-red-500">{error.message}</p>
+			{/await}
+		</ul>
+	</div>
+</div>
+
 <!-- Guide Tabs -->
 <div class="w-full bg-white dark:bg-black mx-auto lg:max-w-4xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-	<Tabs on:tab={handleTab} />
+	<h1 class="text-2xl lg:text-4xl text-black dark:text-gray-100 my-4">Guides</h1>
+	<GuideTabs on:guideTab={handleGuideTab} />
 
 	<div class="bg-white dark:bg-black grid grid-cols-1 gap-y-4 sm:gap-y-10 lg:gap-x-8">
 		<ul class="divide-y divide-gray-200 dark:divide-gray-700">

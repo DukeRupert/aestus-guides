@@ -1,6 +1,13 @@
-import { writable } from 'svelte/store';
-import { asyncReadable, type Loadable } from '@square/svelte-store';
+import {
+	writable,
+	asyncDerived,
+	asyncReadable,
+	asyncWritable,
+	type Loadable,
+	type WritableLoadable
+} from '@square/svelte-store';
 
+import type { PlaylistResponse, Snippet } from '$lib/types/youtube';
 interface Guide {
 	body: [];
 	game: { title: string; description: string; link: string };
@@ -14,6 +21,86 @@ interface Guide {
 	excerpt: string;
 	updatedAt: string;
 }
+
+export const recentVideos: Loadable<Snippet[]> = asyncReadable(
+	[],
+	async () => {
+		const playlistId = 'UUs0WWs6-v6R1nQFZIW3iwSQ';
+		const requestBody = JSON.stringify({ playlistId: playlistId });
+		const res = await fetch('/api/youtube.json', {
+			method: 'POST',
+			body: requestBody,
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		});
+		const data = await res.json();
+		const { items } = data;
+		const newItems = [...items];
+		return newItems;
+	},
+	true
+);
+
+export const bg3Videos: Loadable<Snippet[]> = asyncReadable(
+	[],
+	async () => {
+		const playlistId = 'PLVycni4XqC0svYbrmIPYScY_xrCA91S2J';
+		const requestBody = JSON.stringify({ playlistId: playlistId });
+		const res = await fetch('/api/youtube.json', {
+			method: 'POST',
+			body: requestBody,
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		});
+		const data = await res.json();
+		const { items } = data;
+		const newItems = [...items];
+		return newItems;
+	},
+	true
+);
+
+export const poeVideos: Loadable<Snippet[]> = asyncReadable(
+	[],
+	async () => {
+		const playlistId = 'PLVycni4XqC0sD8ABXJ2j_5kQNb1hXiWz2';
+		const requestBody = JSON.stringify({ playlistId: playlistId });
+		const res = await fetch('/api/youtube.json', {
+			method: 'POST',
+			body: requestBody,
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		});
+		const data = await res.json();
+		const { items } = data;
+		const newItems = [...items];
+		return newItems;
+	},
+	true
+);
+
+export const pathfinderWotrVideos: Loadable<Snippet[]> = asyncReadable(
+	[],
+	async () => {
+		const playlistId = 'PLVycni4XqC0soPNyq6hKZ-5OnylsdHXZc';
+		const requestBody = JSON.stringify({ playlistId: playlistId });
+		const res = await fetch('/api/youtube.json', {
+			method: 'POST',
+			body: requestBody,
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		});
+		const data = await res.json();
+		const { items } = data;
+		const newItems = [...items];
+		return newItems;
+	},
+	true
+);
 
 export const recentGuides: Loadable<Guide[]> = asyncReadable(
 	{},
