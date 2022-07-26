@@ -7,7 +7,9 @@
 	let play = false;
 </script>
 
-<div class="flex-none w-[480px] h-[384px] mb-10 m-2 bg-transparent relative snap-center">
+<div
+	class="flex-none w-[288px] h-[192px] md:w-[480px] md:h-[384px] mb-10 m-2 bg-transparent relative snap-center"
+>
 	{#if play}
 		<iframe
 			src="https://www.youtube.com/embed/{id}?autoplay=1&rel=0"
