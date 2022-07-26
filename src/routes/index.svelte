@@ -136,7 +136,7 @@
 					<EmptyCard />
 					<EmptyCard />
 				{:else}
-					{#each $videos as video (video.id)}
+					{#each $videos as video}
 						<CardYoutube snippet={video.snippet} />
 					{/each}
 				{/if}
