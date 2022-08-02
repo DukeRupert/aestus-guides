@@ -18,8 +18,6 @@
 	import SvelteSeo from 'svelte-seo';
 	import { page } from '$app/stores';
 	import CardYoutube from '$lib/youtube/CardYoutube.svelte';
-	import LoadingSpinner from '$lib/LoadingSpinner.svelte';
-	import EmptyGuideCard from '$lib/guideComponents/emptyGuideCard.svelte';
 
 	let guideTab = 'New';
 	let videoTab = 'New';
@@ -116,7 +114,7 @@
 	<h1 class="text-2xl lg:text-4xl text-black dark:text-gray-100 my-4">Videos</h1>
 	<VideoTabs on:videoTab={handleVideoTab} />
 
-	<div class="bg-white dark:bg-black grid grid-cols-1 gap-y-4 sm:gap-y-10 lg:gap-x-8">
+	<div class="bg-white dark:bg-black grid grid-cols-1 h-auto lg:gap-x-8">
 		<ul
 			class="flex overflow-x-scroll no-scrollbar snap-mandatory snap-x divide-y divide-gray-200 dark:divide-gray-700"
 		>
@@ -128,18 +126,9 @@
 				<EmptyCard />
 				<EmptyCard />
 			{:then}
-				{#if $videos.length === 0}
-					<EmptyCard />
-					<EmptyCard />
-					<EmptyCard />
-					<EmptyCard />
-					<EmptyCard />
-					<EmptyCard />
-				{:else}
-					{#each $videos as video}
-						<CardYoutube snippet={video.snippet} />
-					{/each}
-				{/if}
+				{#each $videos as video}
+					<CardYoutube snippet={video.snippet} />
+				{/each}
 			{:catch error}
 				<p class="text-red-500">{error.message}</p>
 			{/await}

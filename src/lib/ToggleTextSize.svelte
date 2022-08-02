@@ -18,7 +18,6 @@
 	}
 
 	onMount(() => {
-		console.log('Checking for fontSize in localStorage');
 		if (localStorage.fontSize) {
 			console.log('found');
 			fontSize = parseInt(localStorage.fontSize);
