@@ -109,6 +109,28 @@
 		</div>
 	</div>
 </div>
+<!-- Guide Tabs -->
+<div class="w-full bg-white dark:bg-black mx-auto lg:max-w-4xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+	<h1 class="text-2xl lg:text-4xl text-black dark:text-gray-100 my-4">Guides</h1>
+	<GuideTabs on:guideTab={handleGuideTab} />
+
+	<div class="bg-white dark:bg-black grid grid-cols-1 gap-y-4 sm:gap-y-10 lg:gap-x-8">
+		<ul class="divide-y divide-gray-200 dark:divide-gray-700">
+			{#await guides.load()}
+				<PlaceholderCard />
+				<PlaceholderCard />
+				<PlaceholderCard />
+				<PlaceholderCard />
+				<PlaceholderCard />
+				<PlaceholderCard />
+			{:then Guides}
+				{#each Guides as guide}
+					<PreviewCard {guide} />
+				{/each}
+			{/await}
+		</ul>
+	</div>
+</div>
 <!-- Video Tabs -->
 <div class="w-full bg-white dark:bg-black mx-auto lg:max-w-4xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
 	<h1 class="text-2xl lg:text-4xl text-black dark:text-gray-100 my-4">Videos</h1>
@@ -131,29 +153,6 @@
 				{/each}
 			{:catch error}
 				<p class="text-red-500">{error.message}</p>
-			{/await}
-		</ul>
-	</div>
-</div>
-
-<!-- Guide Tabs -->
-<div class="w-full bg-white dark:bg-black mx-auto lg:max-w-4xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-	<h1 class="text-2xl lg:text-4xl text-black dark:text-gray-100 my-4">Guides</h1>
-	<GuideTabs on:guideTab={handleGuideTab} />
-
-	<div class="bg-white dark:bg-black grid grid-cols-1 gap-y-4 sm:gap-y-10 lg:gap-x-8">
-		<ul class="divide-y divide-gray-200 dark:divide-gray-700">
-			{#await guides.load()}
-				<PlaceholderCard />
-				<PlaceholderCard />
-				<PlaceholderCard />
-				<PlaceholderCard />
-				<PlaceholderCard />
-				<PlaceholderCard />
-			{:then Guides}
-				{#each Guides as guide}
-					<PreviewCard {guide} />
-				{/each}
 			{/await}
 		</ul>
 	</div>
