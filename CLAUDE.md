@@ -54,7 +54,20 @@ Hugo uses a modular config structure in `config/_default/`:
 
 ## Deployment
 
-The `deploy.sh` script:
-1. Archives existing `/public` to `/archives` with timestamp
-2. Runs `hugo --minify`
-3. Rsyncs to production server at `mirandashift.com`
+Push to `master` triggers GitHub Actions (`.github/workflows/deploy.yml`):
+1. Builds Docker image using multi-stage Dockerfile (Hugo Extended → nginx)
+2. Pushes to Docker Hub as `aestus-guides:latest` and `aestus-guides:<sha>`
+3. SSHs to VPS and runs `docker compose pull && docker compose up -d`
+
+### Local Docker Testing
+```bash
+docker build -t aestus-guides .
+docker run -p 8080:80 aestus-guides
+```
+
+### Required GitHub Secrets
+- `DOCKERHUB_USERNAME` / `DOCKERHUB_TOKEN`
+- `VPS_HOST` / `VPS_USER` / `VPS_SSH_KEY`
+
+### VPS Setup
+Place `docker-compose.yml` at `/opt/aestus-guides/` on the VPS.

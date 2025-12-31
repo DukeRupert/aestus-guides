@@ -1,0 +1,6 @@
+services:
+  aestus-guides:
+    image: ${DOCKERHUB_USERNAME:-dukerupert}/aestus-guides:latest
+    ports:
+      - "80:80"
+    restart: unless-stopped
