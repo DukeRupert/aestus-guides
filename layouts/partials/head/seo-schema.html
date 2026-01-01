@@ -1,0 +1,105 @@
+{{- /* JSON-LD Structured Data for SEO */ -}}
+
+{{- /* Organization Schema - Site-wide */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.BaseURL }}img/logo_dice.png",
+  "description": "{{ .Site.Params.description | default .Site.Title }}"
+}
+</script>
+
+{{- /* WebSite Schema with SearchAction */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ .Site.BaseURL }}search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+{{- /* Article Schema - Only on article pages */ -}}
+{{- if and .IsPage (eq .Section "articles") -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description | default .Summary | plainify | truncate 160 }}",
+  "url": "{{ .Permalink }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{- if .Lastmod }}
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{- else }}
+  "dateModified": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{- end }}
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Params.author | default .Site.Params.author.name | default "Aestus" }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}img/logo_dice.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+  {{- with .Params.image }},
+  "image": "{{ $.Permalink }}{{ . }}"
+  {{- else }},
+  "image": "{{ $.Site.BaseURL }}img/logo_dice.png"
+  {{- end }}
+  {{- with .Params.categories }},
+  "articleSection": "{{ index . 0 }}"
+  {{- end }}
+  {{- with .Params.tags }},
+  "keywords": "{{ delimit . ", " }}"
+  {{- end }}
+}
+</script>
+
+{{- /* BreadcrumbList Schema */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    }
+    {{- if .Section }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Section | humanize | title }}",
+      "item": "{{ .Site.BaseURL }}{{ .Section }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end -}}

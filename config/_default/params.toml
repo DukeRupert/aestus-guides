@@ -55,14 +55,17 @@ limit = 10
 [[widgets.page]]
 type = "toc"
 
+# Author information for SEO (E-E-A-T signals)
+[author]
+name = "Aestus"
+
 [opengraph.twitter]
-site = ""
 card = "summary_large_image"
 
 [defaultImage.opengraph]
-enabled = false
-local = false
-src = ""
+enabled = true
+local = true
+src = "img/logo_dice.png"
 
 [colorScheme]
 toggle = true

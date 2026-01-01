@@ -1,0 +1,14 @@
+# Robots.txt for Aestus Guides
+# https://www.aestusguides.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.aestusguides.com/sitemap.xml
+
+# Crawl-delay for politeness (optional, not all bots respect this)
+# Crawl-delay: 10
+
+# Disallow admin/system paths (Hugo doesn't have these, but good practice)
+Disallow: /cdn-cgi/
