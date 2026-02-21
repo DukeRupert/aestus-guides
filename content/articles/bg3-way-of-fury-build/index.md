@@ -24,13 +24,13 @@ This build combines Barbarian and Monk to get make an unstoppable brawling jugge
 
 Here is the gist. Late game Monks are very potent damage dealers that lack durability. Late game Barbarians have raid boss durability, but lack damage. Combining them synergizes into a build that is both insanely durable and has high damage.
 
-## Becoming an Unkillable Raid Boss
+## Durability: Why This Build Is Nearly Impossible to Kill
 
 So, what are the core features which synergize? The first is Bearheart + Aspect of Stallion + Step of the Wind: Dash. I discussed this before with my Queenguard Karlach build. Wildheart Barbarians can get Aspect of the Stallion, which adds double their Barbarian level as temporary hit-points every time they dash. Bearheart gives resistance to all damage types except psychic while raging, which practically doubles the value of the temp HP from stallion. It's a beautiful combo, but Barbarians on their own don't have a way to dash on a bonus action besides Eagleheart, which is mutually exclusive to Bearheart. This is where Step of the Wind: Dash enters. At level 2, Monks can spend a kit point to Dash on a bonus action, unlocking the Bearheart + Aspect of Stallion combo!
 
 Late game, we can also get the Bonespike Garb, which adds flat damage reduction and retaliation damage that scales with our constitution score. As I've said before, flat damage reduction synergizes beautifully with resistances stacking from Bearheart, since the percentage reduction is applied before the flat reduction, giving us even more value from the temporary HP! The retaliation damage is also great for us since we want to be building max constitution anyways.
 
-## Becoming an Offensive Murder Machine
+## Damage Output: Stacking Attacks and Bonus Damage
 
 But what about damage? There are three core factors to building great melee damage in BG3. They are:
 
@@ -50,7 +50,7 @@ Add all these up we have a baseline of 4 attacks per round (5 if hasted) but can
 
 ### Hit Accuracy
 
-So, we are making a lot of attacks, but can we hit them? Yes! Monk and Barbarian combine for the highest consistent accuracy in the game that I know of. Barbarians give Reckless Attack for advantage every round. Monks + Tavern Brawler doubles our strength bonus. We'll miss one in every 400 attacks, roughly. Its insane!
+So, we are making a lot of attacks, but can we hit them? Yes! Monk and Barbarian combine for the highest consistent accuracy in the game that I know of. Barbarians give Reckless Attack for advantage every round. Monks + Tavern Brawler doubles our strength bonus. We'll miss one in every 400 attacks, roughly — about as close to guaranteed accuracy as this game allows.
 
 ### Damage Calculation
 

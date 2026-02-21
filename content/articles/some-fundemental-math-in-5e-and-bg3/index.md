@@ -5,7 +5,6 @@ slug: 5e-bg3-fundamental-math
 date: 2022-04-09 00:00:00+0000
 image: math_cover.webp
 categories:
-   - D&D
    - Baldur's Gate 3
 tags:
    - Analysis

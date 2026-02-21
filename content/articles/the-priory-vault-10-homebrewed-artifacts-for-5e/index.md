@@ -4,7 +4,6 @@ description: A collection of custom artifacts for D&D 5e campaigns, including un
 slug: the-priory-vault-10-homebrewed-artifacts-for-5e
 date: 2023-12-23 00:00:00+0000
 categories:
-    - D&D
     - Tabletop RPGs
 tags:
     - Homebrew

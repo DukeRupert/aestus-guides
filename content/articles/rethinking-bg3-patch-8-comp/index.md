@@ -4,7 +4,7 @@ title: "Rethinking my BG3 Patch 8 Comp"
 description: "A detailed analysis of a Dark Urge-focused party composition in Baldur's Gate 3 Patch 8, featuring Shadow Sorcerer, Death Cleric, and Necromancy Wizard multiclass build"
 slug: rethinking-bg3-patch-8-comp
 date: 2025-02-06 00:00:00+0000
-image: bg3_patch8.png
+image: bg3_patch8.webp
 categories:
    - Baldur's Gate 3
 tags:

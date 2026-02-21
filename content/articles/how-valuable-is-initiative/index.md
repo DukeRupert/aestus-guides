@@ -5,7 +5,6 @@ slug: value-of-initiative-game-design
 date: 2022-10-10 00:00:00+0000
 image: initiative_cover.webp
 categories:
-   - D&D
    - Baldur's Gate 3
 tags:
    - Analysis
