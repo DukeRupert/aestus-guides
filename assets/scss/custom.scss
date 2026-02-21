@@ -82,7 +82,7 @@ button,
     --card-text-color-tertiary: #6B6573;
 
     // Card borders and separators
-    --card-separator-color: rgba(46, 42, 53, 0.7);
+    --card-separator-color: #2E2A35;
 
     // Scrollbar
     --scrollbar-thumb: hsl(270, 8%, 35%);
@@ -123,7 +123,7 @@ button,
     --card-text-color-main: #E8E4EC;
     --card-text-color-secondary: #9B95A3;
     --card-text-color-tertiary: #6B6573;
-    --card-separator-color: rgba(46, 42, 53, 0.7);
+    --card-separator-color: #2E2A35;
     --code-background-color: rgba(196, 154, 82, 0.1);
     --code-text-color: #D4AD6A;
     --table-border-color: #2E2A35;
@@ -142,7 +142,7 @@ button,
     --card-background: #FFFFFF;
     --card-background-selected: #EDE8E0;
     --accent-color: #8B6B2F;
-    --accent-color-darker: #6E5424;
+    --accent-color-darker: #A07E3A;
     --accent-color-text: #FFFFFF;
     --body-text-color: #1A171E;
     --card-text-color-main: #1A171E;
@@ -194,10 +194,10 @@ button,
 // Card hover effect - subtle gold border glow
 .article-list article {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid transparent;
+    border: 1px solid #2E2A35;
 
     &:hover {
-        border-color: rgba(196, 154, 82, 0.2);
+        border-color: rgba(196, 154, 82, 0.3);
         box-shadow: 0 4px 12px rgba(196, 154, 82, 0.05);
     }
 }
@@ -249,6 +249,8 @@ button,
                     &.active {
                         color: var(--accent-color);
                         font-weight: 500;
+                        border-left: 2px solid var(--accent-color);
+                        padding-left: 0.75rem;
                     }
                 }
             }
@@ -292,7 +294,7 @@ h4:hover .heading-anchor {
 
 // Search input
 .search-input {
-    font-family: "Lora", Georgia, serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
     &::placeholder {
         color: var(--card-text-color-tertiary);
