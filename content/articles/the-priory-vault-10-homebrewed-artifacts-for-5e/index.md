@@ -11,7 +11,7 @@ tags:
 weight: 1
 ---
 
-# Guide The Priory Vault - 10 Homebrewed Artifacts for 5e
+# The Priory Vault - 10 Homebrewed Artifacts for 5e
 
 Below is an inventory of artifacts collected by the Ordo Prioratus Aequatoris, called the Knights of the Priory. These are items I designed for my tabletop 5e D&D adventure In the Bleak Midwinter.
 

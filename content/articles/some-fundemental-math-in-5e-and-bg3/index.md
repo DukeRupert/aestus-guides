@@ -15,7 +15,7 @@ series:
 weight: 1
 ---
 
-# Guide Some Fundemental Math in 5e and BG3
+# Fundamental Math in D&D 5e and Baldur's Gate 3
 
 This is a resource outlining what I consider the most important math for understanding D&D 5e and BG3. In it I detail important formulas you can use to calculate the power of your own builds, but I also explain as clearly as I can how we arrive at those formulas so that you can understand how it works, not just that it works. At the end I explore the math of power scaling – the so-called “flattened math” of 5e – with concrete examples and discuss how all of it should impact how we evaluate the relative strength of build choices.
 

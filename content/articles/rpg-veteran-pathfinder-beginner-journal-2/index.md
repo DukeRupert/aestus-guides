@@ -12,7 +12,7 @@ tags:
 weight: 1
 ---
 
-# Guide RPG Veteran, Pathfinder Beginner: Journal #2
+# RPG Veteran, Pathfinder Beginner: Journal #2
 
 ## Sources of Overwhelming Damage
 

@@ -15,7 +15,7 @@ toc: true
 weight: 1
 ---
 
-# Guide Fallen Light - An Eagleheart Barbarian Build
+# Fallen Light - An Eagleheart Barbarian Build for BG3
 
 > “If thou beest she; But O how fall'n! how chang'd  
 > From her, who in the happy Realms of Light  

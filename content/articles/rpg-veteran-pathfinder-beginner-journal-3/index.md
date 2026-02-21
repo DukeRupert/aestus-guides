@@ -1,5 +1,5 @@
 ---
-title: "Guide RPG Veteran, Pathfinder Beginner: Journal #3"
+title: "RPG Veteran, Pathfinder Beginner: Journal #3"
 description: "An experienced CRPG player explores Pathfinder: Wrath of the Righteous, examining the Instinctual Warrior class, weapon optimization, and Unfair difficulty"
 slug: rpg-veteran-pathfinder-beginner-journal-3
 date: 2023-02-04 00:00:00+0000
@@ -12,7 +12,7 @@ tags:
 weight: 1
 ---
 
-# Guide RPG Veteran, Pathfinder Beginner: Journal #3
+# RPG Veteran, Pathfinder Beginner: Journal #3
 
 Hello again! Damn… Pathfinder is a complex system. Hands down the hardest to learn in the CRPG cannon. We are lucky to have these games! In a lot of ways they are slog, but I’m honestly loving the challenge!
 

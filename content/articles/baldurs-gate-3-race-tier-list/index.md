@@ -12,7 +12,7 @@ tags:
 weight: 1
 ---
 
-# Guide Baldur's Gate 3 Race Tier List
+# Baldur's Gate 3 Race Tier List Guide
 
 {{< youtube "nqgcy5yV6V4" >}}
 

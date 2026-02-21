@@ -11,7 +11,7 @@ tags:
 weight: 1
 ---
 
-# Guide Miniature Giants– A Meme Build for Playing Minsc in BG3 EA
+# Miniature Giants– A Meme Build for Playing Minsc in BG3 EA
 
 Are you tired of the same old runs on Patch 6? When you are looking through classes in character creation, does it feel like you’ve played them all; that none of them inspire you anymore? This is a build for you! Like my previous builds, this one centers around a collection of strange mechanical interactions that I think many people haven’t realized are in the game. This set of interactions isn’t as powerful as my others, but I think it is still interesting and fun. I hope you will agree!
 

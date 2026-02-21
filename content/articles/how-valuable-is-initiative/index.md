@@ -12,8 +12,7 @@ tags:
    - Game Design
 weight: 1
 ---
-Guide How Valuable is Initiative?
-=================================
+# How Valuable is Initiative? A Game Design Analysis
 
 #### Definitions
 

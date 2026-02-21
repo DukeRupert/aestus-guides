@@ -11,7 +11,7 @@ tags:
 weight: 1
 ---
 
-# Guide Vlaakith’s Arcane Knight of Faith – A Great Weapon Master Wizard Build
+# Vlaakith’s Arcane Knight of Faith – A Great Weapon Master Wizard Build
 
 *“Infinite resignation is the last stage before faith. The moment the Knight executes the act of resignation she is convinced of the impossibility. The Knight of Faith realizes this just as clearly: she can be saved only by the absurd. Consequently, she acknowledges the impossibility of her desire, and in the very same moment she believes the absurd and knows, through the paradox, she will find fullfillment.”*
 

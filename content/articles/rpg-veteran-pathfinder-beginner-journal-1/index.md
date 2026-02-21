@@ -12,7 +12,7 @@ tags:
 weight: 1
 ---
 
-# Guide RPG Veteran, Pathfinder Beginner: Journal #1
+# RPG Veteran, Pathfinder Beginner: Journal #1
 
 Hello Pathfinder community! I am a CRPG and tabletop RPG veteran with 20 years of experience in D&amp;D and D&amp;D CRPG’s, particularly the Baldur’s Gate Series. If you play BG3 you may know me from the popular tier lists I have on this website. I think us CRPG enthusiasts are building an awesome community around a unique artform, and I want to contribute to it! Towards that end, I have been trying to push myself to broaden as well as deepen my engagement with CRPGs, and the beginning of that for me is to leave the familiar comforts of D&amp;D games into the daunting Pathfinder system, starting with Wrath of the Righteous. I am having a blast! I thought it would be interesting if I journaled my thoughts about Wrath of the Righteous *while* I am learning it. If you are new to the game like me, you might find this series helpful. If you are an experienced player it may be funny to see me stumble my way through!
 
