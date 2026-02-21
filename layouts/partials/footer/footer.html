@@ -1,0 +1,23 @@
+<footer class="site-footer">
+    <section class="copyright">
+        &copy;
+        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
+            {{ .Site.Params.footer.since }} -
+        {{ end }}
+        {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
+    </section>
+
+    <!-- Firefly Software signature -->
+    <div class="footer-signature">
+      <span class="sig-divider dark">
+        <span class="sig-divider-rule"></span>
+        <span class="sig-divider-inner">
+          <span class="sig-divider-glyph">✦</span>
+          <span class="sig-divider-text">
+            Made in Montana by <a href="https://fireflysoftware.dev">Firefly Software</a>
+          </span>
+        </span>
+        <span class="sig-divider-rule"></span>
+      </span>
+    </div>
+</footer>
