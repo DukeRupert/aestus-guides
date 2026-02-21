@@ -3,7 +3,7 @@ title: "My Next Build: The Way of Fury"
 description: "A detailed guide for a powerful Barbarian/Monk multiclass build in Baldur's Gate 3, combining high durability with devastating damage output"
 slug: bg3-way-of-fury-build
 date: 2024-04-26 00:00:00+0000
-image: way_of_fury_build.jpg
+image: way_of_fury_build.webp
 categories:
    - Baldur's Gate 3
 tags:

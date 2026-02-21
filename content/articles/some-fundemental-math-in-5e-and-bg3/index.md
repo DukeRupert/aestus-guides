@@ -3,7 +3,7 @@ title: "Fundamental Math in D&D 5e and Baldur's Gate 3"
 description: "A deep dive into the mathematical foundations of D&D 5e and BG3, exploring build calculations, power scaling, and comparative systems analysis"
 slug: 5e-bg3-fundamental-math
 date: 2022-04-09 00:00:00+0000
-image: math_cover.png
+image: math_cover.webp
 categories:
    - D&D
    - Baldur's Gate 3
@@ -58,14 +58,14 @@ In 5e, attacking with advantage means you roll your D20 twice and take the highe
 
 We can model this with a very simple graph:  
 
-![Adv_DsAdv_Chart](adv_dsadv_chart.png)
+![Adv_DsAdv_Chart](adv_dsadv_chart.webp)
 
   
 Each box represents a possible outcome and we can easily picture what our hit percentage will be by shading in the outcomes which will translate to a hit (since what we want is our percentage chance to hit). Note, all four boxes together will equal the value “1” because they represent all possible outcomes.
 
 It's easiest to start with disadvantage. When attacking with disadvantage we need to find the probability of the “Hit-Hit” outcome (see point 2 above), so we graph that by shading it in:  
 
-![DsAdv_Chart](dsadv_chart.png)
+![DsAdv_Chart](dsadv_chart.webp)
 
   
 This is actually very easy to calculate because we already know how to calculate our base chance to hit. To determine the chance of two outcomes you must multiply those outcomes together, in our case its two hits, so, “hit% x hit%” or “p x p” or “p2”. Let's make a note of that for our list of formulas:
@@ -74,7 +74,7 @@ This is actually very easy to calculate because we already know how to calculate
 
 Now what about when we are attacking with advantage? This is much more complicated to solve, but once we model it on our graph we can see what we need to do. Remember, when attacking with advantage you must miss twice to actually miss, so:
 
-![Adv_Chart](adv_chart.png)
+![Adv_Chart](adv_chart.webp)
 
   
 The easiest way to zero in on those three boxes is to find the value of the “Miss-Miss” box than subtract that number from 1. Why? Because, as we noted above, all four boxes together equal the value of 1 (or 100% chance, because when calculating odds 100%, expressed as 1, is the upper bound). If we find the exact value of the “Miss-Miss” box and subtract that from 1 we will have the value of the three shaded boxes.

@@ -3,7 +3,7 @@ title: "RPG Veteran, Pathfinder Beginner: Journal #3"
 description: "An experienced CRPG player explores Pathfinder: Wrath of the Righteous, examining the Instinctual Warrior class, weapon optimization, and Unfair difficulty"
 slug: rpg-veteran-pathfinder-beginner-journal-3
 date: 2023-02-04 00:00:00+0000
-image: Instinctual_Warrior.png
+image: Instinctual_Warrior.webp
 categories:
     - Pathfinder
 tags:
@@ -48,7 +48,7 @@ You should of course invest in Dodge and Crane Style early as well for even more
 
 As a proof of concept, I was able to get a 41 AC on my Instinctual Barbarian by level 5
 
-![Instinct Barb Lvl 5](instinct_barb_pathfinder_lv5.png)
+![Instinct Barb Lvl 5](instinct_barb_pathfinder_lv5.webp)
 
 I chose level 5 just to demonstrate that it’s AC gets ahead of the curve early. You can further grow in into the late game by taking Archmage Armor Mythic ability, through the natural progression of the class, and stronger buffs.
 

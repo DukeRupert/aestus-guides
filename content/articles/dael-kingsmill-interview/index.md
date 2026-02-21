@@ -3,7 +3,7 @@ title: "Interview with Dael Kingsmill: Mythology, Draw Steel, and Cultural Story
 description: "A conversation with Dael Kingsmill about mythology in gaming, her experiences with Draw Steel, and how cultural understanding shapes storytelling in tabletop RPGs"
 slug: dael-kingsmill-interview
 date: 2025-02-14 00:00:00+0000
-image: dael_kingsmill_interview.jpg
+image: dael_kingsmill_interview.webp
 categories:
     - Tabletop RPGs
 tags:

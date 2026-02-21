@@ -3,7 +3,7 @@ title: "RPG Veteran, Pathfinder Beginner: Journal #2"
 description: "An experienced CRPG player explores damage mechanics and tactical system design in Pathfinder: Wrath of the Righteous"
 slug: rpg-veteran-pathfinder-beginner-journal-2
 date: 2021-12-17 00:00:00+0000
-image: za_cleric_bg3.png
+image: za_cleric_bg3.webp
 categories:
    - Pathfinder
 tags:
@@ -38,7 +38,7 @@ I also learned from playing more that I was wrong about what level the wisdom bu
 
 Now if we update our comparison chart to account for these changes we get this:
 
-![Wis Cha Compared](wis_cha_compared.png)
+![Wis Cha Compared](wis_cha_compared.webp)
 
 As before, the check with the asterisk denotes the once per day boost granted by Guarded Hearth. The check with prime denotes the limited used bonuses granted by Smite Evil. How limited those uses are will depend on how many levels of Paladin you have. In my build its only one.
 

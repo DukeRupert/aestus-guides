@@ -3,7 +3,7 @@ title: "Vlaakith's Arcane Knight of Faith – A Great Weapon Master Wizard Build
 description: "A powerful Githyanki Wizard build for Baldur's Gate 3 that combines Great Weapon Master with Arcane Ward and defensive spells"
 slug: vlaakith-s-arcane-knight-of-faith-a-great-weapon-master-wizard-build
 date: 2021-12-20 00:00:00+0000
-image: gwm_wizard.png
+image: gwm_wizard.webp
 categories:
    - Baldur's Gate 3
 tags:
@@ -109,19 +109,19 @@ If you are the kind of person who hates bringing two of the same class in your p
 
 Let’s begin by analyzing how this build performs in DPR. Here is how it compares to other builds we’ve discussed:
 
-![Knight of Faith DPR Chart](knight_of_faith_dpr_chart.png)
+![Knight of Faith DPR Chart](knight_of_faith_dpr_chart.webp)
 
 If you were confused about why we should play as a controller first and a striker second, this is why. Just getting GWM is not enough for making a high performing striker. What makes GWM so strong is enabling it through control spells like Sleep, Tasha’s, and Hold Person, or adding attacks on your reaction with Battle Master Riposte and Menacing Strike. In this build, we enable ourselves, which is good, but it means less rounds attacking.
 
 Keep in mind also that while we don’t have consistent ways of weaponizing our reaction, we do have a way to deal retaliation damage through our frosty armor. If we assume that we can proc a 20 damage retaliation once every two turns (which is a modest assumption I think) here is how our DPR would look:
 
-![Frosty Knight of Faith DPR Chart](frosty_knight_of_faith_dpr_chart.png)
+![Frosty Knight of Faith DPR Chart](frosty_knight_of_faith_dpr_chart.webp)
 
 Now we are talking! This still isn’t the full picture though. If you are refreshing your armor in a fight, that is a turn where you are not attacking. Retaliation damage can look great as raw numbers, but you cannot control to whom that damage is applied. It can definitely be more valuable to do less damage to the right target then just doing tons of damage wholesale.
 
 Overall, I would rate this build an “S” for effectiveness, but its very dependent on using it right. Its an S primarily because it’s a wizard and wizards are just phenomenal. It’s probably the best wizard build I know of. However, if you don’t play into a wizard’s strengths, which is controlling the battlefield, it won’t perform at an S level.
 
-![So'kier Portrait](So'kier_Portrait.png)
+![So'kier Portrait](So'kier_Portrait.webp)
 
 ## The Character – So’kier
 

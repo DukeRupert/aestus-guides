@@ -3,7 +3,7 @@ title: "James Introcaso on Becoming a Professional Designer | Insight Check Epis
 description: "An in-depth interview with prolific TTRPG designer James Introcaso discussing his career journey, contributions to D&D 5e products, and insights on tabletop RPG design"
 slug: james-introcaso-professional-designer-interview
 date: 2025-03-13 00:00:00+0000
-image: james_introcaso_interview_insight_check_5.jpg
+image: james_introcaso_interview_insight_check_5.webp
 categories:
   - Tabletop RPGs
 tags:

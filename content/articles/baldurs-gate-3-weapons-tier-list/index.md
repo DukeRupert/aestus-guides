@@ -4,7 +4,7 @@ description: "Comprehensive rankings of unique weapons and weapon actions in BG3
 slug: baldurs-gate-3-weapons-tier-list
 date: 2022-02-15 00:00:00+0000
 lastmod: 2022-02-15 00:00:00+0000
-image: Greatsword_PlusOne_Icon.png 
+image: Greatsword_PlusOne_Icon.webp 
 categories:
    - Baldur's Gate 3
 tags:
@@ -55,7 +55,7 @@ Ok, let’s get to the list!
 
 ### Backbreaker - B Tier
 
-![Backbreaker](backbreaker.png)
+![Backbreaker](backbreaker.webp)
 
 The character makes a single standard attack as an action. If the attack hits it deals damage as normal but as if your weapon has 1d4 base damage. Moreover, the target must make a strength saving throw or be knocked prone for two turns. A prone target has disadvantage on strength and dexterity saving throws and all attacks against the target made within 3m have advantage. A target may stand up at the cost of half of its movement.
 
@@ -66,7 +66,7 @@ With this ability you lose a bit of damage and get a (slim) chance of knocking t
 
 ### Brace - C Tier
 
-![Brace](brace.png)
+![Brace](brace.webp)
 
 You spend 7.5m of movement and for the rest of your turn you roll damage twice and use the highest result.
 
@@ -75,7 +75,7 @@ This ability seems good until you do the math on what rolling damage twice actua
 
 ### Cleave - B Tier
 
-![Cleave](cleave.png)
+![Cleave](cleave.webp)
 
 You attack in a cone that can hit up to 3 targets in front of you. For every attack that hits you deal half of your normal attack damage.
 
@@ -86,7 +86,7 @@ If you have Great Weapon Master, this is an A-tier action. For everyone else its
 
 ### Concussive Smash - S Tier
 
-![Concussive Smash](concussive_smash.png)
+![Concussive Smash](concussive_smash.webp)
 
 The character makes a standard attack as an action. If the attack hits the target must make a constitution saving throw or receive the dazed condition for two turns. A dazed creature has disadvantage on wisdom saving throws, cannot take reactions, and loses their dexterity bonus to armor class.
 
@@ -95,7 +95,7 @@ Dazed is an overpowered status condition. Wisdom save spells are the most potent
 
 ### Crippling Strike - B Tier
 
-![Crippling Strike](crippling_strike.png)
+![Crippling Strike](crippling_strike.webp)
 
 The character makes a single standard attack as an action. If the attack hits it deals damage as normal but as if your weapon has 1d4 base damage. Moreover, the target must make a constitution saving throw or receive the crippled condition for two turns. A crippled target’s movement is reduced to 0 and they have disadvantage on dexterity saving throws.
 
@@ -104,7 +104,7 @@ A slightly better version of Backbreaker. Not good enough to move it into A-tier
 
 ### Flourish - B Tier
 
-![Flourish](flourish.png)
+![Flourish](flourish.webp)
 
 Flourish is like a melee range control spell that takes a bonus action to cast. The target must make a dexterity saving throw or receive the condition off-balance for two turns. A creature that is off-balance has disadvantage on strength saving throws and the next attack against them is made with advantage.
 
@@ -113,7 +113,7 @@ Off-balance is a mediocre condition but being able to apply it on a bonus action
 
 ### Hamstring Shot - B Tier
 
-![Hamstring Shot](hamstring_shot.png)
+![Hamstring Shot](hamstring_shot.webp)
 
 Make a standard attack. If the attack hits you deal damage as normal, but the target must also roll a constitution saving throw. If they fail, they acquire the hamstrung condition. A hamstrung target has their movement reduced by 50%.
 
@@ -122,7 +122,7 @@ Reducing movement by half… Who cares? Technically its useful for kiting, buts 
 
 ### Heartstopper - S Tier
 
-![Heartstopper](heartstopper.png)
+![Heartstopper](heartstopper.webp)
 
 The character makes a single standard attack as an action. If the attack hits it deals damage as normal but as if your weapon has 1d4 base damage. Moreover, the target must make a constitution saving throw or receive the chest trauma condition for two turns. A target with chest trauma has disadvantage on constitution saving throws and loses their standard action.
 
@@ -131,7 +131,7 @@ Not enough people are talking about how overpowered Heartstopper is. The enemy l
 
 ### Lacerate - B Tier
 
-![Lacerate](lacerate.png)
+![Lacerate](lacerate.webp)
 
 This is made as a part of a standard attack. If the attack hits the target takes damage as normal but also must make a constitution saving throw to acquire the bleeding condition for two rounds. A bleeding creature takes two slashing damage at the beginning of their turn and has disadvantage on constitution saving throws.
 
@@ -140,7 +140,7 @@ This is one of the stronger B-tier abilities. The extra damage is meh. Constitut
 
 ### Mobile Shot - RP Tier
 
-![Mobile Shot](mobile_shot.png)
+![Mobile Shot](mobile_shot.webp)
 
 When you use your dash action you may make a standard attack as a bonus action.
 
@@ -148,7 +148,7 @@ This is another one that sounds good until you think it over. Its exclusive to h
 
 ### Piercing Strike/Shot - A Tier
 
-![Piercing Strike](piercing_strike.png)
+![Piercing Strike](piercing_strike.webp)
 
 The character makes a single standard attack as an action. If the attack hits the target must make a constitution saving throw or receive the gaping wounds condition for two turns. A target with gaping wounds takes an additional two piercing damage when hit by an attack. Gaping wounds is removed if the target is healed.
 
@@ -162,7 +162,7 @@ The first two are really niche circumstances, but the third is actually practica
 
 ### Prepare - A Tier
 
-![Prepare](prepare.png)
+![Prepare](prepare.webp)
 
 You spend 7.5m of movement to add your strength modifier in slashing damage with your weapon till the end of your turn (i.e. it effectively doubles your strength modifier for damage).
 
@@ -170,7 +170,7 @@ Like Piercing Strike, this ability is fun because of how you can multiply it. Yo
 
 ### Pommel Strike - S Tier
 
-![Pommel Strike](pommel_strike.png)
+![Pommel Strike](pommel_strike.webp)
 
 Pommel Strike makes an attack role as a bonus action. If the attack hits the target takes you strength modifier in damage and must also make a constitution saving throw or become dazed for 2 rounds.
 
@@ -179,7 +179,7 @@ This is like a low damage Concussive Smash, but you can use it on a bonus action
 
 ### Rush Attack - A Tier
 
-![Rush Attack](rush_attack.png)
+![Rush Attack](rush_attack.webp)
 
 As an action you can charge 9m forward in a straight line and attack a target. If the attack hits it deals damage as normal but as if your weapon has 1d4 base damage. On a hit the target must also make a strength save or be knocked off-balance for two rounds. A creature that is off-balance has disadvantage on strength saving throws and the next attack against them is made with advantage.
 
@@ -188,7 +188,7 @@ We discussed off-balance above when we were analyzing Flourish. Its not a great 
 
 ### Tenacity - C Tier
 
-![Tenacity](tenacity.png)
+![Tenacity](tenacity.webp)
 
 If you miss an attack, you may spend your reaction to deal your strength modifier in damage anyways.
 
@@ -196,7 +196,7 @@ The damage is low and it costs your reaction. At its best its 5 or so extra dama
 
 ### Topple - B Tier
 
-![Topple](topple.png)
+![Topple](topple.webp)
 
 
 The target makes a dexterity saving throw. If they fail they are knocked prone for two rounds. A prone target has disadvantage on strength and dexterity saving throws and all attacks against the target made within 3m have advantage. A target may stand up at the cost of half of its movement.
@@ -206,7 +206,7 @@ Since this is unique to staffs, its functions as an escape for your squishy cast
 
 ### Weakening Strike - B Tier
 
-![Weakening Strike](weakening_strike.png)
+![Weakening Strike](weakening_strike.webp)
 
 The character makes a single standard attack as an action. If the attack hits it deals damage as normal but as if your weapon has 1d4 base damage. Moreover, the target must make a strength saving throw or receive the weak grip condition for two turns. A target with weak grip has disadvantage on attack roles and strength saving throws.
 
@@ -279,7 +279,7 @@ I will say it again in case you skipped the intro, if you are thinking “I can 
 
 ### Absolute's Warboard - B Tier
 
-![Absolute's Warboard](/items/absolutes_warboard.png)
+![Absolute's Warboard](/items/absolutes_warboard.webp)
 
 Weapon Type: Shield
 
@@ -290,7 +290,7 @@ Patch 7 nerfed this item into oblivion. Before this patch I was saying it was th
 
 ### Adamantine Longsword - B Tier
 
-![Adamantine Longsword](/items/adamantine_longsword.png)
+![Adamantine Longsword](/items/adamantine_longsword.webp)
 
 Weapon Type: Longsword
 
@@ -303,7 +303,7 @@ All of the Adamantine weapons are identical in effect, so I will use the same re
 
 ### Adamantine Mace - B Tier
 
-![Adamantine Mace](/items/adamantine_mace.png)
+![Adamantine Mace](/items/adamantine_mace.webp)
 
 Weapon Type: Mace
 
@@ -316,7 +316,7 @@ All of the Adamantine weapons are identical in effect, so I will use the same re
 
 ### Adamantine Scimitar - B Tier
 
-![Adamantine Scimitar](/items/adamantine_scimitar.png)
+![Adamantine Scimitar](/items/adamantine_scimitar.webp)
 
 Weapon Type: Scimitar
 
@@ -329,7 +329,7 @@ All of the Adamantine weapons are identical in effect, so I will use the same re
 
 ### Blooded Greataxe - B Tier
 
-![Blooded Greataxe](/items/blooded_greataxe.png)
+![Blooded Greataxe](/items/blooded_greataxe.webp)
 
 Weapon Type: Greataxe
 
@@ -340,7 +340,7 @@ This effect is honestly pretty good, since martials are incentivized by other it
 
 ### Club of Hill Giant Strength - B Tier
 
-![Club](/items/club.png)
+![Club](/items/club.webp)
 
 Weapon Type: Club
 
@@ -351,7 +351,7 @@ Its not good enough to be A-tier, but I use it on a lot of my runs. Its good to 
 
 ### Corellon's Grace - A Tier
 
-![Corellon's Grace](/items/corellons_grace.png)
+![Corellon's Grace](/items/corellons_grace.webp)
 
 Weapon Type: Staff
 
@@ -364,7 +364,7 @@ This is for your backline magic user to hold. The effect stacks with Bless, givi
 
 ### Deep Delver - B Tier
 
-![Deep Delver](/items/deep_delver.png)
+![Deep Delver](/items/deep_delver.webp)
 
 Weapon Type: Warpick
 
@@ -375,7 +375,7 @@ This is a very underwhelming item by the time you get it. It gives a little more
 
 ### Doom Axe - C Tier
 
-![Doom Axe](/items/doom_axe.png)
+![Doom Axe](/items/doom_axe.webp)
 
 Weapon Type: Greataxe
 
@@ -386,7 +386,7 @@ It is offering an effect you can already get from a cantrip. Pass.
 
 ### Dragon's Grasp - C Tier
 
-![Dragon's Grasp](/items/dragons_grasp.png)
+![Dragon's Grasp](/items/dragons_grasp.webp)
 
 Weapon Type: Handaxe
 
@@ -396,7 +396,7 @@ Its low damage and very situational, so not worth more words than this.
 
 ### Everburn Blade - A Tier
 
-![Everburn](/items/everburn_blade.png)
+![Everburn](/items/everburn_blade.webp)
 
 
 Weapon Type: Greatsword
@@ -408,7 +408,7 @@ It’s a consistent and high damage heavy weapon that you can get early. Unlike 
 
 ### Exterminator's Axe - B Tier
 
-![Exterminator's Axe](/items/exterminators_axe.png)
+![Exterminator's Axe](/items/exterminators_axe.webp)
 
 Weapon Type: Greataxe
 
@@ -419,7 +419,7 @@ A situational version of Blooded Greataxe. Not much to say here, its worth it if
 
 ### Faithbreaker - S Tier
 
-![Faithbreaker](/items/faithbreaker.png)
+![Faithbreaker](/items/faithbreaker.webp)
 
 Weapon Type: Warhammer
 
@@ -434,7 +434,7 @@ Pushing targets can easily add guaranteed double digit damage in BG3, either fro
 
 ### Firestoker - C Tier
 
-![Firestoker](/items/firestoker.png)
+![Firestoker](/items/firestoker.webp)
 
 Weapon Type: Hand Crossbow
 
@@ -445,7 +445,7 @@ It's the crossbow version of Dragon’s Grasp that you get much later on your ru
 
 ### Giantbreaker - B Tier
 
-![Giantbreaker](/items/giantbreaker.png)
+![Giantbreaker](/items/giantbreaker.webp)
 
 Weapon Type: Heavy Crossbow
 
@@ -458,7 +458,7 @@ Reeling is fine. Its just fine. You can count on this weapon. It’s one of the 
 
 ### Githyanki Crossbow - B Tier
 
-![Gith Crossbow](/items/githyanki_crossbow.png)
+![Gith Crossbow](/items/githyanki_crossbow.webp)
 
 Weapon Type: Heavy Crossbow
 
@@ -471,7 +471,7 @@ It’s a small boost to damage that is situational. However, psychic damage is s
 
 ### Githyanki Greatsword - B Tier
 
-![Gith Greatsword](/items/githyanki_greatsword.png)
+![Gith Greatsword](/items/githyanki_greatsword.webp)
 
 Weapon Type: Greatsword
 
@@ -484,7 +484,7 @@ It’s a small boost to damage that is situational. However, psychic damage is s
 
 ### Githyanki Longsword - B Tier
 
-![Gith Longsword](/items/githyanki_longsword.png)
+![Gith Longsword](/items/githyanki_longsword.webp)
 
 Weapon Type: Longsword
 
@@ -497,7 +497,7 @@ It’s a small boost to damage that is situational. However, psychic damage is s
 
 ### Githyanki Shortsword - B Tier
 
-![Gith Shortsword](/items/githyanki_shortsword.png)
+![Gith Shortsword](/items/githyanki_shortsword.webp)
 
 Weapon Type: Shortsword
 
@@ -510,7 +510,7 @@ It’s a small boost to damage that is situational. However, psychic damage is s
 
 ### Glowing Shield - B Tier
 
-![Glowing Shield](/items/glowing_shield.png)
+![Glowing Shield](/items/glowing_shield.webp)
 
 Weapon Type: Shield
 
@@ -521,7 +521,7 @@ It’s 8 temporary hit points per short rest, which adds up to 24 per long rest 
 
 ### Intransigent Warhammer - A Tier
 
-![Intransigent Warhammer](/items/intransigent_warhammer.png)
+![Intransigent Warhammer](/items/intransigent_warhammer.webp)
 
 Weapon Type: Warhammer
 
@@ -534,7 +534,7 @@ Knock back effects are often useful. You can force the proc with any auto crit m
 
 ### Jagged Spear - A Tier
 
-![Jagged Spear](/items/jagged_spear.png)
+![Jagged Spear](/items/jagged_spear.webp)
 
 Weapon Type: Spear
 
@@ -547,7 +547,7 @@ This is an enabling weapon, not a DPR weapon. There are some good spells that ta
 
 ### Light of Creation - A Tier
 
-![Light of Creation](/items/light_of_creation.png)
+![Light of Creation](/items/light_of_creation.webp)
 
 Weapon Type: Halberd
 
@@ -562,7 +562,7 @@ I love this weapon! It just does so much damage. It’s the highest, uncondition
 
 ### Loviatar's Scourge - C Tier
 
-![Loviatar's Scourge](/items/loviatars_scourge.png)
+![Loviatar's Scourge](/items/loviatars_scourge.webp)
 
 Weapon Type: Mace
 
@@ -575,7 +575,7 @@ Because its bugged, this only give you resistance to necrotic damage, which isn�
 
 ### Nature's Snare - B Tier
 
-![Nature's Snare](/items/natures_snare.png)
+![Nature's Snare](/items/natures_snare.webp)
 
 Weapon Type: Staff
 
@@ -588,7 +588,7 @@ Assuming I am right about the 20% proc rate, this feature adds around 1 damage p
 
 ### Paleoak - B Tier
 
-![Paleoak](/items/paleoak.png)
+![Paleoak](/items/paleoak.webp)
 
 Weapon Type: Staff
 
@@ -601,7 +601,7 @@ This is situationally good on Druid, basically allowing you to make attacks with
 
 ### Raindancer - A Tier
 
-![Raindancer](/items/raindancer.png)
+![Raindancer](/items/raindancer.webp)
 
 Weapon Type: Staff
 
@@ -612,7 +612,7 @@ Unlike Entangle, Create Water is an S-tier spell, and with this item it refreshe
 
 ### Ritual Axe - B Tier
 
-![Ritual Axe](/items/ritual_axe.png)
+![Ritual Axe](/items/ritual_axe.webp)
 
 Weapon Type: Handaxe
 
@@ -625,7 +625,7 @@ Bane is a potent debuff, as we have discussed. However, there are already severa
 
 ### Ritual Dagger - B Tier
 
-![Ritual Dagger](/items/ritual_dagger.png)
+![Ritual Dagger](/items/ritual_dagger.webp)
 
 Weapon Type: Dagger
 
@@ -640,7 +640,7 @@ Similar to Ritual Axe, there are already better ways of getting Bless than to ex
 
 ### Shattered Flail - A Tier
 
-![Shattered Flail](/items/shattered_flail.png)
+![Shattered Flail](/items/shattered_flail.webp)
 
 Weapon Type: Mace
 
@@ -655,7 +655,7 @@ This is another one of my favorite weapons! It’s the only +2 weapon in the gam
 
 ### Shortsword of First Blood - A Tier
 
-![Shortsword of First Blood](/items/shortsword_of_the_firstblood.png)
+![Shortsword of First Blood](/items/shortsword_of_the_firstblood.webp)
 
 Weapon Type: Shortsword
 
@@ -666,7 +666,7 @@ The value of this really depends on your play style I suppose. It could be eithe
 
 ### Sickle of Booal - RP Tier
 
-![Sickle of Booal](/items/sickle_of_booal.png)
+![Sickle of Booal](/items/sickle_of_booal.webp)
 
 Weapon Type: Sickle
 
@@ -679,7 +679,7 @@ This weapon is bugged right now, making it useless. I expect it would be B-tier,
 
 ### Skybreaker - B Tier
 
-![Light Hammer +1](/items/skybreaker.png)
+![Light Hammer +1](/items/skybreaker.webp)
 
 Weapon Type: Light Hammer
 
@@ -692,7 +692,7 @@ Searing Smite is a C-tier spell at best, and that’s practically all this item 
 
 ### Spellthief - S Tier
 
-![Spellthief](/items/spellthief.png)
+![Spellthief](/items/spellthief.webp)
 
 Weapon Type: Longbow
 
@@ -705,7 +705,7 @@ Spells are incredible, and this bow gives you an extra one per short rest (three
 
 ### Sorrow - B Tier
 
-![Sorrow](/items/sorrow.png)
+![Sorrow](/items/sorrow.webp)
 
 Weapon Type: Glaive
 
@@ -720,7 +720,7 @@ This weapon needs a buff in my opinion. The look and the way you get it are so c
 
 ### Staff of Arcane Blessing - S Tier
 
-![Staff of Arcane Blessing](/items/staff_of_arcane_blessing.png)
+![Staff of Arcane Blessing](/items/staff_of_arcane_blessing.webp)
 
 Weapon Type: Staff
 
@@ -735,7 +735,7 @@ Even though it is only a fraction as good as the tooltip says it should be, its 
 
 ### Staff of Crones - RP Tier
 
-![Staff of Crones](/items/staff_of_crones.png)
+![Staff of Crones](/items/staff_of_crones.webp)
 
 Weapon Type: Staff
 
@@ -746,7 +746,7 @@ If Ray of Sickness didn’t hit you as well as your enemy this would be A-tier, 
 
 ### Sussur Dagger - A Tier
 
-![Sussur Dagger](/items/sussur_dagger.png)
+![Sussur Dagger](/items/sussur_dagger.webp)
 
 Weapon Type: Dagger
 
@@ -759,7 +759,7 @@ All of the Sussur weapons are identical in effect, so I will use the same review
 
 ### Sussur Greatsword - A Tier
 
-![Sussur Greatsword](/items/sussur_greatsword.png)
+![Sussur Greatsword](/items/sussur_greatsword.webp)
 
 Weapon Type: Greatsword
 
@@ -772,7 +772,7 @@ All of the Sussur weapons are identical in effect, so I will use the same review
 
 ### Sussur Sickle - A Tier
 
-![Sussur Sickle](/items/sussur_sickle.png)
+![Sussur Sickle](/items/sussur_sickle.webp)
 
 Weapon Type: Sickle
 
@@ -785,7 +785,7 @@ All of the Sussur weapons are identical in effect, so I will use the same review
 
 ### Sword of Justice - S Tier
 
-![Sword of Justice](/items/sword_of_justice.png)
+![Sword of Justice](/items/sword_of_justice.webp)
 
 Weapon Type: Greatsword
 
@@ -798,7 +798,7 @@ I couldn’t find a png image for this one, so I used a generic greatsword inste
 
 ### Sword of Screams - A Tier
 
-![Sword of Screams](/items/sword_of_screams.png)
+![Sword of Screams](/items/sword_of_screams.webp)
 
 Weapon Type: Rapier
 
@@ -809,7 +809,7 @@ It's a rapier that will deal an additional 2.5 damage on hit. Like the finesse w
 
 ### The Watcher's Guide - B Tier
 
-![The Watcher's Guide](/items/the_watchers_guide.png)
+![The Watcher's Guide](/items/the_watchers_guide.webp)
 
 Weapon Type: Spear
 
@@ -820,7 +820,7 @@ What’s there to say about this? Its helps you hit more often. There aren’t a
 
 ### Vision of the Absolute - B Tier
 
-![Vision of the Absolute](/items/vision_of_the_absolute.png)
+![Vision of the Absolute](/items/vision_of_the_absolute.webp)
 
 Weapon Type: Spear
 
@@ -833,7 +833,7 @@ This is one of the better B-tiers in my opinion, and you can get it early. Keep 
 
 ### Worgfang - C Tier
 
-![Worgfang](/items/worgfang.png)
+![Worgfang](/items/worgfang.webp)
 
 Weapon Type: Dagger
 
@@ -844,7 +844,7 @@ Its decent for clearing the goblin camp, if you prioritize getting it before the
 
 ### Xyanyde - B Tier
 
-![Xyanyde](/items/xyanide.png)
+![Xyanyde](/items/xyanide.webp)
 
 Weapon Type: Mace
 

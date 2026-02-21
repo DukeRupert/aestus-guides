@@ -3,7 +3,7 @@ title: "Miniature Giants– A Meme Build for Playing Minsc in BG3 EA"
 description: "A unique character build for Baldur's Gate 3 Early Access inspired by the beloved companion Minsc from the original Baldur's Gate series"
 slug: miniature-giants-a-meme-build-for-playing-minsc-in-bg3-ea
 date: 2022-01-14 00:00:00+0000
-image: minsc_build.png
+image: minsc_build.webp
 categories:
    - Baldur's Gate 3
 tags:
@@ -123,7 +123,7 @@ The obvious difficulty with this is that you are simultaneously forcing the AI t
 
 IMPORTANT NOTE: there is an easy to miss toggle option in the user interface that is actually really important for this build. Its in the lowest part of the attacking section that looks like this:
 
-![Toggle Dual Wield](toggle_dual_wield.png)
+![Toggle Dual Wield](toggle_dual_wield.webp)
 
 See the toggle which says “Dual wield?” That is the important one. Make sure it is set to dual wield, not “One handed.” It should be set to dual by default, but accidentally hitting its hotkey – “R” – can switch it without you noticing. When it is set to dual you will retaliate with both weapons, main hand and off-hand, with Giant Killer instead of just your off-hand. Just setting this toggle correctly will double the potency of your Giant Killer procs.
 
@@ -137,7 +137,7 @@ First, here is how it compares if we don’t factor in Giant Killer:
 
 Terrible, right? But procing Giant Killer actually doubles our DPR for that round. So here is how that would look:
 
-![MG Retaliate DPR](with_giant_killer_dpr_chart.png)
+![MG Retaliate DPR](with_giant_killer_dpr_chart.webp)
 
 The problem is, unlike the Knight of Faith, procing the retaliation damage is difficult and comes at a high action economy price. So, its really not as good as this graph makes it seem.
 

@@ -3,7 +3,7 @@ title: "Pillars of Eternity Companion Tier List Analysis"
 description: "A comprehensive analysis of Pillars of Eternity companions, ranking them based on their tactical value compared to mercenaries, plus an in-depth look at their narrative design"
 slug: pillars-companion-tier-list
 date: 2024-12-07 00:00:00+0000
-image: pillars-of-eternity-companion-tier-list.png
+image: pillars-of-eternity-companion-tier-list.webp
 categories:
     - Pillars of Eternity
 tags:

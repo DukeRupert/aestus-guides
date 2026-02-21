@@ -3,7 +3,7 @@ title: "RPG Veteran, Pathfinder Beginner: Journal #1"
 description: "A D&D veteran's first impressions and analysis of Pathfinder: Wrath of the Righteous mechanics and systems"
 slug: rpg-veteran-pathfinder-beginner-journal-1
 date: 2021-12-10 00:00:00+0000
-image: za_cleric_bg3.png
+image: za_cleric_bg3.webp
 categories:
    - Pathfinder
 tags:
@@ -106,13 +106,13 @@ Before getting into the builds, I want to point out an asymmetry between wisdom 
 
 We noted above that a Paladin 2/ Eldritch Scion 3/ Oracle 15 build checks off many of the items on our shopping list. In fact, of the eight items it satisfies seven of them. Those seven are:
 
-![Charisma Chart](cha_chart.png)
+![Charisma Chart](cha_chart.webp)
 
 Concerning (6), this builds just squeaks by the 16 BAB, which unlocks the 4th attack. They also have access to Oracle spells like Divine Power which boost APR. Concerning 8, with 14 levels in Oracle your animal companion will not max out in levels. I believe it will be level 19 on the completed build, which is one level under max, still good.
 
 Now let’s look at the Wisdom build to see how it compares. The core class tree for Wisdom stacking is the Cleric of Erastil, community and nature domains. Nature domain grants an animal companion. At level 8 the community domain grants a once per day ability (Guarded Hearth) that adds your wisdom modifier to saving throws and attack roles to yourself and allies in the AoE. Of course, Clerics are full casters and add wisdom to their spell DC as well. This class alone checks the following items off:
 
-![Wisdom Chart](wis_chart.png)
+![Wisdom Chart](wis_chart.webp)
 
 I gave (2) and (3) asterisks to note that it is only once per day but also buffs, potentially, the entire party. I leave it to you whether that is a positive or a negative. I think it is positive.
 
@@ -120,7 +120,7 @@ From the Cleric base class there are two directions we can build depending on wh
 
 A three-level dip into Zen Archer will check off (1) through the Monk AC feature, and (3) through the Zen Archery feature. As an aside, it will also get us some very valuable feats. That leaves our wisdom build – Zen Archer 3/ Cleric 17 – with the following:
 
-![Wisdom Charisma Compared](wis_cha_compared.png)
+![Wisdom Charisma Compared](wis_cha_compared.webp)
 
 Side by side with the charisma build our wisdom build checks off the same 7 items that the charisma build does, only they can add their wisdom modifiers to attack roles *twice.*Moreover, when we examine and compare each item we will see the wisdom build gets a little more value out of most of these checks. 
 
