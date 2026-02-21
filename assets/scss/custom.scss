@@ -1,3 +1,314 @@
 /*
-    You can add your own custom styles here.
+    Aestus Guides - Brand Styles
+    Medieval Codex aesthetic: dark backgrounds, gold accents, serif typography
 */
+
+// ============================================
+// Typography
+// ============================================
+
+:root {
+    --base-font-family: "Lora", Georgia, "Times New Roman", serif;
+    --article-font-family: "Lora", Georgia, "Times New Roman", serif;
+    --code-font-family: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+}
+
+// Headings use Cinzel (medieval codex capitals)
+h1, h2, h3,
+.article-title,
+.section-title {
+    font-family: "Cinzel", "Times New Roman", serif;
+}
+
+h4, h5, h6 {
+    font-family: "Lora", Georgia, serif;
+}
+
+// UI elements use Inter
+.menu,
+nav,
+button,
+.widget-title,
+.tag-cloud-tags a,
+.article-category a,
+.article-tags a,
+.pagination {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+// Article body reading optimizations
+.article-content {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+
+    h1, h2, h3 {
+        font-family: "Cinzel", "Times New Roman", serif;
+        margin-top: 2em;
+    }
+
+    h2 {
+        padding-bottom: 0.3em;
+    }
+
+    h4, h5, h6 {
+        font-family: "Lora", Georgia, serif;
+    }
+
+    code {
+        font-family: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+    }
+}
+
+// ============================================
+// Brand Colors - Dark Mode (Primary)
+// ============================================
+
+:root {
+    // Dark backgrounds
+    --body-background: #121014;
+    --card-background: #1A171E;
+    --card-background-selected: #232029;
+
+    // Gold accent (primary)
+    --accent-color: #C49A52;
+    --accent-color-darker: #D4AD6A;
+    --accent-color-text: #121014;
+
+    // Text colors - warm off-white
+    --body-text-color: rgba(232, 228, 236, 0.85);
+    --card-text-color-main: #E8E4EC;
+    --card-text-color-secondary: #9B95A3;
+    --card-text-color-tertiary: #6B6573;
+
+    // Card borders and separators
+    --card-separator-color: rgba(46, 42, 53, 0.7);
+
+    // Scrollbar
+    --scrollbar-thumb: hsl(270, 8%, 35%);
+    --scrollbar-track: #121014;
+
+    // Shadows - subtler for dark theme
+    --shadow-l1: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 0px 2px rgba(0, 0, 0, 0.15);
+    --shadow-l2: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.15);
+
+    // Article content
+    --blockquote-border-size: 4px;
+    --blockquote-background-color: rgba(196, 154, 82, 0.05);
+    --heading-border-size: 4px;
+    --link-background-color: 196, 154, 82;
+    --link-background-opacity: 0.15;
+    --link-background-opacity-hover: 0.3;
+    --pre-background-color: #1A171E;
+    --pre-text-color: #E8E4EC;
+    --code-background-color: rgba(196, 154, 82, 0.1);
+    --code-text-color: #D4AD6A;
+    --table-border-color: #2E2A35;
+    --tr-even-background-color: #1A171E;
+    --kbd-border-color: #2E2A35;
+
+    // Tag styling
+    --tag-border-radius: 4px;
+}
+
+// Dark scheme overrides (when explicitly set)
+[data-scheme="dark"] {
+    --body-background: #121014;
+    --card-background: #1A171E;
+    --card-background-selected: #232029;
+    --accent-color: #C49A52;
+    --accent-color-darker: #D4AD6A;
+    --accent-color-text: #121014;
+    --body-text-color: rgba(232, 228, 236, 0.85);
+    --card-text-color-main: #E8E4EC;
+    --card-text-color-secondary: #9B95A3;
+    --card-text-color-tertiary: #6B6573;
+    --card-separator-color: rgba(46, 42, 53, 0.7);
+    --code-background-color: rgba(196, 154, 82, 0.1);
+    --code-text-color: #D4AD6A;
+    --table-border-color: #2E2A35;
+    --tr-even-background-color: #1A171E;
+    --blockquote-background-color: rgba(196, 154, 82, 0.05);
+    --pre-background-color: #1A171E;
+    --pre-text-color: #E8E4EC;
+}
+
+// ============================================
+// Light Mode - Aged Parchment
+// ============================================
+
+[data-scheme="light"] {
+    --body-background: #F5F0E8;
+    --card-background: #FFFFFF;
+    --card-background-selected: #EDE8E0;
+    --accent-color: #8B6B2F;
+    --accent-color-darker: #6E5424;
+    --accent-color-text: #FFFFFF;
+    --body-text-color: #1A171E;
+    --card-text-color-main: #1A171E;
+    --card-text-color-secondary: #6B6573;
+    --card-text-color-tertiary: #9B95A3;
+    --card-separator-color: rgba(218, 210, 195, 0.6);
+    --code-background-color: rgba(139, 107, 47, 0.08);
+    --code-text-color: #6E5424;
+    --table-border-color: #DAD2C3;
+    --tr-even-background-color: #F0EBE2;
+    --blockquote-background-color: rgba(139, 107, 47, 0.05);
+    --pre-background-color: #1A171E;
+    --pre-text-color: #E8E4EC;
+    --link-background-color: 139, 107, 47;
+}
+
+// ============================================
+// Component Overrides
+// ============================================
+
+// Blockquotes - gold left border per brand guide
+.article-content blockquote {
+    border-left: 4px solid var(--accent-color);
+    background: var(--blockquote-background-color);
+    padding: 1em 1.5em;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5em 0;
+
+    p {
+        font-style: italic;
+        color: var(--card-text-color-main);
+    }
+}
+
+// Links in article content - gold
+.article-content a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-color: rgba(196, 154, 82, 0.3);
+    text-underline-offset: 2px;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+
+    &:hover {
+        color: var(--accent-color-darker);
+        text-decoration-color: var(--accent-color-darker);
+    }
+}
+
+// Card hover effect - subtle gold border glow
+.article-list article {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+
+    &:hover {
+        border-color: rgba(196, 154, 82, 0.2);
+        box-shadow: 0 4px 12px rgba(196, 154, 82, 0.05);
+    }
+}
+
+// Category badges
+.article-category a {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+// Widget titles
+.widget .section-title {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--accent-color);
+}
+
+// Sidebar subtitle
+.site-description {
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    color: var(--card-text-color-secondary);
+}
+
+// Footer styling
+.footer {
+    color: var(--card-text-color-tertiary);
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+}
+
+// Table of Contents improvements
+.widget--toc {
+    #TableOfContents {
+        ol, ul {
+            li {
+                a {
+                    color: var(--card-text-color-secondary);
+                    transition: color 0.2s ease;
+                    font-size: 0.85rem;
+
+                    &:hover {
+                        color: var(--accent-color);
+                    }
+
+                    &.active {
+                        color: var(--accent-color);
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Heading anchor links
+.heading-anchor {
+    color: var(--accent-color);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+h1:hover .heading-anchor,
+h2:hover .heading-anchor,
+h3:hover .heading-anchor,
+h4:hover .heading-anchor {
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+// Tables in articles
+.article-content table {
+    border-collapse: collapse;
+    width: 100%;
+
+    th {
+        background: #232029;
+        color: var(--accent-color);
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+}
+
+// Search input
+.search-input {
+    font-family: "Lora", Georgia, serif;
+
+    &::placeholder {
+        color: var(--card-text-color-tertiary);
+    }
+}
+
+// Pagination
+.pagination {
+    font-family: "Inter", sans-serif;
+
+    .page-link {
+        color: var(--card-text-color-secondary);
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+}
