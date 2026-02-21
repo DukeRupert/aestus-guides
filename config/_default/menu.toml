@@ -1,12 +1,4 @@
-# Configure main menu and social menu
-#[[main]]
-#identifier = "home"
-#name = "Home"
-#url = "/"
-#[main.params]
-#icon = "home"
-#newtab = true
-
+# Social links in sidebar
 [[social]]
 identifier = "youtube"
 name = "YouTube"
@@ -22,3 +14,11 @@ url = "https://www.patreon.com/user?u=52365991"
 
 [social.params]
 icon = "brand-patreon"
+
+[[social]]
+identifier = "rss"
+name = "RSS"
+url = "/index.xml"
+
+[social.params]
+icon = "rss"
