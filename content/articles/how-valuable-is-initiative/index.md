@@ -3,7 +3,7 @@ title: "How Valuable is Initiative? A Game Design Analysis"
 description: "An analytical look at the value of initiative in turn-based tactical games and how character durability affects its importance"
 slug: value-of-initiative-game-design
 date: 2022-10-10 00:00:00+0000
-image: https://cdn.sanity.io/images/si39ve47/production/689ddf7723353a59fce740dea32c231b4a275d21-2360x1640.png?w=600&fm=webp
+image: initiative_cover.png
 categories:
    - D&D
    - Baldur's Gate 3
