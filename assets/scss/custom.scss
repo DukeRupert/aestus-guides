@@ -37,7 +37,7 @@ button,
 
 // Article body reading optimizations
 .article-content {
-    font-size: 1.05rem;
+    font-size: 1.125rem;
     line-height: 1.85;
     letter-spacing: 0.01em;
 
@@ -188,6 +188,12 @@ button,
         color: var(--accent-color-darker);
         text-decoration-color: var(--accent-color-darker);
     }
+}
+
+// Card image - consistent 16:9 aspect ratio
+.article-list .article-image img {
+    height: auto;
+    aspect-ratio: 16 / 9;
 }
 
 // Card hover effect - subtle gold border glow
