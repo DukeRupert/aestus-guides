@@ -14,6 +14,8 @@ weight: 1
 
 # Interview with Dael Kingsmill of Monarch's Factory
 
+*This article is a transcript of a video interview. Watch the full conversation below.*
+
 {{< youtube "1ONwh3FxMEo" >}}
 
 ## Introduction

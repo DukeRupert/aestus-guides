@@ -12,6 +12,10 @@ tags:
 weight: 1
 ---
 
+*This article is a transcript of a video interview. Watch the full conversation below or skip to a topic using the [episode timestamps](#episode-timestamps).*
+
+{{< youtube "JfsOMHOgogg" >}}
+
 ## Introduction
 
 "Hey folks, I got a very special Insight check for you guys. Some friends and I recently formed a Draw Steel Creators Collective called the Manifold. It's just a loose Collective of folks working together to make the best Draw Steel products that we can. This interview was made with the Manifold in mind as a gift for the group. James agreed to discuss his early career with me and how he broke into the industry. I think the discussion led to a lot of helpful insights for people who also want to make a career out of TTRPG design. I know I certainly learned a lot.
