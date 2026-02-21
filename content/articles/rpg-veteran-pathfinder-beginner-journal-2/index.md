@@ -16,7 +16,7 @@ weight: 1
 
 ## Sources of Overwhelming Damage
 
-Hello again! If this is your first time reading one of my articles, I am a CRPG and tabletop RPG veteran with 20 years of experience in D&amp;D and D&amp;D CRPG’s, particularly the Baldur’s Gate series, who is trying to learn the Pathfinder system by playing Wrath of the Righteous. I am journaling my progress because its useful for me and, I hope, interesting to read. You can find my first journal entry [here](https://www.aestusguides.com/guides/rpg-veteran-pathfinder-beginner-journal-1). If you are new to the game like me, you might find this series helpful. If you are an experienced player it may be funny to see me stumble my way through!
+Hello again! If this is your first time reading one of my articles, I am a CRPG and tabletop RPG veteran with 20 years of experience in D&amp;D and D&amp;D CRPG’s, particularly the Baldur’s Gate series, who is trying to learn the Pathfinder system by playing Wrath of the Righteous. I am journaling my progress because its useful for me and, I hope, interesting to read. You can find my first journal entry [here](/articles/rpg-veteran-pathfinder-beginner-journal-1/). If you are new to the game like me, you might find this series helpful. If you are an experienced player it may be funny to see me stumble my way through!
 
 In this entry I want to primarily discuss efficient sources for dealing damage, both in general and for my wisdom build specifically. I also include some corrections to my first journal entry.
 

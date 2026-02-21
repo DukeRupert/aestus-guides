@@ -35,7 +35,7 @@ I honestly cannot think of a stronger solo build. Its only problem is that there
 
 **Race:** this build works best if you go Githyanki, because that grants us both a medium armor proficiency and the greatsword proficiency that we need to eventually use the Sword of Justice to proc our Arcane Ward feature and get the GWM feat. However, there is at least one other good racial option in Shield Dwarf.
 
-Shield Dwarf amounts to a tankier but less offensive option compared to Githyanki. You won’t be able to go GWM, so your auto-attack DPR will be significantly lower. However, you can still get good DPR out of this build if manage to find a Flame Sword scroll. Then you will become like a wizard version of [the Brand](https://www.aestusguides.com/guides/the-brand-of-cloakwood-coast-a-druid-striker-build-for-baldur-s-gate-3). If you like this idea better, be sure to take something like option B for attributes (I will outline that below) so you can use the Circlet of Fire. I don’t prefer this build because of the anti-synergy between Create Water à Armor of Agathys and Flame Blade as your source of damage. The wet condition from Create Water will half your Flame Blade damage. For that reason I will be assuming we chose Githyanki for the rest of the guide.
+Shield Dwarf amounts to a tankier but less offensive option compared to Githyanki. You won’t be able to go GWM, so your auto-attack DPR will be significantly lower. However, you can still get good DPR out of this build if manage to find a Flame Sword scroll. Then you will become like a wizard version of the Brand. If you like this idea better, be sure to take something like option B for attributes (I will outline that below) so you can use the Circlet of Fire. I don’t prefer this build because of the anti-synergy between Create Water à Armor of Agathys and Flame Blade as your source of damage. The wet condition from Create Water will half your Flame Blade damage. For that reason I will be assuming we chose Githyanki for the rest of the guide.
 
 **Attributes:** there are two ways that we can allocate our attribute points depending on whether you want to commit to using the Headband of Intellect or not. They are:
 
@@ -59,13 +59,13 @@ Int: 16
 Wis: 8  
 Cha: 8
 
-The tradeoff is slightly better physical stats for option A at the cost of your helmet slot. Is that a good trade? To be honest, no. There are really good helmets in BG3, like the Circlet of Fire (see [this build](https://www.aestusguides.com/guides/the-brand-of-cloakwood-coast-a-druid-striker-build-for-baldur-s-gate-3) for an example of how powerful it can be), the Helmet of Grit, or even just a standard, non-magical helmet (which gives immunity to critical hits). In my opinion, from a strictly power perspective it is better to go with option B. However, I like option A for my character concept, so I will use option A.
+The tradeoff is slightly better physical stats for option A at the cost of your helmet slot. Is that a good trade? To be honest, no. There are really good helmets in BG3, like the Circlet of Fire (which can be very powerful), the Helmet of Grit, or even just a standard, non-magical helmet (which gives immunity to critical hits). In my opinion, from a strictly power perspective it is better to go with option B. However, I like option A for my character concept, so I will use option A.
 
 As a note, in both options I am assuming you will use both hag’s hairs to boost your odd number attributes. For option A it is strength and constitution; for option B it is strength and dexterity.
 
 **Class:**Wizard!
 
-**Spells and Cantrips:** a big part of the fun of playing a Wizard is creative spell selection/use that changes from run to run due to the variability of scroll drops. I don’t want to spoil that fun by demanding you take a specific spell list, and I also cannot predict which scrolls you will get on your run. Instead, I will just list the spells that I mentioned in the build overview above as crucial to the build and leave the rest up to your imagination. If you want to know my opinions on the strength of spells, I have written a review of every spell available in early access so far, which you can find [here](https://www.aestusguides.com/guides/baldurs-gate-3-spell-tier-list). The crucial spells for this build are:
+**Spells and Cantrips:** a big part of the fun of playing a Wizard is creative spell selection/use that changes from run to run due to the variability of scroll drops. I don’t want to spoil that fun by demanding you take a specific spell list, and I also cannot predict which scrolls you will get on your run. Instead, I will just list the spells that I mentioned in the build overview above as crucial to the build and leave the rest up to your imagination. If you want to know my opinions on the strength of spells, I have written a review of every spell available in early access so far, which you can find on this site. The crucial spells for this build are:
 
 - Blade Ward
 - Armor of Agathys (scroll)
@@ -97,7 +97,7 @@ In this level you are definitely strong enough to take on the Hag to snag those 
 
 ## Notes on Tactics
 
-This section can either be to long or to short. If I discussed all the ways we can use our spells tactically it would be to long, but I have already discussed most of that in my [Spell Tier List](https://www.aestusguides.com/guides/baldurs-gate-3-spell-tier-list) article, so please give that a browse if it interests you.
+This section can either be to long or to short. If I discussed all the ways we can use our spells tactically it would be to long, but I have already discussed most of that in my Spell Tier List article, so please give that a browse if it interests you.
 
 Without analyzing the spells in depth, I am left with some very short general advice: think very carefully about what role you play and how to synergize with your party composition while playing this build. It is a build that wants to do a lot of things: absorb hits, attack, and enable through control spells and it can be really easy to forget which of these is the right action in a certain turn or party composition. As cool as it is to crit for insane damage, or deal 20 cold damage as retaliation, you still need to have a wizard casting control spells on your team. It is just too valuable a class and role to pass on.
 

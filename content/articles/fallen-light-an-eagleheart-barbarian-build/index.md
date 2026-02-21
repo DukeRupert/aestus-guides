@@ -37,7 +37,7 @@ If this is the first build of mine you are reading, I always write a unique char
 
 Typically, what gets me interested in a build is a set of interesting mechanical interactions which might be hard for most players to notice. This build isn’t quite like that. Its central mechanics are less hidden, but do involve several new class features and items so for many players I am sure the combinations will be new.
 
-Long time followers of my work will know how valuable lightning and frost damage are in BG3, thanks to Larian’s interpretation of the spell Create/Destroy Water. The wet condition from Create Water inflicts vulnerability to these two damage types and vulnerability, it turns out, is a very potent debuff. Last patch I released a build [centered around maximizing retaliation frost damage from Armor of Agathys](https://www.aestusguides.com/guides/vlaakith-s-arcane-knight-of-faith-a-great-weapon-master-wizard-build) in combination with Create Water. This build, similarly, maximizes the Lightning damage on wet targets in combination with highly accurate great weapon attacks for very high DPR.
+Long time followers of my work will know how valuable lightning and frost damage are in BG3, thanks to Larian’s interpretation of the spell Create/Destroy Water. The wet condition from Create Water inflicts vulnerability to these two damage types and vulnerability, it turns out, is a very potent debuff. Last patch I released a build [centered around maximizing retaliation frost damage from Armor of Agathys](/articles/vlaakith-s-arcane-knight-of-faith-a-great-weapon-master-wizard-build/) in combination with Create Water. This build, similarly, maximizes the Lightning damage on wet targets in combination with highly accurate great weapon attacks for very high DPR.
 
 Primarily, our lightning damage for this build will be coming from the interaction between a new enchanted set of boots – The Speedy Lightfeet – and the low-cost dashes we get from the Eagleheart barbarian subclass.
 
@@ -170,7 +170,7 @@ All of these questions bring us to the driving question of the entire character:
 
 ## Conclusion
 
-If you want to discuss this build or the character with me and others [you can do so here.](https://www.aestusguides.com/guides/fallen-light-an-eagleheart-barbarian-build)
+If you want to discuss this build or the character with me and others [you can do so here.](/articles/fallen-light-eagleheart-barbarian/)
 
 If you are interested in more content like this, please check out [my Patreon](https://www.patreon.com/user?u=52365991&fan_landing=true).
 
