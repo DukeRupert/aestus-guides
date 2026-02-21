@@ -5,15 +5,11 @@ slug: value-of-initiative-game-design
 date: 2022-10-10 00:00:00+0000
 image: https://cdn.sanity.io/images/si39ve47/production/689ddf7723353a59fce740dea32c231b4a275d21-2360x1640.png?w=600&fm=webp
 categories:
-   - Game Design
-   - Game Theory
-   - Strategy
+   - D&D
+   - Baldur's Gate 3
 tags:
-   - Initiative
-   - Turn-Based Games
-   - Game Mechanics
-   - Game Analysis
-   - Combat Systems
+   - Analysis
+   - Game Design
 weight: 1
 ---
 Guide How Valuable is Initiative?

@@ -6,17 +6,9 @@ slug: bg3-patch-8-build-composition
 date: 2025-01-15 00:00:00+0000
 image: bg3_patch8_builds.png
 categories:
-   - Gaming
    - Baldur's Gate 3
-   - Guides
 tags:
-   - BG3
-   - Character Builds
-   - Party Composition
-   - Patch 8
-   - Gaming Guide
    - Build Guide
-   - Optimization
 weight: 1
 ---
 

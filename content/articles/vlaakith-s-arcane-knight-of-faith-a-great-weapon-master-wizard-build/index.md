@@ -5,16 +5,9 @@ slug: vlaakith-s-arcane-knight-of-faith-a-great-weapon-master-wizard-build
 date: 2021-12-20 00:00:00+0000
 image: gwm_wizard.png
 categories:
-   - Gaming
    - Baldur's Gate 3
-   - Guides
 tags:
-   - BG3
-   - Character Builds
-   - Wizard
-   - Githyanki
-   - Gaming Guide
-   - Early Access
+   - Build Guide
 weight: 1
 ---
 

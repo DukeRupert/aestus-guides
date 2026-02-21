@@ -5,16 +5,10 @@ slug: pillars-of-eternity-2-class-tier-list
 date: 2024-07-20 00:00:00+0000
 image: pillars-of-eternity-2-class-tier-list.jpg
 categories:
-   - Gaming
    - Pillars of Eternity
-   - Guides
 tags:
-   - Deadfire
-   - Class Guide
    - Tier List
-   - RPG
    - Build Guide
-   - Game Analysis
 weight: 1
 ---
 

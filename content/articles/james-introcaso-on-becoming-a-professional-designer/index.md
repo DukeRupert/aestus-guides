@@ -6,15 +6,9 @@ date: 2025-03-13 00:00:00+0000
 image: james_introcaso_interview_insight_check_5.jpg
 categories:
   - Tabletop RPGs
-  - D&D 5e
-  - Game Design
-  - Interviews
 tags:
-  - James Introcaso
-  - MCDM Productions
-  - Draw Steel
-  - Professional Design
-  - Insight Check
+  - Interview
+  - Game Design
 weight: 1
 ---
 

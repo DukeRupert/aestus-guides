@@ -5,14 +5,9 @@ slug: the-priory-vault-10-homebrewed-artifacts-for-5e
 date: 2023-12-23 00:00:00+0000
 categories:
     - D&D
-    - Tabletop Gaming
-    - Homebrew
+    - Tabletop RPGs
 tags:
-    - DnD 5e
-    - Magic Items
-    - Artifacts
     - Homebrew
-    - Campaign Resources
 weight: 1
 ---
 

@@ -5,15 +5,10 @@ slug: baldurs-gate-3-race-tier-list
 date: 2023-09-19 00:00:00+0000
 image: tier_list.png 
 categories:
-   - Gaming
    - Baldur's Gate 3
-   - Guides
 tags:
-   - BG3
-   - Character Builds
    - Tier List
-   - Races
-   - Gaming Guide
+   - Build Guide
 weight: 1
 ---
 

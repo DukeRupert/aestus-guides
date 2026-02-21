@@ -7,16 +7,9 @@ lastmod: 2022-02-15 00:00:00+0000
 image: Greatsword_PlusOne_Icon.png 
 categories:
    - Baldur's Gate 3
-   - Tier Lists
-   - Game Guides
 tags:
-   - BG3
-   - Weapons
    - Tier List
-   - Patch 7
-   - Game Mechanics
-   - Equipment Guide
-   - Item Testing
+   - Analysis
 series:
    - BG3 Tier Lists
 featured: true

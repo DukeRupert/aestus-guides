@@ -5,18 +5,10 @@ slug: dael-kingsmill-interview
 date: 2025-02-14 00:00:00+0000
 image: dael_kingsmill_interview.jpg
 categories:
-    - Gaming
     - Tabletop RPGs
-    - Interviews
 tags:
-    - Draw Steel
-    - MCDM
-    - Mythology
+    - Interview
     - Game Design
-    - Dael Kingsmill
-    - Worldbuilding
-    - Cultural Studies
-    - RPG Theory
 weight: 1
 ---
 

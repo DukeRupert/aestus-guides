@@ -5,15 +5,10 @@ slug: rpg-veteran-pathfinder-beginner-journal-2
 date: 2021-12-17 00:00:00+0000
 image: za_cleric_bg3.png
 categories:
-   - Gaming
    - Pathfinder
-   - Guides
 tags:
-   - Pathfinder: Wrath of the Righteous
-   - Character Builds
-   - Combat Mechanics
-   - Gaming Guide
-   - CRPG
+   - Journal
+   - Analysis
 weight: 1
 ---
 

@@ -6,16 +6,9 @@ slug: rethinking-bg3-patch-8-comp
 date: 2025-02-06 00:00:00+0000
 image: bg3_patch8.png
 categories:
-   - Gaming
    - Baldur's Gate 3
-   - Guides
 tags:
-   - BG3
-   - Character Builds
-   - Dark Urge
-   - Party Composition
-   - Patch 8
-   - Gaming Guide
+   - Build Guide
 weight: 1
 ---
 

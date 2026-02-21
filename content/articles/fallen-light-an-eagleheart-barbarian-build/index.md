@@ -6,16 +6,8 @@ date: 2022-02-23 00:00:00+0000
 image: seshtali_portrait.png 
 categories:
    - Baldur's Gate 3
-   - Build Guides
-   - Character Builds
 tags:
-   - BG3
-   - Barbarian
-   - Eagleheart
    - Build Guide
-   - Character Creation
-   - Lightning Build
-   - Forgotten Realms
 series:
    - BG3 Character Builds
 featured: true

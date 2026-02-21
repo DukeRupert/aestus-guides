@@ -5,16 +5,10 @@ slug: rpg-veteran-pathfinder-beginner-journal-3
 date: 2023-02-04 00:00:00+0000
 image: Instinctual_Warrior.png
 categories:
-    - Gaming
     - Pathfinder
-    - Guides
 tags:
-    - Pathfinder: Wrath of the Righteous
-    - Character Builds
-    - Wisdom Builds
-    - Instinctual Warrior
-    - Gaming Guide
-    - CRPG
+    - Journal
+    - Build Guide
 weight: 1
 ---
 

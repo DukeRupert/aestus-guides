@@ -5,17 +5,9 @@ slug: bg3-way-of-fury-build
 date: 2024-04-26 00:00:00+0000
 image: way_of_fury_build.jpg
 categories:
-   - Gaming
    - Baldur's Gate 3
-   - Guides
 tags:
-   - BG3
-   - Character Builds
    - Build Guide
-   - Barbarian
-   - Monk
-   - Multiclass
-   - Optimization
 weight: 1
 ---
 

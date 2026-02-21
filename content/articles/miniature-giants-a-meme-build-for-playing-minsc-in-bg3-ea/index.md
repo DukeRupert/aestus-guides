@@ -5,16 +5,9 @@ slug: miniature-giants-a-meme-build-for-playing-minsc-in-bg3-ea
 date: 2022-01-14 00:00:00+0000
 image: minsc_build.png
 categories:
-   - Gaming
    - Baldur's Gate 3
-   - Guides
 tags:
-   - BG3
-   - Character Builds
-   - Minsc
-   - Early Access
-   - Gaming Guide
-   - Meme Builds
+   - Build Guide
 weight: 1
 ---
 
