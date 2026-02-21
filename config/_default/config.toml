@@ -12,8 +12,8 @@ defaultContentLanguage = "en"
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage = false
 
-# Change it to your Disqus shortname before using
-disqusShortname = "hugo-theme-stack"
+# Disqus comments disabled (was using default theme shortname)
+# disqusShortname = ""
 
 # Increase timeout for large articles (e.g., 42k-word tier lists)
 timeout = "300s"
