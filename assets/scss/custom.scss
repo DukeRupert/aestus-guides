@@ -190,10 +190,10 @@ button,
     }
 }
 
-// Card image - consistent 16:9 aspect ratio
+// Card image - consistent 3:2 aspect ratio
 .article-list .article-image img {
-    height: auto;
-    aspect-ratio: 16 / 9;
+    height: auto !important;
+    aspect-ratio: 3 / 2;
 }
 
 // Card hover effect - subtle gold border glow
