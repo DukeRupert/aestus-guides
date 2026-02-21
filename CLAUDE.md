@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Aestus Guides is a Hugo static site featuring CRPG (Computer Role-Playing Game) guides, tier lists, and strategic analysis. The site uses the Hugo Stack Theme (v3.30.0) and requires Hugo Extended version.
+Aestus Guides is a Hugo static site featuring CRPG (Computer Role-Playing Game) guides, tier lists, and strategic analysis. The site uses the Hugo Stack Theme (v3.30.0) imported as a Go module (`github.com/CaiJimmy/hugo-theme-stack/v3`) and requires Hugo Extended.
 
 ## Common Commands
 
@@ -15,59 +15,52 @@ hugo server -D
 # Production build (minified)
 hugo --minify
 
-# Deployment (archives old build, builds, rsyncs to server)
-./deploy.sh
-
-# GitHub Codespaces development
-hugo server -D -b="https://<codespace-url>.github.dev" --appendPort=false
+# Local Docker build and test
+docker build -t aestus-guides . && docker run -p 8080:80 aestus-guides
 ```
 
 ## Architecture
 
 ### Configuration
+
 Hugo uses a modular config structure in `config/_default/`:
-- `config.toml` - Base settings (baseurl, title, pagination)
-- `params.toml` - Theme parameters (sidebar, widgets, article features)
-- `menu.toml` - Navigation and social links
-- `markup.toml` - Markdown rendering (unsafe HTML enabled, ToC levels 2-4)
+- `config.toml` - Base settings (baseurl, title, pagination, language)
+- `params.toml` - Theme parameters (sidebar, widgets, article features, SEO/OpenGraph, comments)
+- `menu.toml` - Social links (YouTube, Patreon); main nav is currently commented out
+- `markup.toml` - Goldmark renderer (unsafe HTML enabled, ToC levels 2-4, syntax highlighting, LaTeX math passthrough)
 - `permalinks.toml` - URL structure (`/articles/:slug/`)
+- `module.toml` - Theme Go module import
 
 ### Content Structure
-- `content/articles/` - Main articles, each in its own directory with `index.md`
-- `content/page/` - Special pages (archives, links, search)
-- Article frontmatter: title, description, slug, date, lastmod, image, categories, tags
 
-### Theme Customizations
-- `layouts/partials/head/custom.html` - Plausible analytics injection
-- `assets/scss/custom.scss` - Custom styles (placeholder)
-- Theme imported as Go module: `github.com/CaiJimmy/hugo-theme-stack/v3`
+Articles live in `content/articles/<slug>/index.md` as Hugo page bundles (article + its images in the same directory). Special pages (archives, links, search) are in `content/page/`.
 
-### Static Assets
-- `assets/img/` - Site images (avatar, logos)
-- `static/` - Favicon and other static files
+Article frontmatter fields: `title`, `description`, `slug`, `date`, `lastmod`, `image` (filename of cover image in same directory), `categories`, `tags`, `weight`, `draft`.
+
+### Theme Customizations (Layout Overrides)
+
+- `layouts/partials/head/custom.html` - Self-hosted Plausible analytics (`plausible.angmar.dev`) + SEO schema partial include
+- `layouts/partials/head/seo-schema.html` - JSON-LD structured data (Organization, WebSite with SearchAction, Article schema on article pages, BreadcrumbList)
+- `assets/scss/custom.scss` - Custom styles (currently placeholder)
 
 ## Content Conventions
 
-- Articles use YouTube embeds: `{{< youtube "VIDEO_ID" >}}`
+- YouTube embeds use Hugo shortcode: `{{< youtube "VIDEO_ID" >}}`
 - License: CC BY-NC-SA 4.0 on all content
-- Categories include: Gaming, Baldur's Gate 3, Guides, Tier Lists
+- Categories: Gaming, Baldur's Gate 3, Guides, Tier Lists
+- Cover images are placed alongside `index.md` in the article directory and referenced by filename in frontmatter `image` field
 
 ## Deployment
 
-Push to `master` triggers GitHub Actions (`.github/workflows/deploy.yml`):
-1. Builds Docker image using multi-stage Dockerfile (Hugo Extended → nginx)
+### Production (Docker + GitHub Actions)
+
+Push to `master` triggers `.github/workflows/deploy.yml`:
+1. Builds Docker image via multi-stage Dockerfile (Hugo Extended → nginx:alpine)
 2. Pushes to Docker Hub as `aestus-guides:latest` and `aestus-guides:<sha>`
-3. SSHs to VPS and runs `docker compose pull && docker compose up -d`
+3. SSHs to VPS and runs `docker compose pull && docker compose up -d` at `/opt/aestus-guides/`
 
-### Local Docker Testing
-```bash
-docker build -t aestus-guides .
-docker run -p 8080:80 aestus-guides
-```
+Required GitHub Secrets: `DOCKERHUB_USERNAME`, `DOCKERHUB_TOKEN`, `VPS_HOST`, `VPS_USER`, `VPS_SSH_KEY`
 
-### Required GitHub Secrets
-- `DOCKERHUB_USERNAME` / `DOCKERHUB_TOKEN`
-- `VPS_HOST` / `VPS_USER` / `VPS_SSH_KEY`
+### Legacy (`deploy.sh`)
 
-### VPS Setup
-Place `docker-compose.yml` at `/opt/aestus-guides/` on the VPS.
+The `deploy.sh` script archives the `public/` directory to `archives/`, rebuilds, and rsyncs to the server directly. This predates the Docker-based CI/CD pipeline.
