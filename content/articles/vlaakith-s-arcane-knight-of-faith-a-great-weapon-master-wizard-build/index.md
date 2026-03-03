@@ -3,6 +3,7 @@ title: "Vlaakith's Arcane Knight of Faith – A Great Weapon Master Wizard Build
 description: "A powerful Githyanki Wizard build for Baldur's Gate 3 that combines Great Weapon Master with Arcane Ward and defensive spells"
 slug: vlaakith-s-arcane-knight-of-faith-a-great-weapon-master-wizard-build
 date: 2021-12-20 00:00:00+0000
+lastmod: 2026-03-02
 image: gwm_wizard.webp
 categories:
    - Baldur's Gate 3
@@ -152,5 +153,11 @@ That brings us to the second role-play opportunity, which is that So’kier earn
 The third and final roleplay opportunity lurks behind the previous two, and it is the central theme of hate. I envision the difference between the Githyanki and the Githzerai as similar to the difference between Sith and Jedi in the Star Wars universe. The Gith, like the Sith, see hatred as a virtue. The Githyanki split from the Githzerai because they wanted to hunt and kill every remaining Illithid rather than secure their own growth and flourishing. They hate the Illithids, but they hate the Githzerai too for abandoning them. And they hate everything else to some lesser extent. For an intellectual like So’kier, I imagine this hate manifesting in a drive to study her enemies. If you understand your enemies you can more easily defeat them. But to what degree is understanding mutually exclusive with hate? The more she studies and learns to occupy the point of view of her enemies the more tempted So’kier will be away from the hate that drives her.
 
 If you want to discuss this build with me or others you can do so [here](https://www.reddit.com/r/AestusGuides/comments/rkrou0/vlaakiths_arcane_knight_of_faith_a_great_weapon/?utm_source=share&utm_medium=web2x&context=3)!
+
+## Related Articles
+
+- [Baldur's Gate 3 Race Tier List](/articles/baldurs-gate-3-race-tier-list/) — why Githyanki is the key race for this build
+- [Baldur's Gate 3 Weapons Tier List](/articles/baldurs-gate-3-weapons-tier-list/) — weapon rankings and the Sword of Justice
+- [Fundamental Math in D&D 5e and BG3](/articles/5e-bg3-fundamental-math/) — the math behind GWM damage and accuracy trade-offs
 
 [Return home](/articles)

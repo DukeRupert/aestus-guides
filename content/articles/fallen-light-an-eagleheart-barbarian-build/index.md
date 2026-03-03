@@ -3,6 +3,7 @@ title: "Fallen Light - An Eagleheart Barbarian Build for BG3"
 description: "A poetic lightning-focused Barbarian build guide featuring the Eagleheart subclass, curated items, and lore connections to the Forgotten Realms"
 slug: fallen-light-eagleheart-barbarian
 date: 2022-02-23 00:00:00+0000
+lastmod: 2026-03-02
 image: seshtali_portrait.webp 
 categories:
    - Baldur's Gate 3
@@ -53,7 +54,7 @@ So, adding it all up, we’ll deal around 7 extra lightning damage every hit. At
 
 **Race:** Barbarians want as many physical attribute boosts as they can grab, with a priority on strength, then constitution, and lastly dexterity. Resistances are also very valuable for barbarians, because resistances are a multiplier on health, and barbs have a lot of health. These conditions narrow down our list to a few top options:
 
-Shield Dwarf, gets the best possible physical attribute boosts for the barbarian. They also get poison resistance, which is probably the best resistance outside of the physical damage types, which barbarians have anyways. Shield Dwarf is the optimal choice for every barbarian build, and likely will remain that way.
+[Shield Dwarf](/articles/baldurs-gate-3-race-tier-list/), gets the best possible physical attribute boosts for the barbarian. They also get poison resistance, which is probably the best resistance outside of the physical damage types, which barbarians have anyways. Shield Dwarf is the optimal choice for every barbarian build, and likely will remain that way.
 
 However, there are other racial choices which are almost as good. Humans are great for barbarians because of the 16 in all three physical stats. Strongheart Halflings are great too, also getting the poison resistance and a +3 total bonuses to physical stats. Finally, Zariel Tieflings make great barbarians with their +1 strength and fire resistance.
 
@@ -173,5 +174,11 @@ All of these questions bring us to the driving question of the entire character:
 If you want to discuss this build or the character with me and others [you can do so here.](/articles/fallen-light-eagleheart-barbarian/)
 
 If you are interested in more content like this, please check out [my Patreon](https://www.patreon.com/user?u=52365991&fan_landing=true).
+
+## Related Articles
+
+- [Baldur's Gate 3 Race Tier List](/articles/baldurs-gate-3-race-tier-list/) — full rankings for every race in BG3
+- [Baldur's Gate 3 Weapons Tier List](/articles/baldurs-gate-3-weapons-tier-list/) — weapon rankings including Light of Creation and other key weapons
+- [Fundamental Math in D&D 5e and BG3](/articles/5e-bg3-fundamental-math/) — the DPR formulas behind damage calculations
 
 [Return home](/articles)

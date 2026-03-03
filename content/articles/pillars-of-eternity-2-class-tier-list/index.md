@@ -3,6 +3,7 @@ title: "Pillars of Eternity II: Deadfire Class Tier List"
 description: "A comprehensive analysis of all classes in Pillars of Eternity II: Deadfire, featuring insights from expert player Thelee"
 slug: pillars-of-eternity-2-class-tier-list
 date: 2024-07-20 00:00:00+0000
+lastmod: 2026-03-02
 image: pillars-of-eternity-2-class-tier-list.webp
 categories:
    - Pillars of Eternity
@@ -1451,3 +1452,7 @@ Chanter is flexible - you can test them and decide for yourselves. But yeah, her
 ## Interview Note
 
 The remainder of the video features an in-depth discussion with Thelee, one of the top experts on this game. The interview portion is conducted podcast-style with minimal visual content.
+
+## Related Articles
+
+- [Pillars of Eternity Companion Tier List](/articles/pillars-companion-tier-list/) — companion rankings for the original Pillars of Eternity

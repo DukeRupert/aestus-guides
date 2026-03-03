@@ -3,6 +3,7 @@ title: "Fundamental Math in D&D 5e and Baldur's Gate 3"
 description: "A deep dive into the mathematical foundations of D&D 5e and BG3, exploring build calculations, power scaling, and comparative systems analysis"
 slug: 5e-bg3-fundamental-math
 date: 2022-04-09 00:00:00+0000
+lastmod: 2026-03-02
 image: math_cover.webp
 categories:
    - Baldur's Gate 3
@@ -18,7 +19,7 @@ weight: 1
 
 This is a resource outlining what I consider the most important math for understanding D&D 5e and BG3. In it I detail important formulas you can use to calculate the power of your own builds, but I also explain as clearly as I can how we arrive at those formulas so that you can understand how it works, not just that it works. At the end I explore the math of power scaling – the so-called “flattened math” of 5e – with concrete examples and discuss how all of it should impact how we evaluate the relative strength of build choices.
 
-My plan is to eventually write a similar one of these for Pathfinder, Pillars of Eternity, and the original Baldur’s Gate games as well so we can compare the fundamental math between all of the systems and see how they change what is strong in each system. They will be part of my "niche articles for hardcore fans" series for my patrons. If you like this article, consider subscribing to my [Patreon](https://www.patreon.com/user?u=52365991&fan_landing=true) for more! I already have one article in the series that mathematically models the value of winning initiative.
+My plan is to eventually write a similar one of these for Pathfinder, Pillars of Eternity, and the original Baldur’s Gate games as well so we can compare the fundamental math between all of the systems and see how they change what is strong in each system. They will be part of my "niche articles for hardcore fans" series for my patrons. If you like this article, consider subscribing to my [Patreon](https://www.patreon.com/user?u=52365991&fan_landing=true) for more! I already have one article in the series that mathematically models [the value of winning initiative](/articles/value-of-initiative-game-design/).
 
 Check-Bonus Math
 ----------------
@@ -195,5 +196,11 @@ List of Formulas
 **DPR = ((Hit% - Crit%) x dmg/hit + Crit% x dmg/crit) APR**
 
 **DPTr = (Hit% x dmg/hit + Miss% x dmg/miss) Targets**
+
+## Related Articles
+
+- [Baldur's Gate 3 Race Tier List](/articles/baldurs-gate-3-race-tier-list/) — see these formulas applied to evaluating racial features
+- [Baldur's Gate 3 Weapons Tier List](/articles/baldurs-gate-3-weapons-tier-list/) — DPR analysis applied to weapon rankings
+- [How Valuable is Initiative?](/articles/value-of-initiative-game-design/) — a mathematical model for turn order value
 
 [Return home](/articles)

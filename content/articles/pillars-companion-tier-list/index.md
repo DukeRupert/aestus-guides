@@ -3,6 +3,7 @@ title: "Pillars of Eternity Companion Tier List Analysis"
 description: "A comprehensive analysis of Pillars of Eternity companions, ranking them based on their tactical value compared to mercenaries, plus an in-depth look at their narrative design"
 slug: pillars-companion-tier-list
 date: 2024-12-07 00:00:00+0000
+lastmod: 2026-03-02
 image: pillars-of-eternity-companion-tier-list.webp
 categories:
     - Pillars of Eternity
@@ -20,7 +21,7 @@ Hey folks, Aestus here with another tier list video. Today I'll be ranking all o
 
 A companion tier list is something people often request, but I don't believe I've done one since I started my YouTube channel. I think I did have a companion tier list in written format before I was ever a YouTuber - it's been that long. The reason I don't do them is because I find them, especially in the games I cover, to be somewhat redundant. I always do class tier lists - I always rank classes, and in pretty much all of these games, what a companion offers is like 95% determined by their class.
 
-If you just watch my class tier list, you can have a pretty good idea of what my companion tier list is going to be like. Honestly, Pillars of Eternity is not that different. Take Durance for example - Durance is a priest. If you go to my class tier list, you'll see I have ranked priest in the S tier. Correspondingly, Durance is an S tier companion strictly speaking, if we're just talking about what he brings to a party. Because he's still a priest, and you need a priest in your party, you might as well have Durance there. It's that simple.
+If you just watch my [class tier list](/articles/pillars-of-eternity-2-class-tier-list/), you can have a pretty good idea of what my companion tier list is going to be like. Honestly, Pillars of Eternity is not that different. Take Durance for example - Durance is a priest. If you go to my [class tier list](/articles/pillars-of-eternity-2-class-tier-list/), you'll see I have ranked priest in the S tier. Correspondingly, Durance is an S tier companion strictly speaking, if we're just talking about what he brings to a party. Because he's still a priest, and you need a priest in your party, you might as well have Durance there. It's that simple.
 
 ## Mercenaries and Ranking Methodology
 
@@ -124,4 +125,6 @@ While tactical value is one thing, the narrative design of these companions dese
 
 The writing quality of these companions, even at their worst, maintains a high standard. The best among them are some of the finest examples of character writing in the genre.
 
-_Note: This is based on Aestus's tier list video analysis of Pillars of Eternity companions, focusing on both tactical and narrative aspects of the characters._
+## Related Articles
+
+- [Pillars of Eternity II: Deadfire Class Tier List](/articles/pillars-of-eternity-2-class-tier-list/) — full class rankings for the Deadfire sequel

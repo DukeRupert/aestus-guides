@@ -3,6 +3,7 @@ title: "James Introcaso on Becoming a Professional Designer | Insight Check Epis
 description: "An in-depth interview with prolific TTRPG designer James Introcaso discussing his career journey, contributions to D&D 5e products, and insights on tabletop RPG design"
 slug: james-introcaso-professional-designer-interview
 date: 2025-03-13 00:00:00+0000
+lastmod: 2026-03-02
 image: james_introcaso_interview_insight_check_5.webp
 categories:
   - Tabletop RPGs
@@ -26,7 +27,7 @@ Before jumping into the interview, I also want to apologize and give a quick dis
 
 ## Interview Start
 
-"We are joined now by James Introcaso. James is a senior designer at MCDM and the current lead on Draw Steel. In this interview we will be talking about his career working in the tabletop RPG space. So if I say anything else in the introduction, I'll be spoiling it. But of course, James has been on this podcast many times. I do recommend you check out those other interviews that we've done. James, welcome back."
+"We are joined now by James Introcaso. James is a senior designer at MCDM and the current lead on Draw Steel. In this interview we will be talking about his career working in the tabletop RPG space. So if I say anything else in the introduction, I'll be spoiling it. But of course, James has been on this podcast many times. I do recommend you check out those other interviews that we've done, including our [conversation with Dael Kingsmill](/articles/dael-kingsmill-interview/). James, welcome back."
 
 "Hey, thank you so much for having me, Aus. I love being here and love chatting with you, so this is going to be a fun time."
 
@@ -104,3 +105,7 @@ It would be really fun to cover all of these periods of your career, but the one
 - [01:13:01](https://www.youtube.com/watch?v=JfsOMHOgogg&t=4381s) - The x-factor is friendship
 - [01:16:30](https://www.youtube.com/watch?v=JfsOMHOgogg&t=4590s) - The Manifold Q&A
 - [01:26:26](https://www.youtube.com/watch?v=JfsOMHOgogg&t=5186s) - Outro
+
+## Related Articles
+
+- [Interview with Dael Kingsmill](/articles/dael-kingsmill-interview/) — mythology, Draw Steel, and cultural storytelling in TTRPGs

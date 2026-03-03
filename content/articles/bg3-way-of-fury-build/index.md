@@ -3,6 +3,7 @@ title: "My Next Build: The Way of Fury"
 description: "A detailed guide for a powerful Barbarian/Monk multiclass build in Baldur's Gate 3, combining high durability with devastating damage output"
 slug: bg3-way-of-fury-build
 date: 2024-04-26 00:00:00+0000
+lastmod: 2026-03-02
 image: way_of_fury_build.webp
 categories:
    - Baldur's Gate 3
@@ -73,3 +74,9 @@ This is not factoring in Linebreaker boots or crits. Multiply this by our number
 ## Additional Notes
 
 This build is also highly mobile, because it gets movement speed boosts both from Monk and Barbarian and can dash on a bonus action. Here is a [spreadsheet guide](https://docs.google.com/spreadsheets/d/1Ssa2RnLicEzXiI4KwPCEPlkFyG1Dsl0L/edit?usp=sharing&ouid=102922927028635040581&rtpof=true&sd=true) to the build.
+
+## Related Articles
+
+- [Baldur's Gate 3 Race Tier List](/articles/baldurs-gate-3-race-tier-list/) — choose the best race for your melee striker
+- [Baldur's Gate 3 Weapons Tier List](/articles/baldurs-gate-3-weapons-tier-list/) — weapon rankings and weapon action analysis
+- [Fundamental Math in D&D 5e and BG3](/articles/5e-bg3-fundamental-math/) — the DPR and accuracy formulas behind build optimization

@@ -3,6 +3,7 @@ title: "How Valuable is Initiative? A Game Design Analysis"
 description: "An analytical look at the value of initiative in turn-based tactical games and how character durability affects its importance"
 slug: value-of-initiative-game-design
 date: 2022-10-10 00:00:00+0000
+lastmod: 2026-03-02
 image: initiative_cover.webp
 categories:
    - Baldur's Gate 3
@@ -129,12 +130,17 @@ What all of this means is that initiative will be extremely important in systems
 
 Of course, likely no one who is reading this cares about the importance of initiative in Pokémon or chess. My audience is interested in BG3 and D&D 5e more generally, so let's finish this article by looking at those specifically.
 
-In BG3 and 5e, the value of a turn will vary by your build and what kind of enemy you face. A minotaur’s turn is more valuable than a goblin's turn. Likewise, an optimized level 4 build has more valuable turns than an unoptimized level 1 character. But a relatively easy way to estimate its value is to ask “how many turns will it take to kill my enemies?” and “how many turns will it take my enemies to kill me?” The simplest way to estimate that is to compare your average damage per round (DPR) to their hit point totals. It follows then that initiative will be less valuable in battles against more durable enemies or in more durable team builds.
+In BG3 and 5e, the value of a turn will vary by your build and what kind of enemy you face. A minotaur’s turn is more valuable than a goblin's turn. Likewise, an optimized level 4 build has more valuable turns than an unoptimized level 1 character. But a relatively easy way to estimate its value is to ask “how many turns will it take to kill my enemies?” and “how many turns will it take my enemies to kill me?” The simplest way to estimate that is to compare your average [damage per round (DPR)](/articles/5e-bg3-fundamental-math/) to their hit point totals. It follows then that initiative will be less valuable in battles against more durable enemies or in more durable team builds.
 
 Another really important question is what can we do in a system to ensure that we consistently win initiative? In BG3 and 5e, initiative is determined through a dexterity skill check, i.e. a 1d20 roll + your dexterity modifier. There aren’t many consistent ways to boost initiative beyond this. The fact that it’s a 1d20 roll means that each +1 bonus we add is equivalent to a 5 %point boost. The highest possible dexterity modifier is a +5 (which comes at a high opportunity cost), and nets us a 25 %point increase in winning initiative. That is NOT very consistent at all, not for its opportunity cost.
 
 This means that in BG3 and 5e more durability is more important compared to other tactical RPG systems. Initiative order is going to be unpredictable, there is no way around it, so the best way to make fights predictable is to minimize turn volatility, which means build tankier party compositions.
 
 However, there are other features of BG3 and 5e which do favor turn volatility, for example, the possibility of surprise. With investment in stealth, you can reliably surprise your enemies, which gives your whole party a free turn at the start of combat. In BG3 you are overwhelmingly more likely to surprise your enemies then they are to surprise you. In tabletop 5e, that will depend on your DM. So keep that in mind.
+
+## Related Articles
+
+- [Fundamental Math in D&D 5e and BG3](/articles/5e-bg3-fundamental-math/) — the core formulas for DPR, accuracy, and advantage
+- [Baldur's Gate 3 Race Tier List](/articles/baldurs-gate-3-race-tier-list/) — how racial features affect build durability and turn value
 
 [Return home](/articles)

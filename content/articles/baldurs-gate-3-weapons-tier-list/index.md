@@ -3,7 +3,7 @@ title: "Baldur's Gate 3 Weapons Tier List - Patch 7"
 description: "Comprehensive rankings of unique weapons and weapon actions in BG3, based on detailed testing and actual in-game performance rather than wiki descriptions"
 slug: baldurs-gate-3-weapons-tier-list
 date: 2022-02-15 00:00:00+0000
-lastmod: 2022-02-15 00:00:00+0000
+lastmod: 2026-03-02
 image: Greatsword_PlusOne_Icon.webp 
 categories:
    - Baldur's Gate 3
@@ -885,5 +885,10 @@ Thanks for reading!
 If you want to discuss this article with me or others, you can do so [here](https://www.reddit.com/r/AestusGuides/comments/std2v6/bg3_weapon_tier_list/?utm_source=share&utm_medium=web2x&context=3)
 
 This article has actually been available for early access for over two weeks on my brand new Patreon! I put a lot of time into these articles, and I have plans to write many more. If you want to enable that please consider supporting me through Patreon. There are several tiers which will give you access to loads of exclusive and early access content! You can find my page [here](https://www.patreon.com/user?u=52365991&fan_landing=true).
+
+## Related Articles
+
+- [Baldur's Gate 3 Race Tier List](/articles/baldurs-gate-3-race-tier-list/) — rankings and analysis of the best races in BG3
+- [Fundamental Math in D&D 5e and BG3](/articles/5e-bg3-fundamental-math/) — the formulas behind DPR calculations and power scaling
 
 [Return home](/articles)

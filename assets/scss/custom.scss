@@ -321,6 +321,23 @@ h4:hover .heading-anchor {
 }
 
 // ============================================
+// RSS footer link
+.site-footer .rss {
+    margin-top: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+
+    a {
+        color: var(--card-text-color-tertiary);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+}
+
 // Firefly Software Signature
 // ============================================
 

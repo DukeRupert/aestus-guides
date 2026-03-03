@@ -7,6 +7,10 @@
         {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
     </section>
 
+    <section class="rss">
+        <a href="{{ "index.xml" | absURL }}" target="_blank" rel="noopener noreferrer">RSS Feed</a>
+    </section>
+
     <!-- Firefly Software signature -->
     <div class="footer-signature">
       <span class="sig-divider dark">

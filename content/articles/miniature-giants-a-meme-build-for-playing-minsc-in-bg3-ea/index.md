@@ -3,6 +3,7 @@ title: "Miniature Giants– A Meme Build for Playing Minsc in BG3 EA"
 description: "A unique character build for Baldur's Gate 3 Early Access inspired by the beloved companion Minsc from the original Baldur's Gate series"
 slug: miniature-giants-a-meme-build-for-playing-minsc-in-bg3-ea
 date: 2022-01-14 00:00:00+0000
+lastmod: 2026-03-02
 image: minsc_build.webp
 categories:
    - Baldur's Gate 3
@@ -148,7 +149,7 @@ Overall, I would rate this build a “C.” Its just too situational. It is an S
 
 If you want to discuss this build with me or others you can comment [here.](https://www.reddit.com/r/AestusGuides/comments/s45w9d/miniature_giants_a_meme_build_for_playing_minsc/?utm_source=share&utm_medium=web2x&context=3)
 
-If you liked it you might like my other builds! You can find the [Vlaakith's Arcane Knight of Faith](/articles/vlaakith-s-arcane-knight-of-faith-a-great-weapon-master-wizard-build/) and [Fallen Light](/articles/fallen-light-eagleheart-barbarian/) builds on this site.
+If you liked it you might like my other builds! You can find the [Vlaakith's Arcane Knight of Faith](/articles/vlaakith-s-arcane-knight-of-faith-a-great-weapon-master-wizard-build/), [Fallen Light](/articles/fallen-light-eagleheart-barbarian/), and [Way of Fury](/articles/bg3-way-of-fury-build/) builds on this site. For race selection advice, see my [Race Tier List](/articles/baldurs-gate-3-race-tier-list/).
 
 I want to sign off of this one with an announcement. If you enjoy my articles and have a minute to spare, I would appreciate your attention. I have had a blast writing all of these tier lists and guides! There is a ton more I want to write, however, the time it takes me to make these is not sustainable or healthy for me as a volunteer service, so I am forced to find a way to monetize this or drastically cut back on my output. I hope you understand. In the next month or so I will be exploring ways to make this project sustainable. I am looking into Patreon, a Youtube channel, and, maybe, putting ads on the website. I would really like Patreon to be an alternative to putting ugly ads on the site. Of course, I will be offering exclusive content to my patrons, but what exactly that will be I am still exploring.
 

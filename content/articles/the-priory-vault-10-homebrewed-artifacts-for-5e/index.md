@@ -3,6 +3,7 @@ title: The Priory Vault - 10 Homebrewed Artifacts for 5e
 description: A collection of custom artifacts for D&D 5e campaigns, including unique weapons, armor, and magical items with detailed progression systems
 slug: the-priory-vault-10-homebrewed-artifacts-for-5e
 date: 2023-12-23 00:00:00+0000
+lastmod: 2026-03-02
 categories:
     - Tabletop RPGs
 tags:
@@ -12,7 +13,7 @@ weight: 1
 
 # The Priory Vault - 10 Homebrewed Artifacts for 5e
 
-Below is an inventory of artifacts collected by the Ordo Prioratus Aequatoris, called the Knights of the Priory. These are items I designed for my tabletop 5e D&D adventure In the Bleak Midwinter.
+Below is an inventory of artifacts collected by the Ordo Prioratus Aequatoris, called the Knights of the Priory. These are items I designed for my tabletop 5e D&D adventure In the Bleak Midwinter. If you're interested in the math behind 5e combat design, check out my [Fundamental Math in D&D 5e and BG3](/articles/5e-bg3-fundamental-math/) article.
 
 **Pungent Mutagen**
 This vile potion awakens an ungodly beast within the player. Grants a variety of boosts which culminate in the ability to shapeshift into a deadly monster. Its especially good for barbarians and druids

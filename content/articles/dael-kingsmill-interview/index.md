@@ -3,6 +3,7 @@ title: "Interview with Dael Kingsmill: Mythology, Draw Steel, and Cultural Story
 description: "A conversation with Dael Kingsmill about mythology in gaming, her experiences with Draw Steel, and how cultural understanding shapes storytelling in tabletop RPGs"
 slug: dael-kingsmill-interview
 date: 2025-02-14 00:00:00+0000
+lastmod: 2026-03-02
 image: dael_kingsmill_interview.webp
 categories:
     - Tabletop RPGs
@@ -141,3 +142,8 @@ I think it's fascinating that what is honorable is so different across different
 It's one of the questions that I think of first when I'm doing worldbuilding stuff and I'm setting up a city or something - I think "how do they dispose of their dead? Where are they putting their dead people?" Is it catacombs, is it a cemetery, is it on the side of the hill facing the sunrise? What do they believe about death? I think it becomes a very key way to understand even fictional cultures.
 
 *This interview was conducted as part of the Insight Check series, featuring discussions about tabletop RPGs and game design.*
+
+## Related Articles
+
+- [James Introcaso on Becoming a Professional Designer](/articles/james-introcaso-professional-designer-interview/) — another Insight Check interview on TTRPG design careers
+- [The Priory Vault — 10 Homebrewed Artifacts for 5e](/articles/the-priory-vault-10-homebrewed-artifacts-for-5e/) — custom D&D 5e artifacts with progression systems
