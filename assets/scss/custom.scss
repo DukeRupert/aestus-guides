@@ -408,3 +408,124 @@ h4:hover .heading-anchor {
     .sig-divider-inner { flex-shrink: 1; }
     .sig-divider-text { white-space: normal; text-align: center; }
 }
+
+// ============================================
+// Enshrined Promo Banner
+// ============================================
+
+.enshrined-promo {
+    background: var(--card-background);
+    border: 1px solid var(--card-separator-color);
+    border-radius: var(--card-border-radius, 10px);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-l1);
+    position: relative;
+    overflow: hidden;
+
+    // Decorative gold top border
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    }
+}
+
+.enshrined-promo__label {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--card-text-color-tertiary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.enshrined-promo__title {
+    font-family: "Cinzel", "Times New Roman", serif;
+    font-size: 1.75rem;
+    color: var(--accent-color);
+    margin: 0 0 0.75rem;
+    letter-spacing: 0.03em;
+}
+
+.enshrined-promo__desc {
+    font-family: "Lora", Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--card-text-color-secondary);
+    margin: 0 0 1.25rem;
+    max-width: 640px;
+}
+
+.enshrined-promo__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.enshrined-promo__cta {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.25rem;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    white-space: nowrap;
+
+    &--primary {
+        background: var(--accent-color);
+        color: var(--accent-color-text);
+
+        &:hover {
+            background: var(--accent-color-darker);
+            color: var(--accent-color-text);
+        }
+    }
+
+    &--secondary {
+        background: transparent;
+        color: var(--card-text-color-secondary);
+        border: 1px solid var(--card-separator-color);
+
+        &:hover {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+    }
+}
+
+// Light mode adjustments
+[data-scheme="light"] {
+    .enshrined-promo__cta--primary {
+        &:hover {
+            background: var(--accent-color-darker);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .enshrined-promo {
+        padding: 1.5rem;
+    }
+
+    .enshrined-promo__title {
+        font-size: 1.4rem;
+    }
+
+    .enshrined-promo__links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .enshrined-promo__cta {
+        text-align: center;
+    }
+}
