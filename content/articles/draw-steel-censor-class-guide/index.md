@@ -3,6 +3,7 @@ title: "Draw Steel Censor Class Guide: In-Depth Tactical Analysis"
 description: "A deep dive into the Censor class in Draw Steel, covering Wrath generation, Judgment, subclasses, kits, domain features, and ability picks from level 1 through 10."
 slug: draw-steel-censor-class-guide
 date: 2026-03-03 00:00:00+0000
+lastmod: 2026-04-18 00:00:00+0000
 image: guide-to-censor.webp
 categories:
    - Draw Steel

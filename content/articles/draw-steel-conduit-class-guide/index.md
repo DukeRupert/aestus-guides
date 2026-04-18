@@ -3,6 +3,7 @@ title: "Draw Steel Conduit Class Guide: In-Depth Tactical Analysis"
 description: "A deep dive into the Conduit class in Draw Steel, covering Piety generation, Healing Grace, Prayer, domain selection, and ability picks from level 1 through 10."
 slug: draw-steel-conduit-class-guide
 date: 2026-03-03 00:00:00+0000
+lastmod: 2026-04-18 00:00:00+0000
 image: guide-to-conduit.webp
 categories:
    - Draw Steel
