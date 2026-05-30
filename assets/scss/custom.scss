@@ -413,7 +413,7 @@ h4:hover .heading-anchor {
 // Enshrined Promo Banner
 // ============================================
 
-.enshrined-promo {
+.mythic-promo {
     background: var(--card-background);
     border: 1px solid var(--card-separator-color);
     border-radius: var(--card-border-radius, 10px);
@@ -435,7 +435,7 @@ h4:hover .heading-anchor {
     }
 }
 
-.enshrined-promo__label {
+.mythic-promo__label {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 0.65rem;
     font-weight: 600;
@@ -446,7 +446,7 @@ h4:hover .heading-anchor {
     margin-bottom: 0.5rem;
 }
 
-.enshrined-promo__title {
+.mythic-promo__title {
     font-family: "Cinzel", "Times New Roman", serif;
     font-size: 1.75rem;
     color: var(--accent-color);
@@ -454,7 +454,7 @@ h4:hover .heading-anchor {
     letter-spacing: 0.03em;
 }
 
-.enshrined-promo__desc {
+.mythic-promo__desc {
     font-family: "Lora", Georgia, serif;
     font-size: 1rem;
     line-height: 1.7;
@@ -463,14 +463,14 @@ h4:hover .heading-anchor {
     max-width: 640px;
 }
 
-.enshrined-promo__links {
+.mythic-promo__links {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
     align-items: center;
 }
 
-.enshrined-promo__cta {
+.mythic-promo__cta {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
@@ -504,7 +504,7 @@ h4:hover .heading-anchor {
 
 // Light mode adjustments
 [data-scheme="light"] {
-    .enshrined-promo__cta--primary {
+    .mythic-promo__cta--primary {
         &:hover {
             background: var(--accent-color-darker);
         }
@@ -512,20 +512,20 @@ h4:hover .heading-anchor {
 }
 
 @media (max-width: 768px) {
-    .enshrined-promo {
+    .mythic-promo {
         padding: 1.5rem;
     }
 
-    .enshrined-promo__title {
+    .mythic-promo__title {
         font-size: 1.4rem;
     }
 
-    .enshrined-promo__links {
+    .mythic-promo__links {
         flex-direction: column;
         align-items: stretch;
     }
 
-    .enshrined-promo__cta {
+    .mythic-promo__cta {
         text-align: center;
     }
 }
