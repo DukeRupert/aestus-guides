@@ -2,7 +2,7 @@
 title: "Why I Made a New Treasure System for Draw Steel"
 description: "Why Draw Steel's stock treasures fall short of heroic-fantasy ideals, and how Mythic Treasures rebuilds loot to be both mechanically and narratively character-defining."
 slug: draw-steel-treasure-system
-date: 2026-05-30 00:00:00+0000
+date: 2026-05-30 12:00:00+0000
 lastmod: 2026-05-30 00:00:00+0000
 image: draw-steel-treasure-system.webp
 categories:
